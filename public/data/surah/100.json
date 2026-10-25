@@ -1,0 +1,490 @@
+{
+  "surah": {
+    "id": 100,
+    "name_arabic": "العاديات",
+    "name_simple": "Al-'Adiyat",
+    "translated_name": "Berlari Kencang",
+    "verses_count": 11,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "100:1",
+      "n": 1,
+      "page": 599,
+      "juz": 30,
+      "text": " وَٱلْعَـٰدِيَـٰتِ ضَبْحًا",
+      "tajweed": "وَ<tajweed class=ham_wasl>ٱ</tajweed>لْعَ<tajweed class=madda_normal>ـٰ</tajweed>دِيَ<tajweed class=madda_normal>ـٰ</tajweed>تِ ضَ<tajweed class=qalaqah>بْ</tajweed>حًا <span class=end>١</span>",
+      "translation": "Demi kuda perang yang berlari kencang terengah-engah,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَٱلْعَـٰدِيَـٰتِ",
+          "page": 599,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ضَبْحًۭا",
+          "page": 599,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "١",
+          "page": 599,
+          "line": 12,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "100:2",
+      "n": 2,
+      "page": 599,
+      "juz": 30,
+      "text": "فَٱلْمُورِيَـٰتِ قَدْحًا",
+      "tajweed": "فَ<tajweed class=ham_wasl>ٱ</tajweed>لْمُورِيَ<tajweed class=madda_normal>ـٰ</tajweed>تِ قَ<tajweed class=qalaqah>دْ</tajweed>حًا <span class=end>٢</span>",
+      "translation": "dan kuda yang memercikkan bunga api (dengan pukulan kuku kakinya),",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَٱلْمُورِيَـٰتِ",
+          "page": 599,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "قَدْحًۭا",
+          "page": 599,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "٢",
+          "page": 599,
+          "line": 12,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "100:3",
+      "n": 3,
+      "page": 599,
+      "juz": 30,
+      "text": "فَٱلْمُغِيرَٰتِ صُبْحًا",
+      "tajweed": "فَ<tajweed class=ham_wasl>ٱ</tajweed>لْمُغِير<tajweed class=madda_normal>َٲ</tajweed>تِ صُ<tajweed class=qalaqah>بْ</tajweed>حًا <span class=end>٣</span>",
+      "translation": "dan kuda yang menyerang (dengan tiba-tiba) pada waktu pagi,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَٱلْمُغِيرَٰتِ",
+          "page": 599,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "صُبْحًۭا",
+          "page": 599,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "٣",
+          "page": 599,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "100:4",
+      "n": 4,
+      "page": 599,
+      "juz": 30,
+      "text": "فَأَثَرْنَ بِهِۦ نَقْعًا",
+      "tajweed": "فَأَثَرْنَ بِه<tajweed class=madda_normal>ِۦ</tajweed> نَ<tajweed class=qalaqah>قْ</tajweed>عًا <span class=end>٤</span>",
+      "translation": "sehingga menerbangkan debu,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَأَثَرْنَ",
+          "page": 599,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "بِهِۦ",
+          "page": 599,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "نَقْعًۭا",
+          "page": 599,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٤",
+          "page": 599,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "100:5",
+      "n": 5,
+      "page": 599,
+      "juz": 30,
+      "text": "فَوَسَطْنَ بِهِۦ جَمْعًا",
+      "tajweed": "فَوَسَ<tajweed class=qalaqah>طْ</tajweed>نَ بِه<tajweed class=madda_normal>ِۦ</tajweed> جَمْعًا <span class=end>٥</span>",
+      "translation": "lalu menyerbu ke tengah-tengah kumpulan musuh,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَوَسَطْنَ",
+          "page": 599,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "بِهِۦ",
+          "page": 599,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "جَمْعًا",
+          "page": 599,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٥",
+          "page": 599,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "100:6",
+      "n": 6,
+      "page": 600,
+      "juz": 30,
+      "text": "إِنَّ ٱلْإِنسَـٰنَ لِرَبِّهِۦ لَكَنُودٌ",
+      "tajweed": "إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>لْإِ<tajweed class=ikhafa>نس</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>نَ لِرَبِّه<tajweed class=madda_normal>ِۦ</tajweed> لَكَن<tajweed class=madda_permissible>ُو</tajweed><tajweed class=qalaqah>د</tajweed>ٌ <span class=end>٦</span>",
+      "translation": "sungguh, manusia itu sangat ingkar, (tidak bersyukur) kepada Tuhannya,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِنَّ",
+          "page": 600,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْإِنسَـٰنَ",
+          "page": 600,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "لِرَبِّهِۦ",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لَكَنُودٌۭ",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٦",
+          "page": 600,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "100:7",
+      "n": 7,
+      "page": 600,
+      "juz": 30,
+      "text": "وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ",
+      "tajweed": "وَإِ<tajweed class=ghunnah>نّ</tajweed>َهُ<tajweed class=madda_normal>ۥ</tajweed> عَلَىٰ ذ<tajweed class=madda_normal>َٲ</tajweed>لِكَ لَشَه<tajweed class=madda_permissible>ِي</tajweed><tajweed class=qalaqah>د</tajweed>ٌ <span class=end>٧</span>",
+      "translation": "dan sesungguhnya dia (manusia) menyaksikan (mengakui) keingkarannya,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَإِنَّهُۥ",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "عَلَىٰ",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ذَٰلِكَ",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لَشَهِيدٌۭ",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٧",
+          "page": 600,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "100:8",
+      "n": 8,
+      "page": 600,
+      "juz": 30,
+      "text": "وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ",
+      "tajweed": "وَإِ<tajweed class=ghunnah>نّ</tajweed>َهُ<tajweed class=madda_normal>ۥ</tajweed> لِحُبِّ <tajweed class=ham_wasl>ٱ</tajweed>لْخَيْرِ لَشَد<tajweed class=madda_permissible>ِي</tajweed><tajweed class=qalaqah>د</tajweed>ٌ <span class=end>٨</span>",
+      "translation": "dan sesungguhnya cintanya kepada harta benar-benar berlebihan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَإِنَّهُۥ",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "لِحُبِّ",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلْخَيْرِ",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لَشَدِيدٌ",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٨",
+          "page": 600,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "100:9",
+      "n": 9,
+      "page": 600,
+      "juz": 30,
+      "text": "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ",
+      "tajweed": "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى <tajweed class=ham_wasl>ٱ</tajweed>لْقُب<tajweed class=madda_permissible>ُو</tajweed>رِ <span class=end>٩</span>",
+      "translation": "Maka tidakkah dia mengetahui apabila apa yang di dalam kubur dikeluarkan,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "۞ أَفَلَا",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يَعْلَمُ",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "إِذَا",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "بُعْثِرَ",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "مَا",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "فِى",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "ٱلْقُبُورِ",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "٩",
+          "page": 600,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "100:10",
+      "n": 10,
+      "page": 600,
+      "juz": 30,
+      "text": "وَحُصِّلَ مَا فِى ٱلصُّدُورِ",
+      "tajweed": "وَحُصِّلَ مَا فِى <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صُّد<tajweed class=madda_permissible>ُو</tajweed>رِ <span class=end>١٠</span>",
+      "translation": "dan apa yang tersimpan di dalam dada dikeluarkan?",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَحُصِّلَ",
+          "page": 600,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "مَا",
+          "page": 600,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "فِى",
+          "page": 600,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلصُّدُورِ",
+          "page": 600,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "١٠",
+          "page": 600,
+          "line": 1,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "100:11",
+      "n": 11,
+      "page": 600,
+      "juz": 30,
+      "text": "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَّخَبِيرٌۢ",
+      "tajweed": "إِ<tajweed class=ghunnah>نّ</tajweed>َ رَبَّه<tajweed class=ikhafa_shafawi>ُم ب</tajweed>ِهِمْ يَوْمَئِ<tajweed class=idgham_wo_ghunnah>ذٍ ل</tajweed>َّخَب<tajweed class=madda_permissible>ِي</tajweed>رُۢ <span class=end>١١</span>",
+      "translation": "sungguh, Tuhan mereka pada hari itu Mahateliti terhadap keadaan mereka.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِنَّ",
+          "page": 600,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "رَبَّهُم",
+          "page": 600,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "بِهِمْ",
+          "page": 600,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "يَوْمَئِذٍۢ",
+          "page": 600,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "لَّخَبِيرٌۢ",
+          "page": 600,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "١١",
+          "page": 600,
+          "line": 1,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "page": 604,
+  "juz": 30,
+  "surahs": [
+    {
+      "id": 112,
+      "name_arabic": "الإخلاص",
+      "name_simple": "Al-Ikhlas"
+    },
+    {
+      "id": 113,
+      "name_arabic": "الفلق",
+      "name_simple": "Al-Falaq"
+    },
+    {
+      "id": 114,
+      "name_arabic": "الناس",
+      "name_simple": "An-Nas"
+    }
+  ],
+  "lines": [
+    {
+      "line": 1,
+      "type": "surah_header",
+      "surah": {
+        "id": 112,
+        "name_arabic": "الإخلاص",
+        "name_simple": "Al-Ikhlas"
+      }
+    },
+    {
+      "line": 2,
+      "type": "bismillah",
+      "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"
+    },
+    {
+      "line": 3,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "112:1",
+          "idx": 1,
+          "text": "قُلْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:1",
+          "idx": 2,
+          "text": "هُوَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:1",
+          "idx": 3,
+          "text": "ٱللَّهُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:1",
+          "idx": 4,
+          "text": "أَحَدٌ",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:1",
+          "idx": 5,
+          "text": "١",
+          "type": "end"
+        },
+        {
+          "verse_key": "112:2",
+          "idx": 1,
+          "text": "ٱللَّهُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:2",
+          "idx": 2,
+          "text": "ٱلصَّمَدُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:2",
+          "idx": 3,
+          "text": "٢",
+          "type": "end"
+        },
+        {
+          "verse_key": "112:3",
+          "idx": 1,
+          "text": "لَمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:3",
+          "idx": 2,
+          "text": "يَلِدْ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "112:3",
+          "idx": 3,
+          "text": "وَلَمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:3",
+          "idx": 4,
+          "text": "يُولَدْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:3",
+          "idx": 5,
+          "text": "٣",
+          "type": "end"
+        },
+        {
+          "verse_key": "112:4",
+          "idx": 1,
+          "text": "وَلَمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:4",
+          "idx": 2,
+          "text": "يَكُن",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:4",
+          "idx": 3,
+          "text": "لَّهُۥ",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:4",
+          "idx": 4,
+          "text": "كُفُوًا",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:4",
+          "idx": 5,
+          "text": "أَحَدٌۢ",
+          "type": "word"
+        },
+        {
+          "verse_key": "112:4",
+          "idx": 6,
+          "text": "٤",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "type": "surah_header",
+      "surah": {
+        "id": 113,
+        "name_arabic": "الفلق",
+        "name_simple": "Al-Falaq"
+      }
+    },
+    {
+      "line": 6,
+      "type": "bismillah",
+      "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"
+    },
+    {
+      "line": 7,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "113:1",
+          "idx": 1,
+          "text": "قُلْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:1",
+          "idx": 2,
+          "text": "أَعُوذُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:1",
+          "idx": 3,
+          "text": "بِرَبِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:1",
+          "idx": 4,
+          "text": "ٱلْفَلَقِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:1",
+          "idx": 5,
+          "text": "١",
+          "type": "end"
+        },
+        {
+          "verse_key": "113:2",
+          "idx": 1,
+          "text": "مِن",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:2",
+          "idx": 2,
+          "text": "شَرِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:2",
+          "idx": 3,
+          "text": "مَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:2",
+          "idx": 4,
+          "text": "خَلَقَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:2",
+          "idx": 5,
+          "text": "٢",
+          "type": "end"
+        },
+        {
+          "verse_key": "113:3",
+          "idx": 1,
+          "text": "وَمِن",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "113:3",
+          "idx": 2,
+          "text": "شَرِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:3",
+          "idx": 3,
+          "text": "غَاسِقٍ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:3",
+          "idx": 4,
+          "text": "إِذَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:3",
+          "idx": 5,
+          "text": "وَقَبَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:3",
+          "idx": 6,
+          "text": "٣",
+          "type": "end"
+        },
+        {
+          "verse_key": "113:4",
+          "idx": 1,
+          "text": "وَمِن",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:4",
+          "idx": 2,
+          "text": "شَرِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:4",
+          "idx": 3,
+          "text": "ٱلنَّفَّـٰثَـٰتِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:4",
+          "idx": 4,
+          "text": "فِى",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "113:4",
+          "idx": 5,
+          "text": "ٱلْعُقَدِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:4",
+          "idx": 6,
+          "text": "٤",
+          "type": "end"
+        },
+        {
+          "verse_key": "113:5",
+          "idx": 1,
+          "text": "وَمِن",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:5",
+          "idx": 2,
+          "text": "شَرِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:5",
+          "idx": 3,
+          "text": "حَاسِدٍ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:5",
+          "idx": 4,
+          "text": "إِذَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:5",
+          "idx": 5,
+          "text": "حَسَدَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "113:5",
+          "idx": 6,
+          "text": "٥",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "type": "surah_header",
+      "surah": {
+        "id": 114,
+        "name_arabic": "الناس",
+        "name_simple": "An-Nas"
+      }
+    },
+    {
+      "line": 11,
+      "type": "bismillah",
+      "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"
+    },
+    {
+      "line": 12,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "114:1",
+          "idx": 1,
+          "text": "قُلْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:1",
+          "idx": 2,
+          "text": "أَعُوذُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:1",
+          "idx": 3,
+          "text": "بِرَبِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:1",
+          "idx": 4,
+          "text": "ٱلنَّاسِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:1",
+          "idx": 5,
+          "text": "١",
+          "type": "end"
+        },
+        {
+          "verse_key": "114:2",
+          "idx": 1,
+          "text": "مَلِكِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:2",
+          "idx": 2,
+          "text": "ٱلنَّاسِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:2",
+          "idx": 3,
+          "text": "٢",
+          "type": "end"
+        },
+        {
+          "verse_key": "114:3",
+          "idx": 1,
+          "text": "إِلَـٰهِ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "114:3",
+          "idx": 2,
+          "text": "ٱلنَّاسِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:3",
+          "idx": 3,
+          "text": "٣",
+          "type": "end"
+        },
+        {
+          "verse_key": "114:4",
+          "idx": 1,
+          "text": "مِن",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:4",
+          "idx": 2,
+          "text": "شَرِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:4",
+          "idx": 3,
+          "text": "ٱلْوَسْوَاسِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:4",
+          "idx": 4,
+          "text": "ٱلْخَنَّاسِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:4",
+          "idx": 5,
+          "text": "٤",
+          "type": "end"
+        },
+        {
+          "verse_key": "114:5",
+          "idx": 1,
+          "text": "ٱلَّذِى",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "114:5",
+          "idx": 2,
+          "text": "يُوَسْوِسُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:5",
+          "idx": 3,
+          "text": "فِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:5",
+          "idx": 4,
+          "text": "صُدُورِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:5",
+          "idx": 5,
+          "text": "ٱلنَّاسِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:5",
+          "idx": 6,
+          "text": "٥",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 15,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "114:6",
+          "idx": 1,
+          "text": "مِنَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:6",
+          "idx": 2,
+          "text": "ٱلْجِنَّةِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:6",
+          "idx": 3,
+          "text": "وَٱلنَّاسِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "114:6",
+          "idx": 4,
+          "text": "٦",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

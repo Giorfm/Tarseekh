@@ -1,0 +1,858 @@
+{
+  "surah": {
+    "id": 96,
+    "name_arabic": "العلق",
+    "name_simple": "Al-'Alaq",
+    "translated_name": "Segumpal Darah",
+    "verses_count": 19,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "96:1",
+      "n": 1,
+      "page": 597,
+      "juz": 30,
+      "text": " ٱقْرَأْ بِٱسْمِ رَبِّكَ ٱلَّذِى خَلَقَ",
+      "tajweed": "ٱ<tajweed class=qalaqah>قْ</tajweed>رَأْ بِ<tajweed class=ham_wasl>ٱ</tajweed>سْمِ رَبِّكَ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِى خَلَ<tajweed class=qalaqah>ق</tajweed>َ <span class=end>١</span>",
+      "translation": "Bacalah dengan (menyebut) nama Tuhanmu yang menciptakan,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ٱقْرَأْ",
+          "page": 597,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "بِٱسْمِ",
+          "page": 597,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "رَبِّكَ",
+          "page": 597,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلَّذِى",
+          "page": 597,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "خَلَقَ",
+          "page": 597,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "١",
+          "page": 597,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:2",
+      "n": 2,
+      "page": 597,
+      "juz": 30,
+      "text": "خَلَقَ ٱلْإِنسَـٰنَ مِنْ عَلَقٍ",
+      "tajweed": "خَلَقَ <tajweed class=ham_wasl>ٱ</tajweed>لْإِ<tajweed class=ikhafa>نس</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>نَ مِنْ عَلَ<tajweed class=qalaqah>ق</tajweed>ٍ <span class=end>٢</span>",
+      "translation": "Dia telah menciptakan manusia dari segumpal darah.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "خَلَقَ",
+          "page": 597,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْإِنسَـٰنَ",
+          "page": 597,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مِنْ",
+          "page": 597,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "عَلَقٍ",
+          "page": 597,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٢",
+          "page": 597,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:3",
+      "n": 3,
+      "page": 597,
+      "juz": 30,
+      "text": "ٱقْرَأْ وَرَبُّكَ ٱلْأَكْرَمُ",
+      "tajweed": "ٱ<tajweed class=qalaqah>قْ</tajweed>رَأْ وَرَبُّكَ <tajweed class=ham_wasl>ٱ</tajweed>لْأَكْرَمُ <span class=end>٣</span>",
+      "translation": "Bacalah, dan Tuhanmulah Yang Mahamulia.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ٱقْرَأْ",
+          "page": 597,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "وَرَبُّكَ",
+          "page": 597,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلْأَكْرَمُ",
+          "page": 597,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٣",
+          "page": 597,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:4",
+      "n": 4,
+      "page": 597,
+      "juz": 30,
+      "text": "ٱلَّذِى عَلَّمَ بِٱلْقَلَمِ",
+      "tajweed": "ٱلَّذِى عَلَّمَ بِ<tajweed class=ham_wasl>ٱ</tajweed>لْقَلَمِ <span class=end>٤</span>",
+      "translation": "Yang mengajar (manusia) dengan pena.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ٱلَّذِى",
+          "page": 597,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "عَلَّمَ",
+          "page": 597,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "بِٱلْقَلَمِ",
+          "page": 597,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٤",
+          "page": 597,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:5",
+      "n": 5,
+      "page": 597,
+      "juz": 30,
+      "text": "عَلَّمَ ٱلْإِنسَـٰنَ مَا لَمْ يَعْلَمْ",
+      "tajweed": "عَلَّمَ <tajweed class=ham_wasl>ٱ</tajweed>لْإِ<tajweed class=ikhafa>نس</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>نَ مَا لَمْ يَعْلَمْ <span class=end>٥</span>",
+      "translation": "Dia mengajarkan manusia apa yang tidak diketahuinya.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "عَلَّمَ",
+          "page": 597,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْإِنسَـٰنَ",
+          "page": 597,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَا",
+          "page": 597,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لَمْ",
+          "page": 597,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "يَعْلَمْ",
+          "page": 597,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٥",
+          "page": 597,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:6",
+      "n": 6,
+      "page": 597,
+      "juz": 30,
+      "text": "كَلَّآ إِنَّ ٱلْإِنسَـٰنَ لَيَطْغَىٰٓ",
+      "tajweed": "كَلّ<tajweed class=madda_obligatory>َآ</tajweed> إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>لْإِ<tajweed class=ikhafa>نس</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>نَ لَيَ<tajweed class=qalaqah>طْ</tajweed>غَىٰٓ <span class=end>٦</span>",
+      "translation": "Sekali-sekali tidak! Sungguh, manusia itu benar-benar melampaui batas,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "كَلَّآ",
+          "page": 597,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "إِنَّ",
+          "page": 597,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلْإِنسَـٰنَ",
+          "page": 597,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لَيَطْغَىٰٓ",
+          "page": 597,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٦",
+          "page": 597,
+          "line": 11,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:7",
+      "n": 7,
+      "page": 597,
+      "juz": 30,
+      "text": "أَن رَّءَاهُ ٱسْتَغْنَىٰٓ",
+      "tajweed": "أ<tajweed class=idgham_wo_ghunnah>َن ر</tajweed>َّءَاهُ <tajweed class=ham_wasl>ٱ</tajweed>سْتَغْنَىٰٓ <span class=end>٧</span>",
+      "translation": "apabila melihat dirinya serba cukup.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أَن",
+          "page": 597,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "رَّءَاهُ",
+          "page": 597,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱسْتَغْنَىٰٓ",
+          "page": 597,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٧",
+          "page": 597,
+          "line": 11,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:8",
+      "n": 8,
+      "page": 597,
+      "juz": 30,
+      "text": "إِنَّ إِلَىٰ رَبِّكَ ٱلرُّجْعَىٰٓ",
+      "tajweed": "إِ<tajweed class=ghunnah>نّ</tajweed>َ إِلَىٰ رَبِّكَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>رُّ<tajweed class=qalaqah>جْ</tajweed>عَىٰٓ <span class=end>٨</span>",
+      "translation": "Sungguh, hanya kepada Tuhanmulah tempat kembali(mu).",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِنَّ",
+          "page": 597,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "إِلَىٰ",
+          "page": 597,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "رَبِّكَ",
+          "page": 597,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلرُّجْعَىٰٓ",
+          "page": 597,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٨",
+          "page": 597,
+          "line": 11,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:9",
+      "n": 9,
+      "page": 597,
+      "juz": 30,
+      "text": "أَرَءَيْتَ ٱلَّذِى يَنْهَىٰ",
+      "tajweed": "أَرَءَيْتَ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِى يَنْهَىٰ <span class=end>٩</span>",
+      "translation": "Bagaimana pendapatmu tentang orang yang melarang?",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أَرَءَيْتَ",
+          "page": 597,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلَّذِى",
+          "page": 597,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "يَنْهَىٰ",
+          "page": 597,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٩",
+          "page": 597,
+          "line": 12,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:10",
+      "n": 10,
+      "page": 597,
+      "juz": 30,
+      "text": "عَبْدًا إِذَا صَلَّىٰٓ",
+      "tajweed": "عَ<tajweed class=qalaqah>بْ</tajweed>دًا إِذَا صَلَّىٰٓ <span class=end>١٠</span>",
+      "translation": "seorang hamba ketika dia melaksanakan salat,1",
+      "words": [
+        {
+          "idx": 1,
+          "text": "عَبْدًا",
+          "page": 597,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "إِذَا",
+          "page": 597,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "صَلَّىٰٓ",
+          "page": 597,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "١٠",
+          "page": 597,
+          "line": 12,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:11",
+      "n": 11,
+      "page": 597,
+      "juz": 30,
+      "text": "أَرَءَيْتَ إِن كَانَ عَلَى ٱلْهُدَىٰٓ",
+      "tajweed": "أَرَءَيْتَ إِ<tajweed class=ikhafa>ن ك</tajweed>َانَ عَلَى <tajweed class=ham_wasl>ٱ</tajweed>لْهُدَىٰٓ <span class=end>١١</span>",
+      "translation": "bagaimana pendapatmu jika dia (yang dilarang salat itu) berada di atas kebenaran (petunjuk),",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أَرَءَيْتَ",
+          "page": 597,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "إِن",
+          "page": 597,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "كَانَ",
+          "page": 597,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "عَلَى",
+          "page": 597,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلْهُدَىٰٓ",
+          "page": 597,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "١١",
+          "page": 597,
+          "line": 12,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:12",
+      "n": 12,
+      "page": 597,
+      "juz": 30,
+      "text": "أَوْ أَمَرَ بِٱلتَّقْوَىٰٓ",
+      "tajweed": "أَوْ أَمَرَ بِ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>تَّ<tajweed class=qalaqah>قْ</tajweed>وَىٰٓ <span class=end>١٢</span>",
+      "translation": "atau dia menyuruh bertakwa (kepada Allah)?",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أَوْ",
+          "page": 597,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَمَرَ",
+          "page": 597,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "بِٱلتَّقْوَىٰٓ",
+          "page": 597,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "١٢",
+          "page": 597,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:13",
+      "n": 13,
+      "page": 598,
+      "juz": 30,
+      "text": "أَرَءَيْتَ إِن كَذَّبَ وَتَوَلَّىٰٓ",
+      "tajweed": "أَرَءَيْتَ إِ<tajweed class=ikhafa>ن ك</tajweed>َذَّبَ وَتَوَلَّىٰٓ <span class=end>١٣</span>",
+      "translation": "Bagaimana pendapatmu jika dia (yang melarang) itu mendustakan dan berpaling?",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أَرَءَيْتَ",
+          "page": 598,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "إِن",
+          "page": 598,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "كَذَّبَ",
+          "page": 598,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "وَتَوَلَّىٰٓ",
+          "page": 598,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "١٣",
+          "page": 598,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:14",
+      "n": 14,
+      "page": 598,
+      "juz": 30,
+      "text": "أَلَمْ يَعْلَم بِأَنَّ ٱللَّهَ يَرَىٰ",
+      "tajweed": "أَلَمْ يَعْل<tajweed class=ikhafa_shafawi>َم ب</tajweed>ِأَ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ يَرَىٰ <span class=end>١٤</span>",
+      "translation": "Tidakkah dia mengetahui bahwa sesungguhnya Allah melihat (segala perbuatannya)?",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أَلَمْ",
+          "page": 598,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يَعْلَم",
+          "page": 598,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "بِأَنَّ",
+          "page": 598,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱللَّهَ",
+          "page": 598,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "يَرَىٰ",
+          "page": 598,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "١٤",
+          "page": 598,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:15",
+      "n": 15,
+      "page": 598,
+      "juz": 30,
+      "text": "كَلَّا لَئِن لَّمْ يَنتَهِ لَنَسْفَعًۢا بِٱلنَّاصِيَةِ",
+      "tajweed": "كَلَّا لَئ<tajweed class=idgham_wo_ghunnah>ِن ل</tajweed>َّمْ يَ<tajweed class=ikhafa>نت</tajweed>َهِ لَنَسْفَع<tajweed class=iqlab>َۢا ب</tajweed>ِ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َاصِيَةِ <span class=end>١٥</span>",
+      "translation": "Sekali-kali tidak! Sungguh, jika dia tidak berhenti (berbuat demikian) niscaya Kami tarik ubun-ubunnya (ke dalam neraka),",
+      "words": [
+        {
+          "idx": 1,
+          "text": "كَلَّا",
+          "page": 598,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "لَئِن",
+          "page": 598,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "لَّمْ",
+          "page": 598,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "يَنتَهِ",
+          "page": 598,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "لَنَسْفَعًۢا",
+          "page": 598,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "بِٱلنَّاصِيَةِ",
+          "page": 598,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "١٥",
+          "page": 598,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:16",
+      "n": 16,
+      "page": 598,
+      "juz": 30,
+      "text": "نَاصِيَةٍ كَـٰذِبَةٍ خَاطِئَةٍ",
+      "tajweed": "نَاصِيَ<tajweed class=ikhafa>ةٍ ك</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>ذِبَةٍ خَاطِئَةٍ <span class=end>١٦</span>",
+      "translation": "(yaitu) ubun-ubun orang yang mendustakan dan durhaka.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "نَاصِيَةٍۢ",
+          "page": 598,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "كَـٰذِبَةٍ",
+          "page": 598,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "خَاطِئَةٍۢ",
+          "page": 598,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "١٦",
+          "page": 598,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:17",
+      "n": 17,
+      "page": 598,
+      "juz": 30,
+      "text": "فَلْيَدْعُ نَادِيَهُۥ",
+      "tajweed": "فَلْيَ<tajweed class=qalaqah>دْ</tajweed>عُ نَادِيَهُۥ <span class=end>١٧</span>",
+      "translation": "Maka biarlah dia memanggil golongannya (untuk menolongnya),",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَلْيَدْعُ",
+          "page": 598,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "نَادِيَهُۥ",
+          "page": 598,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "١٧",
+          "page": 598,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:18",
+      "n": 18,
+      "page": 598,
+      "juz": 30,
+      "text": "سَنَدْعُ ٱلزَّبَانِيَةَ",
+      "tajweed": "سَنَ<tajweed class=qalaqah>دْ</tajweed>عُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>زَّبَانِيَةَ <span class=end>١٨</span>",
+      "translation": "kelak Kami akan memanggil Malaikat Zabaniyah (penyiksa orang-orang yang berdosa)",
+      "words": [
+        {
+          "idx": 1,
+          "text": "سَنَدْعُ",
+          "page": 598,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلزَّبَانِيَةَ",
+          "page": 598,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "١٨",
+          "page": 598,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "96:19",
+      "n": 19,
+      "page": 598,
+      "juz": 30,
+      "text": "كَلَّا لَا تُطِعْهُ وَٱسْجُدْ وَٱقْتَرِب ۩",
+      "tajweed": "كَلَّا لَا تُطِعْهُ وَ<tajweed class=ham_wasl>ٱ</tajweed>سْجُ<tajweed class=qalaqah>دْ</tajweed> وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=qalaqah>قْ</tajweed>تَرِ<tajweed class=qalaqah>ب</tajweed> ۩ <span class=end>١٩</span>",
+      "translation": "sekali-kali tidak! Janganlah kamu patuh kepadanya; dan sujudlah serta dekatkanlah (dirimu kepada Allah).",
+      "words": [
+        {
+          "idx": 1,
+          "text": "كَلَّا",
+          "page": 598,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "لَا",
+          "page": 598,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "تُطِعْهُ",
+          "page": 598,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "وَٱسْجُدْ",
+          "page": 598,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "وَٱقْتَرِب ۩",
+          "page": 598,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "١٩",
+          "page": 598,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

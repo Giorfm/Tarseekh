@@ -1,0 +1,352 @@
+{
+  "surah": {
+    "id": 102,
+    "name_arabic": "التكاثر",
+    "name_simple": "At-Takathur",
+    "translated_name": "Bermegah-megahan",
+    "verses_count": 8,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "102:1",
+      "n": 1,
+      "page": 600,
+      "juz": 30,
+      "text": " أَلْهَىٰكُمُ ٱلتَّكَاثُرُ",
+      "tajweed": "أَلْهَ<tajweed class=madda_normal>ـٰ</tajweed>كُمُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>تَّكَاثُرُ <span class=end>١</span>",
+      "translation": "Bermegah-megahan telah melalaikan kamu,1",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أَلْهَىٰكُمُ",
+          "page": 600,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلتَّكَاثُرُ",
+          "page": 600,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "١",
+          "page": 600,
+          "line": 12,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "102:2",
+      "n": 2,
+      "page": 600,
+      "juz": 30,
+      "text": "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ",
+      "tajweed": "حَتَّىٰ زُرْتُمُ <tajweed class=ham_wasl>ٱ</tajweed>لْمَقَابِرَ <span class=end>٢</span>",
+      "translation": "sampai kamu masuk ke dalam kubur.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "حَتَّىٰ",
+          "page": 600,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "زُرْتُمُ",
+          "page": 600,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلْمَقَابِرَ",
+          "page": 600,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٢",
+          "page": 600,
+          "line": 12,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "102:3",
+      "n": 3,
+      "page": 600,
+      "juz": 30,
+      "text": "كَلَّا سَوْفَ تَعْلَمُونَ",
+      "tajweed": "كَلَّا سَوْفَ تَعْلَم<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٣</span>",
+      "translation": "Sekali-kali tidak! Kelak kamu akan mengetahui (akibat perbuatanmu itu),",
+      "words": [
+        {
+          "idx": 1,
+          "text": "كَلَّا",
+          "page": 600,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "سَوْفَ",
+          "page": 600,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "تَعْلَمُونَ",
+          "page": 600,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٣",
+          "page": 600,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "102:4",
+      "n": 4,
+      "page": 600,
+      "juz": 30,
+      "text": "ثُمَّ كَلَّا سَوْفَ تَعْلَمُونَ",
+      "tajweed": "ثُ<tajweed class=ghunnah>مّ</tajweed>َ كَلَّا سَوْفَ تَعْلَم<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٤</span>",
+      "translation": "kemudian sekali-kali tidak! Kelak kamu akan mengetahui.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ثُمَّ",
+          "page": 600,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "كَلَّا",
+          "page": 600,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "سَوْفَ",
+          "page": 600,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "تَعْلَمُونَ",
+          "page": 600,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٤",
+          "page": 600,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "102:5",
+      "n": 5,
+      "page": 600,
+      "juz": 30,
+      "text": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ ٱلْيَقِينِ",
+      "tajweed": "كَلَّا لَوْ تَعْلَمُونَ عِلْمَ <tajweed class=ham_wasl>ٱ</tajweed>لْيَق<tajweed class=madda_permissible>ِي</tajweed>نِ <span class=end>٥</span>",
+      "translation": "Sekali-kali tidak! Sekiranya kamu mengetahui dengan pasti,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "كَلَّا",
+          "page": 600,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "لَوْ",
+          "page": 600,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "تَعْلَمُونَ",
+          "page": 600,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "عِلْمَ",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلْيَقِينِ",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٥",
+          "page": 600,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "102:6",
+      "n": 6,
+      "page": 600,
+      "juz": 30,
+      "text": "لَتَرَوُنَّ ٱلْجَحِيمَ",
+      "tajweed": "لَتَرَوُ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>لْجَح<tajweed class=madda_permissible>ِي</tajweed>مَ <span class=end>٦</span>",
+      "translation": "niscaya kamu benar-benar akan melihat neraka Jahim,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "لَتَرَوُنَّ",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْجَحِيمَ",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "٦",
+          "page": 600,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "102:7",
+      "n": 7,
+      "page": 600,
+      "juz": 30,
+      "text": "ثُمَّ لَتَرَوُنَّهَا عَيْنَ ٱلْيَقِينِ",
+      "tajweed": "ثُ<tajweed class=ghunnah>مّ</tajweed>َ لَتَرَوُ<tajweed class=ghunnah>نّ</tajweed>َهَا عَيْنَ <tajweed class=ham_wasl>ٱ</tajweed>لْيَق<tajweed class=madda_permissible>ِي</tajweed>نِ <span class=end>٧</span>",
+      "translation": "kemudian kamu benar-benar akan melihatnya dengan mata kepala sendiri,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ثُمَّ",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "لَتَرَوُنَّهَا",
+          "page": 600,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "عَيْنَ",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْيَقِينِ",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٧",
+          "page": 600,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "102:8",
+      "n": 8,
+      "page": 600,
+      "juz": 30,
+      "text": "ثُمَّ لَتُسْـَٔلُنَّ يَوْمَئِذٍ عَنِ ٱلنَّعِيمِ",
+      "tajweed": "ثُ<tajweed class=ghunnah>مّ</tajweed>َ لَتُسْــَٔلُ<tajweed class=ghunnah>نّ</tajweed>َ يَوْمَئِذٍ عَنِ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َع<tajweed class=madda_permissible>ِي</tajweed>مِ <span class=end>٨</span>",
+      "translation": "kemudian kamu benar-benar akan ditanya pada hari itu tentang kenikmatan (yang megah di dunia itu).",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ثُمَّ",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "لَتُسْـَٔلُنَّ",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "يَوْمَئِذٍ",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "عَنِ",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلنَّعِيمِ",
+          "page": 600,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٨",
+          "page": 600,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

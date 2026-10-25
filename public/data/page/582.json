@@ -1,0 +1,915 @@
+{
+  "page": 582,
+  "juz": 30,
+  "surahs": [
+    {
+      "id": 78,
+      "name_arabic": "النبإ",
+      "name_simple": "An-Naba"
+    }
+  ],
+  "lines": [
+    {
+      "line": 1,
+      "type": "surah_header",
+      "surah": {
+        "id": 78,
+        "name_arabic": "النبإ",
+        "name_simple": "An-Naba"
+      }
+    },
+    {
+      "line": 2,
+      "type": "bismillah",
+      "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"
+    },
+    {
+      "line": 3,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "78:1",
+          "idx": 1,
+          "text": "عَمَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:1",
+          "idx": 2,
+          "text": "يَتَسَآءَلُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:1",
+          "idx": 3,
+          "text": "١",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:2",
+          "idx": 1,
+          "text": "عَنِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:2",
+          "idx": 2,
+          "text": "ٱلنَّبَإِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:2",
+          "idx": 3,
+          "text": "ٱلْعَظِيمِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:2",
+          "idx": 4,
+          "text": "٢",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:3",
+          "idx": 1,
+          "text": "ٱلَّذِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:3",
+          "idx": 2,
+          "text": "هُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:3",
+          "idx": 3,
+          "text": "فِيهِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:3",
+          "idx": 4,
+          "text": "مُخْتَلِفُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:3",
+          "idx": 5,
+          "text": "٣",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "78:4",
+          "idx": 1,
+          "text": "كَلَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:4",
+          "idx": 2,
+          "text": "سَيَعْلَمُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:4",
+          "idx": 3,
+          "text": "٤",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:5",
+          "idx": 1,
+          "text": "ثُمَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:5",
+          "idx": 2,
+          "text": "كَلَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:5",
+          "idx": 3,
+          "text": "سَيَعْلَمُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:5",
+          "idx": 4,
+          "text": "٥",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:6",
+          "idx": 1,
+          "text": "أَلَمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:6",
+          "idx": 2,
+          "text": "نَجْعَلِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:6",
+          "idx": 3,
+          "text": "ٱلْأَرْضَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:6",
+          "idx": 4,
+          "text": "مِهَـٰدًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:6",
+          "idx": 5,
+          "text": "٦",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "78:7",
+          "idx": 1,
+          "text": "وَٱلْجِبَالَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:7",
+          "idx": 2,
+          "text": "أَوْتَادًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:7",
+          "idx": 3,
+          "text": "٧",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:8",
+          "idx": 1,
+          "text": "وَخَلَقْنَـٰكُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:8",
+          "idx": 2,
+          "text": "أَزْوَٰجًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:8",
+          "idx": 3,
+          "text": "٨",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:9",
+          "idx": 1,
+          "text": "وَجَعَلْنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:9",
+          "idx": 2,
+          "text": "نَوْمَكُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:9",
+          "idx": 3,
+          "text": "سُبَاتًۭا",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "78:9",
+          "idx": 4,
+          "text": "٩",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:10",
+          "idx": 1,
+          "text": "وَجَعَلْنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:10",
+          "idx": 2,
+          "text": "ٱلَّيْلَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:10",
+          "idx": 3,
+          "text": "لِبَاسًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:10",
+          "idx": 4,
+          "text": "١٠",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:11",
+          "idx": 1,
+          "text": "وَجَعَلْنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:11",
+          "idx": 2,
+          "text": "ٱلنَّهَارَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:11",
+          "idx": 3,
+          "text": "مَعَاشًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:11",
+          "idx": 4,
+          "text": "١١",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:12",
+          "idx": 1,
+          "text": "وَبَنَيْنَا",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "78:12",
+          "idx": 2,
+          "text": "فَوْقَكُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:12",
+          "idx": 3,
+          "text": "سَبْعًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:12",
+          "idx": 4,
+          "text": "شِدَادًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:12",
+          "idx": 5,
+          "text": "١٢",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:13",
+          "idx": 1,
+          "text": "وَجَعَلْنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:13",
+          "idx": 2,
+          "text": "سِرَاجًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:13",
+          "idx": 3,
+          "text": "وَهَّاجًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:13",
+          "idx": 4,
+          "text": "١٣",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:14",
+          "idx": 1,
+          "text": "وَأَنزَلْنَا",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "78:14",
+          "idx": 2,
+          "text": "مِنَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:14",
+          "idx": 3,
+          "text": "ٱلْمُعْصِرَٰتِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:14",
+          "idx": 4,
+          "text": "مَآءًۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:14",
+          "idx": 5,
+          "text": "ثَجَّاجًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:14",
+          "idx": 6,
+          "text": "١٤",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:15",
+          "idx": 1,
+          "text": "لِّنُخْرِجَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:15",
+          "idx": 2,
+          "text": "بِهِۦ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:15",
+          "idx": 3,
+          "text": "حَبًّۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:15",
+          "idx": 4,
+          "text": "وَنَبَاتًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:15",
+          "idx": 5,
+          "text": "١٥",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:16",
+          "idx": 1,
+          "text": "وَجَنَّـٰتٍ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "78:16",
+          "idx": 2,
+          "text": "أَلْفَافًا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:16",
+          "idx": 3,
+          "text": "١٦",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:17",
+          "idx": 1,
+          "text": "إِنَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:17",
+          "idx": 2,
+          "text": "يَوْمَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:17",
+          "idx": 3,
+          "text": "ٱلْفَصْلِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:17",
+          "idx": 4,
+          "text": "كَانَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:17",
+          "idx": 5,
+          "text": "مِيقَـٰتًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:17",
+          "idx": 6,
+          "text": "١٧",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:18",
+          "idx": 1,
+          "text": "يَوْمَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:18",
+          "idx": 2,
+          "text": "يُنفَخُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:18",
+          "idx": 3,
+          "text": "فِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:18",
+          "idx": 4,
+          "text": "ٱلصُّورِ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "78:18",
+          "idx": 5,
+          "text": "فَتَأْتُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:18",
+          "idx": 6,
+          "text": "أَفْوَاجًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:18",
+          "idx": 7,
+          "text": "١٨",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:19",
+          "idx": 1,
+          "text": "وَفُتِحَتِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:19",
+          "idx": 2,
+          "text": "ٱلسَّمَآءُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:19",
+          "idx": 3,
+          "text": "فَكَانَتْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:19",
+          "idx": 4,
+          "text": "أَبْوَٰبًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:19",
+          "idx": 5,
+          "text": "١٩",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:20",
+          "idx": 1,
+          "text": "وَسُيِّرَتِ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "78:20",
+          "idx": 2,
+          "text": "ٱلْجِبَالُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:20",
+          "idx": 3,
+          "text": "فَكَانَتْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:20",
+          "idx": 4,
+          "text": "سَرَابًا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:20",
+          "idx": 5,
+          "text": "٢٠",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:21",
+          "idx": 1,
+          "text": "إِنَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:21",
+          "idx": 2,
+          "text": "جَهَنَّمَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:21",
+          "idx": 3,
+          "text": "كَانَتْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:21",
+          "idx": 4,
+          "text": "مِرْصَادًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:21",
+          "idx": 5,
+          "text": "٢١",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:22",
+          "idx": 1,
+          "text": "لِّلطَّـٰغِينَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "78:22",
+          "idx": 2,
+          "text": "مَـَٔابًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:22",
+          "idx": 3,
+          "text": "٢٢",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:23",
+          "idx": 1,
+          "text": "لَّـٰبِثِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:23",
+          "idx": 2,
+          "text": "فِيهَآ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:23",
+          "idx": 3,
+          "text": "أَحْقَابًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:23",
+          "idx": 4,
+          "text": "٢٣",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:24",
+          "idx": 1,
+          "text": "لَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:24",
+          "idx": 2,
+          "text": "يَذُوقُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:24",
+          "idx": 3,
+          "text": "فِيهَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:24",
+          "idx": 4,
+          "text": "بَرْدًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:24",
+          "idx": 5,
+          "text": "وَلَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:24",
+          "idx": 6,
+          "text": "شَرَابًا",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "78:24",
+          "idx": 7,
+          "text": "٢٤",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:25",
+          "idx": 1,
+          "text": "إِلَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:25",
+          "idx": 2,
+          "text": "حَمِيمًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:25",
+          "idx": 3,
+          "text": "وَغَسَّاقًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:25",
+          "idx": 4,
+          "text": "٢٥",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:26",
+          "idx": 1,
+          "text": "جَزَآءًۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:26",
+          "idx": 2,
+          "text": "وِفَاقًا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:26",
+          "idx": 3,
+          "text": "٢٦",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:27",
+          "idx": 1,
+          "text": "إِنَّهُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:27",
+          "idx": 2,
+          "text": "كَانُوا۟",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "78:27",
+          "idx": 3,
+          "text": "لَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:27",
+          "idx": 4,
+          "text": "يَرْجُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:27",
+          "idx": 5,
+          "text": "حِسَابًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:27",
+          "idx": 6,
+          "text": "٢٧",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:28",
+          "idx": 1,
+          "text": "وَكَذَّبُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:28",
+          "idx": 2,
+          "text": "بِـَٔايَـٰتِنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:28",
+          "idx": 3,
+          "text": "كِذَّابًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:28",
+          "idx": 4,
+          "text": "٢٨",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:29",
+          "idx": 1,
+          "text": "وَكُلَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:29",
+          "idx": 2,
+          "text": "شَىْءٍ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 15,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "78:29",
+          "idx": 3,
+          "text": "أَحْصَيْنَـٰهُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:29",
+          "idx": 4,
+          "text": "كِتَـٰبًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:29",
+          "idx": 5,
+          "text": "٢٩",
+          "type": "end"
+        },
+        {
+          "verse_key": "78:30",
+          "idx": 1,
+          "text": "فَذُوقُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:30",
+          "idx": 2,
+          "text": "فَلَن",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:30",
+          "idx": 3,
+          "text": "نَّزِيدَكُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:30",
+          "idx": 4,
+          "text": "إِلَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:30",
+          "idx": 5,
+          "text": "عَذَابًا",
+          "type": "word"
+        },
+        {
+          "verse_key": "78:30",
+          "idx": 6,
+          "text": "٣٠",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "surah": {
+    "id": 107,
+    "name_arabic": "الماعون",
+    "name_simple": "Al-Ma'un",
+    "translated_name": "Barang yang Berguna",
+    "verses_count": 7,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "107:1",
+      "n": 1,
+      "page": 602,
+      "juz": 30,
+      "text": " أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
+      "tajweed": "أَرَءَيْتَ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِى يُكَذِّبُ بِ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>دّ<tajweed class=madda_permissible>ِي</tajweed>نِ <span class=end>١</span>",
+      "translation": "Tahukah kamu (orang) yang mendustakan agama?",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أَرَءَيْتَ",
+          "page": 602,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلَّذِى",
+          "page": 602,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "يُكَذِّبُ",
+          "page": 602,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "بِٱلدِّينِ",
+          "page": 602,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "١",
+          "page": 602,
+          "line": 8,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "107:2",
+      "n": 2,
+      "page": 602,
+      "juz": 30,
+      "text": "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ",
+      "tajweed": "فَذ<tajweed class=madda_normal>َٲ</tajweed>لِكَ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِى يَدُعُّ <tajweed class=ham_wasl>ٱ</tajweed>لْيَت<tajweed class=madda_permissible>ِي</tajweed>مَ <span class=end>٢</span>",
+      "translation": "Maka itulah orang yang menghardik anak yatim,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَذَٰلِكَ",
+          "page": 602,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلَّذِى",
+          "page": 602,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "يَدُعُّ",
+          "page": 602,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْيَتِيمَ",
+          "page": 602,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٢",
+          "page": 602,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "107:3",
+      "n": 3,
+      "page": 602,
+      "juz": 30,
+      "text": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+      "tajweed": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ <tajweed class=ham_wasl>ٱ</tajweed>لْمِسْك<tajweed class=madda_permissible>ِي</tajweed>نِ <span class=end>٣</span>",
+      "translation": "dan tidak mengajak memberi makan orang miskin.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَلَا",
+          "page": 602,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يَحُضُّ",
+          "page": 602,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "عَلَىٰ",
+          "page": 602,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "طَعَامِ",
+          "page": 602,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلْمِسْكِينِ",
+          "page": 602,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٣",
+          "page": 602,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "107:4",
+      "n": 4,
+      "page": 602,
+      "juz": 30,
+      "text": "فَوَيْلٌ لِّلْمُصَلِّينَ",
+      "tajweed": "فَوَيْ<tajweed class=idgham_wo_ghunnah>لٌ ل</tajweed>ِّلْمُصَلّ<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>٤</span>",
+      "translation": "Maka celakalah orang yang salat,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَوَيْلٌۭ",
+          "page": 602,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "لِّلْمُصَلِّينَ",
+          "page": 602,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "٤",
+          "page": 602,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "107:5",
+      "n": 5,
+      "page": 602,
+      "juz": 30,
+      "text": "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
+      "tajweed": "ٱلَّذِينَ هُمْ عَ<tajweed class=ikhafa>ن ص</tajweed>َلَاتِهِمْ سَاه<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٥</span>",
+      "translation": "(yaitu) orang-orang yang lalai terhadap salatnya,1",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ٱلَّذِينَ",
+          "page": 602,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "هُمْ",
+          "page": 602,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "عَن",
+          "page": 602,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "صَلَاتِهِمْ",
+          "page": 602,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "سَاهُونَ",
+          "page": 602,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٥",
+          "page": 602,
+          "line": 11,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "107:6",
+      "n": 6,
+      "page": 602,
+      "juz": 30,
+      "text": "ٱلَّذِينَ هُمْ يُرَآءُونَ",
+      "tajweed": "ٱلَّذِينَ هُمْ يُر<tajweed class=madda_obligatory>َا</tajweed>ٓء<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٦</span>",
+      "translation": "yang berbuat riya`,1",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ٱلَّذِينَ",
+          "page": 602,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "هُمْ",
+          "page": 602,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "يُرَآءُونَ",
+          "page": 602,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٦",
+          "page": 602,
+          "line": 11,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "107:7",
+      "n": 7,
+      "page": 602,
+      "juz": 30,
+      "text": "وَيَمْنَعُونَ ٱلْمَاعُونَ",
+      "tajweed": "وَيَمْنَعُونَ <tajweed class=ham_wasl>ٱ</tajweed>لْمَاع<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٧</span>",
+      "translation": "dan enggan (memberikan) bantuan.1",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَيَمْنَعُونَ",
+          "page": 602,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْمَاعُونَ",
+          "page": 602,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "٧",
+          "page": 602,
+          "line": 11,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

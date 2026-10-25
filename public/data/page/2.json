@@ -1,0 +1,309 @@
+{
+  "page": 2,
+  "juz": 1,
+  "surahs": [
+    {
+      "id": 2,
+      "name_arabic": "البقرة",
+      "name_simple": "Al-Baqarah"
+    }
+  ],
+  "lines": [
+    {
+      "line": 1,
+      "type": "surah_header",
+      "surah": {
+        "id": 2,
+        "name_arabic": "البقرة",
+        "name_simple": "Al-Baqarah"
+      }
+    },
+    {
+      "line": 2,
+      "type": "bismillah",
+      "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"
+    },
+    {
+      "line": 3,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:1",
+          "idx": 1,
+          "text": "الٓمٓ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:1",
+          "idx": 2,
+          "text": "١",
+          "type": "end"
+        },
+        {
+          "verse_key": "2:2",
+          "idx": 1,
+          "text": "ذَٰلِكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:2",
+          "idx": 2,
+          "text": "ٱلْكِتَـٰبُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:2",
+          "idx": 3,
+          "text": "لَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:2",
+          "idx": 4,
+          "text": "رَيْبَ ۛ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:2",
+          "idx": 5,
+          "text": "فِيهِ ۛ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:2",
+          "idx": 6,
+          "text": "هُدًۭى",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:2",
+          "idx": 7,
+          "text": "لِّلْمُتَّقِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:2",
+          "idx": 8,
+          "text": "٢",
+          "type": "end"
+        },
+        {
+          "verse_key": "2:3",
+          "idx": 1,
+          "text": "ٱلَّذِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:3",
+          "idx": 2,
+          "text": "يُؤْمِنُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:3",
+          "idx": 3,
+          "text": "بِٱلْغَيْبِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:3",
+          "idx": 4,
+          "text": "وَيُقِيمُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:3",
+          "idx": 5,
+          "text": "ٱلصَّلَوٰةَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:3",
+          "idx": 6,
+          "text": "وَمِمَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:3",
+          "idx": 7,
+          "text": "رَزَقْنَـٰهُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:3",
+          "idx": 8,
+          "text": "يُنفِقُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:3",
+          "idx": 9,
+          "text": "٣",
+          "type": "end"
+        },
+        {
+          "verse_key": "2:4",
+          "idx": 1,
+          "text": "وَٱلَّذِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:4",
+          "idx": 2,
+          "text": "يُؤْمِنُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:4",
+          "idx": 3,
+          "text": "بِمَآ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:4",
+          "idx": 4,
+          "text": "أُنزِلَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:4",
+          "idx": 5,
+          "text": "إِلَيْكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:4",
+          "idx": 6,
+          "text": "وَمَآ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:4",
+          "idx": 7,
+          "text": "أُنزِلَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:4",
+          "idx": 8,
+          "text": "مِن",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:4",
+          "idx": 9,
+          "text": "قَبْلِكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:4",
+          "idx": 10,
+          "text": "وَبِٱلْـَٔاخِرَةِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:4",
+          "idx": 11,
+          "text": "هُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:4",
+          "idx": 12,
+          "text": "يُوقِنُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:4",
+          "idx": 13,
+          "text": "٤",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:5",
+          "idx": 1,
+          "text": "أُو۟لَـٰٓئِكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:5",
+          "idx": 2,
+          "text": "عَلَىٰ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:5",
+          "idx": 3,
+          "text": "هُدًۭى",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:5",
+          "idx": 4,
+          "text": "مِّن",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:5",
+          "idx": 5,
+          "text": "رَّبِّهِمْ ۖ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:5",
+          "idx": 6,
+          "text": "وَأُو۟لَـٰٓئِكَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:5",
+          "idx": 7,
+          "text": "هُمُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:5",
+          "idx": 8,
+          "text": "ٱلْمُفْلِحُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:5",
+          "idx": 9,
+          "text": "٥",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-amiri-quran: 'Amiri Quran', serif;
+  --font-plus-jakarta: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --quran-scale: 1.75rem;
+  --bg-color: #FAF7F0;
+  --surface-color: #FFFFFF;
+  --text-color: #1E2421;
+  --primary-color: #1F5F4A;
+  --accent-gold: #C9A227;
+}
+
+.dark {
+  --bg-color: #121816;
+  --surface-color: #1B2420;
+  --text-color: #E2E8E5;
+  --primary-color: #5DB899;
+  --accent-gold: #E5BE4A;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-plus-jakarta);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Quranic Arabic typography class */
+.font-quran {
+  font-family: var(--font-amiri-quran), 'Amiri', 'Scheherazade New', serif;
+  font-size: var(--quran-scale);
+  line-height: 2.2;
+  direction: rtl;
+  text-align: right;
+  word-spacing: 0.1em;
+}
+
+/* Accessibility focus ring */
+*:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

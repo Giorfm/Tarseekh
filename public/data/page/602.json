@@ -1,0 +1,515 @@
+{
+  "page": 602,
+  "juz": 30,
+  "surahs": [
+    {
+      "id": 106,
+      "name_arabic": "قريش",
+      "name_simple": "Quraysh"
+    },
+    {
+      "id": 107,
+      "name_arabic": "الماعون",
+      "name_simple": "Al-Ma'un"
+    },
+    {
+      "id": 108,
+      "name_arabic": "الكوثر",
+      "name_simple": "Al-Kawthar"
+    }
+  ],
+  "lines": [
+    {
+      "line": 1,
+      "type": "surah_header",
+      "surah": {
+        "id": 106,
+        "name_arabic": "قريش",
+        "name_simple": "Quraysh"
+      }
+    },
+    {
+      "line": 2,
+      "type": "bismillah",
+      "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"
+    },
+    {
+      "line": 3,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "106:1",
+          "idx": 1,
+          "text": "لِإِيلَـٰفِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:1",
+          "idx": 2,
+          "text": "قُرَيْشٍ",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:1",
+          "idx": 3,
+          "text": "١",
+          "type": "end"
+        },
+        {
+          "verse_key": "106:2",
+          "idx": 1,
+          "text": "إِۦلَـٰفِهِمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:2",
+          "idx": 2,
+          "text": "رِحْلَةَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:2",
+          "idx": 3,
+          "text": "ٱلشِّتَآءِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:2",
+          "idx": 4,
+          "text": "وَٱلصَّيْفِ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "106:2",
+          "idx": 5,
+          "text": "٢",
+          "type": "end"
+        },
+        {
+          "verse_key": "106:3",
+          "idx": 1,
+          "text": "فَلْيَعْبُدُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:3",
+          "idx": 2,
+          "text": "رَبَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:3",
+          "idx": 3,
+          "text": "هَـٰذَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:3",
+          "idx": 4,
+          "text": "ٱلْبَيْتِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:3",
+          "idx": 5,
+          "text": "٣",
+          "type": "end"
+        },
+        {
+          "verse_key": "106:4",
+          "idx": 1,
+          "text": "ٱلَّذِىٓ",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:4",
+          "idx": 2,
+          "text": "أَطْعَمَهُم",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "106:4",
+          "idx": 3,
+          "text": "مِّن",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:4",
+          "idx": 4,
+          "text": "جُوعٍۢ",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:4",
+          "idx": 5,
+          "text": "وَءَامَنَهُم",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:4",
+          "idx": 6,
+          "text": "مِّنْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:4",
+          "idx": 7,
+          "text": "خَوْفٍۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "106:4",
+          "idx": 8,
+          "text": "٤",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "type": "surah_header",
+      "surah": {
+        "id": 107,
+        "name_arabic": "الماعون",
+        "name_simple": "Al-Ma'un"
+      }
+    },
+    {
+      "line": 7,
+      "type": "bismillah",
+      "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"
+    },
+    {
+      "line": 8,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "107:1",
+          "idx": 1,
+          "text": "أَرَءَيْتَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:1",
+          "idx": 2,
+          "text": "ٱلَّذِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:1",
+          "idx": 3,
+          "text": "يُكَذِّبُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:1",
+          "idx": 4,
+          "text": "بِٱلدِّينِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:1",
+          "idx": 5,
+          "text": "١",
+          "type": "end"
+        },
+        {
+          "verse_key": "107:2",
+          "idx": 1,
+          "text": "فَذَٰلِكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:2",
+          "idx": 2,
+          "text": "ٱلَّذِى",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "107:2",
+          "idx": 3,
+          "text": "يَدُعُّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:2",
+          "idx": 4,
+          "text": "ٱلْيَتِيمَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:2",
+          "idx": 5,
+          "text": "٢",
+          "type": "end"
+        },
+        {
+          "verse_key": "107:3",
+          "idx": 1,
+          "text": "وَلَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:3",
+          "idx": 2,
+          "text": "يَحُضُّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:3",
+          "idx": 3,
+          "text": "عَلَىٰ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:3",
+          "idx": 4,
+          "text": "طَعَامِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:3",
+          "idx": 5,
+          "text": "ٱلْمِسْكِينِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:3",
+          "idx": 6,
+          "text": "٣",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "107:4",
+          "idx": 1,
+          "text": "فَوَيْلٌۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:4",
+          "idx": 2,
+          "text": "لِّلْمُصَلِّينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:4",
+          "idx": 3,
+          "text": "٤",
+          "type": "end"
+        },
+        {
+          "verse_key": "107:5",
+          "idx": 1,
+          "text": "ٱلَّذِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:5",
+          "idx": 2,
+          "text": "هُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:5",
+          "idx": 3,
+          "text": "عَن",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:5",
+          "idx": 4,
+          "text": "صَلَاتِهِمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:5",
+          "idx": 5,
+          "text": "سَاهُونَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "107:5",
+          "idx": 6,
+          "text": "٥",
+          "type": "end"
+        },
+        {
+          "verse_key": "107:6",
+          "idx": 1,
+          "text": "ٱلَّذِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:6",
+          "idx": 2,
+          "text": "هُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:6",
+          "idx": 3,
+          "text": "يُرَآءُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:6",
+          "idx": 4,
+          "text": "٦",
+          "type": "end"
+        },
+        {
+          "verse_key": "107:7",
+          "idx": 1,
+          "text": "وَيَمْنَعُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:7",
+          "idx": 2,
+          "text": "ٱلْمَاعُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "107:7",
+          "idx": 3,
+          "text": "٧",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "type": "surah_header",
+      "surah": {
+        "id": 108,
+        "name_arabic": "الكوثر",
+        "name_simple": "Al-Kawthar"
+      }
+    },
+    {
+      "line": 13,
+      "type": "bismillah",
+      "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"
+    },
+    {
+      "line": 14,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "108:1",
+          "idx": 1,
+          "text": "إِنَّآ",
+          "type": "word"
+        },
+        {
+          "verse_key": "108:1",
+          "idx": 2,
+          "text": "أَعْطَيْنَـٰكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "108:1",
+          "idx": 3,
+          "text": "ٱلْكَوْثَرَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "108:1",
+          "idx": 4,
+          "text": "١",
+          "type": "end"
+        },
+        {
+          "verse_key": "108:2",
+          "idx": 1,
+          "text": "فَصَلِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "108:2",
+          "idx": 2,
+          "text": "لِرَبِّكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "108:2",
+          "idx": 3,
+          "text": "وَٱنْحَرْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "108:2",
+          "idx": 4,
+          "text": "٢",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 15,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "108:3",
+          "idx": 1,
+          "text": "إِنَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "108:3",
+          "idx": 2,
+          "text": "شَانِئَكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "108:3",
+          "idx": 3,
+          "text": "هُوَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "108:3",
+          "idx": 4,
+          "text": "ٱلْأَبْتَرُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "108:3",
+          "idx": 5,
+          "text": "٣",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

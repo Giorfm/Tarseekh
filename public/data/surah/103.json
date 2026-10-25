@@ -1,0 +1,164 @@
+{
+  "surah": {
+    "id": 103,
+    "name_arabic": "العصر",
+    "name_simple": "Al-'Asr",
+    "translated_name": "Waktu Sore",
+    "verses_count": 3,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "103:1",
+      "n": 1,
+      "page": 601,
+      "juz": 30,
+      "text": " وَٱلْعَصْرِ",
+      "tajweed": "وَ<tajweed class=ham_wasl>ٱ</tajweed>لْعَصْرِ <span class=end>١</span>",
+      "translation": "Demi masa.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَٱلْعَصْرِ",
+          "page": 601,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "١",
+          "page": 601,
+          "line": 3,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "103:2",
+      "n": 2,
+      "page": 601,
+      "juz": 30,
+      "text": "إِنَّ ٱلْإِنسَـٰنَ لَفِى خُسْرٍ",
+      "tajweed": "إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>لْإِ<tajweed class=ikhafa>نس</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>نَ لَفِى خُسْرٍ <span class=end>٢</span>",
+      "translation": "Sungguh, manusia berada dalam kerugian,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِنَّ",
+          "page": 601,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْإِنسَـٰنَ",
+          "page": 601,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "لَفِى",
+          "page": 601,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "خُسْرٍ",
+          "page": 601,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٢",
+          "page": 601,
+          "line": 3,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "103:3",
+      "n": 3,
+      "page": 601,
+      "juz": 30,
+      "text": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+      "tajweed": "إِلَّا <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ ءَامَنُو<tajweed class=slnt>اْ</tajweed> وَعَمِلُو<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صَّ<tajweed class=madda_normal>ـٰ</tajweed>لِحَ<tajweed class=madda_normal>ـٰ</tajweed>تِ وَتَوَاصَوْ<tajweed class=slnt>اْ</tajweed> بِ<tajweed class=ham_wasl>ٱ</tajweed>لْحَقِّ وَتَوَاصَوْ<tajweed class=slnt>اْ</tajweed> بِ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صَّ<tajweed class=qalaqah>بْ</tajweed>رِ <span class=end>٣</span>",
+      "translation": "kecuali orang-orang yang beriman dan mengerjakan kebajikan serta saling menasihati untuk kebenaran dan saling menasihati untuk kesabaran.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِلَّا",
+          "page": 601,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلَّذِينَ",
+          "page": 601,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ءَامَنُوا۟",
+          "page": 601,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "وَعَمِلُوا۟",
+          "page": 601,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلصَّـٰلِحَـٰتِ",
+          "page": 601,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "وَتَوَاصَوْا۟",
+          "page": 601,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "بِٱلْحَقِّ",
+          "page": 601,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "وَتَوَاصَوْا۟",
+          "page": 601,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "بِٱلصَّبْرِ",
+          "page": 601,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "٣",
+          "page": 601,
+          "line": 4,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

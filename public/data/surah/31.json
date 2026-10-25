@@ -1,0 +1,4446 @@
+{
+  "surah": {
+    "id": 31,
+    "name_arabic": "لقمان",
+    "name_simple": "Luqman",
+    "translated_name": "Luqman",
+    "verses_count": 34,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "31:1",
+      "n": 1,
+      "page": 411,
+      "juz": 21,
+      "text": " الٓمٓ",
+      "tajweed": "ا<tajweed class=madda_necessary>لٓ</tajweed><tajweed class=madda_necessary>مٓ</tajweed> <span class=end>١</span>",
+      "translation": "Alif Lām Mīm.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "الٓمٓ",
+          "page": 411,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "١",
+          "page": 411,
+          "line": 3,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:2",
+      "n": 2,
+      "page": 411,
+      "juz": 21,
+      "text": "تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْحَكِيمِ",
+      "tajweed": "تِلْكَ ءَايَ<tajweed class=madda_normal>ـٰ</tajweed>تُ <tajweed class=ham_wasl>ٱ</tajweed>لْكِتَ<tajweed class=madda_normal>ـٰ</tajweed>بِ <tajweed class=ham_wasl>ٱ</tajweed>لْحَك<tajweed class=madda_permissible>ِي</tajweed>مِ <span class=end>٢</span>",
+      "translation": "Inilah ayat-ayat Alquran yang mengandung hikmah,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "تِلْكَ",
+          "page": 411,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ءَايَـٰتُ",
+          "page": 411,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلْكِتَـٰبِ",
+          "page": 411,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْحَكِيمِ",
+          "page": 411,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٢",
+          "page": 411,
+          "line": 3,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:3",
+      "n": 3,
+      "page": 411,
+      "juz": 21,
+      "text": "هُدًى وَرَحْمَةً لِّلْمُحْسِنِينَ",
+      "tajweed": "هُ<tajweed class=idgham_ghunnah>دًى و</tajweed>َرَحْمَ<tajweed class=idgham_wo_ghunnah>ةً ل</tajweed>ِّلْمُحْسِن<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>٣</span>",
+      "translation": "sebagai petunjuk dan rahmat bagi orang-orang yang berbuat kebaikan,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "هُدًۭى",
+          "page": 411,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "وَرَحْمَةًۭ",
+          "page": 411,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "لِّلْمُحْسِنِينَ",
+          "page": 411,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٣",
+          "page": 411,
+          "line": 4,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:4",
+      "n": 4,
+      "page": 411,
+      "juz": 21,
+      "text": "ٱلَّذِينَ يُقِيمُونَ ٱلصَّلَوٰةَ وَيُؤْتُونَ ٱلزَّكَوٰةَ وَهُم بِٱلْـَٔاخِرَةِ هُمْ يُوقِنُونَ",
+      "tajweed": "ٱلَّذِينَ يُقِيمُونَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صَّلَ<tajweed class=slnt>و</tajweed><tajweed class=madda_normal>ٲ</tajweed>ةَ وَيُؤْتُونَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>زَّكَ<tajweed class=slnt>و</tajweed><tajweed class=madda_normal>ٲ</tajweed>ةَ وَه<tajweed class=ikhafa_shafawi>ُم ب</tajweed>ِ<tajweed class=ham_wasl>ٱ</tajweed>لْأَخِرَةِ هُمْ يُوقِن<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٤</span>",
+      "translation": "(yaitu) orang-orang yang melaksanakan salat, menunaikan zakat dan mereka meyakini adanya akhirat.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ٱلَّذِينَ",
+          "page": 411,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يُقِيمُونَ",
+          "page": 411,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلصَّلَوٰةَ",
+          "page": 411,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "وَيُؤْتُونَ",
+          "page": 411,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلزَّكَوٰةَ",
+          "page": 411,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "وَهُم",
+          "page": 411,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "بِٱلْـَٔاخِرَةِ",
+          "page": 411,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "هُمْ",
+          "page": 411,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "يُوقِنُونَ",
+          "page": 411,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "٤",
+          "page": 411,
+          "line": 5,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:5",
+      "n": 5,
+      "page": 411,
+      "juz": 21,
+      "text": "أُو۟لَـٰٓئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُو۟لَـٰٓئِكَ هُمُ ٱلْمُفْلِحُونَ",
+      "tajweed": "أُ<tajweed class=slnt>وْ</tajweed>لَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>ئِكَ عَلَىٰ هُ<tajweed class=idgham_ghunnah>دًى م</tajweed>ّ<tajweed class=idgham_wo_ghunnah>ِن ر</tajweed>َّبِّهِمْ‌ۖ وَأُ<tajweed class=slnt>وْ</tajweed>لَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>ئِكَ هُمُ <tajweed class=ham_wasl>ٱ</tajweed>لْمُفْلِح<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٥</span>",
+      "translation": "Merekalah orang-orang yang tetap mendapat petunjuk dari Tuhannya dan mereka itulah orang-orang yang beruntung.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أُو۟لَـٰٓئِكَ",
+          "page": 411,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "عَلَىٰ",
+          "page": 411,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "هُدًۭى",
+          "page": 411,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "مِّن",
+          "page": 411,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "رَّبِّهِمْ ۖ",
+          "page": 411,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "وَأُو۟لَـٰٓئِكَ",
+          "page": 411,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "هُمُ",
+          "page": 411,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "ٱلْمُفْلِحُونَ",
+          "page": 411,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "٥",
+          "page": 411,
+          "line": 6,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:6",
+      "n": 6,
+      "page": 411,
+      "juz": 21,
+      "text": "وَمِنَ ٱلنَّاسِ مَن يَشْتَرِى لَهْوَ ٱلْحَدِيثِ لِيُضِلَّ عَن سَبِيلِ ٱللَّهِ بِغَيْرِ عِلْمٍ وَيَتَّخِذَهَا هُزُوًا ۚ أُو۟لَـٰٓئِكَ لَهُمْ عَذَابٌ مُّهِينٌ",
+      "tajweed": "وَمِنَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َاسِ م<tajweed class=idgham_ghunnah>َن ي</tajweed>َشْتَرِى لَهْوَ <tajweed class=ham_wasl>ٱ</tajweed>لْحَدِيثِ لِيُضِلَّ عَ<tajweed class=ikhafa>ن س</tajweed>َبِيلِ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ بِغَيْرِ عِلْ<tajweed class=idgham_ghunnah>مٍ و</tajweed>َيَتَّخِذَهَا هُزُوًا‌ۚ أُ<tajweed class=slnt>وْ</tajweed>لَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>ئِكَ لَهُمْ عَذَا<tajweed class=idgham_ghunnah>بٌ م</tajweed>ُّه<tajweed class=madda_permissible>ِي</tajweed>نٌ <span class=end>٦</span>",
+      "translation": "Dan di antara manusia (ada) orang yang mempergunakan percakapan kosong untuk menyesatkan (manusia) dari jalan Allah tanpa ilmu dan menjadikannya olok-olokan. Mereka itu akan memperoleh azab yang menghinakan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَمِنَ",
+          "page": 411,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلنَّاسِ",
+          "page": 411,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَن",
+          "page": 411,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "يَشْتَرِى",
+          "page": 411,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "لَهْوَ",
+          "page": 411,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "ٱلْحَدِيثِ",
+          "page": 411,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "لِيُضِلَّ",
+          "page": 411,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "عَن",
+          "page": 411,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "سَبِيلِ",
+          "page": 411,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "ٱللَّهِ",
+          "page": 411,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "بِغَيْرِ",
+          "page": 411,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "عِلْمٍۢ",
+          "page": 411,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "وَيَتَّخِذَهَا",
+          "page": 411,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "هُزُوًا ۚ",
+          "page": 411,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "أُو۟لَـٰٓئِكَ",
+          "page": 411,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "لَهُمْ",
+          "page": 411,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "عَذَابٌۭ",
+          "page": 411,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "مُّهِينٌۭ",
+          "page": 411,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "٦",
+          "page": 411,
+          "line": 8,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:7",
+      "n": 7,
+      "page": 411,
+      "juz": 21,
+      "text": "وَإِذَا تُتْلَىٰ عَلَيْهِ ءَايَـٰتُنَا وَلَّىٰ مُسْتَكْبِرًا كَأَن لَّمْ يَسْمَعْهَا كَأَنَّ فِىٓ أُذُنَيْهِ وَقْرًا ۖ فَبَشِّرْهُ بِعَذَابٍ أَلِيمٍ",
+      "tajweed": "وَإِذَا تُتْلَىٰ عَلَيْهِ ءَايَ<tajweed class=madda_normal>ـٰ</tajweed>تُنَا وَلَّىٰ مُسْتَكْبِ<tajweed class=ikhafa>رًا ك</tajweed>َأ<tajweed class=idgham_wo_ghunnah>َن ل</tajweed>َّمْ يَسْمَعْهَا كَأَ<tajweed class=ghunnah>نّ</tajweed>َ ف<tajweed class=madda_obligatory>ِىٓ</tajweed> أُذُنَيْهِ وَ<tajweed class=qalaqah>قْ</tajweed><tajweed class=ikhafa>رًا‌ۖ ف</tajweed>َبَشِّرْهُ بِعَذَابٍ أَل<tajweed class=madda_permissible>ِي</tajweed>مٍ <span class=end>٧</span>",
+      "translation": "Dan apabila dibacakan kepadanya1 ayat-ayat Kami, dia berpaling dengan menyombongkan diri seolah-olah dia belum mendengarnya, seakan-akan ada sumbatan di kedua telinganya, maka gembirakanlah dia dengan azab yang pedih.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَإِذَا",
+          "page": 411,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "تُتْلَىٰ",
+          "page": 411,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "عَلَيْهِ",
+          "page": 411,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ءَايَـٰتُنَا",
+          "page": 411,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "وَلَّىٰ",
+          "page": 411,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "مُسْتَكْبِرًۭا",
+          "page": 411,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "كَأَن",
+          "page": 411,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "لَّمْ",
+          "page": 411,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "يَسْمَعْهَا",
+          "page": 411,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "كَأَنَّ",
+          "page": 411,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "فِىٓ",
+          "page": 411,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "أُذُنَيْهِ",
+          "page": 411,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "وَقْرًۭا ۖ",
+          "page": 411,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "فَبَشِّرْهُ",
+          "page": 411,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "بِعَذَابٍ",
+          "page": 411,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "أَلِيمٍ",
+          "page": 411,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "٧",
+          "page": 411,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:8",
+      "n": 8,
+      "page": 411,
+      "juz": 21,
+      "text": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ لَهُمْ جَنَّـٰتُ ٱلنَّعِيمِ",
+      "tajweed": "إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ ءَامَنُو<tajweed class=slnt>اْ</tajweed> وَعَمِلُو<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صَّ<tajweed class=madda_normal>ـٰ</tajweed>لِحَ<tajweed class=madda_normal>ـٰ</tajweed>تِ لَهُمْ جَ<tajweed class=ghunnah>نّ</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>تُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َع<tajweed class=madda_permissible>ِي</tajweed>مِ <span class=end>٨</span>",
+      "translation": "Sesungguhnya orang-orang yang beriman dan mengerjakan kebajikan, mereka akan mendapat surga-surga yang penuh kenikmatan,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِنَّ",
+          "page": 411,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلَّذِينَ",
+          "page": 411,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ءَامَنُوا۟",
+          "page": 411,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "وَعَمِلُوا۟",
+          "page": 411,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلصَّـٰلِحَـٰتِ",
+          "page": 411,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "لَهُمْ",
+          "page": 411,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "جَنَّـٰتُ",
+          "page": 411,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "ٱلنَّعِيمِ",
+          "page": 411,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "٨",
+          "page": 411,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:9",
+      "n": 9,
+      "page": 411,
+      "juz": 21,
+      "text": "خَـٰلِدِينَ فِيهَا ۖ وَعْدَ ٱللَّهِ حَقًّا ۚ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+      "tajweed": "خَ<tajweed class=madda_normal>ـٰ</tajweed>لِدِينَ فِيهَا‌ۖ وَعْدَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ حَق<tajweed class=idgham_ghunnah>ًّا‌ۚ و</tajweed>َهُوَ <tajweed class=ham_wasl>ٱ</tajweed>لْعَزِيزُ <tajweed class=ham_wasl>ٱ</tajweed>لْحَك<tajweed class=madda_permissible>ِي</tajweed>مُ <span class=end>٩</span>",
+      "translation": "mereka kekal di dalamnya, sebagai janji Allah yang benar. Dan Dia Mahaperkasa, Mahabijaksana.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "خَـٰلِدِينَ",
+          "page": 411,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "فِيهَا ۖ",
+          "page": 411,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "وَعْدَ",
+          "page": 411,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱللَّهِ",
+          "page": 411,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "حَقًّۭا ۚ",
+          "page": 411,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "وَهُوَ",
+          "page": 411,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "ٱلْعَزِيزُ",
+          "page": 411,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "ٱلْحَكِيمُ",
+          "page": 411,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "٩",
+          "page": 411,
+          "line": 11,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:10",
+      "n": 10,
+      "page": 411,
+      "juz": 21,
+      "text": "خَلَقَ ٱلسَّمَـٰوَٰتِ بِغَيْرِ عَمَدٍ تَرَوْنَهَا ۖ وَأَلْقَىٰ فِى ٱلْأَرْضِ رَوَٰسِىَ أَن تَمِيدَ بِكُمْ وَبَثَّ فِيهَا مِن كُلِّ دَآبَّةٍ ۚ وَأَنزَلْنَا مِنَ ٱلسَّمَآءِ مَآءً فَأَنۢبَتْنَا فِيهَا مِن كُلِّ زَوْجٍ كَرِيمٍ",
+      "tajweed": "خَلَقَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سَّمَ<tajweed class=madda_normal>ـٰ</tajweed>و<tajweed class=madda_normal>َٲ</tajweed>تِ بِغَيْرِ عَمَ<tajweed class=ikhafa>دٍ ت</tajweed>َرَوْنَهَا‌ۖ وَأَلْقَىٰ فِى <tajweed class=ham_wasl>ٱ</tajweed>لْأَرْضِ رَو<tajweed class=madda_normal>َٲ</tajweed>سِىَ أَ<tajweed class=ikhafa>ن ت</tajweed>َمِيدَ بِكُمْ وَبَثَّ فِيهَا مِ<tajweed class=ikhafa>ن ك</tajweed>ُلِّ د<tajweed class=madda_necessary>َا</tajweed>ٓبَّ<tajweed class=idgham_ghunnah>ةٍ‌ۚ و</tajweed>َأَ<tajweed class=ikhafa>نز</tajweed>َلْنَا مِنَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سَّم<tajweed class=madda_obligatory>َا</tajweed>ٓءِ م<tajweed class=madda_obligatory>َا</tajweed>ٓ<tajweed class=ikhafa>ءً ف</tajweed>َأَ<tajweed class=iqlab>نۢب</tajweed>َتْنَا فِيهَا مِ<tajweed class=ikhafa>ن ك</tajweed>ُلِّ زَوْ<tajweed class=ikhafa>جٍ ك</tajweed>َر<tajweed class=madda_permissible>ِي</tajweed>مٍ <span class=end>١٠</span>",
+      "translation": "Dia menciptakan langit tanpa tiang sebagaimana kamu melihatnya, dan Dia meletakkan gunung-gunung (di permukaan) bumi agar ia (bumi) tidak menggoyangkan kamu; dan memperkembangbiakkan segala macam jenis makhluk bergerak yang bernyawa di bumi. Dan Kami turunkan air hujan dari langit, lalu Kami tumbuhkan padanya segala macam tumbuh-tumbuhan yang baik.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "خَلَقَ",
+          "page": 411,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلسَّمَـٰوَٰتِ",
+          "page": 411,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "بِغَيْرِ",
+          "page": 411,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "عَمَدٍۢ",
+          "page": 411,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "تَرَوْنَهَا ۖ",
+          "page": 411,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "وَأَلْقَىٰ",
+          "page": 411,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "فِى",
+          "page": 411,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "ٱلْأَرْضِ",
+          "page": 411,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "رَوَٰسِىَ",
+          "page": 411,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "أَن",
+          "page": 411,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "تَمِيدَ",
+          "page": 411,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "بِكُمْ",
+          "page": 411,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "وَبَثَّ",
+          "page": 411,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "فِيهَا",
+          "page": 411,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "مِن",
+          "page": 411,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "كُلِّ",
+          "page": 411,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "دَآبَّةٍۢ ۚ",
+          "page": 411,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "وَأَنزَلْنَا",
+          "page": 411,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "مِنَ",
+          "page": 411,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "ٱلسَّمَآءِ",
+          "page": 411,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "مَآءًۭ",
+          "page": 411,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "فَأَنۢبَتْنَا",
+          "page": 411,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 23,
+          "text": "فِيهَا",
+          "page": 411,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 24,
+          "text": "مِن",
+          "page": 411,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 25,
+          "text": "كُلِّ",
+          "page": 411,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 26,
+          "text": "زَوْجٍۢ",
+          "page": 411,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 27,
+          "text": "كَرِيمٍ",
+          "page": 411,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 28,
+          "text": "١٠",
+          "page": 411,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:11",
+      "n": 11,
+      "page": 411,
+      "juz": 21,
+      "text": "هَـٰذَا خَلْقُ ٱللَّهِ فَأَرُونِى مَاذَا خَلَقَ ٱلَّذِينَ مِن دُونِهِۦ ۚ بَلِ ٱلظَّـٰلِمُونَ فِى ضَلَـٰلٍ مُّبِينٍ",
+      "tajweed": "هَ<tajweed class=madda_normal>ـٰ</tajweed>ذَا خَلْقُ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ فَأَرُونِى مَاذَا خَلَقَ <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ مِ<tajweed class=ikhafa>ن د</tajweed>ُونِه<tajweed class=madda_normal>ِۦ</tajweed>‌ۚ بَلِ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>ظَّ<tajweed class=madda_normal>ـٰ</tajweed>لِمُونَ فِى ضَلَ<tajweed class=madda_normal>ـٰ</tajweed><tajweed class=idgham_ghunnah>لٍ م</tajweed>ُّب<tajweed class=madda_permissible>ِي</tajweed>نٍ <span class=end>١١</span>",
+      "translation": "Inilah ciptaan Allah, maka perlihatkanlah olehmu kepadaku apa yang telah diciptakan oleh (sesembahanmu) selain Allah. Sebenarnya orang-orang yang zalim itu berada di dalam kesesatan yang nyata.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "هَـٰذَا",
+          "page": 411,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "خَلْقُ",
+          "page": 411,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱللَّهِ",
+          "page": 411,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "فَأَرُونِى",
+          "page": 411,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "مَاذَا",
+          "page": 411,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "خَلَقَ",
+          "page": 411,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "ٱلَّذِينَ",
+          "page": 411,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "مِن",
+          "page": 411,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "دُونِهِۦ ۚ",
+          "page": 411,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "بَلِ",
+          "page": 411,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "ٱلظَّـٰلِمُونَ",
+          "page": 411,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "فِى",
+          "page": 411,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "ضَلَـٰلٍۢ",
+          "page": 411,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "مُّبِينٍۢ",
+          "page": 411,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "١١",
+          "page": 411,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:12",
+      "n": 12,
+      "page": 412,
+      "juz": 21,
+      "text": "وَلَقَدْ ءَاتَيْنَا لُقْمَـٰنَ ٱلْحِكْمَةَ أَنِ ٱشْكُرْ لِلَّهِ ۚ وَمَن يَشْكُرْ فَإِنَّمَا يَشْكُرُ لِنَفْسِهِۦ ۖ وَمَن كَفَرَ فَإِنَّ ٱللَّهَ غَنِىٌّ حَمِيدٌ",
+      "tajweed": "وَلَقَ<tajweed class=qalaqah>دْ</tajweed> ءَاتَيْنَا لُ<tajweed class=qalaqah>قْ</tajweed>مَ<tajweed class=madda_normal>ـٰ</tajweed>نَ <tajweed class=ham_wasl>ٱ</tajweed>لْحِكْمَةَ أَنِ <tajweed class=ham_wasl>ٱ</tajweed>شْكُرْ لِلَّهِ‌ۚ وَم<tajweed class=idgham_ghunnah>َن ي</tajweed>َشْكُرْ فَإِ<tajweed class=ghunnah>نّ</tajweed>َمَا يَشْكُرُ لِنَفْسِه<tajweed class=madda_normal>ِۦ</tajweed>‌ۖ وَمَ<tajweed class=ikhafa>ن ك</tajweed>َفَرَ فَإِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ غَنِىٌّ حَم<tajweed class=madda_permissible>ِي</tajweed><tajweed class=qalaqah>د</tajweed>ٌ <span class=end>١٢</span>",
+      "translation": "Dan sungguh, telah Kami berikan hikmah kepada Lukman, yaitu, \"Bersyukurlah kepada Allah! Dan barangsiapa bersyukur (kepada Allah), maka sesungguhnya dia bersyukur untuk dirinya sendiri; dan barangsiapa tidak bersyukur (kufur), maka sesungguhnya Allah Mahakaya, Maha Terpuji.\"",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَلَقَدْ",
+          "page": 412,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ءَاتَيْنَا",
+          "page": 412,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "لُقْمَـٰنَ",
+          "page": 412,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْحِكْمَةَ",
+          "page": 412,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "أَنِ",
+          "page": 412,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "ٱشْكُرْ",
+          "page": 412,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "لِلَّهِ ۚ",
+          "page": 412,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "وَمَن",
+          "page": 412,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "يَشْكُرْ",
+          "page": 412,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "فَإِنَّمَا",
+          "page": 412,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "يَشْكُرُ",
+          "page": 412,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "لِنَفْسِهِۦ ۖ",
+          "page": 412,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "وَمَن",
+          "page": 412,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "كَفَرَ",
+          "page": 412,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "فَإِنَّ",
+          "page": 412,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "ٱللَّهَ",
+          "page": 412,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "غَنِىٌّ",
+          "page": 412,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "حَمِيدٌۭ",
+          "page": 412,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "١٢",
+          "page": 412,
+          "line": 2,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:13",
+      "n": 13,
+      "page": 412,
+      "juz": 21,
+      "text": "وَإِذْ قَالَ لُقْمَـٰنُ لِٱبْنِهِۦ وَهُوَ يَعِظُهُۥ يَـٰبُنَىَّ لَا تُشْرِكْ بِٱللَّهِ ۖ إِنَّ ٱلشِّرْكَ لَظُلْمٌ عَظِيمٌ",
+      "tajweed": "وَإِذْ قَالَ لُ<tajweed class=qalaqah>قْ</tajweed>مَ<tajweed class=madda_normal>ـٰ</tajweed>نُ لِ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=qalaqah>بْ</tajweed>نِه<tajweed class=madda_normal>ِۦ</tajweed> وَهُوَ يَعِظُهُ<tajweed class=madda_normal>ۥ</tajweed> يَ<tajweed class=madda_normal>ـٰ</tajweed>بُنَىَّ لَا تُشْرِكْ بِ<tajweed class=ham_wasl>ٱ</tajweed>للَّهِ‌ۖ إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>شِّرْكَ لَظُلْمٌ عَظ<tajweed class=madda_permissible>ِي</tajweed>مٌ <span class=end>١٣</span>",
+      "translation": "Dan (ingatlah) ketika Lukman berkata kepada anaknya, ketika dia memberi pelajaran kepadanya, \"Wahai anakku! Janganlah engkau mempersekutukan Allah, sesungguhnya mempersekutukan (Allah) adalah benar-benar kezaliman yang besar.\"",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَإِذْ",
+          "page": 412,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "قَالَ",
+          "page": 412,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "لُقْمَـٰنُ",
+          "page": 412,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لِٱبْنِهِۦ",
+          "page": 412,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "وَهُوَ",
+          "page": 412,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "يَعِظُهُۥ",
+          "page": 412,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "يَـٰبُنَىَّ",
+          "page": 412,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "لَا",
+          "page": 412,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "تُشْرِكْ",
+          "page": 412,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "بِٱللَّهِ ۖ",
+          "page": 412,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "إِنَّ",
+          "page": 412,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "ٱلشِّرْكَ",
+          "page": 412,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "لَظُلْمٌ",
+          "page": 412,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "عَظِيمٌۭ",
+          "page": 412,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "١٣",
+          "page": 412,
+          "line": 4,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:14",
+      "n": 14,
+      "page": 412,
+      "juz": 21,
+      "text": "وَوَصَّيْنَا ٱلْإِنسَـٰنَ بِوَٰلِدَيْهِ حَمَلَتْهُ أُمُّهُۥ وَهْنًا عَلَىٰ وَهْنٍ وَفِصَـٰلُهُۥ فِى عَامَيْنِ أَنِ ٱشْكُرْ لِى وَلِوَٰلِدَيْكَ إِلَىَّ ٱلْمَصِيرُ",
+      "tajweed": "وَوَصَّيْنَا <tajweed class=ham_wasl>ٱ</tajweed>لْإِ<tajweed class=ikhafa>نس</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>نَ بِو<tajweed class=madda_normal>َٲ</tajweed>لِدَيْهِ حَمَلَتْهُ أُ<tajweed class=ghunnah>مّ</tajweed>ُهُ<tajweed class=madda_normal>ۥ</tajweed> وَهْنًا عَلَىٰ وَهْ<tajweed class=idgham_ghunnah>نٍ و</tajweed>َفِصَ<tajweed class=madda_normal>ـٰ</tajweed>لُهُ<tajweed class=madda_normal>ۥ</tajweed> فِى عَامَيْنِ أَنِ <tajweed class=ham_wasl>ٱ</tajweed>شْكُرْ لِى وَلِو<tajweed class=madda_normal>َٲ</tajweed>لِدَيْكَ إِلَىَّ <tajweed class=ham_wasl>ٱ</tajweed>لْمَص<tajweed class=madda_permissible>ِي</tajweed>رُ <span class=end>١٤</span>",
+      "translation": "Dan Kami perintahkan kepada manusia (agar berbuat baik) kepada kedua orang tuanya. Ibunya telah mengandungnya dalam keadaan lemah yang bertambah-tambah, dan menyapihnya dalam usia dua tahun.1 Bersyukurlah kepada-Ku dan kepada kedua orang tuamu. Hanya kepada Aku kembalimu.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَوَصَّيْنَا",
+          "page": 412,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْإِنسَـٰنَ",
+          "page": 412,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "بِوَٰلِدَيْهِ",
+          "page": 412,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "حَمَلَتْهُ",
+          "page": 412,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "أُمُّهُۥ",
+          "page": 412,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "وَهْنًا",
+          "page": 412,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "عَلَىٰ",
+          "page": 412,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "وَهْنٍۢ",
+          "page": 412,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "وَفِصَـٰلُهُۥ",
+          "page": 412,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "فِى",
+          "page": 412,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "عَامَيْنِ",
+          "page": 412,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "أَنِ",
+          "page": 412,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "ٱشْكُرْ",
+          "page": 412,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "لِى",
+          "page": 412,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "وَلِوَٰلِدَيْكَ",
+          "page": 412,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "إِلَىَّ",
+          "page": 412,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "ٱلْمَصِيرُ",
+          "page": 412,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "١٤",
+          "page": 412,
+          "line": 6,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:15",
+      "n": 15,
+      "page": 412,
+      "juz": 21,
+      "text": "وَإِن جَـٰهَدَاكَ عَلَىٰٓ أَن تُشْرِكَ بِى مَا لَيْسَ لَكَ بِهِۦ عِلْمٌ فَلَا تُطِعْهُمَا ۖ وَصَاحِبْهُمَا فِى ٱلدُّنْيَا مَعْرُوفًا ۖ وَٱتَّبِعْ سَبِيلَ مَنْ أَنَابَ إِلَىَّ ۚ ثُمَّ إِلَىَّ مَرْجِعُكُمْ فَأُنَبِّئُكُم بِمَا كُنتُمْ تَعْمَلُونَ",
+      "tajweed": "وَإِ<tajweed class=ikhafa>ن ج</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>هَدَاكَ عَلَ<tajweed class=madda_obligatory>ىٰٓ</tajweed> أَ<tajweed class=ikhafa>ن ت</tajweed>ُشْرِكَ بِى مَا لَيْسَ لَكَ بِه<tajweed class=madda_normal>ِۦ</tajweed> عِلْ<tajweed class=ikhafa>مٌ ف</tajweed>َلَا تُطِعْهُمَا‌ۖ وَصَاحِ<tajweed class=qalaqah>بْ</tajweed>هُمَا فِى <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>دُّنْيَا مَعْرُو<tajweed class=idgham_ghunnah>فًا‌ۖ و</tajweed>َ<tajweed class=ham_wasl>ٱ</tajweed>تَّبِعْ سَبِيلَ مَنْ أَنَابَ إِلَىَّ‌ۚ ثُ<tajweed class=ghunnah>مّ</tajweed>َ إِلَىَّ مَرْجِعُكُمْ فَأُنَبِّئُك<tajweed class=ikhafa_shafawi>ُم ب</tajweed>ِمَا كُ<tajweed class=ikhafa>نت</tajweed>ُمْ تَعْمَل<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>١٥</span>",
+      "translation": "Dan jika keduanya memaksamu untuk mempersekutukan Aku dengan sesuatu yang engkau tidak mempunyai ilmu tentang itu, maka janganlah engkau menaati keduanya, dan pergaulilah keduanya di dunia dengan baik, dan ikutilah jalan orang yang kembali kepada-Ku. Kemudian hanya kepada-Ku tempat kembalimu, maka akan Aku beritahukan kepadamu apa yang telah kamu kerjakan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَإِن",
+          "page": 412,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "جَـٰهَدَاكَ",
+          "page": 412,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "عَلَىٰٓ",
+          "page": 412,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "أَن",
+          "page": 412,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "تُشْرِكَ",
+          "page": 412,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "بِى",
+          "page": 412,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "مَا",
+          "page": 412,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "لَيْسَ",
+          "page": 412,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "لَكَ",
+          "page": 412,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "بِهِۦ",
+          "page": 412,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "عِلْمٌۭ",
+          "page": 412,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "فَلَا",
+          "page": 412,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "تُطِعْهُمَا ۖ",
+          "page": 412,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "وَصَاحِبْهُمَا",
+          "page": 412,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "فِى",
+          "page": 412,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "ٱلدُّنْيَا",
+          "page": 412,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "مَعْرُوفًۭا ۖ",
+          "page": 412,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "وَٱتَّبِعْ",
+          "page": 412,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "سَبِيلَ",
+          "page": 412,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "مَنْ",
+          "page": 412,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "أَنَابَ",
+          "page": 412,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "إِلَىَّ ۚ",
+          "page": 412,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 23,
+          "text": "ثُمَّ",
+          "page": 412,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 24,
+          "text": "إِلَىَّ",
+          "page": 412,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 25,
+          "text": "مَرْجِعُكُمْ",
+          "page": 412,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 26,
+          "text": "فَأُنَبِّئُكُم",
+          "page": 412,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 27,
+          "text": "بِمَا",
+          "page": 412,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 28,
+          "text": "كُنتُمْ",
+          "page": 412,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 29,
+          "text": "تَعْمَلُونَ",
+          "page": 412,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 30,
+          "text": "١٥",
+          "page": 412,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:16",
+      "n": 16,
+      "page": 412,
+      "juz": 21,
+      "text": "يَـٰبُنَىَّ إِنَّهَآ إِن تَكُ مِثْقَالَ حَبَّةٍ مِّنْ خَرْدَلٍ فَتَكُن فِى صَخْرَةٍ أَوْ فِى ٱلسَّمَـٰوَٰتِ أَوْ فِى ٱلْأَرْضِ يَأْتِ بِهَا ٱللَّهُ ۚ إِنَّ ٱللَّهَ لَطِيفٌ خَبِيرٌ",
+      "tajweed": "يَ<tajweed class=madda_normal>ـٰ</tajweed>بُنَىَّ إِ<tajweed class=ghunnah>نّ</tajweed>َه<tajweed class=madda_obligatory>َآ</tajweed> إِ<tajweed class=ikhafa>ن ت</tajweed>َكُ مِثْقَالَ حَبَّ<tajweed class=idgham_ghunnah>ةٍ م</tajweed>ِّنْ خَرْدَ<tajweed class=ikhafa>لٍ ف</tajweed>َتَكُ<tajweed class=ikhafa>ن ف</tajweed>ِى صَخْرَةٍ أَوْ فِى <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سَّمَ<tajweed class=madda_normal>ـٰ</tajweed>و<tajweed class=madda_normal>َٲ</tajweed>تِ أَوْ فِى <tajweed class=ham_wasl>ٱ</tajweed>لْأَرْضِ يَأْتِ بِهَا <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ‌ۚ إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ لَطِيفٌ خَب<tajweed class=madda_permissible>ِي</tajweed>رٌ <span class=end>١٦</span>",
+      "translation": "(Lukman berkata), \"Wahai anakku! Sungguh, jika ada (suatu perbuatan) seberat biji sawi, dan berada dalam batu atau di langit atau di bumi, niscaya Allah akan memberinya (balasan). Sesungguhnya Allah Mahahalus,1 Mahateliti.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "يَـٰبُنَىَّ",
+          "page": 412,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "إِنَّهَآ",
+          "page": 412,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "إِن",
+          "page": 412,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "تَكُ",
+          "page": 412,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "مِثْقَالَ",
+          "page": 412,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "حَبَّةٍۢ",
+          "page": 412,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "مِّنْ",
+          "page": 412,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "خَرْدَلٍۢ",
+          "page": 412,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "فَتَكُن",
+          "page": 412,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "فِى",
+          "page": 412,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "صَخْرَةٍ",
+          "page": 412,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "أَوْ",
+          "page": 412,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "فِى",
+          "page": 412,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "ٱلسَّمَـٰوَٰتِ",
+          "page": 412,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "أَوْ",
+          "page": 412,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "فِى",
+          "page": 412,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "ٱلْأَرْضِ",
+          "page": 412,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "يَأْتِ",
+          "page": 412,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "بِهَا",
+          "page": 412,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "ٱللَّهُ ۚ",
+          "page": 412,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "إِنَّ",
+          "page": 412,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "ٱللَّهَ",
+          "page": 412,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 23,
+          "text": "لَطِيفٌ",
+          "page": 412,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 24,
+          "text": "خَبِيرٌۭ",
+          "page": 412,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 25,
+          "text": "١٦",
+          "page": 412,
+          "line": 11,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:17",
+      "n": 17,
+      "page": 412,
+      "juz": 21,
+      "text": "يَـٰبُنَىَّ أَقِمِ ٱلصَّلَوٰةَ وَأْمُرْ بِٱلْمَعْرُوفِ وَٱنْهَ عَنِ ٱلْمُنكَرِ وَٱصْبِرْ عَلَىٰ مَآ أَصَابَكَ ۖ إِنَّ ذَٰلِكَ مِنْ عَزْمِ ٱلْأُمُورِ",
+      "tajweed": "يَ<tajweed class=madda_normal>ـٰ</tajweed>بُنَىَّ أَقِمِ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صَّلَ<tajweed class=slnt>و</tajweed><tajweed class=madda_normal>ٲ</tajweed>ةَ وَأْمُرْ بِ<tajweed class=ham_wasl>ٱ</tajweed>لْمَعْرُوفِ وَ<tajweed class=ham_wasl>ٱ</tajweed>نْهَ عَنِ <tajweed class=ham_wasl>ٱ</tajweed>لْمُ<tajweed class=ikhafa>نك</tajweed>َرِ وَ<tajweed class=ham_wasl>ٱ</tajweed>صْبِرْ عَلَىٰ م<tajweed class=madda_obligatory>َآ</tajweed> أَصَابَكَ‌ۖ إِ<tajweed class=ghunnah>نّ</tajweed>َ ذ<tajweed class=madda_normal>َٲ</tajweed>لِكَ مِنْ عَزْمِ <tajweed class=ham_wasl>ٱ</tajweed>لْأُم<tajweed class=madda_permissible>ُو</tajweed>رِ <span class=end>١٧</span>",
+      "translation": "Wahai anakku! Laksanakanlah salat dan suruhlah (manusia) berbuat yang makruf dan cegahlah (mereka) dari yang mungkar dan bersabarlah terhadap apa yang menimpamu, sesungguhnya yang demikian itu termasuk perkara yang penting.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "يَـٰبُنَىَّ",
+          "page": 412,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَقِمِ",
+          "page": 412,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلصَّلَوٰةَ",
+          "page": 412,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "وَأْمُرْ",
+          "page": 412,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "بِٱلْمَعْرُوفِ",
+          "page": 412,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "وَٱنْهَ",
+          "page": 412,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "عَنِ",
+          "page": 412,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "ٱلْمُنكَرِ",
+          "page": 412,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "وَٱصْبِرْ",
+          "page": 412,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "عَلَىٰ",
+          "page": 412,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "مَآ",
+          "page": 412,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "أَصَابَكَ ۖ",
+          "page": 412,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "إِنَّ",
+          "page": 412,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "ذَٰلِكَ",
+          "page": 412,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "مِنْ",
+          "page": 412,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "عَزْمِ",
+          "page": 412,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "ٱلْأُمُورِ",
+          "page": 412,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "١٧",
+          "page": 412,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:18",
+      "n": 18,
+      "page": 412,
+      "juz": 21,
+      "text": "وَلَا تُصَعِّرْ خَدَّكَ لِلنَّاسِ وَلَا تَمْشِ فِى ٱلْأَرْضِ مَرَحًا ۖ إِنَّ ٱللَّهَ لَا يُحِبُّ كُلَّ مُخْتَالٍ فَخُورٍ",
+      "tajweed": "وَلَا تُصَعِّرْ خَدَّكَ لِل<tajweed class=ghunnah>نّ</tajweed>َاسِ وَلَا تَمْشِ فِى <tajweed class=ham_wasl>ٱ</tajweed>لْأَرْضِ مَرَحًا‌ۖ إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ لَا يُحِبُّ كُلَّ مُخْتَا<tajweed class=ikhafa>لٍ ف</tajweed>َخ<tajweed class=madda_permissible>ُو</tajweed>رٍ <span class=end>١٨</span>",
+      "translation": "Dan janganlah kamu memalingkan wajah dari manusia (karena sombong) dan janganlah berjalan di bumi dengan angkuh. Sungguh, Allah tidak menyukai orang-orang yang sombong dan membanggakan diri.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَلَا",
+          "page": 412,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "تُصَعِّرْ",
+          "page": 412,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "خَدَّكَ",
+          "page": 412,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لِلنَّاسِ",
+          "page": 412,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "وَلَا",
+          "page": 412,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "تَمْشِ",
+          "page": 412,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "فِى",
+          "page": 412,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "ٱلْأَرْضِ",
+          "page": 412,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "مَرَحًا ۖ",
+          "page": 412,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "إِنَّ",
+          "page": 412,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "ٱللَّهَ",
+          "page": 412,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "لَا",
+          "page": 412,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "يُحِبُّ",
+          "page": 412,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "كُلَّ",
+          "page": 412,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "مُخْتَالٍۢ",
+          "page": 412,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "فَخُورٍۢ",
+          "page": 412,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "١٨",
+          "page": 412,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:19",
+      "n": 19,
+      "page": 412,
+      "juz": 21,
+      "text": "وَٱقْصِدْ فِى مَشْيِكَ وَٱغْضُضْ مِن صَوْتِكَ ۚ إِنَّ أَنكَرَ ٱلْأَصْوَٰتِ لَصَوْتُ ٱلْحَمِيرِ",
+      "tajweed": "وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=qalaqah>قْ</tajweed>صِ<tajweed class=qalaqah>دْ</tajweed> فِى مَشْيِكَ وَ<tajweed class=ham_wasl>ٱ</tajweed>غْضُضْ مِ<tajweed class=ikhafa>ن ص</tajweed>َوْتِكَ‌ۚ إِ<tajweed class=ghunnah>نّ</tajweed>َ أَ<tajweed class=ikhafa>نك</tajweed>َرَ <tajweed class=ham_wasl>ٱ</tajweed>لْأَصْو<tajweed class=madda_normal>َٲ</tajweed>تِ لَصَوْتُ <tajweed class=ham_wasl>ٱ</tajweed>لْحَم<tajweed class=madda_permissible>ِي</tajweed>رِ <span class=end>١٩</span>",
+      "translation": "Dan sederhanakanlah dalam berjalan1 dan lunakkanlah suaramu, Sesungguhnya seburuk-buruk suara ialah suara keledai.\"",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَٱقْصِدْ",
+          "page": 412,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "فِى",
+          "page": 412,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَشْيِكَ",
+          "page": 412,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "وَٱغْضُضْ",
+          "page": 412,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "مِن",
+          "page": 412,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "صَوْتِكَ ۚ",
+          "page": 412,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "إِنَّ",
+          "page": 412,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "أَنكَرَ",
+          "page": 412,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "ٱلْأَصْوَٰتِ",
+          "page": 412,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "لَصَوْتُ",
+          "page": 412,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "ٱلْحَمِيرِ",
+          "page": 412,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "١٩",
+          "page": 412,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:20",
+      "n": 20,
+      "page": 413,
+      "juz": 21,
+      "text": "أَلَمْ تَرَوْا۟ أَنَّ ٱللَّهَ سَخَّرَ لَكُم مَّا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ وَأَسْبَغَ عَلَيْكُمْ نِعَمَهُۥ ظَـٰهِرَةً وَبَاطِنَةً ۗ وَمِنَ ٱلنَّاسِ مَن يُجَـٰدِلُ فِى ٱللَّهِ بِغَيْرِ عِلْمٍ وَلَا هُدًى وَلَا كِتَـٰبٍ مُّنِيرٍ",
+      "tajweed": "أَلَمْ تَرَوْ<tajweed class=slnt>اْ</tajweed> أَ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ سَخَّرَ لَك<tajweed class=idgham_shafawi>ُم م</tajweed>َّا فِى <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سَّمَ<tajweed class=madda_normal>ـٰ</tajweed>و<tajweed class=madda_normal>َٲ</tajweed>تِ وَمَا فِى <tajweed class=ham_wasl>ٱ</tajweed>لْأَرْضِ وَأَسْبَغَ عَلَيْكُمْ نِعَمَهُ<tajweed class=madda_normal>ۥ</tajweed> ظَ<tajweed class=madda_normal>ـٰ</tajweed>هِرَ<tajweed class=idgham_ghunnah>ةً و</tajweed>َبَاطِنَ<tajweed class=idgham_ghunnah>ةً‌ۗ و</tajweed>َمِنَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َاسِ م<tajweed class=idgham_ghunnah>َن ي</tajweed>ُجَ<tajweed class=madda_normal>ـٰ</tajweed>دِلُ فِى <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ بِغَيْرِ عِلْ<tajweed class=idgham_ghunnah>مٍ و</tajweed>َلَا هُ<tajweed class=idgham_ghunnah>دًى و</tajweed>َلَا كِتَ<tajweed class=madda_normal>ـٰ</tajweed><tajweed class=idgham_ghunnah>بٍ م</tajweed>ُّن<tajweed class=madda_permissible>ِي</tajweed>رٍ <span class=end>٢٠</span>",
+      "translation": "Tidakkah kamu memperhatikan bahwa Allah telah menundukkan apa yang ada di langit dan apa yang ada di bumi untuk (kepentingan)mu dan menyempurnakan nikmat-Nya untukmu lahir dan batin. Tetapi di antara manusia ada yang membantah tentang (keesaan) Allah tanpa ilmu atau petunjuk dan tanpa Kitab yang memberi penerangan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أَلَمْ",
+          "page": 413,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "تَرَوْا۟",
+          "page": 413,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "أَنَّ",
+          "page": 413,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱللَّهَ",
+          "page": 413,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "سَخَّرَ",
+          "page": 413,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "لَكُم",
+          "page": 413,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "مَّا",
+          "page": 413,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "فِى",
+          "page": 413,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "ٱلسَّمَـٰوَٰتِ",
+          "page": 413,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "وَمَا",
+          "page": 413,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "فِى",
+          "page": 413,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "ٱلْأَرْضِ",
+          "page": 413,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "وَأَسْبَغَ",
+          "page": 413,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "عَلَيْكُمْ",
+          "page": 413,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "نِعَمَهُۥ",
+          "page": 413,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "ظَـٰهِرَةًۭ",
+          "page": 413,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "وَبَاطِنَةًۭ ۗ",
+          "page": 413,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "وَمِنَ",
+          "page": 413,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "ٱلنَّاسِ",
+          "page": 413,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "مَن",
+          "page": 413,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "يُجَـٰدِلُ",
+          "page": 413,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "فِى",
+          "page": 413,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 23,
+          "text": "ٱللَّهِ",
+          "page": 413,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 24,
+          "text": "بِغَيْرِ",
+          "page": 413,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 25,
+          "text": "عِلْمٍۢ",
+          "page": 413,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 26,
+          "text": "وَلَا",
+          "page": 413,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 27,
+          "text": "هُدًۭى",
+          "page": 413,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 28,
+          "text": "وَلَا",
+          "page": 413,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 29,
+          "text": "كِتَـٰبٍۢ",
+          "page": 413,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 30,
+          "text": "مُّنِيرٍۢ",
+          "page": 413,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 31,
+          "text": "٢٠",
+          "page": 413,
+          "line": 3,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:21",
+      "n": 21,
+      "page": 413,
+      "juz": 21,
+      "text": "وَإِذَا قِيلَ لَهُمُ ٱتَّبِعُوا۟ مَآ أَنزَلَ ٱللَّهُ قَالُوا۟ بَلْ نَتَّبِعُ مَا وَجَدْنَا عَلَيْهِ ءَابَآءَنَآ ۚ أَوَلَوْ كَانَ ٱلشَّيْطَـٰنُ يَدْعُوهُمْ إِلَىٰ عَذَابِ ٱلسَّعِيرِ",
+      "tajweed": "وَإِذَا قِيلَ لَهُمُ <tajweed class=ham_wasl>ٱ</tajweed>تَّبِعُو<tajweed class=slnt>اْ</tajweed> م<tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=ikhafa>نز</tajweed>َلَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ قَالُو<tajweed class=slnt>اْ</tajweed> بَلْ نَتَّبِعُ مَا وَجَ<tajweed class=qalaqah>دْ</tajweed>نَا عَلَيْهِ ءَاب<tajweed class=madda_obligatory>َا</tajweed>ٓءَن<tajweed class=madda_obligatory>َآ‌ۚ</tajweed> أَوَلَوْ كَانَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>شَّيْطَ<tajweed class=madda_normal>ـٰ</tajweed>نُ يَ<tajweed class=qalaqah>دْ</tajweed>عُوهُمْ إِلَىٰ عَذَابِ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سَّع<tajweed class=madda_permissible>ِي</tajweed>رِ <span class=end>٢١</span>",
+      "translation": "Dan apabila dikatakan kepada mereka, \"Ikutilah apa yang diturunkan Allah!\" Mereka menjawab, \"(Tidak), tetapi kami (hanya) mengikuti kebiasaan yang kami dapati dari nenek moyang kami.\" Apakah mereka (akan mengikuti nenek moyang mereka) walaupun sebenarnya setan menyeru mereka ke dalam azab api yang menyala-nyala (neraka)?",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَإِذَا",
+          "page": 413,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "قِيلَ",
+          "page": 413,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "لَهُمُ",
+          "page": 413,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱتَّبِعُوا۟",
+          "page": 413,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "مَآ",
+          "page": 413,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "أَنزَلَ",
+          "page": 413,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "ٱللَّهُ",
+          "page": 413,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "قَالُوا۟",
+          "page": 413,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "بَلْ",
+          "page": 413,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "نَتَّبِعُ",
+          "page": 413,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "مَا",
+          "page": 413,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "وَجَدْنَا",
+          "page": 413,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "عَلَيْهِ",
+          "page": 413,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "ءَابَآءَنَآ ۚ",
+          "page": 413,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "أَوَلَوْ",
+          "page": 413,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "كَانَ",
+          "page": 413,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "ٱلشَّيْطَـٰنُ",
+          "page": 413,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "يَدْعُوهُمْ",
+          "page": 413,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "إِلَىٰ",
+          "page": 413,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "عَذَابِ",
+          "page": 413,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "ٱلسَّعِيرِ",
+          "page": 413,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "٢١",
+          "page": 413,
+          "line": 5,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:22",
+      "n": 22,
+      "page": 413,
+      "juz": 21,
+      "text": "۞ وَمَن يُسْلِمْ وَجْهَهُۥٓ إِلَى ٱللَّهِ وَهُوَ مُحْسِنٌ فَقَدِ ٱسْتَمْسَكَ بِٱلْعُرْوَةِ ٱلْوُثْقَىٰ ۗ وَإِلَى ٱللَّهِ عَـٰقِبَةُ ٱلْأُمُورِ",
+      "tajweed": "۞ وَم<tajweed class=idgham_ghunnah>َن ي</tajweed>ُسْلِمْ وَ<tajweed class=qalaqah>جْ</tajweed>هَهُ<tajweed class=madda_obligatory>ۥٓ</tajweed> إِلَى <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ وَهُوَ مُحْسِ<tajweed class=ikhafa>نٌ ف</tajweed>َقَدِ <tajweed class=ham_wasl>ٱ</tajweed>سْتَمْسَكَ بِ<tajweed class=ham_wasl>ٱ</tajweed>لْعُرْوَةِ <tajweed class=ham_wasl>ٱ</tajweed>لْوُثْقَىٰ‌ۗ وَإِلَى <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ عَ<tajweed class=madda_normal>ـٰ</tajweed>قِبَةُ <tajweed class=ham_wasl>ٱ</tajweed>لْأُم<tajweed class=madda_permissible>ُو</tajweed>رِ <span class=end>٢٢</span>",
+      "translation": "Dan barang siapa berserah diri kepada Allah, sedang dia orang yang berbuat kebaikan, maka sesungguhnya dia telah berpegang kepada buhul (tali) yang kokoh. Hanya kepada Allah kesudahan segala urusan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "۞ وَمَن",
+          "page": 413,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يُسْلِمْ",
+          "page": 413,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "وَجْهَهُۥٓ",
+          "page": 413,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "إِلَى",
+          "page": 413,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱللَّهِ",
+          "page": 413,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "وَهُوَ",
+          "page": 413,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "مُحْسِنٌۭ",
+          "page": 413,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "فَقَدِ",
+          "page": 413,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "ٱسْتَمْسَكَ",
+          "page": 413,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "بِٱلْعُرْوَةِ",
+          "page": 413,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "ٱلْوُثْقَىٰ ۗ",
+          "page": 413,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "وَإِلَى",
+          "page": 413,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "ٱللَّهِ",
+          "page": 413,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "عَـٰقِبَةُ",
+          "page": 413,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "ٱلْأُمُورِ",
+          "page": 413,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "٢٢",
+          "page": 413,
+          "line": 7,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:23",
+      "n": 23,
+      "page": 413,
+      "juz": 21,
+      "text": "وَمَن كَفَرَ فَلَا يَحْزُنكَ كُفْرُهُۥٓ ۚ إِلَيْنَا مَرْجِعُهُمْ فَنُنَبِّئُهُم بِمَا عَمِلُوٓا۟ ۚ إِنَّ ٱللَّهَ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ",
+      "tajweed": "وَمَ<tajweed class=ikhafa>ن ك</tajweed>َفَرَ فَلَا يَحْزُ<tajweed class=ikhafa>نك</tajweed>َ كُفْرُهُ<tajweed class=madda_obligatory>ۥٓ‌ۚ</tajweed> إِلَيْنَا مَرْجِعُهُمْ فَنُنَبِّئُه<tajweed class=ikhafa_shafawi>ُم ب</tajweed>ِمَا عَمِل<tajweed class=madda_obligatory>ُوٓ<tajweed class=slnt>اْ</tajweed>‌ۚ</tajweed> إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ عَلِي<tajweed class=iqlab>مُۢ ب</tajweed>ِذَاتِ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صُّد<tajweed class=madda_permissible>ُو</tajweed>رِ <span class=end>٢٣</span>",
+      "translation": "Dan barang siapa kafir maka kekafirannya itu janganlah menyedihkanmu (Muhammad). Hanya kepada Kami tempat kembali mereka, lalu Kami beritakan kepada mereka apa yang telah mereka kerjakan. Sesungguhnya Allah Maha Mengetahui segala isi hati.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَمَن",
+          "page": 413,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "كَفَرَ",
+          "page": 413,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "فَلَا",
+          "page": 413,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "يَحْزُنكَ",
+          "page": 413,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "كُفْرُهُۥٓ ۚ",
+          "page": 413,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "إِلَيْنَا",
+          "page": 413,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "مَرْجِعُهُمْ",
+          "page": 413,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "فَنُنَبِّئُهُم",
+          "page": 413,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "بِمَا",
+          "page": 413,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "عَمِلُوٓا۟ ۚ",
+          "page": 413,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "إِنَّ",
+          "page": 413,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "ٱللَّهَ",
+          "page": 413,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "عَلِيمٌۢ",
+          "page": 413,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "بِذَاتِ",
+          "page": 413,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "ٱلصُّدُورِ",
+          "page": 413,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "٢٣",
+          "page": 413,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:24",
+      "n": 24,
+      "page": 413,
+      "juz": 21,
+      "text": "نُمَتِّعُهُمْ قَلِيلًا ثُمَّ نَضْطَرُّهُمْ إِلَىٰ عَذَابٍ غَلِيظٍ",
+      "tajweed": "نُمَتِّعُهُمْ قَلِيل<tajweed class=ikhafa>اً ث</tajweed>ُ<tajweed class=ghunnah>مّ</tajweed>َ نَضْطَرُّهُمْ إِلَىٰ عَذَابٍ غَل<tajweed class=madda_permissible>ِي</tajweed>ظٍ <span class=end>٢٤</span>",
+      "translation": "Kami biarkan mereka bersenang-senang sebentar, kemudian Kami paksa mereka (masuk) ke dalam azab yang keras.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "نُمَتِّعُهُمْ",
+          "page": 413,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "قَلِيلًۭا",
+          "page": 413,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ثُمَّ",
+          "page": 413,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "نَضْطَرُّهُمْ",
+          "page": 413,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "إِلَىٰ",
+          "page": 413,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "عَذَابٍ",
+          "page": 413,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "غَلِيظٍۢ",
+          "page": 413,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "٢٤",
+          "page": 413,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:25",
+      "n": 25,
+      "page": 413,
+      "juz": 21,
+      "text": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ لَيَقُولُنَّ ٱللَّهُ ۚ قُلِ ٱلْحَمْدُ لِلَّهِ ۚ بَلْ أَكْثَرُهُمْ لَا يَعْلَمُونَ",
+      "tajweed": "وَلَئِ<tajweed class=ikhafa>ن س</tajweed>َأَلْتَه<tajweed class=idgham_shafawi>ُم م</tajweed>َّنْ خَلَقَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سَّمَ<tajweed class=madda_normal>ـٰ</tajweed>و<tajweed class=madda_normal>َٲ</tajweed>تِ وَ<tajweed class=ham_wasl>ٱ</tajweed>لْأَرْضَ لَيَقُولُ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ‌ۚ قُلِ <tajweed class=ham_wasl>ٱ</tajweed>لْحَمْدُ لِلَّهِ‌ۚ بَلْ أَكْثَرُهُمْ لَا يَعْلَم<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٢٥</span>",
+      "translation": "Dan sungguh, jika engkau (Muhammad) tanyakan kepada mereka, \"Siapakah yang menciptakan langit dan bumi?\" Tentu mereka akan menjawab, \"Allah.\" Katakanlah, \"Segala puji bagi Allah,\" tetapi kebanyakan mereka tidak mengetahui.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَلَئِن",
+          "page": 413,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "سَأَلْتَهُم",
+          "page": 413,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَّنْ",
+          "page": 413,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "خَلَقَ",
+          "page": 413,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلسَّمَـٰوَٰتِ",
+          "page": 413,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "وَٱلْأَرْضَ",
+          "page": 413,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "لَيَقُولُنَّ",
+          "page": 413,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "ٱللَّهُ ۚ",
+          "page": 413,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "قُلِ",
+          "page": 413,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "ٱلْحَمْدُ",
+          "page": 413,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "لِلَّهِ ۚ",
+          "page": 413,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "بَلْ",
+          "page": 413,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "أَكْثَرُهُمْ",
+          "page": 413,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "لَا",
+          "page": 413,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "يَعْلَمُونَ",
+          "page": 413,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "٢٥",
+          "page": 413,
+          "line": 11,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:26",
+      "n": 26,
+      "page": 413,
+      "juz": 21,
+      "text": "لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۚ إِنَّ ٱللَّهَ هُوَ ٱلْغَنِىُّ ٱلْحَمِيدُ",
+      "tajweed": "لِلَّهِ مَا فِى <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سَّمَ<tajweed class=madda_normal>ـٰ</tajweed>و<tajweed class=madda_normal>َٲ</tajweed>تِ وَ<tajweed class=ham_wasl>ٱ</tajweed>لْأَرْضِ‌ۚ إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ هُوَ <tajweed class=ham_wasl>ٱ</tajweed>لْغَنِىُّ <tajweed class=ham_wasl>ٱ</tajweed>لْحَم<tajweed class=madda_permissible>ِي</tajweed><tajweed class=qalaqah>د</tajweed>ُ <span class=end>٢٦</span>",
+      "translation": "Milik Allah lah apa yang di langit dan di bumi. Sesungguhnya Allah, Dialah Yang Mahakaya, Maha Terpuji.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "لِلَّهِ",
+          "page": 413,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "مَا",
+          "page": 413,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "فِى",
+          "page": 413,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلسَّمَـٰوَٰتِ",
+          "page": 413,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "وَٱلْأَرْضِ ۚ",
+          "page": 413,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "إِنَّ",
+          "page": 413,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "ٱللَّهَ",
+          "page": 413,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "هُوَ",
+          "page": 413,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "ٱلْغَنِىُّ",
+          "page": 413,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "ٱلْحَمِيدُ",
+          "page": 413,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "٢٦",
+          "page": 413,
+          "line": 12,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:27",
+      "n": 27,
+      "page": 413,
+      "juz": 21,
+      "text": "وَلَوْ أَنَّمَا فِى ٱلْأَرْضِ مِن شَجَرَةٍ أَقْلَـٰمٌ وَٱلْبَحْرُ يَمُدُّهُۥ مِنۢ بَعْدِهِۦ سَبْعَةُ أَبْحُرٍ مَّا نَفِدَتْ كَلِمَـٰتُ ٱللَّهِ ۗ إِنَّ ٱللَّهَ عَزِيزٌ حَكِيمٌ",
+      "tajweed": "وَلَوْ أَ<tajweed class=ghunnah>نّ</tajweed>َمَا فِى <tajweed class=ham_wasl>ٱ</tajweed>لْأَرْضِ مِ<tajweed class=ikhafa>ن ش</tajweed>َجَرَةٍ أَ<tajweed class=qalaqah>قْ</tajweed>لَ<tajweed class=madda_normal>ـٰ</tajweed><tajweed class=idgham_ghunnah>مٌ و</tajweed>َ<tajweed class=ham_wasl>ٱ</tajweed>لْبَحْرُ يَمُدُّهُ<tajweed class=madda_normal>ۥ</tajweed> م<tajweed class=iqlab>ِنۢ ب</tajweed>َعْدِه<tajweed class=madda_normal>ِۦ</tajweed> سَ<tajweed class=qalaqah>بْ</tajweed>عَةُ أَ<tajweed class=qalaqah>بْ</tajweed>حُ<tajweed class=idgham_ghunnah>رٍ م</tajweed>َّا نَفِدَتْ كَلِمَ<tajweed class=madda_normal>ـٰ</tajweed>تُ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ‌ۗ إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ عَزِيزٌ حَك<tajweed class=madda_permissible>ِي</tajweed>مٌ <span class=end>٢٧</span>",
+      "translation": "Dan seandainya pohon-pohon di bumi menjadi pena dan lautan (menjadi tinta), ditambahkan kepadanya tujuh lautan (lagi) setelah (kering)nya, niscaya tidak akan habis-habisnya (dituliskan) kalimat-kalimat Allah.1 Sesungguhnya Allah Mahaperkasa, Mahabijaksana.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَلَوْ",
+          "page": 413,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَنَّمَا",
+          "page": 413,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "فِى",
+          "page": 413,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْأَرْضِ",
+          "page": 413,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "مِن",
+          "page": 413,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "شَجَرَةٍ",
+          "page": 413,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "أَقْلَـٰمٌۭ",
+          "page": 413,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "وَٱلْبَحْرُ",
+          "page": 413,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "يَمُدُّهُۥ",
+          "page": 413,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "مِنۢ",
+          "page": 413,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "بَعْدِهِۦ",
+          "page": 413,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "سَبْعَةُ",
+          "page": 413,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "أَبْحُرٍۢ",
+          "page": 413,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "مَّا",
+          "page": 413,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "نَفِدَتْ",
+          "page": 413,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "كَلِمَـٰتُ",
+          "page": 413,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "ٱللَّهِ ۗ",
+          "page": 413,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "إِنَّ",
+          "page": 413,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "ٱللَّهَ",
+          "page": 413,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "عَزِيزٌ",
+          "page": 413,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "حَكِيمٌۭ",
+          "page": 413,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "٢٧",
+          "page": 413,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:28",
+      "n": 28,
+      "page": 413,
+      "juz": 21,
+      "text": "مَّا خَلْقُكُمْ وَلَا بَعْثُكُمْ إِلَّا كَنَفْسٍ وَٰحِدَةٍ ۗ إِنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ",
+      "tajweed": "مَّا خَلْقُكُمْ وَلَا بَعْثُكُمْ إِلَّا كَنَفْ<tajweed class=idgham_ghunnah>سٍ و</tajweed><tajweed class=madda_normal>َٲ</tajweed>حِدَةٍ‌ۗ إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ سَمِي<tajweed class=iqlab>عُۢ ب</tajweed>َص<tajweed class=madda_permissible>ِي</tajweed>رٌ <span class=end>٢٨</span>",
+      "translation": "Menciptakan dan membangkitkan kamu (bagi Allah) hanyalah seperti (menciptakan dan membangkitkan) satu jiwa saja (mudah). Sesungguhnya Allah Maha Mendengar, Maha Melihat.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "مَّا",
+          "page": 413,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "خَلْقُكُمْ",
+          "page": 413,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "وَلَا",
+          "page": 413,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "بَعْثُكُمْ",
+          "page": 413,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "إِلَّا",
+          "page": 413,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "كَنَفْسٍۢ",
+          "page": 413,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "وَٰحِدَةٍ ۗ",
+          "page": 413,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "إِنَّ",
+          "page": 413,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "ٱللَّهَ",
+          "page": 413,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "سَمِيعٌۢ",
+          "page": 413,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "بَصِيرٌ",
+          "page": 413,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "٢٨",
+          "page": 413,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:29",
+      "n": 29,
+      "page": 414,
+      "juz": 21,
+      "text": "أَلَمْ تَرَ أَنَّ ٱللَّهَ يُولِجُ ٱلَّيْلَ فِى ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِى ٱلَّيْلِ وَسَخَّرَ ٱلشَّمْسَ وَٱلْقَمَرَ كُلٌّ يَجْرِىٓ إِلَىٰٓ أَجَلٍ مُّسَمًّى وَأَنَّ ٱللَّهَ بِمَا تَعْمَلُونَ خَبِيرٌ",
+      "tajweed": "أَلَمْ تَرَ أَ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ يُولِجُ <tajweed class=ham_wasl>ٱ</tajweed>لَّيْلَ فِى <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َهَارِ وَيُولِجُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َهَارَ فِى <tajweed class=ham_wasl>ٱ</tajweed>لَّيْلِ وَسَخَّرَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>شَّمْسَ وَ<tajweed class=ham_wasl>ٱ</tajweed>لْقَمَرَ كُ<tajweed class=idgham_ghunnah>لٌّ ي</tajweed>َ<tajweed class=qalaqah>جْ</tajweed>ر<tajweed class=madda_obligatory>ِىٓ</tajweed> إِلَ<tajweed class=madda_obligatory>ىٰٓ</tajweed> أَجَ<tajweed class=idgham_ghunnah>لٍ م</tajweed>ُّسَم<tajweed class=idgham_ghunnah>ًّى و</tajweed>َأَ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ بِمَا تَعْمَلُونَ خَب<tajweed class=madda_permissible>ِي</tajweed>رٌ <span class=end>٢٩</span>",
+      "translation": "Tidakkah engkau memperhatikan, bahwa Allah memasukkan malam ke dalam siang dan memasukkan siang ke dalam malam dan Dia menundukkan matahari dan bulan, masing-masing beredar sampai kepada waktu yang ditentukan. Sungguh, Allah Mahateliti atas apa yang kamu kerjakan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أَلَمْ",
+          "page": 414,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "تَرَ",
+          "page": 414,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "أَنَّ",
+          "page": 414,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱللَّهَ",
+          "page": 414,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "يُولِجُ",
+          "page": 414,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "ٱلَّيْلَ",
+          "page": 414,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "فِى",
+          "page": 414,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "ٱلنَّهَارِ",
+          "page": 414,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "وَيُولِجُ",
+          "page": 414,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "ٱلنَّهَارَ",
+          "page": 414,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "فِى",
+          "page": 414,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "ٱلَّيْلِ",
+          "page": 414,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "وَسَخَّرَ",
+          "page": 414,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "ٱلشَّمْسَ",
+          "page": 414,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "وَٱلْقَمَرَ",
+          "page": 414,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "كُلٌّۭ",
+          "page": 414,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "يَجْرِىٓ",
+          "page": 414,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "إِلَىٰٓ",
+          "page": 414,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "أَجَلٍۢ",
+          "page": 414,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "مُّسَمًّۭى",
+          "page": 414,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "وَأَنَّ",
+          "page": 414,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "ٱللَّهَ",
+          "page": 414,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 23,
+          "text": "بِمَا",
+          "page": 414,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 24,
+          "text": "تَعْمَلُونَ",
+          "page": 414,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 25,
+          "text": "خَبِيرٌۭ",
+          "page": 414,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 26,
+          "text": "٢٩",
+          "page": 414,
+          "line": 3,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:30",
+      "n": 30,
+      "page": 414,
+      "juz": 21,
+      "text": "ذَٰلِكَ بِأَنَّ ٱللَّهَ هُوَ ٱلْحَقُّ وَأَنَّ مَا يَدْعُونَ مِن دُونِهِ ٱلْبَـٰطِلُ وَأَنَّ ٱللَّهَ هُوَ ٱلْعَلِىُّ ٱلْكَبِيرُ",
+      "tajweed": "ذ<tajweed class=madda_normal>َٲ</tajweed>لِكَ بِأَ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ هُوَ <tajweed class=ham_wasl>ٱ</tajweed>لْحَقُّ وَأَ<tajweed class=ghunnah>نّ</tajweed>َ مَا يَ<tajweed class=qalaqah>دْ</tajweed>عُونَ مِ<tajweed class=ikhafa>ن د</tajweed>ُونِهِ <tajweed class=ham_wasl>ٱ</tajweed>لْبَ<tajweed class=madda_normal>ـٰ</tajweed>طِلُ وَأَ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ هُوَ <tajweed class=ham_wasl>ٱ</tajweed>لْعَلِىُّ <tajweed class=ham_wasl>ٱ</tajweed>لْكَب<tajweed class=madda_permissible>ِي</tajweed>رُ <span class=end>٣٠</span>",
+      "translation": "Demikianlah, karena sesungguhnya Allah, Dialah (Tuhan) yang sebenarnya dan apa saja yang mereka seru selain Allah adalah batil. Dan sesungguhnya Allah, Dialah Yang Mahatinggi, Mahabesar.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ذَٰلِكَ",
+          "page": 414,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "بِأَنَّ",
+          "page": 414,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱللَّهَ",
+          "page": 414,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "هُوَ",
+          "page": 414,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلْحَقُّ",
+          "page": 414,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "وَأَنَّ",
+          "page": 414,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "مَا",
+          "page": 414,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "يَدْعُونَ",
+          "page": 414,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "مِن",
+          "page": 414,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "دُونِهِ",
+          "page": 414,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "ٱلْبَـٰطِلُ",
+          "page": 414,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "وَأَنَّ",
+          "page": 414,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "ٱللَّهَ",
+          "page": 414,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "هُوَ",
+          "page": 414,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "ٱلْعَلِىُّ",
+          "page": 414,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "ٱلْكَبِيرُ",
+          "page": 414,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "٣٠",
+          "page": 414,
+          "line": 4,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:31",
+      "n": 31,
+      "page": 414,
+      "juz": 21,
+      "text": "أَلَمْ تَرَ أَنَّ ٱلْفُلْكَ تَجْرِى فِى ٱلْبَحْرِ بِنِعْمَتِ ٱللَّهِ لِيُرِيَكُم مِّنْ ءَايَـٰتِهِۦٓ ۚ إِنَّ فِى ذَٰلِكَ لَـَٔايَـٰتٍ لِّكُلِّ صَبَّارٍ شَكُورٍ",
+      "tajweed": "أَلَمْ تَرَ أَ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>لْفُلْكَ تَ<tajweed class=qalaqah>جْ</tajweed>رِى فِى <tajweed class=ham_wasl>ٱ</tajweed>لْبَحْرِ بِنِعْمَتِ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ لِيُرِيَك<tajweed class=idgham_shafawi>ُم م</tajweed>ِّنْ ءَايَ<tajweed class=madda_normal>ـٰ</tajweed>تِه<tajweed class=madda_obligatory>ِۦٓ‌ۚ</tajweed> إِ<tajweed class=ghunnah>نّ</tajweed>َ فِى ذ<tajweed class=madda_normal>َٲ</tajweed>لِكَ لَأَيَ<tajweed class=madda_normal>ـٰ</tajweed><tajweed class=idgham_wo_ghunnah>تٍ ل</tajweed>ِّكُلِّ صَبَّا<tajweed class=ikhafa>رٍ ش</tajweed>َك<tajweed class=madda_permissible>ُو</tajweed>رٍ <span class=end>٣١</span>",
+      "translation": "Tidakkah engkau memperhatikan bahwa sesungguhnya kapal itu berlayar di laut dengan nikmat Allah, agar diperlihatkan-Nya kepadamu sebagian dari tanda-tanda (kebesaran)-Nya. Sungguh, pada yang demikian itu terdapat tanda-tanda (kebesaran)-Nya bagi setiap orang yang sangat sabar dan banyak bersyukur.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أَلَمْ",
+          "page": 414,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "تَرَ",
+          "page": 414,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "أَنَّ",
+          "page": 414,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْفُلْكَ",
+          "page": 414,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "تَجْرِى",
+          "page": 414,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "فِى",
+          "page": 414,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "ٱلْبَحْرِ",
+          "page": 414,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "بِنِعْمَتِ",
+          "page": 414,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "ٱللَّهِ",
+          "page": 414,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "لِيُرِيَكُم",
+          "page": 414,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "مِّنْ",
+          "page": 414,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "ءَايَـٰتِهِۦٓ ۚ",
+          "page": 414,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "إِنَّ",
+          "page": 414,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "فِى",
+          "page": 414,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "ذَٰلِكَ",
+          "page": 414,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "لَـَٔايَـٰتٍۢ",
+          "page": 414,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "لِّكُلِّ",
+          "page": 414,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "صَبَّارٍۢ",
+          "page": 414,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "شَكُورٍۢ",
+          "page": 414,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "٣١",
+          "page": 414,
+          "line": 6,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:32",
+      "n": 32,
+      "page": 414,
+      "juz": 21,
+      "text": "وَإِذَا غَشِيَهُم مَّوْجٌ كَٱلظُّلَلِ دَعَوُا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ فَلَمَّا نَجَّىٰهُمْ إِلَى ٱلْبَرِّ فَمِنْهُم مُّقْتَصِدٌ ۚ وَمَا يَجْحَدُ بِـَٔايَـٰتِنَآ إِلَّا كُلُّ خَتَّارٍ كَفُورٍ",
+      "tajweed": "وَإِذَا غَشِيَه<tajweed class=idgham_shafawi>ُم م</tajweed>َّوْ<tajweed class=ikhafa>جٌ ك</tajweed>َ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>ظُّلَلِ دَعَوُ<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ مُخْلِصِينَ لَهُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>دِّينَ فَلَ<tajweed class=ghunnah>مّ</tajweed>َا نَجَّ<tajweed class=madda_normal>ـٰ</tajweed>هُمْ إِلَى <tajweed class=ham_wasl>ٱ</tajweed>لْبَرِّ فَمِنْه<tajweed class=idgham_shafawi>ُم م</tajweed>ُّ<tajweed class=qalaqah>قْ</tajweed>تَصِ<tajweed class=idgham_ghunnah>دٌ‌ۚ و</tajweed>َمَا يَ<tajweed class=qalaqah>جْ</tajweed>حَدُ بِـَٔـايَ<tajweed class=madda_normal>ـٰ</tajweed>تِن<tajweed class=madda_obligatory>َآ</tajweed> إِلَّا كُلُّ خَتَّا<tajweed class=ikhafa>رٍ ك</tajweed>َف<tajweed class=madda_permissible>ُو</tajweed>رٍ <span class=end>٣٢</span>",
+      "translation": "Dan apabila mereka digulung ombak yang besar seperti gunung, mereka menyeru Allah dengan tulus ikhlas beragama kepada-Nya. Tetapi ketika Allah menyelamatkan mereka sampai di daratan, lalu sebagian mereka tetap menempuh jalan yang lurus.1 Adapun yang mengingkari ayat-ayat Kami hanyalah pengkhianat yang tidak berterima kasih.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَإِذَا",
+          "page": 414,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "غَشِيَهُم",
+          "page": 414,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَّوْجٌۭ",
+          "page": 414,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "كَٱلظُّلَلِ",
+          "page": 414,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "دَعَوُا۟",
+          "page": 414,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "ٱللَّهَ",
+          "page": 414,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "مُخْلِصِينَ",
+          "page": 414,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "لَهُ",
+          "page": 414,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "ٱلدِّينَ",
+          "page": 414,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "فَلَمَّا",
+          "page": 414,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "نَجَّىٰهُمْ",
+          "page": 414,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "إِلَى",
+          "page": 414,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "ٱلْبَرِّ",
+          "page": 414,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "فَمِنْهُم",
+          "page": 414,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "مُّقْتَصِدٌۭ ۚ",
+          "page": 414,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "وَمَا",
+          "page": 414,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "يَجْحَدُ",
+          "page": 414,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "بِـَٔايَـٰتِنَآ",
+          "page": 414,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "إِلَّا",
+          "page": 414,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "كُلُّ",
+          "page": 414,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "خَتَّارٍۢ",
+          "page": 414,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "كَفُورٍۢ",
+          "page": 414,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 23,
+          "text": "٣٢",
+          "page": 414,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:33",
+      "n": 33,
+      "page": 414,
+      "juz": 21,
+      "text": "يَـٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمْ وَٱخْشَوْا۟ يَوْمًا لَّا يَجْزِى وَالِدٌ عَن وَلَدِهِۦ وَلَا مَوْلُودٌ هُوَ جَازٍ عَن وَالِدِهِۦ شَيْـًٔا ۚ إِنَّ وَعْدَ ٱللَّهِ حَقٌّ ۖ فَلَا تَغُرَّنَّكُمُ ٱلْحَيَوٰةُ ٱلدُّنْيَا وَلَا يَغُرَّنَّكُم بِٱللَّهِ ٱلْغَرُورُ",
+      "tajweed": "يَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>أَيُّهَا <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َاسُ <tajweed class=ham_wasl>ٱ</tajweed>تَّقُو<tajweed class=slnt>اْ</tajweed> رَبَّكُمْ وَ<tajweed class=ham_wasl>ٱ</tajweed>خْشَوْ<tajweed class=slnt>اْ</tajweed> يَوْ<tajweed class=idgham_wo_ghunnah>مًا ل</tajweed>َّا يَ<tajweed class=qalaqah>جْ</tajweed>زِى وَالِدٌ ع<tajweed class=idgham_ghunnah>َن و</tajweed>َلَدِه<tajweed class=madda_normal>ِۦ</tajweed> وَلَا مَوْلُودٌ هُوَ جَازٍ ع<tajweed class=idgham_ghunnah>َن و</tajweed>َالِدِه<tajweed class=madda_normal>ِۦ</tajweed> شَيْــًٔا‌ۚ إِ<tajweed class=ghunnah>نّ</tajweed>َ وَعْدَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ حَ<tajweed class=ikhafa>قٌّ‌ۖ ف</tajweed>َلَا تَغُرَّ<tajweed class=ghunnah>نّ</tajweed>َكُمُ <tajweed class=ham_wasl>ٱ</tajweed>لْحَيَ<tajweed class=slnt>و</tajweed><tajweed class=madda_normal>ٲ</tajweed>ةُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>دُّنْيَا وَلَا يَغُرَّ<tajweed class=ghunnah>نّ</tajweed>َك<tajweed class=ikhafa_shafawi>ُم ب</tajweed>ِ<tajweed class=ham_wasl>ٱ</tajweed>للَّهِ <tajweed class=ham_wasl>ٱ</tajweed>لْغَر<tajweed class=madda_permissible>ُو</tajweed>رُ <span class=end>٣٣</span>",
+      "translation": "Wahai manusia! Bertakwalah kepada Tuhanmu dan takutlah pada hari yang (ketika itu) seorang bapak tidak dapat menolong anaknya, dan seorang anak tidak dapat (pula) menolong bapaknya sedikit pun. Sungguh, janji Allah pasti benar, maka janganlah sekali-kali kamu terpedaya oleh kehidupan dunia, dan jangan sampai kamu terpedaya oleh penipu dalam (menaati) Allah.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "يَـٰٓأَيُّهَا",
+          "page": 414,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلنَّاسُ",
+          "page": 414,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱتَّقُوا۟",
+          "page": 414,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "رَبَّكُمْ",
+          "page": 414,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "وَٱخْشَوْا۟",
+          "page": 414,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "يَوْمًۭا",
+          "page": 414,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "لَّا",
+          "page": 414,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "يَجْزِى",
+          "page": 414,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "وَالِدٌ",
+          "page": 414,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "عَن",
+          "page": 414,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "وَلَدِهِۦ",
+          "page": 414,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "وَلَا",
+          "page": 414,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "مَوْلُودٌ",
+          "page": 414,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "هُوَ",
+          "page": 414,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "جَازٍ",
+          "page": 414,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "عَن",
+          "page": 414,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "وَالِدِهِۦ",
+          "page": 414,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "شَيْـًٔا ۚ",
+          "page": 414,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "إِنَّ",
+          "page": 414,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "وَعْدَ",
+          "page": 414,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "ٱللَّهِ",
+          "page": 414,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "حَقٌّۭ ۖ",
+          "page": 414,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 23,
+          "text": "فَلَا",
+          "page": 414,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 24,
+          "text": "تَغُرَّنَّكُمُ",
+          "page": 414,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 25,
+          "text": "ٱلْحَيَوٰةُ",
+          "page": 414,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 26,
+          "text": "ٱلدُّنْيَا",
+          "page": 414,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 27,
+          "text": "وَلَا",
+          "page": 414,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 28,
+          "text": "يَغُرَّنَّكُم",
+          "page": 414,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 29,
+          "text": "بِٱللَّهِ",
+          "page": 414,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 30,
+          "text": "ٱلْغَرُورُ",
+          "page": 414,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 31,
+          "text": "٣٣",
+          "page": 414,
+          "line": 12,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "31:34",
+      "n": 34,
+      "page": 414,
+      "juz": 21,
+      "text": "إِنَّ ٱللَّهَ عِندَهُۥ عِلْمُ ٱلسَّاعَةِ وَيُنَزِّلُ ٱلْغَيْثَ وَيَعْلَمُ مَا فِى ٱلْأَرْحَامِ ۖ وَمَا تَدْرِى نَفْسٌ مَّاذَا تَكْسِبُ غَدًا ۖ وَمَا تَدْرِى نَفْسٌۢ بِأَىِّ أَرْضٍ تَمُوتُ ۚ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌۢ",
+      "tajweed": "إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ عِ<tajweed class=ikhafa>ند</tajweed>َهُ<tajweed class=madda_normal>ۥ</tajweed> عِلْمُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سَّاعَةِ وَيُنَزِّلُ <tajweed class=ham_wasl>ٱ</tajweed>لْغَيْثَ وَيَعْلَمُ مَا فِى <tajweed class=ham_wasl>ٱ</tajweed>لْأَرْحَامِ‌ۖ وَمَا تَ<tajweed class=qalaqah>دْ</tajweed>رِى نَفْ<tajweed class=idgham_ghunnah>سٌ م</tajweed>َّاذَا تَكْسِبُ غَ<tajweed class=idgham_ghunnah>دًا‌ۖ و</tajweed>َمَا تَ<tajweed class=qalaqah>دْ</tajweed>رِى نَفْ<tajweed class=iqlab>سُۢ ب</tajweed>ِأَىِّ أَرْ<tajweed class=ikhafa>ضٍ ت</tajweed>َمُوتُ‌ۚ إِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ عَلِيمٌ خَب<tajweed class=madda_permissible>ِي</tajweed>رُۢ <span class=end>٣٤</span>",
+      "translation": "Sesungguhnya hanya di sisi Allah ilmu tentang hari Kiamat; dan Dia yang menurunkan hujan, dan mengetahui apa yang ada dalam rahim. Dan tidak ada seorang pun yang dapat mengetahui (dengan pasti) apa yang akan dikerjakannya besok.1 Dan tidak ada seorang pun yang dapat mengetahui di bumi mana dia akan mati. Sungguh, Allah Maha Mengetahui, Maha Mengenal.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِنَّ",
+          "page": 414,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱللَّهَ",
+          "page": 414,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "عِندَهُۥ",
+          "page": 414,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "عِلْمُ",
+          "page": 414,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلسَّاعَةِ",
+          "page": 414,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "وَيُنَزِّلُ",
+          "page": 414,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "ٱلْغَيْثَ",
+          "page": 414,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "وَيَعْلَمُ",
+          "page": 414,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "مَا",
+          "page": 414,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "فِى",
+          "page": 414,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "ٱلْأَرْحَامِ ۖ",
+          "page": 414,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "وَمَا",
+          "page": 414,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "تَدْرِى",
+          "page": 414,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "نَفْسٌۭ",
+          "page": 414,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "مَّاذَا",
+          "page": 414,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "تَكْسِبُ",
+          "page": 414,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "غَدًۭا ۖ",
+          "page": 414,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "وَمَا",
+          "page": 414,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "تَدْرِى",
+          "page": 414,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "نَفْسٌۢ",
+          "page": 414,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "بِأَىِّ",
+          "page": 414,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "أَرْضٍۢ",
+          "page": 414,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 23,
+          "text": "تَمُوتُ ۚ",
+          "page": 414,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 24,
+          "text": "إِنَّ",
+          "page": 414,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 25,
+          "text": "ٱللَّهَ",
+          "page": 414,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 26,
+          "text": "عَلِيمٌ",
+          "page": 414,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 27,
+          "text": "خَبِيرٌۢ",
+          "page": 414,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 28,
+          "text": "٣٤",
+          "page": 414,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "surah": {
+    "id": 94,
+    "name_arabic": "الشرح",
+    "name_simple": "Ash-Sharh",
+    "translated_name": "Melapangkan",
+    "verses_count": 8,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "94:1",
+      "n": 1,
+      "page": 596,
+      "juz": 30,
+      "text": " أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
+      "tajweed": "أَلَمْ نَشْرَحْ لَكَ صَ<tajweed class=qalaqah>دْ</tajweed>رَكَ <span class=end>١</span>",
+      "translation": "Bukankah kami telah melapangkan dadamu (Muhammad)?",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أَلَمْ",
+          "page": 596,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "نَشْرَحْ",
+          "page": 596,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "لَكَ",
+          "page": 596,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "صَدْرَكَ",
+          "page": 596,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "١",
+          "page": 596,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "94:2",
+      "n": 2,
+      "page": 596,
+      "juz": 30,
+      "text": "وَوَضَعْنَا عَنكَ وِزْرَكَ",
+      "tajweed": "وَوَضَعْنَا عَ<tajweed class=ikhafa>نك</tajweed>َ وِزْرَكَ <span class=end>٢</span>",
+      "translation": "dan kami pun telah menurunkan beban darimu,1",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَوَضَعْنَا",
+          "page": 596,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "عَنكَ",
+          "page": 596,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "وِزْرَكَ",
+          "page": 596,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٢",
+          "page": 596,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "94:3",
+      "n": 3,
+      "page": 597,
+      "juz": 30,
+      "text": "ٱلَّذِىٓ أَنقَضَ ظَهْرَكَ",
+      "tajweed": "ٱلَّذ<tajweed class=madda_obligatory>ِىٓ</tajweed> أَ<tajweed class=ikhafa>نق</tajweed>َضَ ظَهْرَكَ <span class=end>٣</span>",
+      "translation": "yang memberatkan punggungmu,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ٱلَّذِىٓ",
+          "page": 597,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَنقَضَ",
+          "page": 597,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ظَهْرَكَ",
+          "page": 597,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٣",
+          "page": 597,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "94:4",
+      "n": 4,
+      "page": 597,
+      "juz": 30,
+      "text": "وَرَفَعْنَا لَكَ ذِكْرَكَ",
+      "tajweed": "وَرَفَعْنَا لَكَ ذِكْرَكَ <span class=end>٤</span>",
+      "translation": "dan kami tinggikan sebutan (nama)mu1 bagimu.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَرَفَعْنَا",
+          "page": 597,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "لَكَ",
+          "page": 597,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ذِكْرَكَ",
+          "page": 597,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٤",
+          "page": 597,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "94:5",
+      "n": 5,
+      "page": 597,
+      "juz": 30,
+      "text": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+      "tajweed": "فَإِ<tajweed class=ghunnah>نّ</tajweed>َ مَعَ <tajweed class=ham_wasl>ٱ</tajweed>لْعُسْرِ يُسْرًا <span class=end>٥</span>",
+      "translation": "Maka sesungguhnya bersama kesulitan ada kemudahan,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَإِنَّ",
+          "page": 597,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "مَعَ",
+          "page": 597,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلْعُسْرِ",
+          "page": 597,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "يُسْرًا",
+          "page": 597,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٥",
+          "page": 597,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "94:6",
+      "n": 6,
+      "page": 597,
+      "juz": 30,
+      "text": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+      "tajweed": "إِ<tajweed class=ghunnah>نّ</tajweed>َ مَعَ <tajweed class=ham_wasl>ٱ</tajweed>لْعُسْرِ يُسْرًا <span class=end>٦</span>",
+      "translation": "sesungguhnya bersama kesulitan ada kemudahan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِنَّ",
+          "page": 597,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "مَعَ",
+          "page": 597,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلْعُسْرِ",
+          "page": 597,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "يُسْرًۭا",
+          "page": 597,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٦",
+          "page": 597,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "94:7",
+      "n": 7,
+      "page": 597,
+      "juz": 30,
+      "text": "فَإِذَا فَرَغْتَ فَٱنصَبْ",
+      "tajweed": "فَإِذَا فَرَغْتَ فَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=ikhafa>نص</tajweed>َ<tajweed class=qalaqah>بْ</tajweed> <span class=end>٧</span>",
+      "translation": "Maka apabila engkau telah selesai (dari suatu urusan), tetaplah bekerja keras (untuk urusan yang lain),1",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَإِذَا",
+          "page": 597,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "فَرَغْتَ",
+          "page": 597,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "فَٱنصَبْ",
+          "page": 597,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٧",
+          "page": 597,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "94:8",
+      "n": 8,
+      "page": 597,
+      "juz": 30,
+      "text": "وَإِلَىٰ رَبِّكَ فَٱرْغَب",
+      "tajweed": "وَإِلَىٰ رَبِّكَ فَ<tajweed class=ham_wasl>ٱ</tajweed>رْغَ<tajweed class=qalaqah>ب</tajweed> <span class=end>٨</span>",
+      "translation": "dan hanya kepada Tuhanmulah engkau berharap.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَإِلَىٰ",
+          "page": 597,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "رَبِّكَ",
+          "page": 597,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "فَٱرْغَب",
+          "page": 597,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٨",
+          "page": 597,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

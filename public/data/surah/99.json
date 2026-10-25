@@ -1,0 +1,408 @@
+{
+  "surah": {
+    "id": 99,
+    "name_arabic": "الزلزلة",
+    "name_simple": "Az-Zalzalah",
+    "translated_name": "Kegoncangan",
+    "verses_count": 8,
+    "revelation_place": "madinah"
+  },
+  "verses": [
+    {
+      "key": "99:1",
+      "n": 1,
+      "page": 599,
+      "juz": 30,
+      "text": " إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+      "tajweed": "إِذَا زُلْزِلَتِ <tajweed class=ham_wasl>ٱ</tajweed>لْأَرْضُ زِلْزَالَهَا <span class=end>١</span>",
+      "translation": "Apabila bumi diguncangkan dengan guncangan yang dahsyat,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِذَا",
+          "page": 599,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "زُلْزِلَتِ",
+          "page": 599,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلْأَرْضُ",
+          "page": 599,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "زِلْزَالَهَا",
+          "page": 599,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "١",
+          "page": 599,
+          "line": 5,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "99:2",
+      "n": 2,
+      "page": 599,
+      "juz": 30,
+      "text": "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا",
+      "tajweed": "وَأَخْرَجَتِ <tajweed class=ham_wasl>ٱ</tajweed>لْأَرْضُ أَثْقَالَهَا <span class=end>٢</span>",
+      "translation": "dan bumi telah mengeluarkan beban-beban berat (yang dikandung)nya,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَأَخْرَجَتِ",
+          "page": 599,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْأَرْضُ",
+          "page": 599,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "أَثْقَالَهَا",
+          "page": 599,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٢",
+          "page": 599,
+          "line": 6,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "99:3",
+      "n": 3,
+      "page": 599,
+      "juz": 30,
+      "text": "وَقَالَ ٱلْإِنسَـٰنُ مَا لَهَا",
+      "tajweed": "وَقَالَ <tajweed class=ham_wasl>ٱ</tajweed>لْإِ<tajweed class=ikhafa>نس</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>نُ مَا لَهَا <span class=end>٣</span>",
+      "translation": "dan manusia bertanya, \"Apa yang terjadi pada bumi ini?\"",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَقَالَ",
+          "page": 599,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْإِنسَـٰنُ",
+          "page": 599,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَا",
+          "page": 599,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لَهَا",
+          "page": 599,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٣",
+          "page": 599,
+          "line": 6,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "99:4",
+      "n": 4,
+      "page": 599,
+      "juz": 30,
+      "text": "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا",
+      "tajweed": "يَوْمَئِ<tajweed class=ikhafa>ذٍ ت</tajweed>ُحَدِّثُ أَخْبَارَهَا <span class=end>٤</span>",
+      "translation": "Pada hari itu bumi menyampaikan beritanya,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "يَوْمَئِذٍۢ",
+          "page": 599,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "تُحَدِّثُ",
+          "page": 599,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "أَخْبَارَهَا",
+          "page": 599,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٤",
+          "page": 599,
+          "line": 6,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "99:5",
+      "n": 5,
+      "page": 599,
+      "juz": 30,
+      "text": "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا",
+      "tajweed": "بِأَ<tajweed class=ghunnah>نّ</tajweed>َ رَبَّكَ أَوْحَىٰ لَهَا <span class=end>٥</span>",
+      "translation": "karena sesungguhnya Tuhanmu telah memerintahkan (yang sedemikian itu) padanya.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "بِأَنَّ",
+          "page": 599,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "رَبَّكَ",
+          "page": 599,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "أَوْحَىٰ",
+          "page": 599,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لَهَا",
+          "page": 599,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٥",
+          "page": 599,
+          "line": 7,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "99:6",
+      "n": 6,
+      "page": 599,
+      "juz": 30,
+      "text": "يَوْمَئِذٍ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًا لِّيُرَوْا۟ أَعْمَـٰلَهُمْ",
+      "tajweed": "يَوْمَئِ<tajweed class=idgham_ghunnah>ذٍ ي</tajweed>َصْدُرُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َاسُ أَشْتَا<tajweed class=idgham_wo_ghunnah>تًا ل</tajweed>ِّيُرَوْ<tajweed class=slnt>اْ</tajweed> أَعْمَ<tajweed class=madda_normal>ـٰ</tajweed>لَهُمْ <span class=end>٦</span>",
+      "translation": "Pada hari itu manusia keluar dari kuburnya dalam keadaan berkelompok-kelompok,1 untuk diperlihatkan kepada mereka (balasan) semua amal perbuatannya.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "يَوْمَئِذٍۢ",
+          "page": 599,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يَصْدُرُ",
+          "page": 599,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلنَّاسُ",
+          "page": 599,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "أَشْتَاتًۭا",
+          "page": 599,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "لِّيُرَوْا۟",
+          "page": 599,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "أَعْمَـٰلَهُمْ",
+          "page": 599,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "٦",
+          "page": 599,
+          "line": 8,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "99:7",
+      "n": 7,
+      "page": 599,
+      "juz": 30,
+      "text": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ",
+      "tajweed": "فَم<tajweed class=idgham_ghunnah>َن ي</tajweed>َعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْ<tajweed class=idgham_ghunnah>رًا ي</tajweed>َرَهُۥ <span class=end>٧</span>",
+      "translation": "Maka barangsiapa mengerjakan kebaikan seberat zarah, niscaya dia akan melihat (balasan)nya.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَمَن",
+          "page": 599,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يَعْمَلْ",
+          "page": 599,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مِثْقَالَ",
+          "page": 599,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ذَرَّةٍ",
+          "page": 599,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "خَيْرًۭا",
+          "page": 599,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "يَرَهُۥ",
+          "page": 599,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "٧",
+          "page": 599,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "99:8",
+      "n": 8,
+      "page": 599,
+      "juz": 30,
+      "text": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ",
+      "tajweed": "وَم<tajweed class=idgham_ghunnah>َن ي</tajweed>َعْمَلْ مِثْقَالَ ذَرَّ<tajweed class=ikhafa>ةٍ ش</tajweed>َر<tajweed class=idgham_ghunnah>ًّا ي</tajweed>َرَهُۥ <span class=end>٨</span>",
+      "translation": "Dan barangsiapa mengerjakan kejahatan seberat zarah, niscaya dia akan melihat (balasan)nya.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَمَن",
+          "page": 599,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يَعْمَلْ",
+          "page": 599,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مِثْقَالَ",
+          "page": 599,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ذَرَّةٍۢ",
+          "page": 599,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "شَرًّۭا",
+          "page": 599,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "يَرَهُۥ",
+          "page": 599,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "٨",
+          "page": 599,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "surah": {
+    "id": 108,
+    "name_arabic": "الكوثر",
+    "name_simple": "Al-Kawthar",
+    "translated_name": "Nikmat Berlimpah",
+    "verses_count": 3,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "108:1",
+      "n": 1,
+      "page": 602,
+      "juz": 30,
+      "text": " إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ",
+      "tajweed": "إِ<tajweed class=ghunnah>نّ</tajweed><tajweed class=madda_obligatory>َآ</tajweed> أَعْطَيْنَ<tajweed class=madda_normal>ـٰ</tajweed>كَ <tajweed class=ham_wasl>ٱ</tajweed>لْكَوْثَرَ <span class=end>١</span>",
+      "translation": "Sungguh, Kami telah memberimu (Muhammad) nikmat yang banyak.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِنَّآ",
+          "page": 602,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَعْطَيْنَـٰكَ",
+          "page": 602,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلْكَوْثَرَ",
+          "page": 602,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "١",
+          "page": 602,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "108:2",
+      "n": 2,
+      "page": 602,
+      "juz": 30,
+      "text": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
+      "tajweed": "فَصَلِّ لِرَبِّكَ وَ<tajweed class=ham_wasl>ٱ</tajweed>نْحَرْ <span class=end>٢</span>",
+      "translation": "Maka laksanakanlah salat karena Tuhanmu, dan berkurbanlah (sebagai ibadah dan mendekatkan diri kepada Allah).",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَصَلِّ",
+          "page": 602,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "لِرَبِّكَ",
+          "page": 602,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "وَٱنْحَرْ",
+          "page": 602,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٢",
+          "page": 602,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "108:3",
+      "n": 3,
+      "page": 602,
+      "juz": 30,
+      "text": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
+      "tajweed": "إِ<tajweed class=ghunnah>نّ</tajweed>َ شَانِئَكَ هُوَ <tajweed class=ham_wasl>ٱ</tajweed>لْأَ<tajweed class=qalaqah>بْ</tajweed>تَرُ <span class=end>٣</span>",
+      "translation": "Sungguh, orang-orang yang membencimu dialah yang terputus (dari rahmat Allah).",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِنَّ",
+          "page": 602,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "شَانِئَكَ",
+          "page": 602,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "هُوَ",
+          "page": 602,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْأَبْتَرُ",
+          "page": 602,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٣",
+          "page": 602,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

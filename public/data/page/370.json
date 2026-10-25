@@ -1,0 +1,997 @@
+{
+  "page": 370,
+  "juz": 19,
+  "surahs": [
+    {
+      "id": 26,
+      "name_arabic": "الشعراء",
+      "name_simple": "Ash-Shu'ara"
+    }
+  ],
+  "lines": [
+    {
+      "line": 1,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:61",
+          "idx": 1,
+          "text": "فَلَمَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:61",
+          "idx": 2,
+          "text": "تَرَٰٓءَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:61",
+          "idx": 3,
+          "text": "ٱلْجَمْعَانِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:61",
+          "idx": 4,
+          "text": "قَالَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:61",
+          "idx": 5,
+          "text": "أَصْحَـٰبُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:61",
+          "idx": 6,
+          "text": "مُوسَىٰٓ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:61",
+          "idx": 7,
+          "text": "إِنَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:61",
+          "idx": 8,
+          "text": "لَمُدْرَكُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:61",
+          "idx": 9,
+          "text": "٦١",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:62",
+          "idx": 1,
+          "text": "قَالَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:62",
+          "idx": 2,
+          "text": "كَلَّآ ۖ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:62",
+          "idx": 3,
+          "text": "إِنَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:62",
+          "idx": 4,
+          "text": "مَعِىَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:62",
+          "idx": 5,
+          "text": "رَبِّى",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:62",
+          "idx": 6,
+          "text": "سَيَهْدِينِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:62",
+          "idx": 7,
+          "text": "٦٢",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:63",
+          "idx": 1,
+          "text": "فَأَوْحَيْنَآ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:63",
+          "idx": 2,
+          "text": "إِلَىٰ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:63",
+          "idx": 3,
+          "text": "مُوسَىٰٓ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:63",
+          "idx": 4,
+          "text": "أَنِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:63",
+          "idx": 5,
+          "text": "ٱضْرِب",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:63",
+          "idx": 6,
+          "text": "بِّعَصَاكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:63",
+          "idx": 7,
+          "text": "ٱلْبَحْرَ ۖ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:63",
+          "idx": 8,
+          "text": "فَٱنفَلَقَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:63",
+          "idx": 9,
+          "text": "فَكَانَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:63",
+          "idx": 10,
+          "text": "كُلُّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:63",
+          "idx": 11,
+          "text": "فِرْقٍۢ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:63",
+          "idx": 12,
+          "text": "كَٱلطَّوْدِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:63",
+          "idx": 13,
+          "text": "ٱلْعَظِيمِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:63",
+          "idx": 14,
+          "text": "٦٣",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:64",
+          "idx": 1,
+          "text": "وَأَزْلَفْنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:64",
+          "idx": 2,
+          "text": "ثَمَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:64",
+          "idx": 3,
+          "text": "ٱلْـَٔاخَرِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:64",
+          "idx": 4,
+          "text": "٦٤",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:65",
+          "idx": 1,
+          "text": "وَأَنجَيْنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:65",
+          "idx": 2,
+          "text": "مُوسَىٰ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:65",
+          "idx": 3,
+          "text": "وَمَن",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:65",
+          "idx": 4,
+          "text": "مَّعَهُۥٓ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:65",
+          "idx": 5,
+          "text": "أَجْمَعِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:65",
+          "idx": 6,
+          "text": "٦٥",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:66",
+          "idx": 1,
+          "text": "ثُمَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:66",
+          "idx": 2,
+          "text": "أَغْرَقْنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:66",
+          "idx": 3,
+          "text": "ٱلْـَٔاخَرِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:66",
+          "idx": 4,
+          "text": "٦٦",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:67",
+          "idx": 1,
+          "text": "إِنَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:67",
+          "idx": 2,
+          "text": "فِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:67",
+          "idx": 3,
+          "text": "ذَٰلِكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:67",
+          "idx": 4,
+          "text": "لَـَٔايَةًۭ ۖ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:67",
+          "idx": 5,
+          "text": "وَمَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:67",
+          "idx": 6,
+          "text": "كَانَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:67",
+          "idx": 7,
+          "text": "أَكْثَرُهُم",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:67",
+          "idx": 8,
+          "text": "مُّؤْمِنِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:67",
+          "idx": 9,
+          "text": "٦٧",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:68",
+          "idx": 1,
+          "text": "وَإِنَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:68",
+          "idx": 2,
+          "text": "رَبَّكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:68",
+          "idx": 3,
+          "text": "لَهُوَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:68",
+          "idx": 4,
+          "text": "ٱلْعَزِيزُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:68",
+          "idx": 5,
+          "text": "ٱلرَّحِيمُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:68",
+          "idx": 6,
+          "text": "٦٨",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:69",
+          "idx": 1,
+          "text": "وَٱتْلُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:69",
+          "idx": 2,
+          "text": "عَلَيْهِمْ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:69",
+          "idx": 3,
+          "text": "نَبَأَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:69",
+          "idx": 4,
+          "text": "إِبْرَٰهِيمَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:69",
+          "idx": 5,
+          "text": "٦٩",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:70",
+          "idx": 1,
+          "text": "إِذْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:70",
+          "idx": 2,
+          "text": "قَالَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:70",
+          "idx": 3,
+          "text": "لِأَبِيهِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:70",
+          "idx": 4,
+          "text": "وَقَوْمِهِۦ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:70",
+          "idx": 5,
+          "text": "مَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:70",
+          "idx": 6,
+          "text": "تَعْبُدُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:70",
+          "idx": 7,
+          "text": "٧٠",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:71",
+          "idx": 1,
+          "text": "قَالُوا۟",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:71",
+          "idx": 2,
+          "text": "نَعْبُدُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:71",
+          "idx": 3,
+          "text": "أَصْنَامًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:71",
+          "idx": 4,
+          "text": "فَنَظَلُّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:71",
+          "idx": 5,
+          "text": "لَهَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:71",
+          "idx": 6,
+          "text": "عَـٰكِفِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:71",
+          "idx": 7,
+          "text": "٧١",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:72",
+          "idx": 1,
+          "text": "قَالَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:72",
+          "idx": 2,
+          "text": "هَلْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:72",
+          "idx": 3,
+          "text": "يَسْمَعُونَكُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:72",
+          "idx": 4,
+          "text": "إِذْ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:72",
+          "idx": 5,
+          "text": "تَدْعُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:72",
+          "idx": 6,
+          "text": "٧٢",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:73",
+          "idx": 1,
+          "text": "أَوْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:73",
+          "idx": 2,
+          "text": "يَنفَعُونَكُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:73",
+          "idx": 3,
+          "text": "أَوْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:73",
+          "idx": 4,
+          "text": "يَضُرُّونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:73",
+          "idx": 5,
+          "text": "٧٣",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:74",
+          "idx": 1,
+          "text": "قَالُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:74",
+          "idx": 2,
+          "text": "بَلْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:74",
+          "idx": 3,
+          "text": "وَجَدْنَآ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:74",
+          "idx": 4,
+          "text": "ءَابَآءَنَا",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:74",
+          "idx": 5,
+          "text": "كَذَٰلِكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:74",
+          "idx": 6,
+          "text": "يَفْعَلُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:74",
+          "idx": 7,
+          "text": "٧٤",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:75",
+          "idx": 1,
+          "text": "قَالَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:75",
+          "idx": 2,
+          "text": "أَفَرَءَيْتُم",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:75",
+          "idx": 3,
+          "text": "مَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:75",
+          "idx": 4,
+          "text": "كُنتُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:75",
+          "idx": 5,
+          "text": "تَعْبُدُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:75",
+          "idx": 6,
+          "text": "٧٥",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:76",
+          "idx": 1,
+          "text": "أَنتُمْ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:76",
+          "idx": 2,
+          "text": "وَءَابَآؤُكُمُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:76",
+          "idx": 3,
+          "text": "ٱلْأَقْدَمُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:76",
+          "idx": 4,
+          "text": "٧٦",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:77",
+          "idx": 1,
+          "text": "فَإِنَّهُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:77",
+          "idx": 2,
+          "text": "عَدُوٌّۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:77",
+          "idx": 3,
+          "text": "لِّىٓ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:77",
+          "idx": 4,
+          "text": "إِلَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:77",
+          "idx": 5,
+          "text": "رَبَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:77",
+          "idx": 6,
+          "text": "ٱلْعَـٰلَمِينَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:77",
+          "idx": 7,
+          "text": "٧٧",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:78",
+          "idx": 1,
+          "text": "ٱلَّذِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:78",
+          "idx": 2,
+          "text": "خَلَقَنِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:78",
+          "idx": 3,
+          "text": "فَهُوَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:78",
+          "idx": 4,
+          "text": "يَهْدِينِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:78",
+          "idx": 5,
+          "text": "٧٨",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:79",
+          "idx": 1,
+          "text": "وَٱلَّذِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:79",
+          "idx": 2,
+          "text": "هُوَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:79",
+          "idx": 3,
+          "text": "يُطْعِمُنِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:79",
+          "idx": 4,
+          "text": "وَيَسْقِينِ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:79",
+          "idx": 5,
+          "text": "٧٩",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:80",
+          "idx": 1,
+          "text": "وَإِذَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:80",
+          "idx": 2,
+          "text": "مَرِضْتُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:80",
+          "idx": 3,
+          "text": "فَهُوَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:80",
+          "idx": 4,
+          "text": "يَشْفِينِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:80",
+          "idx": 5,
+          "text": "٨٠",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:81",
+          "idx": 1,
+          "text": "وَٱلَّذِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:81",
+          "idx": 2,
+          "text": "يُمِيتُنِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:81",
+          "idx": 3,
+          "text": "ثُمَّ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:81",
+          "idx": 4,
+          "text": "يُحْيِينِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:81",
+          "idx": 5,
+          "text": "٨١",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:82",
+          "idx": 1,
+          "text": "وَٱلَّذِىٓ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:82",
+          "idx": 2,
+          "text": "أَطْمَعُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:82",
+          "idx": 3,
+          "text": "أَن",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:82",
+          "idx": 4,
+          "text": "يَغْفِرَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:82",
+          "idx": 5,
+          "text": "لِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:82",
+          "idx": 6,
+          "text": "خَطِيٓـَٔتِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:82",
+          "idx": 7,
+          "text": "يَوْمَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:82",
+          "idx": 8,
+          "text": "ٱلدِّينِ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 15,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "26:82",
+          "idx": 9,
+          "text": "٨٢",
+          "type": "end"
+        },
+        {
+          "verse_key": "26:83",
+          "idx": 1,
+          "text": "رَبِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:83",
+          "idx": 2,
+          "text": "هَبْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:83",
+          "idx": 3,
+          "text": "لِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:83",
+          "idx": 4,
+          "text": "حُكْمًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:83",
+          "idx": 5,
+          "text": "وَأَلْحِقْنِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:83",
+          "idx": 6,
+          "text": "بِٱلصَّـٰلِحِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "26:83",
+          "idx": 7,
+          "text": "٨٣",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

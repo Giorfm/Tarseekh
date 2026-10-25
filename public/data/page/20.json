@@ -1,0 +1,943 @@
+{
+  "page": 20,
+  "juz": 1,
+  "surahs": [
+    {
+      "id": 2,
+      "name_arabic": "البقرة",
+      "name_simple": "Al-Baqarah"
+    }
+  ],
+  "lines": [
+    {
+      "line": 1,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:127",
+          "idx": 1,
+          "text": "وَإِذْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:127",
+          "idx": 2,
+          "text": "يَرْفَعُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:127",
+          "idx": 3,
+          "text": "إِبْرَٰهِـۧمُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:127",
+          "idx": 4,
+          "text": "ٱلْقَوَاعِدَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:127",
+          "idx": 5,
+          "text": "مِنَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:127",
+          "idx": 6,
+          "text": "ٱلْبَيْتِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:127",
+          "idx": 7,
+          "text": "وَإِسْمَـٰعِيلُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:127",
+          "idx": 8,
+          "text": "رَبَّنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:127",
+          "idx": 9,
+          "text": "تَقَبَّلْ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:127",
+          "idx": 10,
+          "text": "مِنَّآ ۖ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:127",
+          "idx": 11,
+          "text": "إِنَّكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:127",
+          "idx": 12,
+          "text": "أَنتَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:127",
+          "idx": 13,
+          "text": "ٱلسَّمِيعُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:127",
+          "idx": 14,
+          "text": "ٱلْعَلِيمُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:127",
+          "idx": 15,
+          "text": "١٢٧",
+          "type": "end"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 1,
+          "text": "رَبَّنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 2,
+          "text": "وَٱجْعَلْنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 3,
+          "text": "مُسْلِمَيْنِ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:128",
+          "idx": 4,
+          "text": "لَكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 5,
+          "text": "وَمِن",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 6,
+          "text": "ذُرِّيَّتِنَآ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 7,
+          "text": "أُمَّةًۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 8,
+          "text": "مُّسْلِمَةًۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 9,
+          "text": "لَّكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 10,
+          "text": "وَأَرِنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 11,
+          "text": "مَنَاسِكَنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 12,
+          "text": "وَتُبْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 13,
+          "text": "عَلَيْنَآ ۖ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:128",
+          "idx": 14,
+          "text": "إِنَّكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 15,
+          "text": "أَنتَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 16,
+          "text": "ٱلتَّوَّابُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 17,
+          "text": "ٱلرَّحِيمُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:128",
+          "idx": 18,
+          "text": "١٢٨",
+          "type": "end"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 1,
+          "text": "رَبَّنَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 2,
+          "text": "وَٱبْعَثْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 3,
+          "text": "فِيهِمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 4,
+          "text": "رَسُولًۭا",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:129",
+          "idx": 5,
+          "text": "مِّنْهُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 6,
+          "text": "يَتْلُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 7,
+          "text": "عَلَيْهِمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 8,
+          "text": "ءَايَـٰتِكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 9,
+          "text": "وَيُعَلِّمُهُمُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 10,
+          "text": "ٱلْكِتَـٰبَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 11,
+          "text": "وَٱلْحِكْمَةَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:129",
+          "idx": 12,
+          "text": "وَيُزَكِّيهِمْ ۚ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 13,
+          "text": "إِنَّكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 14,
+          "text": "أَنتَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 15,
+          "text": "ٱلْعَزِيزُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 16,
+          "text": "ٱلْحَكِيمُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:129",
+          "idx": 17,
+          "text": "١٢٩",
+          "type": "end"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 1,
+          "text": "وَمَن",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 2,
+          "text": "يَرْغَبُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 3,
+          "text": "عَن",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:130",
+          "idx": 4,
+          "text": "مِّلَّةِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 5,
+          "text": "إِبْرَٰهِـۧمَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 6,
+          "text": "إِلَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 7,
+          "text": "مَن",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 8,
+          "text": "سَفِهَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 9,
+          "text": "نَفْسَهُۥ ۚ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 10,
+          "text": "وَلَقَدِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 11,
+          "text": "ٱصْطَفَيْنَـٰهُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 12,
+          "text": "فِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 13,
+          "text": "ٱلدُّنْيَا ۖ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:130",
+          "idx": 14,
+          "text": "وَإِنَّهُۥ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 15,
+          "text": "فِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 16,
+          "text": "ٱلْـَٔاخِرَةِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 17,
+          "text": "لَمِنَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 18,
+          "text": "ٱلصَّـٰلِحِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:130",
+          "idx": 19,
+          "text": "١٣٠",
+          "type": "end"
+        },
+        {
+          "verse_key": "2:131",
+          "idx": 1,
+          "text": "إِذْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:131",
+          "idx": 2,
+          "text": "قَالَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:131",
+          "idx": 3,
+          "text": "لَهُۥ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:131",
+          "idx": 4,
+          "text": "رَبُّهُۥٓ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:131",
+          "idx": 5,
+          "text": "أَسْلِمْ ۖ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:131",
+          "idx": 6,
+          "text": "قَالَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:131",
+          "idx": 7,
+          "text": "أَسْلَمْتُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:131",
+          "idx": 8,
+          "text": "لِرَبِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:131",
+          "idx": 9,
+          "text": "ٱلْعَـٰلَمِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:131",
+          "idx": 10,
+          "text": "١٣١",
+          "type": "end"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 1,
+          "text": "وَوَصَّىٰ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 2,
+          "text": "بِهَآ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 3,
+          "text": "إِبْرَٰهِـۧمُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 4,
+          "text": "بَنِيهِ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:132",
+          "idx": 5,
+          "text": "وَيَعْقُوبُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 6,
+          "text": "يَـٰبَنِىَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 7,
+          "text": "إِنَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 8,
+          "text": "ٱللَّهَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 9,
+          "text": "ٱصْطَفَىٰ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 10,
+          "text": "لَكُمُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 11,
+          "text": "ٱلدِّينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 12,
+          "text": "فَلَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 13,
+          "text": "تَمُوتُنَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 14,
+          "text": "إِلَّا",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:132",
+          "idx": 15,
+          "text": "وَأَنتُم",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 16,
+          "text": "مُّسْلِمُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:132",
+          "idx": 17,
+          "text": "١٣٢",
+          "type": "end"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 1,
+          "text": "أَمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 2,
+          "text": "كُنتُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 3,
+          "text": "شُهَدَآءَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 4,
+          "text": "إِذْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 5,
+          "text": "حَضَرَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 6,
+          "text": "يَعْقُوبَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:133",
+          "idx": 7,
+          "text": "ٱلْمَوْتُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 8,
+          "text": "إِذْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 9,
+          "text": "قَالَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 10,
+          "text": "لِبَنِيهِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 11,
+          "text": "مَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 12,
+          "text": "تَعْبُدُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 13,
+          "text": "مِنۢ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 14,
+          "text": "بَعْدِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 15,
+          "text": "قَالُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 16,
+          "text": "نَعْبُدُ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:133",
+          "idx": 17,
+          "text": "إِلَـٰهَكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 18,
+          "text": "وَإِلَـٰهَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 19,
+          "text": "ءَابَآئِكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 20,
+          "text": "إِبْرَٰهِـۧمَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 21,
+          "text": "وَإِسْمَـٰعِيلَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 22,
+          "text": "وَإِسْحَـٰقَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 23,
+          "text": "إِلَـٰهًۭا",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:133",
+          "idx": 24,
+          "text": "وَٰحِدًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 25,
+          "text": "وَنَحْنُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 26,
+          "text": "لَهُۥ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 27,
+          "text": "مُسْلِمُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:133",
+          "idx": 28,
+          "text": "١٣٣",
+          "type": "end"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 1,
+          "text": "تِلْكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 2,
+          "text": "أُمَّةٌۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 3,
+          "text": "قَدْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 4,
+          "text": "خَلَتْ ۖ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 5,
+          "text": "لَهَا",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 15,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "2:134",
+          "idx": 6,
+          "text": "مَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 7,
+          "text": "كَسَبَتْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 8,
+          "text": "وَلَكُم",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 9,
+          "text": "مَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 10,
+          "text": "كَسَبْتُمْ ۖ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 11,
+          "text": "وَلَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 12,
+          "text": "تُسْـَٔلُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 13,
+          "text": "عَمَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 14,
+          "text": "كَانُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 15,
+          "text": "يَعْمَلُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "2:134",
+          "idx": 16,
+          "text": "١٣٤",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

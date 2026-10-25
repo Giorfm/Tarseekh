@@ -1,0 +1,203 @@
+{
+  "surah": {
+    "id": 106,
+    "name_arabic": "قريش",
+    "name_simple": "Quraysh",
+    "translated_name": "Suku Quraisy",
+    "verses_count": 4,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "106:1",
+      "n": 1,
+      "page": 602,
+      "juz": 30,
+      "text": " لِإِيلَـٰفِ قُرَيْشٍ",
+      "tajweed": "لِإِيلَ<tajweed class=madda_normal>ـٰ</tajweed>فِ قُر<tajweed class=madda_permissible>َي</tajweed>ْشٍ <span class=end>١</span>",
+      "translation": "Karena kebiasaan orang-orang Quraisy,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "لِإِيلَـٰفِ",
+          "page": 602,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "قُرَيْشٍ",
+          "page": 602,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "١",
+          "page": 602,
+          "line": 3,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "106:2",
+      "n": 2,
+      "page": 602,
+      "juz": 30,
+      "text": "إِۦلَـٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ",
+      "tajweed": "إ<tajweed class=madda_normal>ِۦ</tajweed>لَ<tajweed class=madda_normal>ـٰ</tajweed>فِهِمْ رِحْلَةَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>شِّت<tajweed class=madda_obligatory>َا</tajweed>ٓءِ وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>صّ<tajweed class=madda_permissible>َي</tajweed>ْفِ <span class=end>٢</span>",
+      "translation": "(yaitu) kebiasaan mereka bepergian pada musim dingin dan musim panas.1",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِۦلَـٰفِهِمْ",
+          "page": 602,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "رِحْلَةَ",
+          "page": 602,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلشِّتَآءِ",
+          "page": 602,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "وَٱلصَّيْفِ",
+          "page": 602,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٢",
+          "page": 602,
+          "line": 4,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "106:3",
+      "n": 3,
+      "page": 602,
+      "juz": 30,
+      "text": "فَلْيَعْبُدُوا۟ رَبَّ هَـٰذَا ٱلْبَيْتِ",
+      "tajweed": "فَلْيَعْبُدُو<tajweed class=slnt>اْ</tajweed> رَبَّ هَ<tajweed class=madda_normal>ـٰ</tajweed>ذَا <tajweed class=ham_wasl>ٱ</tajweed>لْب<tajweed class=madda_permissible>َي</tajweed>ْتِ <span class=end>٣</span>",
+      "translation": "Maka hendaklah mereka menyembah Tuhan (pemilik) rumah ini (Ka'bah),",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَلْيَعْبُدُوا۟",
+          "page": 602,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "رَبَّ",
+          "page": 602,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "هَـٰذَا",
+          "page": 602,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْبَيْتِ",
+          "page": 602,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٣",
+          "page": 602,
+          "line": 4,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "106:4",
+      "n": 4,
+      "page": 602,
+      "juz": 30,
+      "text": "ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍ وَءَامَنَهُم مِّنْ خَوْفٍۭ",
+      "tajweed": "ٱلَّذ<tajweed class=madda_obligatory>ِىٓ</tajweed> أَ<tajweed class=qalaqah>طْ</tajweed>عَمَه<tajweed class=idgham_shafawi>ُم م</tajweed>ِّ<tajweed class=ikhafa>ن ج</tajweed>ُو<tajweed class=idgham_ghunnah>عٍ و</tajweed>َءَامَنَه<tajweed class=idgham_shafawi>ُم م</tajweed>ِّنْ خ<tajweed class=madda_permissible>َو</tajweed>ْفِۭ <span class=end>٤</span>",
+      "translation": "yang telah memberi makanan kepada mereka untuk menghilangkan lapar dan mengamankan mereka dari rasa ketakutan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ٱلَّذِىٓ",
+          "page": 602,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَطْعَمَهُم",
+          "page": 602,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مِّن",
+          "page": 602,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "جُوعٍۢ",
+          "page": 602,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "وَءَامَنَهُم",
+          "page": 602,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "مِّنْ",
+          "page": 602,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "خَوْفٍۭ",
+          "page": 602,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "٤",
+          "page": 602,
+          "line": 5,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

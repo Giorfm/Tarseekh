@@ -1,0 +1,199 @@
+{
+  "surah": {
+    "id": 110,
+    "name_arabic": "النصر",
+    "name_simple": "An-Nasr",
+    "translated_name": "Pertolongan",
+    "verses_count": 3,
+    "revelation_place": "madinah"
+  },
+  "verses": [
+    {
+      "key": "110:1",
+      "n": 1,
+      "page": 603,
+      "juz": 30,
+      "text": " إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
+      "tajweed": "إِذَا ج<tajweed class=madda_obligatory>َا</tajweed>ٓءَ نَصْرُ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ وَ<tajweed class=ham_wasl>ٱ</tajweed>لْفَتْحُ <span class=end>١</span>",
+      "translation": "Apabila telah datang pertolongan Allah dan kemenangan,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِذَا",
+          "page": 603,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "جَآءَ",
+          "page": 603,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "نَصْرُ",
+          "page": 603,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱللَّهِ",
+          "page": 603,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "وَٱلْفَتْحُ",
+          "page": 603,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "١",
+          "page": 603,
+          "line": 8,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "110:2",
+      "n": 2,
+      "page": 603,
+      "juz": 30,
+      "text": "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا",
+      "tajweed": "وَرَأَيْتَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َاسَ يَ<tajweed class=qalaqah>دْ</tajweed>خُلُونَ فِى دِينِ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ أَفْوَاجًا <span class=end>٢</span>",
+      "translation": "dan engkau melihat manusia berbondong-bondong masuk agama Allah.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَرَأَيْتَ",
+          "page": 603,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلنَّاسَ",
+          "page": 603,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "يَدْخُلُونَ",
+          "page": 603,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "فِى",
+          "page": 603,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "دِينِ",
+          "page": 603,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "ٱللَّهِ",
+          "page": 603,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "أَفْوَاجًۭا",
+          "page": 603,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "٢",
+          "page": 603,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "110:3",
+      "n": 3,
+      "page": 603,
+      "juz": 30,
+      "text": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا",
+      "tajweed": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَ<tajweed class=ham_wasl>ٱ</tajweed>سْتَغْفِرْهُ‌ۚ إِ<tajweed class=ghunnah>نّ</tajweed>َهُ<tajweed class=madda_normal>ۥ</tajweed> كَانَ تَوَّابَۢا <span class=end>٣</span>",
+      "translation": "maka bertasbihlah dengan memuji Tuhanmu dan mohonlah ampunan kepada-Nya. Sungguh, Dia Maha Penerima tobat.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَسَبِّحْ",
+          "page": 603,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "بِحَمْدِ",
+          "page": 603,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "رَبِّكَ",
+          "page": 603,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "وَٱسْتَغْفِرْهُ ۚ",
+          "page": 603,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "إِنَّهُۥ",
+          "page": 603,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "كَانَ",
+          "page": 603,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "تَوَّابًۢا",
+          "page": 603,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "٣",
+          "page": 603,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

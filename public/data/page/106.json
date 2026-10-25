@@ -1,0 +1,878 @@
+{
+  "page": 106,
+  "juz": 6,
+  "surahs": [
+    {
+      "id": 4,
+      "name_arabic": "النساء",
+      "name_simple": "An-Nisa"
+    },
+    {
+      "id": 5,
+      "name_arabic": "المائدة",
+      "name_simple": "Al-Ma'idah"
+    }
+  ],
+  "lines": [
+    {
+      "line": 1,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "4:176",
+          "idx": 1,
+          "text": "يَسْتَفْتُونَكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 2,
+          "text": "قُلِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 3,
+          "text": "ٱللَّهُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 4,
+          "text": "يُفْتِيكُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 5,
+          "text": "فِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 6,
+          "text": "ٱلْكَلَـٰلَةِ ۚ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 7,
+          "text": "إِنِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 8,
+          "text": "ٱمْرُؤٌا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 9,
+          "text": "هَلَكَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "4:176",
+          "idx": 10,
+          "text": "لَيْسَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 11,
+          "text": "لَهُۥ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 12,
+          "text": "وَلَدٌۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 13,
+          "text": "وَلَهُۥٓ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 14,
+          "text": "أُخْتٌۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 15,
+          "text": "فَلَهَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 16,
+          "text": "نِصْفُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 17,
+          "text": "مَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 18,
+          "text": "تَرَكَ ۚ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 19,
+          "text": "وَهُوَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 20,
+          "text": "يَرِثُهَآ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "4:176",
+          "idx": 21,
+          "text": "إِن",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 22,
+          "text": "لَّمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 23,
+          "text": "يَكُن",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 24,
+          "text": "لَّهَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 25,
+          "text": "وَلَدٌۭ ۚ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 26,
+          "text": "فَإِن",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 27,
+          "text": "كَانَتَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 28,
+          "text": "ٱثْنَتَيْنِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 29,
+          "text": "فَلَهُمَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 30,
+          "text": "ٱلثُّلُثَانِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 31,
+          "text": "مِمَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 32,
+          "text": "تَرَكَ ۚ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "4:176",
+          "idx": 33,
+          "text": "وَإِن",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 34,
+          "text": "كَانُوٓا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 35,
+          "text": "إِخْوَةًۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 36,
+          "text": "رِّجَالًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 37,
+          "text": "وَنِسَآءًۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 38,
+          "text": "فَلِلذَّكَرِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 39,
+          "text": "مِثْلُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 40,
+          "text": "حَظِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 41,
+          "text": "ٱلْأُنثَيَيْنِ ۗ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "4:176",
+          "idx": 42,
+          "text": "يُبَيِّنُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 43,
+          "text": "ٱللَّهُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 44,
+          "text": "لَكُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 45,
+          "text": "أَن",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 46,
+          "text": "تَضِلُّوا۟ ۗ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 47,
+          "text": "وَٱللَّهُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 48,
+          "text": "بِكُلِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 49,
+          "text": "شَىْءٍ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 50,
+          "text": "عَلِيمٌۢ",
+          "type": "word"
+        },
+        {
+          "verse_key": "4:176",
+          "idx": 51,
+          "text": "١٧٦",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "type": "surah_header",
+      "surah": {
+        "id": 5,
+        "name_arabic": "المائدة",
+        "name_simple": "Al-Ma'idah"
+      }
+    },
+    {
+      "line": 7,
+      "type": "bismillah",
+      "text": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ"
+    },
+    {
+      "line": 8,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "5:1",
+          "idx": 1,
+          "text": "يَـٰٓأَيُّهَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 2,
+          "text": "ٱلَّذِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 3,
+          "text": "ءَامَنُوٓا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 4,
+          "text": "أَوْفُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 5,
+          "text": "بِٱلْعُقُودِ ۚ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 6,
+          "text": "أُحِلَّتْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 7,
+          "text": "لَكُم",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 8,
+          "text": "بَهِيمَةُ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "5:1",
+          "idx": 9,
+          "text": "ٱلْأَنْعَـٰمِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 10,
+          "text": "إِلَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 11,
+          "text": "مَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 12,
+          "text": "يُتْلَىٰ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 13,
+          "text": "عَلَيْكُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 14,
+          "text": "غَيْرَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 15,
+          "text": "مُحِلِّى",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 16,
+          "text": "ٱلصَّيْدِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 17,
+          "text": "وَأَنتُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 18,
+          "text": "حُرُمٌ ۗ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 19,
+          "text": "إِنَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 20,
+          "text": "ٱللَّهَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "5:1",
+          "idx": 21,
+          "text": "يَحْكُمُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 22,
+          "text": "مَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 23,
+          "text": "يُرِيدُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:1",
+          "idx": 24,
+          "text": "١",
+          "type": "end"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 1,
+          "text": "يَـٰٓأَيُّهَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 2,
+          "text": "ٱلَّذِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 3,
+          "text": "ءَامَنُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 4,
+          "text": "لَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 5,
+          "text": "تُحِلُّوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 6,
+          "text": "شَعَـٰٓئِرَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 7,
+          "text": "ٱللَّهِ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "5:2",
+          "idx": 8,
+          "text": "وَلَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 9,
+          "text": "ٱلشَّهْرَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 10,
+          "text": "ٱلْحَرَامَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 11,
+          "text": "وَلَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 12,
+          "text": "ٱلْهَدْىَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 13,
+          "text": "وَلَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 14,
+          "text": "ٱلْقَلَـٰٓئِدَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 15,
+          "text": "وَلَآ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 16,
+          "text": "ءَآمِّينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 17,
+          "text": "ٱلْبَيْتَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "5:2",
+          "idx": 18,
+          "text": "ٱلْحَرَامَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 19,
+          "text": "يَبْتَغُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 20,
+          "text": "فَضْلًۭا",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 21,
+          "text": "مِّن",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 22,
+          "text": "رَّبِّهِمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 23,
+          "text": "وَرِضْوَٰنًۭا ۚ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 24,
+          "text": "وَإِذَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 25,
+          "text": "حَلَلْتُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 26,
+          "text": "فَٱصْطَادُوا۟ ۚ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "5:2",
+          "idx": 27,
+          "text": "وَلَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 28,
+          "text": "يَجْرِمَنَّكُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 29,
+          "text": "شَنَـَٔانُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 30,
+          "text": "قَوْمٍ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 31,
+          "text": "أَن",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 32,
+          "text": "صَدُّوكُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 33,
+          "text": "عَنِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 34,
+          "text": "ٱلْمَسْجِدِ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "5:2",
+          "idx": 35,
+          "text": "ٱلْحَرَامِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 36,
+          "text": "أَن",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 37,
+          "text": "تَعْتَدُوا۟ ۘ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 38,
+          "text": "وَتَعَاوَنُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 39,
+          "text": "عَلَى",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 40,
+          "text": "ٱلْبِرِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 41,
+          "text": "وَٱلتَّقْوَىٰ ۖ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 42,
+          "text": "وَلَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 43,
+          "text": "تَعَاوَنُوا۟",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 15,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "5:2",
+          "idx": 44,
+          "text": "عَلَى",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 45,
+          "text": "ٱلْإِثْمِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 46,
+          "text": "وَٱلْعُدْوَٰنِ ۚ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 47,
+          "text": "وَٱتَّقُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 48,
+          "text": "ٱللَّهَ ۖ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 49,
+          "text": "إِنَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 50,
+          "text": "ٱللَّهَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 51,
+          "text": "شَدِيدُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 52,
+          "text": "ٱلْعِقَابِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "5:2",
+          "idx": 53,
+          "text": "٢",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

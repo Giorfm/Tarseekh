@@ -1,0 +1,405 @@
+{
+  "surah": {
+    "id": 104,
+    "name_arabic": "الهمزة",
+    "name_simple": "Al-Humazah",
+    "translated_name": "Pengumpat",
+    "verses_count": 9,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "104:1",
+      "n": 1,
+      "page": 601,
+      "juz": 30,
+      "text": " وَيْلٌ لِّكُلِّ هُمَزَةٍ لُّمَزَةٍ",
+      "tajweed": "وَيْ<tajweed class=idgham_wo_ghunnah>لٌ ل</tajweed>ِّكُلِّ هُمَزَ<tajweed class=idgham_wo_ghunnah>ةٍ ل</tajweed>ُّمَزَةٍ <span class=end>١</span>",
+      "translation": "Celakalah bagi setiap pengumpat dan pencela,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَيْلٌۭ",
+          "page": 601,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "لِّكُلِّ",
+          "page": 601,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "هُمَزَةٍۢ",
+          "page": 601,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لُّمَزَةٍ",
+          "page": 601,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "١",
+          "page": 601,
+          "line": 7,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "104:2",
+      "n": 2,
+      "page": 601,
+      "juz": 30,
+      "text": "ٱلَّذِى جَمَعَ مَالًا وَعَدَّدَهُۥ",
+      "tajweed": "ٱلَّذِى جَمَعَ مَال<tajweed class=idgham_ghunnah>اً و</tajweed>َعَدَّدَهُۥ <span class=end>٢</span>",
+      "translation": "yang mengumpulkan harta dan menghitung-hitungnya,1",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ٱلَّذِى",
+          "page": 601,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "جَمَعَ",
+          "page": 601,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَالًۭا",
+          "page": 601,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "وَعَدَّدَهُۥ",
+          "page": 601,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٢",
+          "page": 601,
+          "line": 7,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "104:3",
+      "n": 3,
+      "page": 601,
+      "juz": 30,
+      "text": "يَحْسَبُ أَنَّ مَالَهُۥٓ أَخْلَدَهُۥ",
+      "tajweed": "يَحْسَبُ أَ<tajweed class=ghunnah>نّ</tajweed>َ مَالَهُ<tajweed class=madda_obligatory>ۥٓ</tajweed> أَخْلَدَهُۥ <span class=end>٣</span>",
+      "translation": "dia (manusia) mengira bahwa hartanya itu dapat mengekalkannya.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "يَحْسَبُ",
+          "page": 601,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَنَّ",
+          "page": 601,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَالَهُۥٓ",
+          "page": 601,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "أَخْلَدَهُۥ",
+          "page": 601,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٣",
+          "page": 601,
+          "line": 8,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "104:4",
+      "n": 4,
+      "page": 601,
+      "juz": 30,
+      "text": "كَلَّا ۖ لَيُنۢبَذَنَّ فِى ٱلْحُطَمَةِ",
+      "tajweed": "كَلَّا‌ۖ لَيُ<tajweed class=iqlab>نۢب</tajweed>َذَ<tajweed class=ghunnah>نّ</tajweed>َ فِى <tajweed class=ham_wasl>ٱ</tajweed>لْحُطَمَةِ <span class=end>٤</span>",
+      "translation": "Sekali-kali tidak! Pasti dia akan dilemparkan ke dalam (neraka) Ḥuṭamah.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "كَلَّا ۖ",
+          "page": 601,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "لَيُنۢبَذَنَّ",
+          "page": 601,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "فِى",
+          "page": 601,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْحُطَمَةِ",
+          "page": 601,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٤",
+          "page": 601,
+          "line": 8,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "104:5",
+      "n": 5,
+      "page": 601,
+      "juz": 30,
+      "text": "وَمَآ أَدْرَىٰكَ مَا ٱلْحُطَمَةُ",
+      "tajweed": "وَم<tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=qalaqah>دْ</tajweed>رَ<tajweed class=madda_normal>ٮٰ</tajweed>كَ مَا <tajweed class=ham_wasl>ٱ</tajweed>لْحُطَمَةُ <span class=end>٥</span>",
+      "translation": "Dan tahukah kamu apakah (neraka) Ḥuṭamah itu?",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَمَآ",
+          "page": 601,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَدْرَىٰكَ",
+          "page": 601,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَا",
+          "page": 601,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْحُطَمَةُ",
+          "page": 601,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٥",
+          "page": 601,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "104:6",
+      "n": 6,
+      "page": 601,
+      "juz": 30,
+      "text": "نَارُ ٱللَّهِ ٱلْمُوقَدَةُ",
+      "tajweed": "نَارُ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ <tajweed class=ham_wasl>ٱ</tajweed>لْمُوقَدَةُ <span class=end>٦</span>",
+      "translation": "(Yaitu) api (azab) Allah yang dinyalakan,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "نَارُ",
+          "page": 601,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱللَّهِ",
+          "page": 601,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلْمُوقَدَةُ",
+          "page": 601,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٦",
+          "page": 601,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "104:7",
+      "n": 7,
+      "page": 601,
+      "juz": 30,
+      "text": "ٱلَّتِى تَطَّلِعُ عَلَى ٱلْأَفْـِٔدَةِ",
+      "tajweed": "ٱلَّتِى تَطَّلِعُ عَلَى <tajweed class=ham_wasl>ٱ</tajweed>لْأَفْــِٔدَةِ <span class=end>٧</span>",
+      "translation": "yang (membakar) sampai ke hati.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ٱلَّتِى",
+          "page": 601,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "تَطَّلِعُ",
+          "page": 601,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "عَلَى",
+          "page": 601,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْأَفْـِٔدَةِ",
+          "page": 601,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٧",
+          "page": 601,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "104:8",
+      "n": 8,
+      "page": 601,
+      "juz": 30,
+      "text": "إِنَّهَا عَلَيْهِم مُّؤْصَدَةٌ",
+      "tajweed": "إِ<tajweed class=ghunnah>نّ</tajweed>َهَا عَلَيْه<tajweed class=idgham_shafawi>ِم م</tajweed>ُّؤْصَدَةٌ <span class=end>٨</span>",
+      "translation": "Sungguh, api itu ditutup rapat atas (diri) mereka,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِنَّهَا",
+          "page": 601,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "عَلَيْهِم",
+          "page": 601,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مُّؤْصَدَةٌۭ",
+          "page": 601,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٨",
+          "page": 601,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "104:9",
+      "n": 9,
+      "page": 601,
+      "juz": 30,
+      "text": "فِى عَمَدٍ مُّمَدَّدَةٍۭ",
+      "tajweed": "فِى عَمَ<tajweed class=idgham_ghunnah>دٍ م</tajweed>ُّمَدَّدَةِۭ <span class=end>٩</span>",
+      "translation": "(sedang mereka itu) diikat pada tiang-tiang yang panjang.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فِى",
+          "page": 601,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "عَمَدٍۢ",
+          "page": 601,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مُّمَدَّدَةٍۭ",
+          "page": 601,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٩",
+          "page": 601,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

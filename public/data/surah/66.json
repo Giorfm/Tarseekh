@@ -1,0 +1,1971 @@
+{
+  "surah": {
+    "id": 66,
+    "name_arabic": "التحريم",
+    "name_simple": "At-Tahrim",
+    "translated_name": "Mengharamkan",
+    "verses_count": 12,
+    "revelation_place": "madinah"
+  },
+  "verses": [
+    {
+      "key": "66:1",
+      "n": 1,
+      "page": 560,
+      "juz": 28,
+      "text": " يَـٰٓأَيُّهَا ٱلنَّبِىُّ لِمَ تُحَرِّمُ مَآ أَحَلَّ ٱللَّهُ لَكَ ۖ تَبْتَغِى مَرْضَاتَ أَزْوَٰجِكَ ۚ وَٱللَّهُ غَفُورٌ رَّحِيمٌ",
+      "tajweed": "يَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>أَيُّهَا <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َبِىُّ لِمَ تُحَرِّمُ م<tajweed class=madda_obligatory>َآ</tajweed> أَحَلَّ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ لَكَ‌ۖ تَ<tajweed class=qalaqah>بْ</tajweed>تَغِى مَرْضَاتَ أَزْو<tajweed class=madda_normal>َٲ</tajweed>جِكَ‌ۚ وَ<tajweed class=ham_wasl>ٱ</tajweed>للَّهُ غَفُو<tajweed class=idgham_wo_ghunnah>رٌ ر</tajweed>َّح<tajweed class=madda_permissible>ِي</tajweed>مٌ <span class=end>١</span>",
+      "translation": "Wahai Nabi! Mengapa engkau mengharamkan apa yang dihalalkan Allah bagimu? Engkau ingin menyenangkan hati istri-istrimu? Dan Allah Maha Pengampun, Maha Penyayang.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "يَـٰٓأَيُّهَا",
+          "page": 560,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلنَّبِىُّ",
+          "page": 560,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "لِمَ",
+          "page": 560,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "تُحَرِّمُ",
+          "page": 560,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "مَآ",
+          "page": 560,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "أَحَلَّ",
+          "page": 560,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "ٱللَّهُ",
+          "page": 560,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "لَكَ ۖ",
+          "page": 560,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "تَبْتَغِى",
+          "page": 560,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "مَرْضَاتَ",
+          "page": 560,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "أَزْوَٰجِكَ ۚ",
+          "page": 560,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "وَٱللَّهُ",
+          "page": 560,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "غَفُورٌۭ",
+          "page": 560,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "رَّحِيمٌۭ",
+          "page": 560,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "١",
+          "page": 560,
+          "line": 4,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "66:2",
+      "n": 2,
+      "page": 560,
+      "juz": 28,
+      "text": "قَدْ فَرَضَ ٱللَّهُ لَكُمْ تَحِلَّةَ أَيْمَـٰنِكُمْ ۚ وَٱللَّهُ مَوْلَىٰكُمْ ۖ وَهُوَ ٱلْعَلِيمُ ٱلْحَكِيمُ",
+      "tajweed": "قَ<tajweed class=qalaqah>دْ</tajweed> فَرَضَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ لَكُمْ تَحِلَّةَ أَيْمَ<tajweed class=madda_normal>ـٰ</tajweed>نِكُمْ‌ۚ وَ<tajweed class=ham_wasl>ٱ</tajweed>للَّهُ مَوْلَ<tajweed class=madda_normal>ـٰ</tajweed>كُمْ‌ۖ وَهُوَ <tajweed class=ham_wasl>ٱ</tajweed>لْعَلِيمُ <tajweed class=ham_wasl>ٱ</tajweed>لْحَك<tajweed class=madda_permissible>ِي</tajweed>مُ <span class=end>٢</span>",
+      "translation": "Sungguh, Allah telah mewajibkan kepadamu membebaskan diri dari sumpahmu; dan Allah adalah pelindungmu dan Dia Maha Mengetahui, Mahabijaksana.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "قَدْ",
+          "page": 560,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "فَرَضَ",
+          "page": 560,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱللَّهُ",
+          "page": 560,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لَكُمْ",
+          "page": 560,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "تَحِلَّةَ",
+          "page": 560,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "أَيْمَـٰنِكُمْ ۚ",
+          "page": 560,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "وَٱللَّهُ",
+          "page": 560,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "مَوْلَىٰكُمْ ۖ",
+          "page": 560,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "وَهُوَ",
+          "page": 560,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "ٱلْعَلِيمُ",
+          "page": 560,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "ٱلْحَكِيمُ",
+          "page": 560,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "٢",
+          "page": 560,
+          "line": 5,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "66:3",
+      "n": 3,
+      "page": 560,
+      "juz": 28,
+      "text": "وَإِذْ أَسَرَّ ٱلنَّبِىُّ إِلَىٰ بَعْضِ أَزْوَٰجِهِۦ حَدِيثًا فَلَمَّا نَبَّأَتْ بِهِۦ وَأَظْهَرَهُ ٱللَّهُ عَلَيْهِ عَرَّفَ بَعْضَهُۥ وَأَعْرَضَ عَنۢ بَعْضٍ ۖ فَلَمَّا نَبَّأَهَا بِهِۦ قَالَتْ مَنْ أَنۢبَأَكَ هَـٰذَا ۖ قَالَ نَبَّأَنِىَ ٱلْعَلِيمُ ٱلْخَبِيرُ",
+      "tajweed": "وَإِذْ أَسَرَّ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َبِىُّ إِلَىٰ بَعْضِ أَزْو<tajweed class=madda_normal>َٲ</tajweed>جِه<tajweed class=madda_normal>ِۦ</tajweed> حَدِي<tajweed class=ikhafa>ثًا ف</tajweed>َلَ<tajweed class=ghunnah>مّ</tajweed>َا نَبَّأَتْ بِه<tajweed class=madda_normal>ِۦ</tajweed> وَأَظْهَرَهُ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ عَلَيْهِ عَرَّفَ بَعْضَهُ<tajweed class=madda_normal>ۥ</tajweed> وَأَعْرَضَ ع<tajweed class=iqlab>َنۢ ب</tajweed>َعْ<tajweed class=ikhafa>ضٍ‌ۖ ف</tajweed>َلَ<tajweed class=ghunnah>مّ</tajweed>َا نَبَّأَهَا بِه<tajweed class=madda_normal>ِۦ</tajweed> قَالَتْ مَنْ أَ<tajweed class=iqlab>نۢب</tajweed>َأَكَ هَ<tajweed class=madda_normal>ـٰ</tajweed>ذَا‌ۖ قَالَ نَبَّأَنِىَ <tajweed class=ham_wasl>ٱ</tajweed>لْعَلِيمُ <tajweed class=ham_wasl>ٱ</tajweed>لْخَب<tajweed class=madda_permissible>ِي</tajweed>رُ <span class=end>٣</span>",
+      "translation": "Dan ingatlah ketika secara rahasia Nabi membicarakan suatu peristiwa kepada salah seorang istrinya (Hafsah). Lalu dia menceritakan peristiwa itu (kepada Aisyah) dan Allah memberitahukan peristiwa itu kepadanya (Nabi), lalu (Nabi) memberitahukan (kepada Hafsah) sebagian dan menyembunyikan sebagian yang lain. Maka ketika dia (Nabi) memberitahukan pembicaraan itu kepadanya (Hafsah), dia bertanya, \"Siapa yang telah memberitahukan hal ini kepadamu?\" Nabi menjawab, \"Yang memberitahukan kepadaku adalah Allah Yang Maha Mengetahui, Mahateliti.\"",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَإِذْ",
+          "page": 560,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَسَرَّ",
+          "page": 560,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلنَّبِىُّ",
+          "page": 560,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "إِلَىٰ",
+          "page": 560,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "بَعْضِ",
+          "page": 560,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "أَزْوَٰجِهِۦ",
+          "page": 560,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "حَدِيثًۭا",
+          "page": 560,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "فَلَمَّا",
+          "page": 560,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "نَبَّأَتْ",
+          "page": 560,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "بِهِۦ",
+          "page": 560,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "وَأَظْهَرَهُ",
+          "page": 560,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "ٱللَّهُ",
+          "page": 560,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "عَلَيْهِ",
+          "page": 560,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "عَرَّفَ",
+          "page": 560,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "بَعْضَهُۥ",
+          "page": 560,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "وَأَعْرَضَ",
+          "page": 560,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "عَنۢ",
+          "page": 560,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "بَعْضٍۢ ۖ",
+          "page": 560,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "فَلَمَّا",
+          "page": 560,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "نَبَّأَهَا",
+          "page": 560,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "بِهِۦ",
+          "page": 560,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "قَالَتْ",
+          "page": 560,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 23,
+          "text": "مَنْ",
+          "page": 560,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 24,
+          "text": "أَنۢبَأَكَ",
+          "page": 560,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 25,
+          "text": "هَـٰذَا ۖ",
+          "page": 560,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 26,
+          "text": "قَالَ",
+          "page": 560,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 27,
+          "text": "نَبَّأَنِىَ",
+          "page": 560,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 28,
+          "text": "ٱلْعَلِيمُ",
+          "page": 560,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 29,
+          "text": "ٱلْخَبِيرُ",
+          "page": 560,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 30,
+          "text": "٣",
+          "page": 560,
+          "line": 8,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "66:4",
+      "n": 4,
+      "page": 560,
+      "juz": 28,
+      "text": "إِن تَتُوبَآ إِلَى ٱللَّهِ فَقَدْ صَغَتْ قُلُوبُكُمَا ۖ وَإِن تَظَـٰهَرَا عَلَيْهِ فَإِنَّ ٱللَّهَ هُوَ مَوْلَىٰهُ وَجِبْرِيلُ وَصَـٰلِحُ ٱلْمُؤْمِنِينَ ۖ وَٱلْمَلَـٰٓئِكَةُ بَعْدَ ذَٰلِكَ ظَهِيرٌ",
+      "tajweed": "إِ<tajweed class=ikhafa>ن ت</tajweed>َتُوب<tajweed class=madda_obligatory>َآ</tajweed> إِلَى <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ فَقَ<tajweed class=qalaqah>دْ</tajweed> صَغَتْ قُلُوبُكُمَا‌ۖ وَإِ<tajweed class=ikhafa>ن ت</tajweed>َظَ<tajweed class=madda_normal>ـٰ</tajweed>هَرَا عَلَيْهِ فَإِ<tajweed class=ghunnah>نّ</tajweed>َ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ هُوَ مَوْلَ<tajweed class=madda_normal>ـٰ</tajweed>هُ وَجِ<tajweed class=qalaqah>بْ</tajweed>رِيلُ وَصَ<tajweed class=madda_normal>ـٰ</tajweed>لِحُ <tajweed class=ham_wasl>ٱ</tajweed>لْمُؤْمِنِينَ‌ۖ وَ<tajweed class=ham_wasl>ٱ</tajweed>لْمَلَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>ئِكَةُ بَعْدَ ذ<tajweed class=madda_normal>َٲ</tajweed>لِكَ ظَه<tajweed class=madda_permissible>ِي</tajweed>رٌ <span class=end>٤</span>",
+      "translation": "Jika kamu berdua bertobat kepada Allah, maka sungguh, hati kamu berdua telah condong (untuk menerima kebenaran); dan jika kamu berdua saling bantu membantu menyusahkan Nabi, maka sungguh, Allah menjadi pelindungnya dan (juga) Jibril dan orang-orang mukmin yang baik; dan selain itu malaikat-malaikat adalah penolongnya.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِن",
+          "page": 560,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "تَتُوبَآ",
+          "page": 560,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "إِلَى",
+          "page": 560,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱللَّهِ",
+          "page": 560,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "فَقَدْ",
+          "page": 560,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "صَغَتْ",
+          "page": 560,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "قُلُوبُكُمَا ۖ",
+          "page": 560,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "وَإِن",
+          "page": 560,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "تَظَـٰهَرَا",
+          "page": 560,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "عَلَيْهِ",
+          "page": 560,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "فَإِنَّ",
+          "page": 560,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "ٱللَّهَ",
+          "page": 560,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "هُوَ",
+          "page": 560,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "مَوْلَىٰهُ",
+          "page": 560,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "وَجِبْرِيلُ",
+          "page": 560,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "وَصَـٰلِحُ",
+          "page": 560,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "ٱلْمُؤْمِنِينَ ۖ",
+          "page": 560,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "وَٱلْمَلَـٰٓئِكَةُ",
+          "page": 560,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "بَعْدَ",
+          "page": 560,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "ذَٰلِكَ",
+          "page": 560,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "ظَهِيرٌ",
+          "page": 560,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "٤",
+          "page": 560,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "66:5",
+      "n": 5,
+      "page": 560,
+      "juz": 28,
+      "text": "عَسَىٰ رَبُّهُۥٓ إِن طَلَّقَكُنَّ أَن يُبْدِلَهُۥٓ أَزْوَٰجًا خَيْرًا مِّنكُنَّ مُسْلِمَـٰتٍ مُّؤْمِنَـٰتٍ قَـٰنِتَـٰتٍ تَـٰٓئِبَـٰتٍ عَـٰبِدَٰتٍ سَـٰٓئِحَـٰتٍ ثَيِّبَـٰتٍ وَأَبْكَارًا",
+      "tajweed": "عَسَىٰ رَبُّهُ<tajweed class=madda_obligatory>ۥٓ</tajweed> إِ<tajweed class=ikhafa>ن ط</tajweed>َلَّقَكُ<tajweed class=ghunnah>نّ</tajweed>َ أ<tajweed class=idgham_ghunnah>َن ي</tajweed>ُ<tajweed class=qalaqah>بْ</tajweed>دِلَهُ<tajweed class=madda_obligatory>ۥٓ</tajweed> أَزْو<tajweed class=madda_normal>َٲ</tajweed>جًا خَيْ<tajweed class=idgham_ghunnah>رًا م</tajweed>ِّ<tajweed class=ikhafa>نك</tajweed>ُ<tajweed class=ghunnah>نّ</tajweed>َ مُسْلِمَ<tajweed class=madda_normal>ـٰ</tajweed><tajweed class=idgham_ghunnah>تٍ م</tajweed>ُّؤْمِنَ<tajweed class=madda_normal>ـٰ</tajweed><tajweed class=ikhafa>تٍ ق</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed>نِتَ<tajweed class=madda_normal>ـٰ</tajweed><tajweed class=ikhafa>تٍ ت</tajweed>َ<tajweed class=madda_obligatory>ـٰٓ</tajweed>ئِبَ<tajweed class=madda_normal>ـٰ</tajweed>تٍ عَ<tajweed class=madda_normal>ـٰ</tajweed>بِد<tajweed class=madda_normal>َٲ</tajweed><tajweed class=ikhafa>تٍ س</tajweed>َ<tajweed class=madda_obligatory>ـٰٓ</tajweed>ئِحَ<tajweed class=madda_normal>ـٰ</tajweed><tajweed class=ikhafa>تٍ ث</tajweed>َيِّبَ<tajweed class=madda_normal>ـٰ</tajweed><tajweed class=idgham_ghunnah>تٍ و</tajweed>َأَ<tajweed class=qalaqah>بْ</tajweed>كَارًا <span class=end>٥</span>",
+      "translation": "Jika dia (Nabi) menceraikan kamu, boleh jadi Tuhan akan memberi ganti kepadanya dengan istri-istri yang lebih baik dari kamu, perempuan-perempuan yang patuh, yang beriman, yang taat, yang bertobat, yang beribadah, yang berpuasa, yang janda dan yang perawan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "عَسَىٰ",
+          "page": 560,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "رَبُّهُۥٓ",
+          "page": 560,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "إِن",
+          "page": 560,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "طَلَّقَكُنَّ",
+          "page": 560,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "أَن",
+          "page": 560,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "يُبْدِلَهُۥٓ",
+          "page": 560,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "أَزْوَٰجًا",
+          "page": 560,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "خَيْرًۭا",
+          "page": 560,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "مِّنكُنَّ",
+          "page": 560,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "مُسْلِمَـٰتٍۢ",
+          "page": 560,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "مُّؤْمِنَـٰتٍۢ",
+          "page": 560,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "قَـٰنِتَـٰتٍۢ",
+          "page": 560,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "تَـٰٓئِبَـٰتٍ",
+          "page": 560,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "عَـٰبِدَٰتٍۢ",
+          "page": 560,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "سَـٰٓئِحَـٰتٍۢ",
+          "page": 560,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "ثَيِّبَـٰتٍۢ",
+          "page": 560,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "وَأَبْكَارًۭا",
+          "page": 560,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "٥",
+          "page": 560,
+          "line": 12,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "66:6",
+      "n": 6,
+      "page": 560,
+      "juz": 28,
+      "text": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ قُوٓا۟ أَنفُسَكُمْ وَأَهْلِيكُمْ نَارًا وَقُودُهَا ٱلنَّاسُ وَٱلْحِجَارَةُ عَلَيْهَا مَلَـٰٓئِكَةٌ غِلَاظٌ شِدَادٌ لَّا يَعْصُونَ ٱللَّهَ مَآ أَمَرَهُمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ",
+      "tajweed": "يَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>أَيُّهَا <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ ءَامَنُو<tajweed class=slnt>اْ</tajweed> ق<tajweed class=madda_obligatory>ُوٓ</tajweed><tajweed class=slnt>اْ</tajweed> أَ<tajweed class=ikhafa>نف</tajweed>ُسَكُمْ وَأَهْلِيكُمْ نَا<tajweed class=idgham_ghunnah>رًا و</tajweed>َقُودُهَا <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َاسُ وَ<tajweed class=ham_wasl>ٱ</tajweed>لْحِجَارَةُ عَلَيْهَا مَلَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>ئِكَةٌ غِلَا<tajweed class=ikhafa>ظٌ ش</tajweed>ِدَا<tajweed class=idgham_wo_ghunnah>دٌ ل</tajweed>َّا يَعْصُونَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهَ م<tajweed class=madda_obligatory>َآ</tajweed> أَمَرَهُمْ وَيَفْعَلُونَ مَا يُؤْمَر<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٦</span>",
+      "translation": "Wahai orang-orang yang beriman! Peliharalah dirimu dan keluargamu dari api neraka yang bahan bakarnya adalah manusia dan batu; penjaganya malaikat-malaikat yang kasar, dan keras, yang tidak durhaka kepada apa yang Allah perintahkan kepada mereka dan selalu mengerjakan apa yang diperintahkan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "يَـٰٓأَيُّهَا",
+          "page": 560,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلَّذِينَ",
+          "page": 560,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ءَامَنُوا۟",
+          "page": 560,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "قُوٓا۟",
+          "page": 560,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "أَنفُسَكُمْ",
+          "page": 560,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "وَأَهْلِيكُمْ",
+          "page": 560,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "نَارًۭا",
+          "page": 560,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "وَقُودُهَا",
+          "page": 560,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "ٱلنَّاسُ",
+          "page": 560,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "وَٱلْحِجَارَةُ",
+          "page": 560,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "عَلَيْهَا",
+          "page": 560,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "مَلَـٰٓئِكَةٌ",
+          "page": 560,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "غِلَاظٌۭ",
+          "page": 560,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "شِدَادٌۭ",
+          "page": 560,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "لَّا",
+          "page": 560,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "يَعْصُونَ",
+          "page": 560,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "ٱللَّهَ",
+          "page": 560,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "مَآ",
+          "page": 560,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "أَمَرَهُمْ",
+          "page": 560,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "وَيَفْعَلُونَ",
+          "page": 560,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "مَا",
+          "page": 560,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "يُؤْمَرُونَ",
+          "page": 560,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 23,
+          "text": "٦",
+          "page": 560,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "66:7",
+      "n": 7,
+      "page": 560,
+      "juz": 28,
+      "text": "يَـٰٓأَيُّهَا ٱلَّذِينَ كَفَرُوا۟ لَا تَعْتَذِرُوا۟ ٱلْيَوْمَ ۖ إِنَّمَا تُجْزَوْنَ مَا كُنتُمْ تَعْمَلُونَ",
+      "tajweed": "يَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>أَيُّهَا <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ كَفَرُو<tajweed class=slnt>اْ</tajweed> لَا تَعْتَذِرُو<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed>لْيَوْمَ‌ۖ إِ<tajweed class=ghunnah>نّ</tajweed>َمَا تُ<tajweed class=qalaqah>جْ</tajweed>زَوْنَ مَا كُ<tajweed class=ikhafa>نت</tajweed>ُمْ تَعْمَل<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٧</span>",
+      "translation": "Wahai orang-orang kafir! Janganlah kamu mengemukakan alasan pada hari ini. Sesungguhnya kamu hanya diberi balasan menurut apa yang telah kamu kerjakan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "يَـٰٓأَيُّهَا",
+          "page": 560,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلَّذِينَ",
+          "page": 560,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "كَفَرُوا۟",
+          "page": 560,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لَا",
+          "page": 560,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "تَعْتَذِرُوا۟",
+          "page": 560,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "ٱلْيَوْمَ ۖ",
+          "page": 560,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "إِنَّمَا",
+          "page": 560,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "تُجْزَوْنَ",
+          "page": 560,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "مَا",
+          "page": 560,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "كُنتُمْ",
+          "page": 560,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "تَعْمَلُونَ",
+          "page": 560,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "٧",
+          "page": 560,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "66:8",
+      "n": 8,
+      "page": 561,
+      "juz": 28,
+      "text": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ تُوبُوٓا۟ إِلَى ٱللَّهِ تَوْبَةً نَّصُوحًا عَسَىٰ رَبُّكُمْ أَن يُكَفِّرَ عَنكُمْ سَيِّـَٔاتِكُمْ وَيُدْخِلَكُمْ جَنَّـٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ يَوْمَ لَا يُخْزِى ٱللَّهُ ٱلنَّبِىَّ وَٱلَّذِينَ ءَامَنُوا۟ مَعَهُۥ ۖ نُورُهُمْ يَسْعَىٰ بَيْنَ أَيْدِيهِمْ وَبِأَيْمَـٰنِهِمْ يَقُولُونَ رَبَّنَآ أَتْمِمْ لَنَا نُورَنَا وَٱغْفِرْ لَنَآ ۖ إِنَّكَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ",
+      "tajweed": "يَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>أَيُّهَا <tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ ءَامَنُو<tajweed class=slnt>اْ</tajweed> تُوب<tajweed class=madda_obligatory>ُوٓ</tajweed><tajweed class=slnt>اْ</tajweed> إِلَى <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ تَوْبَ<tajweed class=idgham_ghunnah>ةً ن</tajweed>َّصُوحًا عَسَىٰ رَبُّكُمْ أ<tajweed class=idgham_ghunnah>َن ي</tajweed>ُكَفِّرَ عَ<tajweed class=ikhafa>نك</tajweed>ُمْ سَيِّـَٔـاتِكُمْ وَيُ<tajweed class=qalaqah>دْ</tajweed>خِلَكُمْ جَ<tajweed class=ghunnah>نّ</tajweed>َ<tajweed class=madda_normal>ـٰ</tajweed><tajweed class=ikhafa>تٍ ت</tajweed>َ<tajweed class=qalaqah>جْ</tajweed>رِى مِ<tajweed class=ikhafa>ن ت</tajweed>َحْتِهَا <tajweed class=ham_wasl>ٱ</tajweed>لْأَنْهَ<tajweed class=madda_normal>ـٰ</tajweed>رُ يَوْمَ لَا يُخْزِى <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َبِىَّ وَ<tajweed class=ham_wasl>ٱ</tajweed>لَّذِينَ ءَامَنُو<tajweed class=slnt>اْ</tajweed> مَعَهُ<tajweed class=madda_normal>ۥ</tajweed>‌ۖ نُورُهُمْ يَسْعَىٰ بَيْنَ أَيْدِيهِمْ وَبِأَيْمَ<tajweed class=madda_normal>ـٰ</tajweed>نِهِمْ يَقُولُونَ رَبَّن<tajweed class=madda_obligatory>َآ</tajweed> أَتْمِمْ لَنَا نُورَنَا وَ<tajweed class=ham_wasl>ٱ</tajweed>غْفِرْ لَن<tajweed class=madda_obligatory>َآ‌ۖ</tajweed> إِ<tajweed class=ghunnah>نّ</tajweed>َكَ عَلَىٰ كُلِّ ش<tajweed class=ikhafa>َىْءٍ ق</tajweed>َد<tajweed class=madda_permissible>ِي</tajweed>رٌ <span class=end>٨</span>",
+      "translation": "Wahai orang-orang yang beriman! Bertobatlah kepada Allah dengan tobat yang semurni-murninya, mudah-mudahan Tuhan kamu akan menghapus kesalahan-kesalahanmu dan memasukkan kamu ke dalam surga-surga yang mengalir di bawahnya sungai-sungai, pada hari ketika Allah tidak mengecewakan Nabi dan orang-orang yang beriman bersama dengannya; sedang cahaya mereka memancar di hadapan dan di sebelah kanan mereka, sambil mereka berkata, \"Ya Tuhan kami, sempurnakanlah untuk kami cahaya kami dan ampunilah kami; sungguh, Engkau Mahakuasa atas segala sesuatu.\"",
+      "words": [
+        {
+          "idx": 1,
+          "text": "يَـٰٓأَيُّهَا",
+          "page": 561,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلَّذِينَ",
+          "page": 561,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ءَامَنُوا۟",
+          "page": 561,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "تُوبُوٓا۟",
+          "page": 561,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "إِلَى",
+          "page": 561,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "ٱللَّهِ",
+          "page": 561,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "تَوْبَةًۭ",
+          "page": 561,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "نَّصُوحًا",
+          "page": 561,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "عَسَىٰ",
+          "page": 561,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "رَبُّكُمْ",
+          "page": 561,
+          "line": 1,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "أَن",
+          "page": 561,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "يُكَفِّرَ",
+          "page": 561,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "عَنكُمْ",
+          "page": 561,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "سَيِّـَٔاتِكُمْ",
+          "page": 561,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "وَيُدْخِلَكُمْ",
+          "page": 561,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "جَنَّـٰتٍۢ",
+          "page": 561,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "تَجْرِى",
+          "page": 561,
+          "line": 2,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "مِن",
+          "page": 561,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "تَحْتِهَا",
+          "page": 561,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "ٱلْأَنْهَـٰرُ",
+          "page": 561,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "يَوْمَ",
+          "page": 561,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "لَا",
+          "page": 561,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 23,
+          "text": "يُخْزِى",
+          "page": 561,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 24,
+          "text": "ٱللَّهُ",
+          "page": 561,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 25,
+          "text": "ٱلنَّبِىَّ",
+          "page": 561,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 26,
+          "text": "وَٱلَّذِينَ",
+          "page": 561,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 27,
+          "text": "ءَامَنُوا۟",
+          "page": 561,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 28,
+          "text": "مَعَهُۥ ۖ",
+          "page": 561,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 29,
+          "text": "نُورُهُمْ",
+          "page": 561,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 30,
+          "text": "يَسْعَىٰ",
+          "page": 561,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 31,
+          "text": "بَيْنَ",
+          "page": 561,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 32,
+          "text": "أَيْدِيهِمْ",
+          "page": 561,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 33,
+          "text": "وَبِأَيْمَـٰنِهِمْ",
+          "page": 561,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 34,
+          "text": "يَقُولُونَ",
+          "page": 561,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 35,
+          "text": "رَبَّنَآ",
+          "page": 561,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 36,
+          "text": "أَتْمِمْ",
+          "page": 561,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 37,
+          "text": "لَنَا",
+          "page": 561,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 38,
+          "text": "نُورَنَا",
+          "page": 561,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 39,
+          "text": "وَٱغْفِرْ",
+          "page": 561,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 40,
+          "text": "لَنَآ ۖ",
+          "page": 561,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 41,
+          "text": "إِنَّكَ",
+          "page": 561,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 42,
+          "text": "عَلَىٰ",
+          "page": 561,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 43,
+          "text": "كُلِّ",
+          "page": 561,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 44,
+          "text": "شَىْءٍۢ",
+          "page": 561,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 45,
+          "text": "قَدِيرٌۭ",
+          "page": 561,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 46,
+          "text": "٨",
+          "page": 561,
+          "line": 5,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "66:9",
+      "n": 9,
+      "page": 561,
+      "juz": 28,
+      "text": "يَـٰٓأَيُّهَا ٱلنَّبِىُّ جَـٰهِدِ ٱلْكُفَّارَ وَٱلْمُنَـٰفِقِينَ وَٱغْلُظْ عَلَيْهِمْ ۚ وَمَأْوَىٰهُمْ جَهَنَّمُ ۖ وَبِئْسَ ٱلْمَصِيرُ",
+      "tajweed": "يَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>أَيُّهَا <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َبِىُّ جَ<tajweed class=madda_normal>ـٰ</tajweed>هِدِ <tajweed class=ham_wasl>ٱ</tajweed>لْكُفَّارَ وَ<tajweed class=ham_wasl>ٱ</tajweed>لْمُنَ<tajweed class=madda_normal>ـٰ</tajweed>فِقِينَ وَ<tajweed class=ham_wasl>ٱ</tajweed>غْلُظْ عَلَيْهِمْ‌ۚ وَمَأْوَ<tajweed class=madda_normal>ٮٰ</tajweed>هُمْ جَهَ<tajweed class=ghunnah>نّ</tajweed>َمُ‌ۖ وَبِئْسَ <tajweed class=ham_wasl>ٱ</tajweed>لْمَص<tajweed class=madda_permissible>ِي</tajweed>رُ <span class=end>٩</span>",
+      "translation": "Wahai Nabi! Perangilah orang-orang kafir dan orang-orang munafik dan bersikap keraslah terhadap mereka. Tempat mereka adalah neraka Jahanam dan itulah seburuk-buruk tempat kembali.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "يَـٰٓأَيُّهَا",
+          "page": 561,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلنَّبِىُّ",
+          "page": 561,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "جَـٰهِدِ",
+          "page": 561,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْكُفَّارَ",
+          "page": 561,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "وَٱلْمُنَـٰفِقِينَ",
+          "page": 561,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "وَٱغْلُظْ",
+          "page": 561,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "عَلَيْهِمْ ۚ",
+          "page": 561,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "وَمَأْوَىٰهُمْ",
+          "page": 561,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "جَهَنَّمُ ۖ",
+          "page": 561,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "وَبِئْسَ",
+          "page": 561,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "ٱلْمَصِيرُ",
+          "page": 561,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "٩",
+          "page": 561,
+          "line": 7,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "66:10",
+      "n": 10,
+      "page": 561,
+      "juz": 28,
+      "text": "ضَرَبَ ٱللَّهُ مَثَلًا لِّلَّذِينَ كَفَرُوا۟ ٱمْرَأَتَ نُوحٍ وَٱمْرَأَتَ لُوطٍ ۖ كَانَتَا تَحْتَ عَبْدَيْنِ مِنْ عِبَادِنَا صَـٰلِحَيْنِ فَخَانَتَاهُمَا فَلَمْ يُغْنِيَا عَنْهُمَا مِنَ ٱللَّهِ شَيْـًٔا وَقِيلَ ٱدْخُلَا ٱلنَّارَ مَعَ ٱلدَّٰخِلِينَ",
+      "tajweed": "ضَرَبَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ مَثَل<tajweed class=idgham_wo_ghunnah>اً ل</tajweed>ِّلَّذِينَ كَفَرُو<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed>مْرَأَتَ نُو<tajweed class=idgham_ghunnah>حٍ و</tajweed>َ<tajweed class=ham_wasl>ٱ</tajweed>مْرَأَتَ لُو<tajweed class=ikhafa>طٍ‌ۖ ك</tajweed>َانَتَا تَحْتَ عَ<tajweed class=qalaqah>بْ</tajweed>دَيْنِ مِنْ عِبَادِنَا صَ<tajweed class=madda_normal>ـٰ</tajweed>لِحَيْنِ فَخَانَتَاهُمَا فَلَمْ يُغْنِيَا عَنْهُمَا مِنَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهِ شَيْـ<tajweed class=idgham_ghunnah>ـًٔا و</tajweed>َقِيلَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=qalaqah>دْ</tajweed>خُلَا <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َارَ مَعَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>دّ<tajweed class=madda_normal>َٲ</tajweed>خِل<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>١٠</span>",
+      "translation": "Allah membuat perumpamaan bagi orang-orang kafir, istri Nuh dan istri Luṭ. Keduanya berada di bawah pengawasan dua orang hamba yang saleh di antara hamba-hamba Kami; lalu kedua istri itu berkhianat kepada kedua suaminya, tetapi kedua suaminya itu tidak dapat membantu mereka sedikit pun dari (siksa) Allah; dan dikatakan (kepada kedua istri itu), \"Masuklah kamu berdua ke neraka bersama orang-orang yang masuk (neraka).\"",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ضَرَبَ",
+          "page": 561,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱللَّهُ",
+          "page": 561,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَثَلًۭا",
+          "page": 561,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لِّلَّذِينَ",
+          "page": 561,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "كَفَرُوا۟",
+          "page": 561,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "ٱمْرَأَتَ",
+          "page": 561,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "نُوحٍۢ",
+          "page": 561,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "وَٱمْرَأَتَ",
+          "page": 561,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "لُوطٍۢ ۖ",
+          "page": 561,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "كَانَتَا",
+          "page": 561,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "تَحْتَ",
+          "page": 561,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "عَبْدَيْنِ",
+          "page": 561,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "مِنْ",
+          "page": 561,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "عِبَادِنَا",
+          "page": 561,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "صَـٰلِحَيْنِ",
+          "page": 561,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "فَخَانَتَاهُمَا",
+          "page": 561,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "فَلَمْ",
+          "page": 561,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "يُغْنِيَا",
+          "page": 561,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "عَنْهُمَا",
+          "page": 561,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "مِنَ",
+          "page": 561,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "ٱللَّهِ",
+          "page": 561,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "شَيْـًۭٔا",
+          "page": 561,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 23,
+          "text": "وَقِيلَ",
+          "page": 561,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 24,
+          "text": "ٱدْخُلَا",
+          "page": 561,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 25,
+          "text": "ٱلنَّارَ",
+          "page": 561,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 26,
+          "text": "مَعَ",
+          "page": 561,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 27,
+          "text": "ٱلدَّٰخِلِينَ",
+          "page": 561,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 28,
+          "text": "١٠",
+          "page": 561,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "66:11",
+      "n": 11,
+      "page": 561,
+      "juz": 28,
+      "text": "وَضَرَبَ ٱللَّهُ مَثَلًا لِّلَّذِينَ ءَامَنُوا۟ ٱمْرَأَتَ فِرْعَوْنَ إِذْ قَالَتْ رَبِّ ٱبْنِ لِى عِندَكَ بَيْتًا فِى ٱلْجَنَّةِ وَنَجِّنِى مِن فِرْعَوْنَ وَعَمَلِهِۦ وَنَجِّنِى مِنَ ٱلْقَوْمِ ٱلظَّـٰلِمِينَ",
+      "tajweed": "وَضَرَبَ <tajweed class=ham_wasl>ٱ</tajweed>للَّهُ مَثَل<tajweed class=idgham_wo_ghunnah>اً ل</tajweed>ِّلَّذِينَ ءَامَنُو<tajweed class=slnt>اْ</tajweed> <tajweed class=ham_wasl>ٱ</tajweed>مْرَأَتَ فِرْعَوْنَ إِذْ قَالَتْ رَبِّ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=qalaqah>بْ</tajweed>نِ لِى عِ<tajweed class=ikhafa>ند</tajweed>َكَ بَيْ<tajweed class=ikhafa>تًا ف</tajweed>ِى <tajweed class=ham_wasl>ٱ</tajweed>لْجَ<tajweed class=ghunnah>نّ</tajweed>َةِ وَنَجِّنِى مِ<tajweed class=ikhafa>ن ف</tajweed>ِرْعَوْنَ وَعَمَلِه<tajweed class=madda_normal>ِۦ</tajweed> وَنَجِّنِى مِنَ <tajweed class=ham_wasl>ٱ</tajweed>لْقَوْمِ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>ظَّ<tajweed class=madda_normal>ـٰ</tajweed>لِم<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>١١</span>",
+      "translation": "Dan Allah membuat perumpamaan bagi orang-orang yang beriman, istri Fir'aun, ketika dia berkata, \"Ya Tuhanku, bangunkanlah untukku satu rumah di sisi-Mu dalam surga dan selamatkanlah aku dari Fir'aun dan perbuatannya, dan selamatkanlah aku dari kaum yang zalim,\"",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَضَرَبَ",
+          "page": 561,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱللَّهُ",
+          "page": 561,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَثَلًۭا",
+          "page": 561,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لِّلَّذِينَ",
+          "page": 561,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ءَامَنُوا۟",
+          "page": 561,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "ٱمْرَأَتَ",
+          "page": 561,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "فِرْعَوْنَ",
+          "page": 561,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "إِذْ",
+          "page": 561,
+          "line": 11,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "قَالَتْ",
+          "page": 561,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "رَبِّ",
+          "page": 561,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "ٱبْنِ",
+          "page": 561,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "لِى",
+          "page": 561,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "عِندَكَ",
+          "page": 561,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "بَيْتًۭا",
+          "page": 561,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "فِى",
+          "page": 561,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "ٱلْجَنَّةِ",
+          "page": 561,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "وَنَجِّنِى",
+          "page": 561,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "مِن",
+          "page": 561,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 19,
+          "text": "فِرْعَوْنَ",
+          "page": 561,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 20,
+          "text": "وَعَمَلِهِۦ",
+          "page": 561,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 21,
+          "text": "وَنَجِّنِى",
+          "page": 561,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 22,
+          "text": "مِنَ",
+          "page": 561,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 23,
+          "text": "ٱلْقَوْمِ",
+          "page": 561,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 24,
+          "text": "ٱلظَّـٰلِمِينَ",
+          "page": 561,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 25,
+          "text": "١١",
+          "page": 561,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "66:12",
+      "n": 12,
+      "page": 561,
+      "juz": 28,
+      "text": "وَمَرْيَمَ ٱبْنَتَ عِمْرَٰنَ ٱلَّتِىٓ أَحْصَنَتْ فَرْجَهَا فَنَفَخْنَا فِيهِ مِن رُّوحِنَا وَصَدَّقَتْ بِكَلِمَـٰتِ رَبِّهَا وَكُتُبِهِۦ وَكَانَتْ مِنَ ٱلْقَـٰنِتِينَ",
+      "tajweed": "وَمَرْيَمَ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=qalaqah>بْ</tajweed>نَتَ عِمْر<tajweed class=madda_normal>َٲ</tajweed>نَ <tajweed class=ham_wasl>ٱ</tajweed>لَّت<tajweed class=madda_obligatory>ِىٓ</tajweed> أَحْصَنَتْ فَرْجَهَا فَنَفَخْنَا فِيهِ م<tajweed class=idgham_wo_ghunnah>ِن ر</tajweed>ُّوحِنَا وَصَدَّقَتْ بِكَلِمَ<tajweed class=madda_normal>ـٰ</tajweed>تِ رَبِّهَا وَكُتُبِه<tajweed class=madda_normal>ِۦ</tajweed> وَكَانَتْ مِنَ <tajweed class=ham_wasl>ٱ</tajweed>لْقَ<tajweed class=madda_normal>ـٰ</tajweed>نِت<tajweed class=madda_permissible>ِي</tajweed>نَ <span class=end>١٢</span>",
+      "translation": "dan Maryam putri Imran yang memelihara kehormatannya, maka Kami tiupkan ke dalam rahimnya sebagian dari roh (ciptaan) Kami; dan dia membenarkan kalimat-kalimat Tuhannya dan kitab-kitab-Nya; dan dia termasuk orang-orang yang taat.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَمَرْيَمَ",
+          "page": 561,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱبْنَتَ",
+          "page": 561,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "عِمْرَٰنَ",
+          "page": 561,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلَّتِىٓ",
+          "page": 561,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "أَحْصَنَتْ",
+          "page": 561,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "فَرْجَهَا",
+          "page": 561,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "فَنَفَخْنَا",
+          "page": 561,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "فِيهِ",
+          "page": 561,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "مِن",
+          "page": 561,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "رُّوحِنَا",
+          "page": 561,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 11,
+          "text": "وَصَدَّقَتْ",
+          "page": 561,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 12,
+          "text": "بِكَلِمَـٰتِ",
+          "page": 561,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 13,
+          "text": "رَبِّهَا",
+          "page": 561,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 14,
+          "text": "وَكُتُبِهِۦ",
+          "page": 561,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 15,
+          "text": "وَكَانَتْ",
+          "page": 561,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 16,
+          "text": "مِنَ",
+          "page": 561,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 17,
+          "text": "ٱلْقَـٰنِتِينَ",
+          "page": 561,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 18,
+          "text": "١٢",
+          "page": 561,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

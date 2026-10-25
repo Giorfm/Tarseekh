@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F5F4A"/>
+      <stop offset="100%" stop-color="#123B2E"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#C9A227"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Rounded Container -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Ornamental Ring -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-opacity="0.3" stroke-dasharray="8 8"/>
+  <circle cx="256" cy="256" r="195" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-opacity="0.2"/>
+
+  <!-- Arabic Calligraphy Letter Ta (ت) for Tarseekh (ترسيخ) -->
+  <g fill="url(#goldGrad)">
+    <!-- Dots for Ta -->
+    <circle cx="220" cy="180" r="22"/>
+    <circle cx="292" cy="180" r="22"/>
+    
+    <!-- Base Boat Shape -->
+    <path d="M 120 280 C 130 360, 382 360, 392 280 C 392 260, 368 260, 368 280 C 358 330, 154 330, 144 280 C 144 260, 120 260, 120 280 Z"/>
+  </g>
+</svg>

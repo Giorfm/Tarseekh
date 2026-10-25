@@ -1,0 +1,263 @@
+{
+  "surah": {
+    "id": 111,
+    "name_arabic": "المسد",
+    "name_simple": "Al-Masad",
+    "translated_name": "Gejolak Api (Sabut)",
+    "verses_count": 5,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "111:1",
+      "n": 1,
+      "page": 603,
+      "juz": 30,
+      "text": " تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ",
+      "tajweed": "تَبَّتْ يَد<tajweed class=madda_obligatory>َآ</tajweed> أَبِى لَهَ<tajweed class=idgham_ghunnah>بٍ و</tajweed>َتَ<tajweed class=qalaqah>ب</tajweed>َّ <span class=end>١</span>",
+      "translation": "Binasalah kedua tangan Abu Lahab dan benar-benar binasa dia!1",
+      "words": [
+        {
+          "idx": 1,
+          "text": "تَبَّتْ",
+          "page": 603,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يَدَآ",
+          "page": 603,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "أَبِى",
+          "page": 603,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لَهَبٍۢ",
+          "page": 603,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "وَتَبَّ",
+          "page": 603,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "١",
+          "page": 603,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "111:2",
+      "n": 2,
+      "page": 603,
+      "juz": 30,
+      "text": "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ",
+      "tajweed": "م<tajweed class=madda_obligatory>َآ</tajweed> أَغْنَىٰ عَنْهُ مَالُهُ<tajweed class=madda_normal>ۥ</tajweed> وَمَا كَسَ<tajweed class=qalaqah>ب</tajweed>َ <span class=end>٢</span>",
+      "translation": "Tidaklah berguna baginya hartanya dan apa yang dia usahakan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "مَآ",
+          "page": 603,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَغْنَىٰ",
+          "page": 603,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "عَنْهُ",
+          "page": 603,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "مَالُهُۥ",
+          "page": 603,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "وَمَا",
+          "page": 603,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "كَسَبَ",
+          "page": 603,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "٢",
+          "page": 603,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "111:3",
+      "n": 3,
+      "page": 603,
+      "juz": 30,
+      "text": "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ",
+      "tajweed": "سَيَصْلَىٰ نَا<tajweed class=ikhafa>رًا ذ</tajweed>َاتَ لَهَ<tajweed class=qalaqah>ب</tajweed>ٍ <span class=end>٣</span>",
+      "translation": "Kelak dia akan masuk ke dalam api yang bergejolak (neraka).",
+      "words": [
+        {
+          "idx": 1,
+          "text": "سَيَصْلَىٰ",
+          "page": 603,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "نَارًۭا",
+          "page": 603,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ذَاتَ",
+          "page": 603,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لَهَبٍۢ",
+          "page": 603,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٣",
+          "page": 603,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "111:4",
+      "n": 4,
+      "page": 603,
+      "juz": 30,
+      "text": "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ",
+      "tajweed": "وَ<tajweed class=ham_wasl>ٱ</tajweed>مْرَأَتُهُ<tajweed class=madda_normal>ۥ</tajweed> حَ<tajweed class=ghunnah>مّ</tajweed>َالَةَ <tajweed class=ham_wasl>ٱ</tajweed>لْحَطَ<tajweed class=qalaqah>ب</tajweed>ِ <span class=end>٤</span>",
+      "translation": "Dan (begitu pula) istrinya, pembawa kayu bakar (penyebar fitnah).",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَٱمْرَأَتُهُۥ",
+          "page": 603,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "حَمَّالَةَ",
+          "page": 603,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلْحَطَبِ",
+          "page": 603,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٤",
+          "page": 603,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "111:5",
+      "n": 5,
+      "page": 603,
+      "juz": 30,
+      "text": "فِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍۭ",
+      "tajweed": "فِى جِيدِهَا حَ<tajweed class=qalaqah>بْ</tajweed><tajweed class=idgham_ghunnah>لٌ م</tajweed>ّ<tajweed class=idgham_ghunnah>ِن م</tajweed>َّسَ<tajweed class=qalaqah>د</tajweed>ِۭ <span class=end>٥</span>",
+      "translation": "Di lehernya ada tali dari sabut yang dipintal.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فِى",
+          "page": 603,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "جِيدِهَا",
+          "page": 603,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "حَبْلٌۭ",
+          "page": 603,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "مِّن",
+          "page": 603,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "مَّسَدٍۭ",
+          "page": 603,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٥",
+          "page": 603,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "surah": {
+    "id": 93,
+    "name_arabic": "الضحى",
+    "name_simple": "Ad-Duhaa",
+    "translated_name": "Waktu Dhuha",
+    "verses_count": 11,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "93:1",
+      "n": 1,
+      "page": 596,
+      "juz": 30,
+      "text": " وَٱلضُّحَىٰ",
+      "tajweed": "وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>ضُّحَىٰ <span class=end>١</span>",
+      "translation": "Demi waktu duha (ketika matahari naik sepenggalan),",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَٱلضُّحَىٰ",
+          "page": 596,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "١",
+          "page": 596,
+          "line": 6,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "93:2",
+      "n": 2,
+      "page": 596,
+      "juz": 30,
+      "text": "وَٱلَّيْلِ إِذَا سَجَىٰ",
+      "tajweed": "وَ<tajweed class=ham_wasl>ٱ</tajweed>لَّيْلِ إِذَا سَجَىٰ <span class=end>٢</span>",
+      "translation": "dan demi malam apabila telah sunyi,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَٱلَّيْلِ",
+          "page": 596,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "إِذَا",
+          "page": 596,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "سَجَىٰ",
+          "page": 596,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٢",
+          "page": 596,
+          "line": 6,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "93:3",
+      "n": 3,
+      "page": 596,
+      "juz": 30,
+      "text": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+      "tajweed": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ <span class=end>٣</span>",
+      "translation": "Tuhanmu tidak meninggalkan engkau (Muhammad) dan tidak (pula) membencimu,1",
+      "words": [
+        {
+          "idx": 1,
+          "text": "مَا",
+          "page": 596,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "وَدَّعَكَ",
+          "page": 596,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "رَبُّكَ",
+          "page": 596,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "وَمَا",
+          "page": 596,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "قَلَىٰ",
+          "page": 596,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٣",
+          "page": 596,
+          "line": 6,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "93:4",
+      "n": 4,
+      "page": 596,
+      "juz": 30,
+      "text": "وَلَلْـَٔاخِرَةُ خَيْرٌ لَّكَ مِنَ ٱلْأُولَىٰ",
+      "tajweed": "وَلَلْأَخِرَةُ خَيْ<tajweed class=idgham_wo_ghunnah>رٌ ل</tajweed>َّكَ مِنَ <tajweed class=ham_wasl>ٱ</tajweed>لْأُولَىٰ <span class=end>٤</span>",
+      "translation": "dan sungguh, yang kemudian itu lebih baik bagimu daripada yang permulaan.1",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَلَلْـَٔاخِرَةُ",
+          "page": 596,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "خَيْرٌۭ",
+          "page": 596,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "لَّكَ",
+          "page": 596,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "مِنَ",
+          "page": 596,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلْأُولَىٰ",
+          "page": 596,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٤",
+          "page": 596,
+          "line": 7,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "93:5",
+      "n": 5,
+      "page": 596,
+      "juz": 30,
+      "text": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
+      "tajweed": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ <span class=end>٥</span>",
+      "translation": "Dan sungguh, kelak Tuhanmu pasti memberikan karunia-Nya kepadamu, sehingga engkau menjadi puas.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَلَسَوْفَ",
+          "page": 596,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يُعْطِيكَ",
+          "page": 596,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "رَبُّكَ",
+          "page": 596,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "فَتَرْضَىٰٓ",
+          "page": 596,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٥",
+          "page": 596,
+          "line": 8,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "93:6",
+      "n": 6,
+      "page": 596,
+      "juz": 30,
+      "text": "أَلَمْ يَجِدْكَ يَتِيمًا فَـَٔاوَىٰ",
+      "tajweed": "أَلَمْ يَجِ<tajweed class=qalaqah>دْ</tajweed>كَ يَتِي<tajweed class=ikhafa>مًا ف</tajweed>َـَٔـاوَىٰ <span class=end>٦</span>",
+      "translation": "Bukankah Dia mendapatimu sebagai seorang yatim, lalu Dia melindungi(mu).",
+      "words": [
+        {
+          "idx": 1,
+          "text": "أَلَمْ",
+          "page": 596,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يَجِدْكَ",
+          "page": 596,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "يَتِيمًۭا",
+          "page": 596,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "فَـَٔاوَىٰ",
+          "page": 596,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٦",
+          "page": 596,
+          "line": 8,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "93:7",
+      "n": 7,
+      "page": 596,
+      "juz": 30,
+      "text": "وَوَجَدَكَ ضَآلًّا فَهَدَىٰ",
+      "tajweed": "وَوَجَدَكَ ضَآل<tajweed class=ikhafa>اًّ ف</tajweed>َهَدَىٰ <span class=end>٧</span>",
+      "translation": "Dan Dia mendapatimu sebagai seorang yang bingung,1 lalu Dia memberikan petunjuk.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَوَجَدَكَ",
+          "page": 596,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ضَآلًّۭا",
+          "page": 596,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "فَهَدَىٰ",
+          "page": 596,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٧",
+          "page": 596,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "93:8",
+      "n": 8,
+      "page": 596,
+      "juz": 30,
+      "text": "وَوَجَدَكَ عَآئِلًا فَأَغْنَىٰ",
+      "tajweed": "وَوَجَدَكَ ع<tajweed class=madda_obligatory>َا</tajweed>ٓئِل<tajweed class=ikhafa>اً ف</tajweed>َأَغْنَىٰ <span class=end>٨</span>",
+      "translation": "Dan Dia mendapatimu sebagai seorang yang kekurangan, lalu Dia memberikan kecukupan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَوَجَدَكَ",
+          "page": 596,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "عَآئِلًۭا",
+          "page": 596,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "فَأَغْنَىٰ",
+          "page": 596,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٨",
+          "page": 596,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "93:9",
+      "n": 9,
+      "page": 596,
+      "juz": 30,
+      "text": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ",
+      "tajweed": "فَأَ<tajweed class=ghunnah>مّ</tajweed>َا <tajweed class=ham_wasl>ٱ</tajweed>لْيَتِيمَ فَلَا تَ<tajweed class=qalaqah>قْ</tajweed>هَرْ <span class=end>٩</span>",
+      "translation": "Maka terhadap anak yatim janganlah engkau berlaku sewenang-wenang.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَأَمَّا",
+          "page": 596,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْيَتِيمَ",
+          "page": 596,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "فَلَا",
+          "page": 596,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "تَقْهَرْ",
+          "page": 596,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٩",
+          "page": 596,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "93:10",
+      "n": 10,
+      "page": 596,
+      "juz": 30,
+      "text": "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ",
+      "tajweed": "وَأَ<tajweed class=ghunnah>مّ</tajweed>َا <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>سّ<tajweed class=madda_obligatory>َا</tajweed>ٓئِلَ فَلَا تَنْهَرْ <span class=end>١٠</span>",
+      "translation": "Dan terhadap orang yang meminta-minta, janganlah engkau menghardik(nya).",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَأَمَّا",
+          "page": 596,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلسَّآئِلَ",
+          "page": 596,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "فَلَا",
+          "page": 596,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "تَنْهَرْ",
+          "page": 596,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "١٠",
+          "page": 596,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "93:11",
+      "n": 11,
+      "page": 596,
+      "juz": 30,
+      "text": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+      "tajweed": "وَأَ<tajweed class=ghunnah>مّ</tajweed>َا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ <span class=end>١١</span>",
+      "translation": "Dan terhadap nikmat Tuhanmu, hendaklah engkau nyatakan (dengan bersyukur).",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَأَمَّا",
+          "page": 596,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "بِنِعْمَةِ",
+          "page": 596,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "رَبِّكَ",
+          "page": 596,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "فَحَدِّثْ",
+          "page": 596,
+          "line": 10,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "١١",
+          "page": 596,
+          "line": 10,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

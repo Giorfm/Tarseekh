@@ -1,0 +1,312 @@
+{
+  "surah": {
+    "id": 97,
+    "name_arabic": "القدر",
+    "name_simple": "Al-Qadr",
+    "translated_name": "Kemuliaan",
+    "verses_count": 5,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "97:1",
+      "n": 1,
+      "page": 598,
+      "juz": 30,
+      "text": "إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+      "tajweed": "إِ<tajweed class=ghunnah>نّ</tajweed><tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=ikhafa>نز</tajweed>َلْنَ<tajweed class=madda_normal>ـٰ</tajweed>هُ فِى لَيْلَةِ <tajweed class=ham_wasl>ٱ</tajweed>لْقَ<tajweed class=qalaqah>دْ</tajweed>رِ <span class=end>١</span>",
+      "translation": "Sesungguhnya Kami telah menurunkannya (Alquran) pada malam qadar.1",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِنَّآ",
+          "page": 598,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَنزَلْنَـٰهُ",
+          "page": 598,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "فِى",
+          "page": 598,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لَيْلَةِ",
+          "page": 598,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلْقَدْرِ",
+          "page": 598,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "١",
+          "page": 598,
+          "line": 3,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "97:2",
+      "n": 2,
+      "page": 598,
+      "juz": 30,
+      "text": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
+      "tajweed": "وَم<tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=qalaqah>دْ</tajweed>رَ<tajweed class=madda_normal>ٮٰ</tajweed>كَ مَا لَيْلَةُ <tajweed class=ham_wasl>ٱ</tajweed>لْقَ<tajweed class=qalaqah>دْ</tajweed>رِ <span class=end>٢</span>",
+      "translation": "Dan tahukah kamu apakah malam kemuliaan itu?",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَمَآ",
+          "page": 598,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَدْرَىٰكَ",
+          "page": 598,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَا",
+          "page": 598,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "لَيْلَةُ",
+          "page": 598,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلْقَدْرِ",
+          "page": 598,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٢",
+          "page": 598,
+          "line": 3,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "97:3",
+      "n": 3,
+      "page": 598,
+      "juz": 30,
+      "text": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
+      "tajweed": "لَيْلَةُ <tajweed class=ham_wasl>ٱ</tajweed>لْقَ<tajweed class=qalaqah>دْ</tajweed>رِ خَيْ<tajweed class=idgham_ghunnah>رٌ م</tajweed>ِّنْ أَلْفِ شَهْرٍ <span class=end>٣</span>",
+      "translation": "Malam kemuliaan itu lebih baik daripada seribu bulan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "لَيْلَةُ",
+          "page": 598,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْقَدْرِ",
+          "page": 598,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "خَيْرٌۭ",
+          "page": 598,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "مِّنْ",
+          "page": 598,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "أَلْفِ",
+          "page": 598,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "شَهْرٍۢ",
+          "page": 598,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "٣",
+          "page": 598,
+          "line": 4,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "97:4",
+      "n": 4,
+      "page": 598,
+      "juz": 30,
+      "text": "تَنَزَّلُ ٱلْمَلَـٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ",
+      "tajweed": "تَنَزَّلُ <tajweed class=ham_wasl>ٱ</tajweed>لْمَلَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>ئِكَةُ وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed>رُّوحُ فِيهَا بِإِذْنِ رَبِّه<tajweed class=idgham_shafawi>ِم م</tajweed>ِّ<tajweed class=ikhafa>ن ك</tajweed>ُلِّ أَمْرٍ <span class=end>٤</span>",
+      "translation": "Pada malam itu turun para malaikat dan Ruh (Jibril) dengan izin Tuhannya untuk mengatur semua urusan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "تَنَزَّلُ",
+          "page": 598,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْمَلَـٰٓئِكَةُ",
+          "page": 598,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "وَٱلرُّوحُ",
+          "page": 598,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "فِيهَا",
+          "page": 598,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "بِإِذْنِ",
+          "page": 598,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "رَبِّهِم",
+          "page": 598,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 7,
+          "text": "مِّن",
+          "page": 598,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 8,
+          "text": "كُلِّ",
+          "page": 598,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 9,
+          "text": "أَمْرٍۢ",
+          "page": 598,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 10,
+          "text": "٤",
+          "page": 598,
+          "line": 5,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "97:5",
+      "n": 5,
+      "page": 598,
+      "juz": 30,
+      "text": "سَلَـٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+      "tajweed": "سَلَ<tajweed class=madda_normal>ـٰ</tajweed>مٌ هِىَ حَتَّىٰ مَ<tajweed class=qalaqah>طْ</tajweed>لَعِ <tajweed class=ham_wasl>ٱ</tajweed>لْفَ<tajweed class=qalaqah>جْ</tajweed>رِ <span class=end>٥</span>",
+      "translation": "Sejahteralah (malam itu) sampai terbit fajar.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "سَلَـٰمٌ",
+          "page": 598,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "هِىَ",
+          "page": 598,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "حَتَّىٰ",
+          "page": 598,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "مَطْلَعِ",
+          "page": 598,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلْفَجْرِ",
+          "page": 598,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٥",
+          "page": 598,
+          "line": 5,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

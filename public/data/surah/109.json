@@ -1,0 +1,302 @@
+{
+  "surah": {
+    "id": 109,
+    "name_arabic": "الكافرون",
+    "name_simple": "Al-Kafirun",
+    "translated_name": "Orang-orang Kafir",
+    "verses_count": 6,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "109:1",
+      "n": 1,
+      "page": 603,
+      "juz": 30,
+      "text": " قُلْ يَـٰٓأَيُّهَا ٱلْكَـٰفِرُونَ",
+      "tajweed": "قُلْ يَ<tajweed class=madda_obligatory>ـٰٓ</tajweed>أَيُّهَا <tajweed class=ham_wasl>ٱ</tajweed>لْكَ<tajweed class=madda_normal>ـٰ</tajweed>فِر<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>١</span>",
+      "translation": "Katakanlah (Muhammad), \"Wahai orang-orang kafir!",
+      "words": [
+        {
+          "idx": 1,
+          "text": "قُلْ",
+          "page": 603,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يَـٰٓأَيُّهَا",
+          "page": 603,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلْكَـٰفِرُونَ",
+          "page": 603,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "١",
+          "page": 603,
+          "line": 3,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "109:2",
+      "n": 2,
+      "page": 603,
+      "juz": 30,
+      "text": "لَآ أَعْبُدُ مَا تَعْبُدُونَ",
+      "tajweed": "ل<tajweed class=madda_obligatory>َآ</tajweed> أَعْبُدُ مَا تَعْبُد<tajweed class=madda_permissible>ُو</tajweed>نَ <span class=end>٢</span>",
+      "translation": "aku tidak akan menyembah apa yang kamu sembah,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "لَآ",
+          "page": 603,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَعْبُدُ",
+          "page": 603,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَا",
+          "page": 603,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "تَعْبُدُونَ",
+          "page": 603,
+          "line": 3,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٢",
+          "page": 603,
+          "line": 3,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "109:3",
+      "n": 3,
+      "page": 603,
+      "juz": 30,
+      "text": "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
+      "tajweed": "وَل<tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=ikhafa>نت</tajweed>ُمْ عَ<tajweed class=madda_normal>ـٰ</tajweed>بِدُونَ م<tajweed class=madda_obligatory>َآ</tajweed> أَعْبُ<tajweed class=qalaqah>د</tajweed>ُ <span class=end>٣</span>",
+      "translation": "dan kamu bukan penyembah apa yang aku sembah,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَلَآ",
+          "page": 603,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَنتُمْ",
+          "page": 603,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "عَـٰبِدُونَ",
+          "page": 603,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "مَآ",
+          "page": 603,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "أَعْبُدُ",
+          "page": 603,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٣",
+          "page": 603,
+          "line": 4,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "109:4",
+      "n": 4,
+      "page": 603,
+      "juz": 30,
+      "text": "وَلَآ أَنَا۠ عَابِدٌ مَّا عَبَدتُّمْ",
+      "tajweed": "وَل<tajweed class=madda_obligatory>َآ</tajweed> أَنَا۟ عَابِ<tajweed class=idgham_ghunnah>دٌ م</tajweed>َّا عَبَ<tajweed class=idgham_mutajanisayn>د</tajweed>تُّمْ <span class=end>٤</span>",
+      "translation": "dan aku tidak pernah menjadi penyembah apa yang kamu sembah,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَلَآ",
+          "page": 603,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَنَا۠",
+          "page": 603,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "عَابِدٌۭ",
+          "page": 603,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "مَّا",
+          "page": 603,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "عَبَدتُّمْ",
+          "page": 603,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٤",
+          "page": 603,
+          "line": 4,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "109:5",
+      "n": 5,
+      "page": 603,
+      "juz": 30,
+      "text": "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
+      "tajweed": "وَل<tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=ikhafa>نت</tajweed>ُمْ عَ<tajweed class=madda_normal>ـٰ</tajweed>بِدُونَ م<tajweed class=madda_obligatory>َآ</tajweed> أَعْبُ<tajweed class=qalaqah>د</tajweed>ُ <span class=end>٥</span>",
+      "translation": "dan kamu tidak pernah (pula) menjadi penyembah apa yang aku sembah.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَلَآ",
+          "page": 603,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَنتُمْ",
+          "page": 603,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "عَـٰبِدُونَ",
+          "page": 603,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "مَآ",
+          "page": 603,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "أَعْبُدُ",
+          "page": 603,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٥",
+          "page": 603,
+          "line": 5,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "109:6",
+      "n": 6,
+      "page": 603,
+      "juz": 30,
+      "text": "لَكُمْ دِينُكُمْ وَلِىَ دِينِ",
+      "tajweed": "لَكُمْ دِينُكُمْ وَلِىَ د<tajweed class=madda_permissible>ِي</tajweed>نِ <span class=end>٦</span>",
+      "translation": "Untukmu agamamu, dan untukku agamaku.\"",
+      "words": [
+        {
+          "idx": 1,
+          "text": "لَكُمْ",
+          "page": 603,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "دِينُكُمْ",
+          "page": 603,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "وَلِىَ",
+          "page": 603,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "دِينِ",
+          "page": 603,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٦",
+          "page": 603,
+          "line": 5,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

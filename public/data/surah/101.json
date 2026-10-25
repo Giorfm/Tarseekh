@@ -1,0 +1,462 @@
+{
+  "surah": {
+    "id": 101,
+    "name_arabic": "القارعة",
+    "name_simple": "Al-Qari'ah",
+    "translated_name": "Hari Kiamat",
+    "verses_count": 11,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "101:1",
+      "n": 1,
+      "page": 600,
+      "juz": 30,
+      "text": " ٱلْقَارِعَةُ",
+      "tajweed": "ٱلْقَارِعَةُ <span class=end>١</span>",
+      "translation": "Hari Kiamat,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ٱلْقَارِعَةُ",
+          "page": 600,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "١",
+          "page": 600,
+          "line": 4,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "101:2",
+      "n": 2,
+      "page": 600,
+      "juz": 30,
+      "text": "مَا ٱلْقَارِعَةُ",
+      "tajweed": "مَا <tajweed class=ham_wasl>ٱ</tajweed>لْقَارِعَةُ <span class=end>٢</span>",
+      "translation": "Apakah hari Kiamat itu?",
+      "words": [
+        {
+          "idx": 1,
+          "text": "مَا",
+          "page": 600,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْقَارِعَةُ",
+          "page": 600,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "٢",
+          "page": 600,
+          "line": 4,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "101:3",
+      "n": 3,
+      "page": 600,
+      "juz": 30,
+      "text": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
+      "tajweed": "وَم<tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=qalaqah>دْ</tajweed>رَ<tajweed class=madda_normal>ٮٰ</tajweed>كَ مَا <tajweed class=ham_wasl>ٱ</tajweed>لْقَارِعَةُ <span class=end>٣</span>",
+      "translation": "Dan tahukah kamu apakah hari Kiamat itu?",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَمَآ",
+          "page": 600,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَدْرَىٰكَ",
+          "page": 600,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَا",
+          "page": 600,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْقَارِعَةُ",
+          "page": 600,
+          "line": 4,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٣",
+          "page": 600,
+          "line": 5,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "101:4",
+      "n": 4,
+      "page": 600,
+      "juz": 30,
+      "text": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
+      "tajweed": "يَوْمَ يَكُونُ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed>َاسُ كَ<tajweed class=ham_wasl>ٱ</tajweed>لْفَرَاشِ <tajweed class=ham_wasl>ٱ</tajweed>لْمَ<tajweed class=qalaqah>بْ</tajweed>ث<tajweed class=madda_permissible>ُو</tajweed>ثِ <span class=end>٤</span>",
+      "translation": "Pada hari itu manusia seperti laron yang beterbangan,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "يَوْمَ",
+          "page": 600,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يَكُونُ",
+          "page": 600,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلنَّاسُ",
+          "page": 600,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "كَٱلْفَرَاشِ",
+          "page": 600,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلْمَبْثُوثِ",
+          "page": 600,
+          "line": 5,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٤",
+          "page": 600,
+          "line": 5,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "101:5",
+      "n": 5,
+      "page": 600,
+      "juz": 30,
+      "text": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
+      "tajweed": "وَتَكُونُ <tajweed class=ham_wasl>ٱ</tajweed>لْجِبَالُ كَ<tajweed class=ham_wasl>ٱ</tajweed>لْعِهْنِ <tajweed class=ham_wasl>ٱ</tajweed>لْمَ<tajweed class=ikhafa>نف</tajweed><tajweed class=madda_permissible>ُو</tajweed>شِ <span class=end>٥</span>",
+      "translation": "dan gunung-gunung seperti bulu yang dihambur-hamburkan.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَتَكُونُ",
+          "page": 600,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْجِبَالُ",
+          "page": 600,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "كَٱلْعِهْنِ",
+          "page": 600,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْمَنفُوشِ",
+          "page": 600,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٥",
+          "page": 600,
+          "line": 6,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "101:6",
+      "n": 6,
+      "page": 600,
+      "juz": 30,
+      "text": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
+      "tajweed": "فَأَ<tajweed class=ghunnah>مّ</tajweed>َا مَ<tajweed class=ikhafa>ن ث</tajweed>َقُلَتْ مَو<tajweed class=madda_normal>َٲ</tajweed>زِينُهُۥ <span class=end>٦</span>",
+      "translation": "Maka adapun orang yang berat timbangan (kebaikan)nya,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَأَمَّا",
+          "page": 600,
+          "line": 6,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "مَن",
+          "page": 600,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ثَقُلَتْ",
+          "page": 600,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "مَوَٰزِينُهُۥ",
+          "page": 600,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٦",
+          "page": 600,
+          "line": 7,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "101:7",
+      "n": 7,
+      "page": 600,
+      "juz": 30,
+      "text": "فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ",
+      "tajweed": "فَهُوَ فِى عِيشَ<tajweed class=idgham_wo_ghunnah>ةٍ ر</tajweed>َّاضِيَةٍ <span class=end>٧</span>",
+      "translation": "maka dia berada dalam kehidupan yang memuaskan (senang).",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَهُوَ",
+          "page": 600,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "فِى",
+          "page": 600,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "عِيشَةٍۢ",
+          "page": 600,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "رَّاضِيَةٍۢ",
+          "page": 600,
+          "line": 7,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٧",
+          "page": 600,
+          "line": 8,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "101:8",
+      "n": 8,
+      "page": 600,
+      "juz": 30,
+      "text": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
+      "tajweed": "وَأَ<tajweed class=ghunnah>مّ</tajweed>َا مَنْ خَفَّتْ مَو<tajweed class=madda_normal>َٲ</tajweed>زِينُهُۥ <span class=end>٨</span>",
+      "translation": "Dan adapun orang yang ringan timbangan (kebaikan)nya,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَأَمَّا",
+          "page": 600,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "مَنْ",
+          "page": 600,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "خَفَّتْ",
+          "page": 600,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "مَوَٰزِينُهُۥ",
+          "page": 600,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٨",
+          "page": 600,
+          "line": 8,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "101:9",
+      "n": 9,
+      "page": 600,
+      "juz": 30,
+      "text": "فَأُمُّهُۥ هَاوِيَةٌ",
+      "tajweed": "فَأُ<tajweed class=ghunnah>مّ</tajweed>ُهُ<tajweed class=madda_normal>ۥ</tajweed> هَاوِيَةٌ <span class=end>٩</span>",
+      "translation": "maka tempat kembalinya adalah neraka Hāwiyah.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "فَأُمُّهُۥ",
+          "page": 600,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "هَاوِيَةٌۭ",
+          "page": 600,
+          "line": 8,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "٩",
+          "page": 600,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "101:10",
+      "n": 10,
+      "page": 600,
+      "juz": 30,
+      "text": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
+      "tajweed": "وَم<tajweed class=madda_obligatory>َآ</tajweed> أَ<tajweed class=qalaqah>دْ</tajweed>رَ<tajweed class=madda_normal>ٮٰ</tajweed>كَ مَا هِيَهْ <span class=end>١٠</span>",
+      "translation": "Dan tahukah kamu apakah neraka Hāwiyah itu?",
+      "words": [
+        {
+          "idx": 1,
+          "text": "وَمَآ",
+          "page": 600,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَدْرَىٰكَ",
+          "page": 600,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "مَا",
+          "page": 600,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "هِيَهْ",
+          "page": 600,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "١٠",
+          "page": 600,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "101:11",
+      "n": 11,
+      "page": 600,
+      "juz": 30,
+      "text": "نَارٌ حَامِيَةٌۢ",
+      "tajweed": "نَارٌ حَامِيَةُۢ <span class=end>١١</span>",
+      "translation": "(Yaitu) api yang sangat panas.",
+      "words": [
+        {
+          "idx": 1,
+          "text": "نَارٌ",
+          "page": 600,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "حَامِيَةٌۢ",
+          "page": 600,
+          "line": 9,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "١١",
+          "page": 600,
+          "line": 9,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

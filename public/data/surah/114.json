@@ -1,0 +1,260 @@
+{
+  "surah": {
+    "id": 114,
+    "name_arabic": "الناس",
+    "name_simple": "An-Nas",
+    "translated_name": "Umat Manusia",
+    "verses_count": 6,
+    "revelation_place": "makkah"
+  },
+  "verses": [
+    {
+      "key": "114:1",
+      "n": 1,
+      "page": 604,
+      "juz": 30,
+      "text": " قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+      "tajweed": "قُلْ أَعُوذُ بِرَبِّ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed><tajweed class=madda_permissible>َا</tajweed>سِ <span class=end>١</span>",
+      "translation": "Katakanlah, \"Aku berlindung kepada Tuhannya manusia,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "قُلْ",
+          "page": 604,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "أَعُوذُ",
+          "page": 604,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "بِرَبِّ",
+          "page": 604,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلنَّاسِ",
+          "page": 604,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "١",
+          "page": 604,
+          "line": 12,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "114:2",
+      "n": 2,
+      "page": 604,
+      "juz": 30,
+      "text": "مَلِكِ ٱلنَّاسِ",
+      "tajweed": "مَلِكِ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed><tajweed class=madda_permissible>َا</tajweed>سِ <span class=end>٢</span>",
+      "translation": "Raja manusia,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "مَلِكِ",
+          "page": 604,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلنَّاسِ",
+          "page": 604,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "٢",
+          "page": 604,
+          "line": 12,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "114:3",
+      "n": 3,
+      "page": 604,
+      "juz": 30,
+      "text": "إِلَـٰهِ ٱلنَّاسِ",
+      "tajweed": "إِلَ<tajweed class=madda_normal>ـٰ</tajweed>هِ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed><tajweed class=madda_permissible>َا</tajweed>سِ <span class=end>٣</span>",
+      "translation": "sembahan manusia,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "إِلَـٰهِ",
+          "page": 604,
+          "line": 12,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلنَّاسِ",
+          "page": 604,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "٣",
+          "page": 604,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "114:4",
+      "n": 4,
+      "page": 604,
+      "juz": 30,
+      "text": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+      "tajweed": "مِ<tajweed class=ikhafa>ن ش</tajweed>َرِّ <tajweed class=ham_wasl>ٱ</tajweed>لْوَسْوَاسِ <tajweed class=ham_wasl>ٱ</tajweed>لْخَ<tajweed class=ghunnah>نّ</tajweed><tajweed class=madda_permissible>َا</tajweed>سِ <span class=end>٤</span>",
+      "translation": "dari kejahatan (bisikan) setan yang bersembunyi,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "مِن",
+          "page": 604,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "شَرِّ",
+          "page": 604,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "ٱلْوَسْوَاسِ",
+          "page": 604,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "ٱلْخَنَّاسِ",
+          "page": 604,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "٤",
+          "page": 604,
+          "line": 13,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "114:5",
+      "n": 5,
+      "page": 604,
+      "juz": 30,
+      "text": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+      "tajweed": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ <tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed><tajweed class=madda_permissible>َا</tajweed>سِ <span class=end>٥</span>",
+      "translation": "yang membisikkan (kejahatan) ke dalam dada manusia,",
+      "words": [
+        {
+          "idx": 1,
+          "text": "ٱلَّذِى",
+          "page": 604,
+          "line": 13,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "يُوَسْوِسُ",
+          "page": 604,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "فِى",
+          "page": 604,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "صُدُورِ",
+          "page": 604,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 5,
+          "text": "ٱلنَّاسِ",
+          "page": 604,
+          "line": 14,
+          "type": "word"
+        },
+        {
+          "idx": 6,
+          "text": "٥",
+          "page": 604,
+          "line": 14,
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "key": "114:6",
+      "n": 6,
+      "page": 604,
+      "juz": 30,
+      "text": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "tajweed": "مِنَ <tajweed class=ham_wasl>ٱ</tajweed>لْجِ<tajweed class=ghunnah>نّ</tajweed>َةِ وَ<tajweed class=ham_wasl>ٱ</tajweed><tajweed class=laam_shamsiyah>ل</tajweed><tajweed class=ghunnah>نّ</tajweed><tajweed class=madda_permissible>َا</tajweed>سِ <span class=end>٦</span>",
+      "translation": "dari (golongan) jin dan manusia.\"",
+      "words": [
+        {
+          "idx": 1,
+          "text": "مِنَ",
+          "page": 604,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 2,
+          "text": "ٱلْجِنَّةِ",
+          "page": 604,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 3,
+          "text": "وَٱلنَّاسِ",
+          "page": 604,
+          "line": 15,
+          "type": "word"
+        },
+        {
+          "idx": 4,
+          "text": "٦",
+          "page": 604,
+          "line": 15,
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}

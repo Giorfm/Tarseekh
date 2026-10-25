@@ -1,0 +1,913 @@
+{
+  "page": 485,
+  "juz": 25,
+  "surahs": [
+    {
+      "id": 42,
+      "name_arabic": "الشورى",
+      "name_simple": "Ash-Shuraa"
+    }
+  ],
+  "lines": [
+    {
+      "line": 1,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:16",
+          "idx": 1,
+          "text": "وَٱلَّذِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 2,
+          "text": "يُحَآجُّونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 3,
+          "text": "فِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 4,
+          "text": "ٱللَّهِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 5,
+          "text": "مِنۢ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 6,
+          "text": "بَعْدِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 7,
+          "text": "مَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 8,
+          "text": "ٱسْتُجِيبَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 9,
+          "text": "لَهُۥ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 10,
+          "text": "حُجَّتُهُمْ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 2,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:16",
+          "idx": 11,
+          "text": "دَاحِضَةٌ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 12,
+          "text": "عِندَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 13,
+          "text": "رَبِّهِمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 14,
+          "text": "وَعَلَيْهِمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 15,
+          "text": "غَضَبٌۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 16,
+          "text": "وَلَهُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 17,
+          "text": "عَذَابٌۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:16",
+          "idx": 18,
+          "text": "شَدِيدٌ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:16",
+          "idx": 19,
+          "text": "١٦",
+          "type": "end"
+        },
+        {
+          "verse_key": "42:17",
+          "idx": 1,
+          "text": "ٱللَّهُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:17",
+          "idx": 2,
+          "text": "ٱلَّذِىٓ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:17",
+          "idx": 3,
+          "text": "أَنزَلَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:17",
+          "idx": 4,
+          "text": "ٱلْكِتَـٰبَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:17",
+          "idx": 5,
+          "text": "بِٱلْحَقِّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:17",
+          "idx": 6,
+          "text": "وَٱلْمِيزَانَ ۗ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:17",
+          "idx": 7,
+          "text": "وَمَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:17",
+          "idx": 8,
+          "text": "يُدْرِيكَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 4,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:17",
+          "idx": 9,
+          "text": "لَعَلَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:17",
+          "idx": 10,
+          "text": "ٱلسَّاعَةَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:17",
+          "idx": 11,
+          "text": "قَرِيبٌۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:17",
+          "idx": 12,
+          "text": "١٧",
+          "type": "end"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 1,
+          "text": "يَسْتَعْجِلُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 2,
+          "text": "بِهَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 3,
+          "text": "ٱلَّذِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 4,
+          "text": "لَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 5,
+          "text": "يُؤْمِنُونَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 5,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:18",
+          "idx": 6,
+          "text": "بِهَا ۖ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 7,
+          "text": "وَٱلَّذِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 8,
+          "text": "ءَامَنُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 9,
+          "text": "مُشْفِقُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 10,
+          "text": "مِنْهَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 11,
+          "text": "وَيَعْلَمُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 12,
+          "text": "أَنَّهَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 13,
+          "text": "ٱلْحَقُّ ۗ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 6,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:18",
+          "idx": 14,
+          "text": "أَلَآ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 15,
+          "text": "إِنَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 16,
+          "text": "ٱلَّذِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 17,
+          "text": "يُمَارُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 18,
+          "text": "فِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 19,
+          "text": "ٱلسَّاعَةِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 20,
+          "text": "لَفِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 21,
+          "text": "ضَلَـٰلٍۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 22,
+          "text": "بَعِيدٍ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:18",
+          "idx": 23,
+          "text": "١٨",
+          "type": "end"
+        }
+      ]
+    },
+    {
+      "line": 7,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:19",
+          "idx": 1,
+          "text": "ٱللَّهُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:19",
+          "idx": 2,
+          "text": "لَطِيفٌۢ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:19",
+          "idx": 3,
+          "text": "بِعِبَادِهِۦ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:19",
+          "idx": 4,
+          "text": "يَرْزُقُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:19",
+          "idx": 5,
+          "text": "مَن",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:19",
+          "idx": 6,
+          "text": "يَشَآءُ ۖ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:19",
+          "idx": 7,
+          "text": "وَهُوَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:19",
+          "idx": 8,
+          "text": "ٱلْقَوِىُّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:19",
+          "idx": 9,
+          "text": "ٱلْعَزِيزُ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 8,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:19",
+          "idx": 10,
+          "text": "١٩",
+          "type": "end"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 1,
+          "text": "مَن",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 2,
+          "text": "كَانَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 3,
+          "text": "يُرِيدُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 4,
+          "text": "حَرْثَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 5,
+          "text": "ٱلْـَٔاخِرَةِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 6,
+          "text": "نَزِدْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 7,
+          "text": "لَهُۥ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 8,
+          "text": "فِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 9,
+          "text": "حَرْثِهِۦ ۖ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 10,
+          "text": "وَمَن",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 9,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:20",
+          "idx": 11,
+          "text": "كَانَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 12,
+          "text": "يُرِيدُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 13,
+          "text": "حَرْثَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 14,
+          "text": "ٱلدُّنْيَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 15,
+          "text": "نُؤْتِهِۦ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 16,
+          "text": "مِنْهَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 17,
+          "text": "وَمَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 18,
+          "text": "لَهُۥ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 19,
+          "text": "فِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 20,
+          "text": "ٱلْـَٔاخِرَةِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 21,
+          "text": "مِن",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 10,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:20",
+          "idx": 22,
+          "text": "نَّصِيبٍ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:20",
+          "idx": 23,
+          "text": "٢٠",
+          "type": "end"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 1,
+          "text": "أَمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 2,
+          "text": "لَهُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 3,
+          "text": "شُرَكَـٰٓؤُا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 4,
+          "text": "شَرَعُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 5,
+          "text": "لَهُم",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 6,
+          "text": "مِّنَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 7,
+          "text": "ٱلدِّينِ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 11,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:21",
+          "idx": 8,
+          "text": "مَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 9,
+          "text": "لَمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 10,
+          "text": "يَأْذَنۢ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 11,
+          "text": "بِهِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 12,
+          "text": "ٱللَّهُ ۚ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 13,
+          "text": "وَلَوْلَا",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 14,
+          "text": "كَلِمَةُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 15,
+          "text": "ٱلْفَصْلِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 16,
+          "text": "لَقُضِىَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 17,
+          "text": "بَيْنَهُمْ ۗ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 12,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:21",
+          "idx": 18,
+          "text": "وَإِنَّ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 19,
+          "text": "ٱلظَّـٰلِمِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 20,
+          "text": "لَهُمْ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 21,
+          "text": "عَذَابٌ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 22,
+          "text": "أَلِيمٌۭ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:21",
+          "idx": 23,
+          "text": "٢١",
+          "type": "end"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 1,
+          "text": "تَرَى",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 2,
+          "text": "ٱلظَّـٰلِمِينَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 13,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:22",
+          "idx": 3,
+          "text": "مُشْفِقِينَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 4,
+          "text": "مِمَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 5,
+          "text": "كَسَبُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 6,
+          "text": "وَهُوَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 7,
+          "text": "وَاقِعٌۢ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 8,
+          "text": "بِهِمْ ۗ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 9,
+          "text": "وَٱلَّذِينَ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 14,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:22",
+          "idx": 10,
+          "text": "ءَامَنُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 11,
+          "text": "وَعَمِلُوا۟",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 12,
+          "text": "ٱلصَّـٰلِحَـٰتِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 13,
+          "text": "فِى",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 14,
+          "text": "رَوْضَاتِ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 15,
+          "text": "ٱلْجَنَّاتِ ۖ",
+          "type": "word"
+        }
+      ]
+    },
+    {
+      "line": 15,
+      "type": "text",
+      "words": [
+        {
+          "verse_key": "42:22",
+          "idx": 16,
+          "text": "لَهُم",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 17,
+          "text": "مَّا",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 18,
+          "text": "يَشَآءُونَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 19,
+          "text": "عِندَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 20,
+          "text": "رَبِّهِمْ ۚ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 21,
+          "text": "ذَٰلِكَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 22,
+          "text": "هُوَ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 23,
+          "text": "ٱلْفَضْلُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 24,
+          "text": "ٱلْكَبِيرُ",
+          "type": "word"
+        },
+        {
+          "verse_key": "42:22",
+          "idx": 25,
+          "text": "٢٢",
+          "type": "end"
+        }
+      ]
+    }
+  ]
+}
