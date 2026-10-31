@@ -1,0 +1,310 @@
+{
+  "slug": "ashabul-kahfi",
+  "title": "Ashabul Kahfi",
+  "subtitle": "Para Pemuda Penghuni Gua",
+  "title_arabic": "أصحاب الكهف",
+  "surah": 18,
+  "reference": "QS Al-Kahf 18:9–26",
+  "intro": "Kisah sekelompok pemuda beriman yang meninggalkan kaumnya demi menjaga tauhid, lalu ditidurkan Allah di dalam gua selama bertahun-tahun sebagai tanda kekuasaan-Nya. Urutan bagian disusun mengikuti alur peristiwa, sehingga sebagian ayat tidak dibaca berurutan seperti di mushaf.",
+  "nodes": [
+    {
+      "id": "tanda-kebesaran",
+      "order": 1,
+      "type": "story",
+      "icon": "sparkles",
+      "label": "Pembuka",
+      "title": "Tanda Kebesaran yang Menakjubkan",
+      "ayat": [{ "surah": 18, "from": 9, "to": 9 }],
+      "summary": {
+        "tag": "quran",
+        "text": "Allah membuka kisah ini dengan sebuah pertanyaan kepada Nabi Muhammad ﷺ: apakah engkau mengira bahwa para penghuni gua dan ar-Raqim termasuk tanda-tanda kebesaran Allah yang menakjubkan?"
+      },
+      "hadith": [
+        {
+          "tag": "hadith",
+          "text": "Barang siapa menghafal sepuluh ayat pertama dari surah Al-Kahfi, ia akan dilindungi dari (fitnah) Dajjal. Dalam salah satu riwayat Muslim disebutkan: sepuluh ayat terakhir.",
+          "source": "HR. Muslim no. 809, dari Abu Darda' radhiyallahu 'anhu",
+          "grade": "Shahih"
+        }
+      ],
+      "context": [
+        {
+          "tag": "tafsir",
+          "text": "Ibnu Katsir menjelaskan bahwa maksud pertanyaan ini: kisah mereka bukanlah satu-satunya hal yang menakjubkan, sebab penciptaan langit dan bumi serta tanda kekuasaan Allah lainnya jauh lebih menakjubkan.",
+          "source": "Tafsir Ibnu Katsir, QS 18:9"
+        },
+        {
+          "tag": "diperselisihkan",
+          "text": "Makna ar-Raqim diperselisihkan ulama. Sebagian memaknainya sebagai lempengan bertulis berisi nama atau kisah mereka; sebagian lain menyebutnya nama lembah atau gunung tempat gua itu berada.",
+          "source": "Tafsir ath-Thabari dan Tafsir Ibnu Katsir, QS 18:9"
+        }
+      ],
+      "reflection": "Keajaiban yang Allah tunjukkan bukan sekadar untuk dikagumi, tetapi untuk mengantarkan kita mengenal kekuasaan-Nya yang terbentang di sekitar kita setiap hari."
+    },
+    {
+      "id": "pemuda-beriman",
+      "order": 2,
+      "type": "story",
+      "icon": "users",
+      "label": "Pemuda Beriman",
+      "title": "Pemuda yang Diteguhkan Hatinya",
+      "ayat": [{ "surah": 18, "from": 13, "to": 14 }],
+      "summary": {
+        "tag": "quran",
+        "text": "Allah menegaskan bahwa kisah ini diceritakan dengan sebenar-benarnya. Mereka adalah para pemuda yang beriman kepada Tuhan mereka, lalu Allah menambahkan petunjuk kepada mereka. Allah meneguhkan hati mereka ketika mereka berdiri dan menyatakan: Tuhan kami adalah Tuhan langit dan bumi; kami tidak akan menyeru tuhan selain Dia."
+      },
+      "hadith": [],
+      "context": [
+        {
+          "tag": "sejarah",
+          "text": "Sebagian ahli tafsir menukil riwayat ahli sejarah bahwa para pemuda ini hidup di bawah kekuasaan seorang raja penyembah berhala bernama Diqyanus, yang sering dikaitkan dengan Kaisar Romawi Decius. Keterangan ini tidak berasal dari Al-Qur'an maupun hadis shahih.",
+          "source": "Dinukil dalam Tafsir Ibnu Katsir dari riwayat ahli sejarah"
+        }
+      ],
+      "reflection": "Petunjuk mereka bertambah setelah mereka berani mengambil sikap. Allah meneguhkan hati siapa pun yang berpegang pada kebenaran, meski harus berdiri sendirian."
+    },
+    {
+      "id": "meninggalkan-kaum",
+      "order": 3,
+      "type": "story",
+      "icon": "footprints",
+      "label": "Hijrah",
+      "title": "Meninggalkan Sesembahan Kaumnya",
+      "ayat": [{ "surah": 18, "from": 15, "to": 16 }],
+      "summary": {
+        "tag": "quran",
+        "text": "Para pemuda itu mempertanyakan kaum mereka yang menyembah tuhan-tuhan selain Allah tanpa alasan yang jelas, padahal tidak ada yang lebih zalim daripada orang yang mengada-adakan kebohongan terhadap Allah. Mereka pun meninggalkan kaumnya beserta sesembahannya dan mencari perlindungan ke dalam gua, dengan harapan Allah melimpahkan rahmat dan memudahkan urusan mereka."
+      },
+      "hadith": [],
+      "context": [],
+      "reflection": "Menjauh dari lingkungan yang menjauhkan dari Allah adalah bentuk penjagaan iman. Mereka meninggalkan kenyamanan, dan Allah menjanjikan rahmat sebagai gantinya."
+    },
+    {
+      "id": "doa-di-gua",
+      "order": 4,
+      "type": "story",
+      "icon": "mountain",
+      "label": "Berlindung",
+      "title": "Doa di Pintu Gua",
+      "ayat": [{ "surah": 18, "from": 10, "to": 10 }],
+      "summary": {
+        "tag": "quran",
+        "text": "Para pemuda itu berlindung ke dalam gua, lalu berdoa: \"Ya Tuhan kami, berikanlah rahmat kepada kami dari sisi-Mu dan sempurnakanlah petunjuk yang lurus bagi kami dalam urusan kami.\""
+      },
+      "hadith": [],
+      "context": [
+        {
+          "tag": "diperselisihkan",
+          "text": "Al-Qur'an tidak menyebutkan lokasi gua tersebut. Beberapa tempat diklaim sebagai lokasinya, antara lain di dekat Efesus (Turki) dan di sekitar Amman (Yordania), namun tidak ada kepastian.",
+          "source": "Pendapat para sejarawan dan peneliti"
+        }
+      ],
+      "reflection": "Ketika pilihan terasa sempit, mereka memulai dengan doa. Memohon rahmat dan petunjuk sebelum melangkah adalah bekal terbaik dalam setiap urusan."
+    },
+    {
+      "id": "tertidur",
+      "order": 5,
+      "type": "story",
+      "icon": "moon",
+      "label": "Tertidur",
+      "title": "Ditidurkan Bertahun-tahun",
+      "ayat": [{ "surah": 18, "from": 11, "to": 11 }],
+      "summary": {
+        "tag": "quran",
+        "text": "Allah menutup telinga mereka di dalam gua selama bertahun-tahun."
+      },
+      "hadith": [],
+      "context": [
+        {
+          "tag": "tafsir",
+          "text": "Ungkapan \"Kami tutup telinga mereka\" dipahami para mufasir sebagai kiasan bahwa Allah menidurkan mereka dengan sangat lelap, sehingga tidak terbangun oleh suara apa pun.",
+          "source": "Tafsir Al-Muyassar dan Tafsir Ibnu Katsir, QS 18:11"
+        }
+      ],
+      "reflection": "Waktu sepenuhnya berada dalam genggaman Allah. Apa yang bagi manusia terasa mustahil, bagi-Nya sangat mudah."
+    },
+    {
+      "id": "penjagaan-gua",
+      "order": 6,
+      "type": "story",
+      "icon": "sun",
+      "label": "Penjagaan",
+      "title": "Penjagaan di Dalam Gua",
+      "ayat": [{ "surah": 18, "from": 17, "to": 18 }],
+      "summary": {
+        "tag": "quran",
+        "text": "Ketika terbit, matahari condong dari gua mereka ke sebelah kanan; ketika terbenam, ia menjauhi mereka ke sebelah kiri, sementara mereka berada di tempat yang luas di dalam gua. Orang yang melihat akan mengira mereka terjaga, padahal mereka tidur. Allah membolak-balikkan mereka ke kanan dan ke kiri, sedangkan anjing mereka membentangkan kedua lengannya di depan pintu gua. Siapa pun yang menyaksikan mereka akan berpaling lari dan dipenuhi rasa takut."
+      },
+      "hadith": [],
+      "context": [
+        {
+          "tag": "tafsir",
+          "text": "Sebagian mufasir menjelaskan bahwa hikmah dibolak-balikkannya tubuh mereka adalah agar jasad mereka tidak rusak selama tidur yang panjang.",
+          "source": "Tafsir Ibnu Katsir, QS 18:18"
+        },
+        {
+          "tag": "diperselisihkan",
+          "text": "Al-Qur'an tidak menyebutkan nama para pemuda maupun anjing mereka. Nama-nama yang beredar berasal dari riwayat Isra'iliyat yang tidak dapat dipastikan kebenarannya.",
+          "source": "Tafsir Ibnu Katsir, QS 18:18–22"
+        }
+      ],
+      "reflection": "Allah menjaga hamba-Nya dengan cara yang tidak terduga, bahkan melalui arah sinar matahari dan seekor anjing di pintu gua."
+    },
+    {
+      "id": "terbangun",
+      "order": 7,
+      "type": "story",
+      "icon": "coins",
+      "label": "Terbangun",
+      "title": "Terbangun dan Saling Bertanya",
+      "ayat": [
+        { "surah": 18, "from": 12, "to": 12 },
+        { "surah": 18, "from": 19, "to": 20 }
+      ],
+      "summary": {
+        "tag": "quran",
+        "text": "Allah membangunkan mereka agar mereka saling bertanya, dan agar tampak golongan mana yang lebih tepat menghitung lamanya mereka tinggal. Salah seorang bertanya, \"Sudah berapa lama kamu berada di sini?\" Mereka menjawab, \"Sehari atau setengah hari.\" Yang lain berkata, \"Tuhanmu lebih mengetahui.\" Mereka lalu mengutus salah seorang ke kota dengan membawa uang perak untuk mencari makanan yang lebih baik, dengan pesan agar berlaku lemah lembut dan tidak menceritakan keadaan mereka kepada siapa pun, sebab jika kaumnya mengetahui, mereka akan dilempari batu atau dipaksa kembali kepada agama kaumnya."
+      },
+      "hadith": [],
+      "context": [
+        {
+          "tag": "tafsir",
+          "text": "\"Makanan yang lebih baik\" (azkā ṭa'āman) dipahami banyak mufasir sebagai makanan yang paling halal dan suci.",
+          "source": "Tafsir Ibnu Katsir, QS 18:19"
+        }
+      ],
+      "reflection": "Setelah keajaiban sebesar itu pun mereka tetap berhati-hati, memilih rezeki yang halal, dan menyerahkan apa yang tidak mereka ketahui kepada Allah."
+    },
+    {
+      "id": "ditemukan",
+      "order": 8,
+      "type": "story",
+      "icon": "eye",
+      "label": "Ditemukan",
+      "title": "Diperlihatkan kepada Manusia",
+      "ayat": [{ "surah": 18, "from": 21, "to": 21 }],
+      "summary": {
+        "tag": "quran",
+        "text": "Allah memperlihatkan keadaan mereka kepada manusia, agar manusia tahu bahwa janji Allah itu benar dan hari Kiamat tidak diragukan lagi. Orang-orang kemudian berselisih tentang mereka. Sebagian berkata, \"Dirikanlah suatu bangunan di atas gua mereka; Tuhan mereka lebih mengetahui tentang mereka.\" Orang yang berkuasa atas urusan mereka berkata, \"Kami pasti akan mendirikan rumah ibadah di atasnya.\""
+      },
+      "hadith": [
+        {
+          "tag": "hadith",
+          "text": "Allah melaknat orang Yahudi dan Nasrani yang menjadikan kubur nabi-nabi mereka sebagai masjid.",
+          "source": "HR. al-Bukhari no. 1330 dan Muslim no. 529, dari Aisyah radhiyallahu 'anha",
+          "grade": "Shahih"
+        }
+      ],
+      "context": [
+        {
+          "tag": "tafsir",
+          "text": "Ibnu Katsir menyebutkan bahwa keinginan pihak yang berkuasa untuk mendirikan rumah ibadah di atas gua itu bukanlah perbuatan yang terpuji, lalu menukil hadis larangan menjadikan kubur sebagai masjid.",
+          "source": "Tafsir Ibnu Katsir, QS 18:21"
+        }
+      ],
+      "reflection": "Kebangkitan para pemuda setelah tidur panjang adalah pengingat nyata bahwa Allah mampu membangkitkan manusia pada hari Kiamat."
+    },
+    {
+      "id": "jumlah-mereka",
+      "order": 9,
+      "type": "story",
+      "icon": "hash",
+      "label": "Jumlah",
+      "title": "Berapa Jumlah Mereka?",
+      "ayat": [{ "surah": 18, "from": 22, "to": 22 }],
+      "summary": {
+        "tag": "quran",
+        "text": "Orang-orang akan menerka jumlah mereka: tiga orang dan yang keempat anjingnya, lima orang dan yang keenam anjingnya, atau tujuh orang dan yang kedelapan anjingnya. Allah memerintahkan Nabi ﷺ untuk berkata bahwa Tuhan lebih mengetahui jumlah mereka, hanya sedikit yang mengetahuinya, dan melarang berbantah tentang mereka kecuali seperlunya, serta menanyakan hal itu kepada siapa pun."
+      },
+      "hadith": [],
+      "context": [
+        {
+          "tag": "tafsir",
+          "text": "Ibnu Abbas radhiyallahu 'anhuma berkata, \"Aku termasuk yang sedikit itu; mereka berjumlah tujuh.\" Para mufasir juga mencatat bahwa dua pendapat pertama disifati ayat sebagai terkaan terhadap yang gaib, sedangkan pendapat ketiga tidak.",
+          "source": "Tafsir ath-Thabari dan Tafsir Ibnu Katsir, QS 18:22"
+        }
+      ],
+      "reflection": "Tidak semua detail perlu diperdebatkan. Al-Qur'an mengajak kita fokus pada hikmah, bukan pada perkara yang tidak membawa manfaat."
+    },
+    {
+      "id": "insya-allah",
+      "order": 10,
+      "type": "story",
+      "icon": "sunrise",
+      "label": "Insya Allah",
+      "title": "Pelajaran Mengucapkan Insya Allah",
+      "ayat": [{ "surah": 18, "from": 23, "to": 24 }],
+      "summary": {
+        "tag": "quran",
+        "text": "Di tengah kisah, Allah menyisipkan pelajaran: jangan sekali-kali berkata tentang sesuatu, \"Aku pasti melakukan itu besok pagi,\" kecuali dengan mengucapkan \"Insya Allah\". Ingatlah kepada Allah ketika lupa, dan berharaplah agar Allah membimbing kepada yang lebih dekat kepada kebenaran."
+      },
+      "hadith": [
+        {
+          "tag": "hadith",
+          "text": "Nabi ﷺ menceritakan bahwa Nabi Sulaiman AS bertekad melakukan sesuatu tanpa mengucapkan \"Insya Allah\", sehingga tekadnya tidak terwujud. Nabi ﷺ bersabda bahwa seandainya ia mengucapkannya, hajatnya akan terpenuhi. (Diringkas)",
+          "source": "HR. al-Bukhari dan Muslim (Shahih Muslim no. 1654), dari Abu Hurairah radhiyallahu 'anhu",
+          "grade": "Shahih"
+        }
+      ],
+      "context": [
+        {
+          "tag": "diperselisihkan",
+          "text": "Ibnu Ishaq meriwayatkan bahwa kaum Quraisy, atas saran pendeta Yahudi, bertanya kepada Nabi ﷺ tentang para pemuda ini, Dzulqarnain, dan ruh. Nabi ﷺ menjanjikan jawaban esok hari tanpa mengucapkan \"Insya Allah\", lalu wahyu tertunda beberapa waktu. Riwayat ini masyhur dalam kitab sirah dan tafsir, namun sanadnya diperbincangkan ulama.",
+          "source": "Sirah Ibnu Ishaq; dinukil dalam Tafsir ath-Thabari dan Tafsir Ibnu Katsir"
+        }
+      ],
+      "reflection": "\"Insya Allah\" bukan basa-basi atau penolakan halus, melainkan pengakuan bahwa setiap rencana kita bergantung pada kehendak Allah."
+    },
+    {
+      "id": "lama-tinggal",
+      "order": 11,
+      "type": "story",
+      "icon": "hourglass",
+      "label": "309 Tahun",
+      "title": "Tiga Ratus Sembilan Tahun",
+      "ayat": [{ "surah": 18, "from": 25, "to": 26 }],
+      "summary": {
+        "tag": "quran",
+        "text": "Mereka tinggal di dalam gua selama tiga ratus tahun ditambah sembilan tahun. Allah lalu memerintahkan: katakanlah, Allah lebih mengetahui berapa lama mereka tinggal. Milik-Nya segala yang gaib di langit dan di bumi; penglihatan dan pendengaran-Nya sempurna; tidak ada pelindung bagi mereka selain Dia, dan Dia tidak menjadikan seorang pun sekutu dalam keputusan-Nya."
+      },
+      "hadith": [],
+      "context": [
+        {
+          "tag": "tafsir",
+          "text": "Sebagian mufasir menjelaskan bahwa 300 tahun menurut hitungan matahari setara dengan sekitar 309 tahun menurut hitungan bulan (qamariyah). Penjelasan ini adalah ijtihad ulama, bukan pernyataan eksplisit ayat.",
+          "source": "Tafsir Ibnu Katsir, QS 18:25"
+        },
+        {
+          "tag": "diperselisihkan",
+          "text": "Sebagian kecil mufasir berpendapat bahwa angka tersebut adalah perkataan manusia yang kemudian dijawab dengan \"Allah lebih mengetahui\"; mayoritas memandangnya sebagai pemberitaan langsung dari Allah.",
+          "source": "Tafsir ath-Thabari dan Tafsir Ibnu Katsir, QS 18:25–26"
+        }
+      ],
+      "reflection": "Di hadapan ilmu Allah, hitungan manusia menjadi kecil. Yang tetap adalah pelajarannya: hanya Dia satu-satunya Pelindung."
+    },
+    {
+      "id": "refleksi",
+      "order": 12,
+      "type": "reflection",
+      "icon": "award",
+      "label": "Refleksi",
+      "title": "Hikmah Ashabul Kahfi",
+      "ayat": [],
+      "summary": {
+        "tag": "quran",
+        "text": "Kamu telah menelusuri kisah Ashabul Kahfi dari QS Al-Kahf ayat 9 sampai 26. Renungkan kembali pelajaran utamanya sebelum melanjutkan membaca surah Al-Kahfi."
+      },
+      "lessons": [
+        "Keteguhan iman para pemuda yang berani berbeda dari kaumnya (QS 18:13–14).",
+        "Memulai setiap urusan dengan doa memohon rahmat dan petunjuk (QS 18:10).",
+        "Allah menjaga hamba-Nya dengan cara yang tidak terduga (QS 18:17–18).",
+        "Kisah ini adalah bukti kebenaran janji Allah dan hari kebangkitan (QS 18:21).",
+        "Tidak sibuk memperdebatkan detail yang tidak bermanfaat (QS 18:22).",
+        "Menggantungkan setiap rencana kepada kehendak Allah dengan Insya Allah (QS 18:23–24)."
+      ],
+      "hadith": [],
+      "context": [],
+      "reflection": "Bacalah surah Al-Kahfi secara utuh untuk melihat kisah ini dalam rangkaian kisah-kisah lainnya di surah yang sama."
+    }
+  ]
+}

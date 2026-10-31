@@ -1,14 +1,17 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { BookOpen, Home, Sparkles, Settings, Sun, Moon } from 'lucide-react';
+import { BookOpen, Home, Sparkles, Settings, Sun, Moon, ScrollText } from 'lucide-react';
 import { useSettings } from '@/context/SettingsContext';
+
+const KISAH_SEEN_KEY = 'tarseekh_kisah_seen_v1';
 
 const NAV_ITEMS = [
   { label: 'Beranda', href: '/', icon: Home },
   { label: 'Quran', href: '/quran', icon: BookOpen },
+  { label: 'Kisah', href: '/kisah', icon: ScrollText, featured: true },
   { label: 'Hafalan', href: '/hafalan', icon: Sparkles },
   { label: 'Pengaturan', href: '/settings', icon: Settings },
 ];
@@ -16,6 +19,21 @@ const NAV_ITEMS = [
 export function AppShell({ children }) {
   const pathname = usePathname();
   const { settings, toggleTheme } = useSettings();
+  const [showKisahBadge, setShowKisahBadge] = useState(false);
+
+  // One-time "Baru" dot on the featured Kisah item until it is first visited
+  useEffect(() => {
+    try {
+      if (pathname.startsWith('/kisah')) {
+        localStorage.setItem(KISAH_SEEN_KEY, '1');
+        setShowKisahBadge(false);
+      } else {
+        setShowKisahBadge(!localStorage.getItem(KISAH_SEEN_KEY));
+      }
+    } catch {
+      // ignore
+    }
+  }, [pathname]);
 
   const isCurrent = (href) => {
     if (href === '/') return pathname === '/';
@@ -49,6 +67,38 @@ export function AppShell({ children }) {
           {NAV_ITEMS.map((item) => {
             const Icon = item.icon;
             const active = isCurrent(item.href);
+
+            if (item.featured) {
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  aria-current={active ? 'page' : undefined}
+                  className={`group flex items-center gap-3 px-3 py-2 rounded-xl font-semibold text-sm border transition-all duration-200 ${
+                    active
+                      ? 'bg-brand-primary text-white border-brand-primary dark:bg-brand-dark-primary dark:text-brand-dark-bg dark:border-brand-dark-primary shadow-md'
+                      : 'bg-brand-primary/5 dark:bg-brand-dark-primary/10 border-brand-primary/15 dark:border-brand-dark-primary/20 text-brand-primary dark:text-brand-dark-primary hover:bg-brand-primary/10 dark:hover:bg-brand-dark-primary/15 hover:shadow-sm'
+                  }`}
+                >
+                  <span
+                    className={`w-8 h-8 rounded-full flex items-center justify-center shadow-sm transition-transform duration-200 group-hover:scale-105 ${
+                      active
+                        ? 'bg-white/15 dark:bg-brand-dark-bg/15 text-amber-300 dark:text-brand-dark-bg'
+                        : 'bg-brand-primary dark:bg-brand-dark-primary text-amber-300 dark:text-brand-dark-bg'
+                    }`}
+                  >
+                    <Icon className="w-[18px] h-[18px]" />
+                  </span>
+                  <span className="flex-1">{item.label}</span>
+                  {showKisahBadge && !active && (
+                    <span className="px-1.5 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300">
+                      Baru
+                    </span>
+                  )}
+                </Link>
+              );
+            }
+
             return (
               <Link
                 key={item.href}
@@ -122,6 +172,38 @@ export function AppShell({ children }) {
           {NAV_ITEMS.map((item) => {
             const Icon = item.icon;
             const active = isCurrent(item.href);
+
+            if (item.featured) {
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  aria-current={active ? 'page' : undefined}
+                  className="group relative flex flex-col items-center justify-center px-1"
+                >
+                  <span
+                    className={`relative -translate-y-2 w-14 h-14 rounded-full flex items-center justify-center ring-4 ring-white dark:ring-brand-dark-surface bg-brand-primary dark:bg-brand-dark-primary text-amber-300 dark:text-brand-dark-bg transition-all duration-200 ${
+                      active ? 'scale-105 shadow-lg shadow-emerald-900/30' : 'shadow-md group-active:scale-95'
+                    }`}
+                  >
+                    <Icon className={`w-6 h-6 ${active ? 'stroke-[2.5]' : 'stroke-[2]'}`} />
+                    {showKisahBadge && !active && (
+                      <span className="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-amber-400 ring-2 ring-brand-primary dark:ring-brand-dark-primary" aria-hidden="true" />
+                    )}
+                  </span>
+                  <span
+                    className={`-mt-1.5 text-[11px] ${
+                      active
+                        ? 'text-brand-primary dark:text-brand-dark-primary font-semibold'
+                        : 'text-brand-primary/80 dark:text-brand-dark-primary/80 font-medium'
+                    }`}
+                  >
+                    {item.label}
+                  </span>
+                </Link>
+              );
+            }
+
             return (
               <Link
                 key={item.href}
