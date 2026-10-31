@@ -17,7 +17,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "Tarseekh - Meneguhkan & Menancapkan Al-Qur'an",
+  title: "Tarseekh - Seek the Light, Unfold Insight",
   description: "Aplikasi Al-Qur'an responsif dengan peneguh hafalan (Tarseekh), pemahaman makna berbasis AI grounded tafsir, pelacak suara, dan mushaf Madinah 15 baris.",
   manifest: '/manifest.webmanifest',
   icons: {
