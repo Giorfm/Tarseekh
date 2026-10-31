@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { similarityRatio, align } from './matcher.js';
+import { similarityRatio, align, verifyRecitationWord, matchRecitationStep } from './matcher.js';
 import { calculateSM2, generateWordMasks } from '../memorization/engine.js';
 
 describe('Speech Matcher & SM-2 Memorization Suite', () => {
@@ -8,6 +8,99 @@ describe('Speech Matcher & SM-2 Memorization Suite', () => {
     // 1 char edit out of 6 -> ~0.83 > 0.7
     expect(similarityRatio('الرحمن', 'الرحيم')).toBeGreaterThanOrEqual(0.65);
     expect(similarityRatio('بسم', 'الله')).toBeLessThan(0.4);
+  });
+
+  describe('verifyRecitationWord (Tarteel AI Matching)', () => {
+    it('matches exact and tashkeel-stripped words', () => {
+      expect(verifyRecitationWord('بسم', 'بِسْمِ').isMatch).toBe(true);
+      expect(verifyRecitationWord('الله', 'ٱللَّهِ').isMatch).toBe(true);
+    });
+
+    it('handles dagger alef and script spelling differences (e.g. malik, ar-rahman)', () => {
+      // Dagger alef in Uthmani Quran vs spoken standard
+      expect(verifyRecitationWord('مالك', 'مَـٰلِكِ').isMatch).toBe(true);
+      expect(verifyRecitationWord('ملك', 'مَـٰلِكِ').isMatch).toBe(true);
+      expect(verifyRecitationWord('الرحمن', 'ٱلرَّحْمَـٰنِ').isMatch).toBe(true);
+      expect(verifyRecitationWord('الرحمان', 'ٱلرَّحْمَـٰنِ').isMatch).toBe(true);
+    });
+
+    it('handles definite article prefix (ال) and conjunction (و) flexibilities', () => {
+      expect(verifyRecitationWord('رحمن', 'ٱلرَّحْمَـٰنِ').isMatch).toBe(true);
+      expect(verifyRecitationWord('التين', 'وَٱلتِّينِ').isMatch).toBe(true);
+    });
+
+    it('rejects incorrect words with low similarity', () => {
+      expect(verifyRecitationWord('قل', 'ٱلْحَمْدُ').isMatch).toBe(false);
+      expect(verifyRecitationWord('كتب', 'بِسْمِ').isMatch).toBe(false);
+      expect(verifyRecitationWord('الناس', 'الفلق').isMatch).toBe(false);
+    });
+  });
+
+  describe('matchRecitationStep (Sequential Real-Time Recitation Tracker)', () => {
+    const targetWords = [
+      { text: 'بِسْمِ', idx: 1 },
+      { text: 'ٱللَّهِ', idx: 2 },
+      { text: 'ٱلرَّحْمَـٰنِ', idx: 3 },
+      { text: 'ٱلرَّحِيمِ', idx: 4 },
+    ];
+
+    it('advances continuously when words are recited correctly', () => {
+      const step1 = matchRecitationStep({
+        spokenTokens: ['بسم', 'الله'],
+        words: targetWords,
+        pointer: 0,
+      });
+
+      expect(step1.pointer).toBe(2);
+      expect(step1.matchedIndices).toEqual([0, 1]);
+      expect(step1.hasError).toBe(false);
+      expect(step1.errorIndex).toBeNull();
+      expect(step1.isFinished).toBe(false);
+
+      // Next step continues from pointer 2
+      const step2 = matchRecitationStep({
+        spokenTokens: ['الرحمن', 'الرحيم'],
+        words: targetWords,
+        pointer: step1.pointer,
+      });
+
+      expect(step2.pointer).toBe(4);
+      expect(step2.matchedIndices).toEqual([2, 3]);
+      expect(step2.hasError).toBe(false);
+      expect(step2.isFinished).toBe(true);
+    });
+
+    it('stops immediately on wrong recitation, flags error, and does NOT advance past error word', () => {
+      // User says "بسم" correctly, then says "الناس" instead of "الله"
+      const step = matchRecitationStep({
+        spokenTokens: ['بسم', 'الناس'],
+        words: targetWords,
+        pointer: 0,
+      });
+
+      expect(step.pointer).toBe(1); // Stopped at index 1 ('الله')
+      expect(step.matchedIndices).toEqual([0]);
+      expect(step.hasError).toBe(true);
+      expect(step.errorIndex).toBe(1); // Error is on index 1
+      expect(step.isFinished).toBe(false);
+    });
+
+    it('resumes tracking when user repeats with the correct word', () => {
+      // Initially stopped at pointer 1 with error
+      const pointer = 1;
+
+      // User corrects by reciting 'الله'
+      const correctionStep = matchRecitationStep({
+        spokenTokens: ['الله'],
+        words: targetWords,
+        pointer: pointer,
+      });
+
+      expect(correctionStep.pointer).toBe(2);
+      expect(correctionStep.matchedIndices).toEqual([1]);
+      expect(correctionStep.hasError).toBe(false);
+      expect(correctionStep.errorIndex).toBeNull();
+    });
   });
 
   it('aligns spoken tokens sequentially with lookahead and detects skipped words', () => {

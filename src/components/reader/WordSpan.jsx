@@ -50,6 +50,9 @@ export function WordSpan({
 
   // 2. Memorization Mask
   if (isMasked) {
+    const isCurrent = highlightState === 'current';
+    const isError = highlightState === 'missed';
+
     return (
       <span
         data-verse-key={verseKey}
@@ -57,10 +60,27 @@ export function WordSpan({
         data-page={page}
         data-line={line}
         onClick={onClick}
-        className="inline-block mx-0.5 border-b-2 border-emerald-700/60 dark:border-emerald-400/60 text-transparent select-none cursor-pointer hover:border-emerald-500 transition-colors"
+        title={
+          isError
+            ? `Bacaan belum tepat: ulangi kata "${text}"`
+            : isCurrent
+            ? 'Lafalkan kata ini...'
+            : 'Ketuk untuk membuka petunjuk'
+        }
+        className={`inline-block mx-0.5 select-none cursor-pointer transition-all duration-200 ${
+          isError
+            ? 'border-b-2 border-red-500 bg-red-100/90 dark:bg-red-950/70 text-red-600 dark:text-red-400 font-bold px-1 rounded-sm ring-2 ring-red-400/60 animate-pulse shadow-xs'
+            : isCurrent
+            ? 'border-b-2 border-amber-400 bg-amber-400/15 dark:bg-amber-400/20 text-transparent px-1 rounded-sm ring-2 ring-amber-400/50 animate-pulse'
+            : 'border-b-2 border-emerald-700/60 dark:border-emerald-400/60 text-transparent hover:border-emerald-500'
+        }`}
         style={{ minWidth: `${Math.max(1.8, text.length * 0.75)}ch` }}
       >
-        {maskHint ? (
+        {isError ? (
+          <span className="text-red-600 dark:text-red-400 text-[0.85em] font-sans font-bold">
+            {maskHint || '✖'}
+          </span>
+        ) : maskHint ? (
           <span className="text-gray-400 dark:text-gray-500 text-[0.85em] select-none">
             {maskHint}
           </span>
@@ -82,11 +102,11 @@ export function WordSpan({
       onClick={onClick}
       className={`relative inline-block mx-[1px] transition-colors duration-150 rounded px-0.5 selection:bg-emerald-200 dark:selection:bg-emerald-900 ${
         highlightState === 'current'
-          ? 'bg-amber-200/80 dark:bg-amber-900/60 text-amber-950 dark:text-amber-100 ring-2 ring-amber-400'
+          ? 'bg-amber-200/90 dark:bg-amber-900/60 text-amber-950 dark:text-amber-100 ring-2 ring-amber-400 font-semibold shadow-xs'
           : highlightState === 'matched'
-          ? 'text-emerald-700 dark:text-emerald-300 font-semibold'
+          ? 'text-emerald-700 dark:text-emerald-300 font-bold bg-emerald-500/10 dark:bg-emerald-400/10 rounded px-0.5'
           : highlightState === 'missed'
-          ? 'text-red-500 line-through opacity-70'
+          ? 'bg-red-100 dark:bg-red-950/70 text-red-600 dark:text-red-400 ring-2 ring-red-400/80 font-bold rounded animate-pulse'
           : 'hover:bg-black/5 dark:hover:bg-white/10'
       }`}
     >

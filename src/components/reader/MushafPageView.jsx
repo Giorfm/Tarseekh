@@ -19,8 +19,9 @@ import { prefetchAdjacentPages } from '@/lib/pages/loader';
 import { saveLastPosition } from '@/lib/quran/position';
 import { getPageTajweedMap } from '@/lib/tajwid/page-tajweed';
 import { tokenizeArabic } from '@/lib/arabic/normalize';
-import { align } from '@/lib/speech/matcher';
+import { align, matchRecitationStep, verifyRecitationWord } from '@/lib/speech/matcher';
 import { SpeechTracker, hasSpeechConsent, isSpeechSupported } from '@/lib/speech/tracker';
+import { RecitationStatusBar } from '@/components/speech/RecitationStatusBar';
 import { generateWordMasks } from '@/lib/memorization/engine';
 import { logActivity } from '@/lib/activity/logger';
 
@@ -108,6 +109,34 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     return list;
   }, [pageData]);
 
+  const pageWordsRef = useRef(pageWords);
+  pageWordsRef.current = pageWords;
+
+  const speechPointerRef = useRef(0);
+  const phraseConsumedTokensRef = useRef(0);
+  const [speechStatus, setSpeechStatus] = useState({
+    state: 'idle',
+    message: '',
+    expectedWord: null,
+  });
+
+  // Reset speech tracking on page change or mode change
+  useEffect(() => {
+    speechPointerRef.current = 0;
+    setSpeechPointer(0);
+    phraseConsumedTokensRef.current = 0;
+    setMatchedWordKeys(new Set());
+    setMissedWordKeys(new Set());
+    if (isMicActive) {
+      const firstWord = pageWords[0];
+      setSpeechStatus({
+        state: 'listening',
+        message: 'Mendengarkan bacaan...',
+        expectedWord: firstWord?.text || null,
+      });
+    }
+  }, [pageNum, activeMode, isMicActive, pageWords]);
+
   // Recalculate memorization masks for page
   useEffect(() => {
     if (activeMode === 'memorize') {
@@ -135,15 +164,47 @@ export function MushafPageView({ pageData, facingPageData = null }) {
 
     if (!trackerRef.current) {
       trackerRef.current = new SpeechTracker({
-        onResult: (transcript) => {
+        onResult: (transcript, isFinal) => {
           const spokenTokens = tokenizeArabic(transcript);
-          const result = align(spokenTokens, pageWords, speechPointer);
+          if (spokenTokens.length === 0) return;
 
-          if (result.matchedIndices.length > 0) {
+          // If transcript shrank, reset phrase token counter
+          if (spokenTokens.length < phraseConsumedTokensRef.current) {
+            phraseConsumedTokensRef.current = 0;
+          }
+
+          const newTokens = spokenTokens.slice(phraseConsumedTokensRef.current);
+          if (newTokens.length === 0) {
+            if (isFinal) phraseConsumedTokensRef.current = 0;
+            return;
+          }
+
+          const targetList = pageWordsRef.current;
+          let curPtr = speechPointerRef.current;
+
+          if (curPtr >= targetList.length) {
+            setSpeechStatus({
+              state: 'finished',
+              message: 'Maa syaa Allah! Halaman ini telah selesai dilafalkan.',
+              expectedWord: null,
+            });
+            if (isFinal) phraseConsumedTokensRef.current = 0;
+            return;
+          }
+
+          // Evaluate recitation step (Tarteel-AI model: advance when correct, stop when wrong)
+          const stepResult = matchRecitationStep({
+            spokenTokens: newTokens,
+            words: targetList,
+            pointer: curPtr,
+          });
+
+          // 1. Correct recitation
+          if (stepResult.matchedIndices.length > 0) {
             setMatchedWordKeys((prev) => {
               const next = new Set(prev);
-              for (const idx of result.matchedIndices) {
-                const targetWord = pageWords[idx];
+              for (const idx of stepResult.matchedIndices) {
+                const targetWord = targetList[idx];
                 if (targetWord) {
                   const key = `${targetWord.verse_key}:${targetWord.idx}`;
                   next.add(key);
@@ -152,36 +213,99 @@ export function MushafPageView({ pageData, facingPageData = null }) {
               }
               return next;
             });
-          }
 
-          if (result.missedIndices.length > 0) {
+            // Clear errors on correctly matched words
             setMissedWordKeys((prev) => {
               const next = new Set(prev);
-              for (const idx of result.missedIndices) {
-                const targetWord = pageWords[idx];
+              for (const idx of stepResult.matchedIndices) {
+                const targetWord = targetList[idx];
                 if (targetWord) {
-                  next.add(`${targetWord.verse_key}:${targetWord.idx}`);
+                  next.delete(`${targetWord.verse_key}:${targetWord.idx}`);
                 }
               }
               return next;
             });
+
+            phraseConsumedTokensRef.current += stepResult.matchedIndices.length;
+            speechPointerRef.current = stepResult.pointer;
+            setSpeechPointer(stepResult.pointer);
+
+            const nextWord = targetList[stepResult.pointer];
+            if (nextWord) {
+              setSpeechStatus({
+                state: 'correct',
+                message: 'Benar! Lanjutkan bacaan...',
+                expectedWord: nextWord.text,
+              });
+
+              // Auto-scroll / focus to active word
+              const el = document.querySelector(
+                `[data-verse-key="${nextWord.verse_key}"][data-word-index="${nextWord.idx}"]`
+              );
+              el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+              setSpeechStatus({
+                state: 'finished',
+                message: 'Maa syaa Allah! Halaman selesai dilafalkan.',
+                expectedWord: null,
+              });
+            }
+
+            // Auto page turn when pointer passes last word of the page
+            if (stepResult.pointer >= targetList.length && pageNum < 604) {
+              setTimeout(() => {
+                goToPage(pageNum + 1);
+              }, 600);
+            }
           }
 
-          setSpeechPointer(result.pointer);
+          // 2. Incorrect recitation: stop and highlight error
+          if (stepResult.hasError && stepResult.errorIndex !== null) {
+            const errWord = targetList[stepResult.errorIndex];
+            if (errWord) {
+              const errKey = `${errWord.verse_key}:${errWord.idx}`;
+              setMissedWordKeys((prev) => new Set(prev).add(errKey));
 
-          // Auto page turn when pointer passes last word of the page
-          if (result.pointer >= pageWords.length && pageNum < 604) {
-            setTimeout(() => {
-              goToPage(pageNum + 1);
-            }, 500);
+              setSpeechStatus({
+                state: 'error',
+                message: `Bacaan belum tepat pada kata "${errWord.text}". Silakan ulangi kata ini.`,
+                expectedWord: errWord.text,
+              });
+
+              // Consume 1 token to prevent repeating on same wrong word token
+              phraseConsumedTokensRef.current += 1;
+            }
+          }
+
+          if (isFinal) {
+            phraseConsumedTokensRef.current = 0;
           }
         },
         onError: (type, msg) => {
           console.warn('Speech error:', type, msg);
           if (type === 'not-allowed') alert(msg);
+          setSpeechStatus({
+            state: 'idle',
+            message: msg || 'Mikrofon terhenti.',
+            expectedWord: null,
+          });
         },
         onStatusChange: (status) => {
           setIsMicActive(status);
+          if (status) {
+            const cur = pageWordsRef.current[speechPointerRef.current];
+            setSpeechStatus({
+              state: 'listening',
+              message: 'Mendengarkan bacaan...',
+              expectedWord: cur?.text || null,
+            });
+          } else {
+            setSpeechStatus({
+              state: 'idle',
+              message: '',
+              expectedWord: null,
+            });
+          }
         },
       });
     }
@@ -193,6 +317,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     if (isMicActive) {
       trackerRef.current?.stop();
       setIsMicActive(false);
+      setSpeechStatus({ state: 'idle', message: '', expectedWord: null });
     } else {
       if (!hasSpeechConsent()) {
         setIsConsentOpen(true);
@@ -203,6 +328,26 @@ export function MushafPageView({ pageData, facingPageData = null }) {
   };
 
   const handleNextHint = () => {
+    // Check current speech pointer word first
+    const targetList = pageWordsRef.current;
+    const curWord = targetList[speechPointerRef.current];
+    if (curWord) {
+      const curKey = `${curWord.verse_key}:${curWord.idx}`;
+      if (!revealedWords.has(curKey)) {
+        setRevealedWords((prev) => new Set(prev).add(curKey));
+        setMissedWordKeys((prev) => {
+          const next = new Set(prev);
+          next.delete(curKey);
+          return next;
+        });
+        setHintsUsed((h) => h + 1);
+        speechPointerRef.current += 1;
+        setSpeechPointer(speechPointerRef.current);
+        return;
+      }
+    }
+
+    // Fallback: find first unrevealed masked word
     for (const [key, cfg] of maskedWordsMap.entries()) {
       if (cfg.isMasked && !revealedWords.has(key)) {
         setRevealedWords((prev) => new Set(prev).add(key));
@@ -216,9 +361,27 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     const key = `${verseKey}:${idx}`;
     if (activeMode === 'memorize' && maskedWordsMap.get(key)?.isMasked) {
       setRevealedWords((prev) => new Set(prev).add(key));
+      setMissedWordKeys((prev) => {
+        const next = new Set(prev);
+        next.delete(key);
+        return next;
+      });
+
+      const targetList = pageWordsRef.current;
+      const curWord = targetList[speechPointerRef.current];
+      if (curWord && curWord.verse_key === verseKey && curWord.idx === idx) {
+        speechPointerRef.current += 1;
+        setSpeechPointer(speechPointerRef.current);
+      }
     } else if (isMicActive) {
       setMatchedWordKeys((prev) => new Set(prev).add(key));
-      setSpeechPointer((p) => p + 1);
+      setMissedWordKeys((prev) => {
+        const next = new Set(prev);
+        next.delete(key);
+        return next;
+      });
+      speechPointerRef.current += 1;
+      setSpeechPointer(speechPointerRef.current);
     }
   };
 
@@ -516,6 +679,17 @@ export function MushafPageView({ pageData, facingPageData = null }) {
         onClick={toggleMic}
         isActive={isMicActive}
         title={isMicActive ? 'Mendengarkan bacaan... (Klik untuk berhenti)' : 'Mulai Pelacak Suara'}
+      />
+
+      {/* Real-Time Recitation Tracker Status Bar (Tarteel-AI style) */}
+      <RecitationStatusBar
+        isActive={isMicActive}
+        status={speechStatus}
+        pointer={speechPointer}
+        totalWords={pageWords.length}
+        onToggleMic={toggleMic}
+        onNextHint={handleNextHint}
+        isMemorizeMode={activeMode === 'memorize'}
       />
 
       {/* Speech Privacy Consent Modal */}

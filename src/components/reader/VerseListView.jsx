@@ -16,8 +16,9 @@ import { useSettings } from '@/context/SettingsContext';
 import { saveLastPosition } from '@/lib/quran/position';
 import { parseVerseTajweed } from '@/lib/tajwid/parser';
 import { tokenizeArabic } from '@/lib/arabic/normalize';
-import { align } from '@/lib/speech/matcher';
+import { align, matchRecitationStep, verifyRecitationWord } from '@/lib/speech/matcher';
 import { SpeechTracker, hasSpeechConsent, isSpeechSupported } from '@/lib/speech/tracker';
+import { RecitationStatusBar } from '@/components/speech/RecitationStatusBar';
 import { generateWordMasks } from '@/lib/memorization/engine';
 import { recordVerseDwell, logActivity } from '@/lib/activity/logger';
 
@@ -89,6 +90,52 @@ export function VerseListView({ surahData, initialAyah = null }) {
     }
   }, [activeMode, memConfig, surahData]);
 
+  // Target words for recitation tracking (scoped to memorization range when active)
+  const activeTargetWords = React.useMemo(() => {
+    if (activeMode === 'memorize') {
+      const list = [];
+      for (const v of surahData.verses) {
+        if (v.n >= memConfig.startAyah && v.n <= memConfig.endAyah) {
+          for (const w of v.words) {
+            if (w.type !== 'end') {
+              list.push({ ...w, verseKey: v.key });
+            }
+          }
+        }
+      }
+      return list;
+    }
+    return flatWords;
+  }, [activeMode, memConfig, surahData, flatWords]);
+
+  const activeTargetWordsRef = useRef(activeTargetWords);
+  activeTargetWordsRef.current = activeTargetWords;
+
+  const speechPointerRef = useRef(0);
+  const phraseConsumedTokensRef = useRef(0);
+  const [speechStatus, setSpeechStatus] = useState({
+    state: 'idle',
+    message: '',
+    expectedWord: null,
+  });
+
+  // Reset tracking state when mode or target words change
+  useEffect(() => {
+    speechPointerRef.current = 0;
+    setSpeechPointer(0);
+    phraseConsumedTokensRef.current = 0;
+    setMatchedWordKeys(new Set());
+    setMissedWordKeys(new Set());
+    if (isMicActive) {
+      const curWord = activeTargetWords[0];
+      setSpeechStatus({
+        state: 'listening',
+        message: 'Mendengarkan bacaan...',
+        expectedWord: curWord?.text || null,
+      });
+    }
+  }, [activeMode, memConfig, activeTargetWords, isMicActive]);
+
   const startSpeechTracking = () => {
     if (!isSpeechSupported()) {
       alert('Peramban Anda tidak mendukung pengenalan suara. Silakan gunakan Google Chrome di Android atau Desktop, atau gunakan mode manual (ketuk kata untuk maju).');
@@ -97,54 +144,141 @@ export function VerseListView({ surahData, initialAyah = null }) {
 
     if (!trackerRef.current) {
       trackerRef.current = new SpeechTracker({
-        onResult: (transcript) => {
+        onResult: (transcript, isFinal) => {
           const spokenTokens = tokenizeArabic(transcript);
-          const result = align(spokenTokens, flatWords, speechPointer);
+          if (spokenTokens.length === 0) return;
 
-          if (result.matchedIndices.length > 0) {
+          // If transcript shrank, reset phrase token counter
+          if (spokenTokens.length < phraseConsumedTokensRef.current) {
+            phraseConsumedTokensRef.current = 0;
+          }
+
+          const newTokens = spokenTokens.slice(phraseConsumedTokensRef.current);
+          if (newTokens.length === 0) {
+            if (isFinal) phraseConsumedTokensRef.current = 0;
+            return;
+          }
+
+          const targetList = activeTargetWordsRef.current;
+          let curPtr = speechPointerRef.current;
+
+          if (curPtr >= targetList.length) {
+            setSpeechStatus({
+              state: 'finished',
+              message: 'Maa syaa Allah! Seluruh bacaan telah selesai dilafalkan.',
+              expectedWord: null,
+            });
+            if (isFinal) phraseConsumedTokensRef.current = 0;
+            return;
+          }
+
+          // Evaluate recitation step (Tarteel-AI model: advance when correct, stop when wrong)
+          const stepResult = matchRecitationStep({
+            spokenTokens: newTokens,
+            words: targetList,
+            pointer: curPtr,
+          });
+
+          // 1. Correct words
+          if (stepResult.matchedIndices.length > 0) {
             setMatchedWordKeys((prev) => {
               const next = new Set(prev);
-              for (const idx of result.matchedIndices) {
-                const targetWord = flatWords[idx];
+              for (const idx of stepResult.matchedIndices) {
+                const targetWord = targetList[idx];
                 if (targetWord) {
                   const key = `${targetWord.verseKey}:${targetWord.idx}`;
                   next.add(key);
-                  // In memorization mode, reveal matched word
                   setRevealedWords((r) => new Set(r).add(key));
                 }
               }
               return next;
             });
-          }
 
-          if (result.missedIndices.length > 0) {
+            // Clear any error from matched words
             setMissedWordKeys((prev) => {
               const next = new Set(prev);
-              for (const idx of result.missedIndices) {
-                const targetWord = flatWords[idx];
+              for (const idx of stepResult.matchedIndices) {
+                const targetWord = targetList[idx];
                 if (targetWord) {
-                  next.add(`${targetWord.verseKey}:${targetWord.idx}`);
+                  next.delete(`${targetWord.verseKey}:${targetWord.idx}`);
                 }
               }
               return next;
             });
+
+            phraseConsumedTokensRef.current += stepResult.matchedIndices.length;
+            speechPointerRef.current = stepResult.pointer;
+            setSpeechPointer(stepResult.pointer);
+
+            const nextWord = targetList[stepResult.pointer];
+            if (nextWord) {
+              setSpeechStatus({
+                state: 'correct',
+                message: 'Benar! Lanjutkan bacaan...',
+                expectedWord: nextWord.text,
+              });
+
+              // Auto-scroll to center active word
+              const el = document.querySelector(
+                `[data-verse-key="${nextWord.verseKey}"][data-word-index="${nextWord.idx}"]`
+              );
+              el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+              setSpeechStatus({
+                state: 'finished',
+                message: 'Maa syaa Allah! Seluruh bacaan telah berhasil dilafalkan.',
+                expectedWord: null,
+              });
+            }
           }
 
-          setSpeechPointer(result.pointer);
+          // 2. Incorrect recitation: stop and highlight error
+          if (stepResult.hasError && stepResult.errorIndex !== null) {
+            const errWord = targetList[stepResult.errorIndex];
+            if (errWord) {
+              const errKey = `${errWord.verseKey}:${errWord.idx}`;
+              setMissedWordKeys((prev) => new Set(prev).add(errKey));
 
-          // Auto-scroll to current word
-          const currentWord = flatWords[result.pointer];
-          if (currentWord) {
-            const el = document.querySelector(`[data-verse-key="${currentWord.verseKey}"][data-word-index="${currentWord.idx}"]`);
-            el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              setSpeechStatus({
+                state: 'error',
+                message: `Bacaan belum tepat pada kata "${errWord.text}". Silakan ulangi kata ini.`,
+                expectedWord: errWord.text,
+              });
+
+              // Consume 1 token to avoid infinite loop on same wrong word token
+              phraseConsumedTokensRef.current += 1;
+            }
+          }
+
+          if (isFinal) {
+            phraseConsumedTokensRef.current = 0;
           }
         },
         onError: (type, msg) => {
           console.warn('Speech tracker error:', type, msg);
           if (type === 'not-allowed') alert(msg);
+          setSpeechStatus({
+            state: 'idle',
+            message: msg || 'Mikrofon terhenti.',
+            expectedWord: null,
+          });
         },
         onStatusChange: (status) => {
           setIsMicActive(status);
+          if (status) {
+            const cur = activeTargetWordsRef.current[speechPointerRef.current];
+            setSpeechStatus({
+              state: 'listening',
+              message: 'Mendengarkan bacaan...',
+              expectedWord: cur?.text || null,
+            });
+          } else {
+            setSpeechStatus({
+              state: 'idle',
+              message: '',
+              expectedWord: null,
+            });
+          }
         },
       });
     }
@@ -156,6 +290,7 @@ export function VerseListView({ surahData, initialAyah = null }) {
     if (isMicActive) {
       trackerRef.current?.stop();
       setIsMicActive(false);
+      setSpeechStatus({ state: 'idle', message: '', expectedWord: null });
     } else {
       if (!hasSpeechConsent()) {
         setIsConsentOpen(true);
@@ -166,7 +301,26 @@ export function VerseListView({ surahData, initialAyah = null }) {
   };
 
   const handleNextHint = () => {
-    // Find first unrevealed masked word
+    // Check current speech pointer word first
+    const targetList = activeTargetWordsRef.current;
+    const curWord = targetList[speechPointerRef.current];
+    if (curWord) {
+      const curKey = `${curWord.verseKey}:${curWord.idx}`;
+      if (!revealedWords.has(curKey)) {
+        setRevealedWords((prev) => new Set(prev).add(curKey));
+        setMissedWordKeys((prev) => {
+          const next = new Set(prev);
+          next.delete(curKey);
+          return next;
+        });
+        setHintsUsed((h) => h + 1);
+        speechPointerRef.current += 1;
+        setSpeechPointer(speechPointerRef.current);
+        return;
+      }
+    }
+
+    // Fallback: find first unrevealed masked word
     for (const [key, cfg] of maskedWordsMap.entries()) {
       if (cfg.isMasked && !revealedWords.has(key)) {
         setRevealedWords((prev) => new Set(prev).add(key));
@@ -179,12 +333,28 @@ export function VerseListView({ surahData, initialAyah = null }) {
   const handleWordManualClick = (verseKey, idx) => {
     const key = `${verseKey}:${idx}`;
     if (activeMode === 'memorize' && maskedWordsMap.get(key)?.isMasked) {
-      // Manual reveal on tap
       setRevealedWords((prev) => new Set(prev).add(key));
+      setMissedWordKeys((prev) => {
+        const next = new Set(prev);
+        next.delete(key);
+        return next;
+      });
+
+      const targetList = activeTargetWordsRef.current;
+      const curWord = targetList[speechPointerRef.current];
+      if (curWord && curWord.verseKey === verseKey && curWord.idx === idx) {
+        speechPointerRef.current += 1;
+        setSpeechPointer(speechPointerRef.current);
+      }
     } else if (isMicActive) {
-      // Manual advance pointer in speech tracker
       setMatchedWordKeys((prev) => new Set(prev).add(key));
-      setSpeechPointer((p) => p + 1);
+      setMissedWordKeys((prev) => {
+        const next = new Set(prev);
+        next.delete(key);
+        return next;
+      });
+      speechPointerRef.current += 1;
+      setSpeechPointer(speechPointerRef.current);
     }
   };
 
@@ -384,7 +554,7 @@ export function VerseListView({ surahData, initialAyah = null }) {
 
                     let highlightState = null;
                     if (isMicActive) {
-                      const currentWord = flatWords[speechPointer];
+                      const currentWord = activeTargetWords[speechPointer];
                       if (currentWord && `${currentWord.verseKey}:${currentWord.idx}` === wordKey) {
                         highlightState = 'current';
                       } else if (matchedWordKeys.has(wordKey)) {
@@ -433,6 +603,17 @@ export function VerseListView({ surahData, initialAyah = null }) {
         onClick={toggleMic}
         isActive={isMicActive}
         title={isMicActive ? 'Mendengarkan bacaan... (Klik untuk berhenti)' : 'Mulai Pelacak Suara'}
+      />
+
+      {/* Real-Time Recitation Tracker Status Bar (Tarteel-AI style) */}
+      <RecitationStatusBar
+        isActive={isMicActive}
+        status={speechStatus}
+        pointer={speechPointer}
+        totalWords={activeTargetWords.length}
+        onToggleMic={toggleMic}
+        onNextHint={handleNextHint}
+        isMemorizeMode={activeMode === 'memorize'}
       />
 
       {/* Speech Privacy Consent Modal */}
