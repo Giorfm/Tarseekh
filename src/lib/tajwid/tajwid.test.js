@@ -49,6 +49,33 @@ describe('Tajweed Parser & Rules Suite', () => {
     }
   });
 
+  it('keeps verified plain text for every word of the Quran and colours at least 95% of verses', async () => {
+    let total = 0;
+    let coloured = 0;
+    for (let s = 1; s <= 114; s++) {
+      const surah = await getSurah(s);
+      for (const verse of surah.verses) {
+        const parsedWords = parseVerseTajweed(verse.tajweed, verse.words);
+        expect(parsedWords).toHaveLength(verse.words.length);
+        for (let i = 0; i < verse.words.length; i++) {
+          expect(parsedWords[i].map((token) => token.text).join(''), verse.key).toBe(verse.words[i].text);
+        }
+        total++;
+        if (parsedWords.some((w) => w.some((token) => token.rule))) coloured++;
+      }
+    }
+    expect(total).toBe(6236);
+    expect(coloured / total).toBeGreaterThan(0.95);
+  });
+
+  it('maps tajweed rules across encoding differences (ZWNJ waqf signs, small low meem)', async () => {
+    const baqarah = await getSurah(2);
+    const verse = baqarah.verses[1]; // 2:2 ذَٰلِكَ ٱلْكِتَـٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًۭى
+    const parsedWords = parseVerseTajweed(verse.tajweed, verse.words);
+    expect(parsedWords[1].some((t) => t.rule === 'ham_wasl')).toBe(true);
+    expect(parsedWords[5].some((t) => t.rule === 'idgham_wo_ghunnah')).toBe(true);
+  });
+
   it('safely falls back to plain text when tajweed markup does not align', () => {
     const fakePlainWords = [
       { idx: 1, text: 'بِسْمِ' },

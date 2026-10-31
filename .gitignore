@@ -33,3 +33,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Mushaf OCR pipeline working files (downloads, renders)
+scripts/mushaf-ocr/work/
+scripts/mushaf-ocr/.venv/

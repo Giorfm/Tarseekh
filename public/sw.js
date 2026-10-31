@@ -76,7 +76,26 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 4. Stale-While-Revalidate for navigation and other assets
+  // 4. Cache-First for KFGQPC mushaf page images (Supabase Storage, immutable)
+  if (url.pathname.includes('/storage/v1/object/public/mushaf/')) {
+    event.respondWith(
+      caches.match(event.request).then((cachedResponse) => {
+        if (cachedResponse) {
+          return cachedResponse;
+        }
+        return fetch(event.request).then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200) {
+            const clone = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+          }
+          return networkResponse;
+        });
+      })
+    );
+    return;
+  }
+
+  // 5. Stale-While-Revalidate for navigation and other assets
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
       const fetchPromise = fetch(event.request)
