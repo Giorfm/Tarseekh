@@ -49,9 +49,10 @@ describe('Tajweed Parser & Rules Suite', () => {
     }
   });
 
-  it('keeps verified plain text for every word of the Quran and colours at least 95% of verses', async () => {
+  it('keeps verified plain text for every word and colours every verse that has tajweed markup', async () => {
     let total = 0;
     let coloured = 0;
+    let withMarkup = 0;
     for (let s = 1; s <= 114; s++) {
       const surah = await getSurah(s);
       for (const verse of surah.verses) {
@@ -61,11 +62,12 @@ describe('Tajweed Parser & Rules Suite', () => {
           expect(parsedWords[i].map((token) => token.text).join(''), verse.key).toBe(verse.words[i].text);
         }
         total++;
+        if (/<tajweed/.test(verse.tajweed || '')) withMarkup++;
         if (parsedWords.some((w) => w.some((token) => token.rule))) coloured++;
       }
     }
     expect(total).toBe(6236);
-    expect(coloured / total).toBeGreaterThan(0.95);
+    expect(coloured).toBe(withMarkup);
   });
 
   it('maps tajweed rules across encoding differences (ZWNJ waqf signs, small low meem)', async () => {

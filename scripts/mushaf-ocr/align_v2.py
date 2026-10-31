@@ -20,7 +20,7 @@ import numpy as np
 import pymupdf
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from align_page import extract_geometry, fit_grid, slot_of  # noqa: E402
+from align_page import contours_of, extract_geometry, fit_grid, slot_of  # noqa: E402
 from paw_probe import expected_paws  # noqa: E402
 
 ZOOM = 6.0
@@ -68,6 +68,16 @@ def render_dark(page, markers):
         dark[max(0, y0 - 2):y1 + 2, max(0, x0 - 2):x1 + 2] = 0
     dark[:int(TEXT_TOP * ZOOM)] = 0
     dark[int(TEXT_BOTTOM * ZOOM):] = 0
+    # Sajdah overlines: long, hairline-thin sub-paths drawn over the sajdah words. They touch
+    # the letter tops and would merge the words below into one ink component, so erase them.
+    for d in page.get_drawings():
+        fill = d.get('fill')
+        if not fill or max(fill) > 0.3:
+            continue
+        for c in contours_of(d):
+            if c[2] - c[0] > 25 and c[3] - c[1] < 2.5:
+                x0, y0, x1, y1 = (int(c[0] * ZOOM) - 2, int((c[1] - 0.6) * ZOOM), int(c[2] * ZOOM) + 2, int((c[3] + 0.6) * ZOOM))
+                dark[max(0, y0):y1, max(0, x0):x1] = 0
     return img, dark
 
 

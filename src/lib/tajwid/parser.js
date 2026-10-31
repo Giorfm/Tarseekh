@@ -81,12 +81,12 @@ export function parseVerseTajweed(rawHtml, plainWords = []) {
           const first = ch.normalize('NFD')[0];
           if (isBaseLetter(first)) {
             ci++;
-            // Alef maqsura written in one source but carried by a dagger alef in the other
-            if (clusters[ci]?.base === ALEF_MAQSURA && first !== ALEF_MAQSURA && clusters[ci + 1]?.base === first) {
+            // Alef maqsura written in the markup but carried by a dagger alef in the plain text
+            if (clusters[ci]?.base === ALEF_MAQSURA && first !== ALEF_MAQSURA && sameLetter(clusters[ci + 1]?.base, first)) {
               ci++;
             }
-            if (ci >= clusters.length || clusters[ci].base !== first) {
-              if (first === ALEF_MAQSURA && ci > 0) {
+            if (ci >= clusters.length || !sameLetter(clusters[ci].base, first)) {
+              if (OPTIONAL_LETTERS.has(first) && ci > 0) {
                 ci--;
                 rule = clusters[ci].rule;
               } else {
@@ -122,12 +122,24 @@ export function parseVerseTajweed(rawHtml, plainWords = []) {
 }
 
 const ALEF_MAQSURA = '\u0649';
+// Letters one source writes in full where the other only carries a dagger alef / mark
+const OPTIONAL_LETTERS = new Set([ALEF_MAQSURA, '\u0627']);
 
 /**
  * Arabic base letters (everything else is a haraka, Quranic mark, digit or separator).
  */
 function isBaseLetter(ch) {
   return /[\u0621-\u063A\u0641-\u064A\u0671-\u06D3\u06EE\u06EF\u06FA-\u06FF]/.test(ch);
+}
+
+/**
+ * Letters written with interchangeable code points in the two sources
+ * (ya / alef maqsura / Farsi ya, alef / alef wasla).
+ */
+const LETTER_EQUIVALENTS = { '\u0649': '\u064A', '\u06CC': '\u064A', '\u0671': '\u0627' };
+function sameLetter(a, b) {
+  if (!a || !b) return false;
+  return (LETTER_EQUIVALENTS[a] || a) === (LETTER_EQUIVALENTS[b] || b);
 }
 
 /**

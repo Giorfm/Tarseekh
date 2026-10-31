@@ -26,8 +26,9 @@ import { SpeechTracker, hasSpeechConsent, isSpeechSupported } from '@/lib/speech
 import { RecitationStatusBar } from '@/components/speech/RecitationStatusBar';
 import { generateWordMasks } from '@/lib/memorization/engine';
 import { logActivity } from '@/lib/activity/logger';
-import { getMushafImageUrl, isMushafImageEnabled } from '@/lib/mushaf/image';
+import { getMushafImageUrl } from '@/lib/mushaf/image';
 import { getMushafLayout } from '@/lib/mushaf/layout';
+import { buildLinesFromLayout } from '@/lib/mushaf/lines';
 
 const compareWords = (a, b) => {
   const [sa, va] = a.verse_key.split(':').map(Number);
@@ -443,9 +444,8 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     }
   }, [pageData, facingPageData, isTajwidActive]);
 
-  // Load word geometry for the image view (falls back to the text view on failure)
+  // Load word geometry: drives the image view and the line breaks of the text view
   useEffect(() => {
-    if (!isMushafImageEnabled()) return;
     for (const p of [pageData, facingPageData]) {
       if (!p || p.page in mushafLayouts) continue;
       getMushafLayout(p.page)
@@ -658,7 +658,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
           }`}
           dir="rtl"
         >
-          {page.lines.map((line) => {
+          {(mushafLayouts[page.page] ? buildLinesFromLayout(page, mushafLayouts[page.page]) : page.lines).map((line) => {
             // Case 1: Surah Header Banner
             if (line.type === 'surah_header') {
               return (

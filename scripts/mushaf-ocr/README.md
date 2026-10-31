@@ -26,14 +26,16 @@ sudah diketahui dari data terverifikasi, masalahnya adalah **forced alignment**,
 3. **Jumlah PAW yang diharapkan** per kata dihitung dari teks terverifikasi (huruf yang tidak
    menyambung ke kiri: ا د ذ ر ز و ة ء ...).
 4. **Lebar kata yang diharapkan** diukur dengan HarfBuzz memakai font KFGQPC Hafs, diskalakan per baris.
-5. **Dynamic programming** membagi deretan PAW di antara dua penanda ayat menjadi tepat N kata,
+5. **Garis sajdah** (garis tipis panjang di atas kata sajdah) dihapus dari mask tinta berdasarkan
+   sub-path vektornya, karena garis itu menyentuh puncak huruf dan menyatukan beberapa kata.
+6. **Dynamic programming** membagi deretan PAW di antara dua penanda ayat menjadi tepat N kata,
    menghormati pergantian baris, dengan biaya: selisih jumlah PAW + selisih lebar (log) + celah sempit
    di batas kata.
 
 Cetakan 1441H memiliki pemenggalan baris sendiri (berbeda dari `line_number` maupun `line_v2`
 Quran.com), sehingga posisi baris diambil dari gambar, bukan dari data.
 
-## Hasil (31 Oktober 2026)
+## Hasil (31 Oktober 2026, pembaruan garis sajdah)
 
 | Metrik | Nilai |
 |---|---|
@@ -41,7 +43,7 @@ Quran.com), sehingga posisi baris diambil dari gambar, bukan dari data.
 | Token (kata + penanda ayat) | **83.665 / 83.665**, masing-masing tepat sekali |
 | Selisih PAW per kata | 0,072 |
 | Biaya DP per kata | median 0,381, terburuk 0,618 |
-| Ayat dengan pembagian perkiraan (`approx`) | 2: QS 17:107 (hal. 293) dan QS 53:62 (hal. 528), ayat sajdah yang tandanya menempel pada teks |
+| Ayat dengan pembagian perkiraan (`approx`) | 0 (sebelumnya 2 ayat sajdah: QS 17:107 dan QS 53:62, kini diperbaiki dengan penghapusan garis sajdah) |
 | Gambar | 604 × WebP 1200×1716, total ±81 MB, ±130 KB/halaman |
 
 `src/lib/mushaf/mushaf.test.js` memeriksa cakupan seluruh token di setiap build.
@@ -73,7 +75,8 @@ Opsi debug: `align_v2.py ... 3,7,50 --overlay work/overlay` menggambar kotak kat
 
 ## Batasan yang diketahui
 
-- Dua ayat sajdah memakai pembagian perkiraan (ditandai `approx` di data tata letak).
+- Jika suatu ayat tidak bisa dibagi dari tinta (kata saling menempel), pipeline memakai pembagian
+  perkiraan berdasarkan lebar font dan menandainya `approx`. Saat ini tidak ada halaman yang memakainya.
 - Kotak kata mengikuti jangkauan tinta; huruf berekor panjang (mis. kaf memanjang) dapat tumpang tindih
   sedikit dengan kata tetangga. Area sentuh (`hx0`/`hx1`) dibagi di tengah celah.
 - Belum ada ground truth manual untuk setiap kata; validasi saat ini: cakupan token 100%, metrik biaya,
