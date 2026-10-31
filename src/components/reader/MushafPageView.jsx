@@ -8,7 +8,9 @@ import { WordSpan } from './WordSpan';
 import { ReaderSettingsSheet } from './ReaderSettingsSheet';
 import { JumpSheet } from './JumpSheet';
 import { TajweedLegendSheet } from './TajweedLegendSheet';
-import { SelectionPopover } from '@/components/chat/SelectionPopover';
+import { TajweedWordSheet } from './TajweedWordSheet';
+import { MushafImagePage } from './MushafImagePage';
+import { SelectionPopover, getPopoverPosition } from '@/components/chat/SelectionPopover';
 import { ChatPanel } from '@/components/chat/ChatPanel';
 import { SpeechConsentModal } from '@/components/speech/SpeechConsentModal';
 import { MemorizationSetupModal } from '@/components/memorization/MemorizationSetupModal';
@@ -24,6 +26,14 @@ import { SpeechTracker, hasSpeechConsent, isSpeechSupported } from '@/lib/speech
 import { RecitationStatusBar } from '@/components/speech/RecitationStatusBar';
 import { generateWordMasks } from '@/lib/memorization/engine';
 import { logActivity } from '@/lib/activity/logger';
+import { getMushafImageUrl, isMushafImageEnabled } from '@/lib/mushaf/image';
+import { getMushafLayout } from '@/lib/mushaf/layout';
+
+const compareWords = (a, b) => {
+  const [sa, va] = a.verse_key.split(':').map(Number);
+  const [sb, vb] = b.verse_key.split(':').map(Number);
+  return sa - sb || va - vb || a.idx - b.idx;
+};
 
 export function MushafPageView({ pageData, facingPageData = null }) {
   const router = useRouter();
@@ -56,6 +66,13 @@ export function MushafPageView({ pageData, facingPageData = null }) {
   const [maskedWordsMap, setMaskedWordsMap] = useState(new Map());
   const [revealedWords, setRevealedWords] = useState(new Set());
   const [hintsUsed, setHintsUsed] = useState(0);
+
+  // Mushaf Image Mode State (KFGQPC page images + aligned word layer)
+  const [mushafLayouts, setMushafLayouts] = useState({}); // page -> layout | null (failed)
+  const [failedImagePages, setFailedImagePages] = useState(new Set());
+  const [imageSelection, setImageSelection] = useState(null); // controlled SelectionPopover state
+  const [tajweedWord, setTajweedWord] = useState(null);
+  const imageSelectionOpenedAtRef = useRef(0);
 
   const touchStartXRef = useRef(null);
   const touchStartYRef = useRef(null);
@@ -106,8 +123,23 @@ export function MushafPageView({ pageData, facingPageData = null }) {
         }
       }
     }
-    return list;
+    // Canonical reading order (line order in page data is wrong on some pages, e.g. 593)
+    return list.sort(compareWords);
   }, [pageData]);
+
+  // Verified text of every token (words and ayah-end markers) on the visible pages
+  const wordTextMap = React.useMemo(() => {
+    const map = new Map();
+    for (const p of [pageData, facingPageData]) {
+      if (!p) continue;
+      for (const l of p.lines) {
+        if (l.type === 'text' && Array.isArray(l.words)) {
+          for (const w of l.words) map.set(`${w.verse_key}:${w.idx}`, w);
+        }
+      }
+    }
+    return map;
+  }, [pageData, facingPageData]);
 
   const pageWordsRef = useRef(pageWords);
   pageWordsRef.current = pageWords;
@@ -141,9 +173,11 @@ export function MushafPageView({ pageData, facingPageData = null }) {
   useEffect(() => {
     if (activeMode === 'memorize') {
       const map = new Map();
-      const masks = generateWordMasks(pageWords, memConfig.level, `page-${pageNum}`);
-      for (const [idx, cfg] of masks.entries()) {
-        const w = pageWords.find((item) => item.idx === idx);
+      // Masks are keyed by idx; word idx repeats per ayah, so use the page position instead
+      const positioned = pageWords.map((w, i) => ({ ...w, idx: i }));
+      const masks = generateWordMasks(positioned, memConfig.level, `page-${pageNum}`);
+      for (const [i, cfg] of masks.entries()) {
+        const w = pageWords[i];
         if (w) {
           map.set(`${w.verse_key}:${w.idx}`, cfg);
         }
@@ -397,6 +431,78 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     }
   }, [pageData, isTajwidActive]);
 
+  // Load word geometry for the image view (falls back to the text view on failure)
+  useEffect(() => {
+    if (!isMushafImageEnabled()) return;
+    for (const p of [pageData, facingPageData]) {
+      if (!p || p.page in mushafLayouts) continue;
+      getMushafLayout(p.page)
+        .then((layout) => setMushafLayouts((prev) => ({ ...prev, [p.page]: layout })))
+        .catch((err) => {
+          console.warn(`Tata letak gambar halaman ${p.page} tidak tersedia`, err);
+          setMushafLayouts((prev) => ({ ...prev, [p.page]: null }));
+        });
+    }
+  }, [pageData, facingPageData, mushafLayouts]);
+
+  // Clear image selection when leaving the page
+  useEffect(() => {
+    setImageSelection(null);
+    setTajweedWord(null);
+  }, [pageNum]);
+
+  const getImageWordState = (key) => {
+    const w = wordTextMap.get(key);
+    const maskCfg = maskedWordsMap.get(key);
+    let highlightState = null;
+    if (isMicActive) {
+      const currentWord = pageWords[speechPointer];
+      if (currentWord && `${currentWord.verse_key}:${currentWord.idx}` === key) highlightState = 'current';
+      else if (matchedWordKeys.has(key)) highlightState = 'matched';
+      else if (missedWordKeys.has(key)) highlightState = 'missed';
+    }
+    const tokens = isTajwidActive ? tajweedMap.get(key) : null;
+    return {
+      text: w?.text || '',
+      highlightState,
+      isMasked: activeMode === 'memorize' && Boolean(maskCfg?.isMasked) && !revealedWords.has(key),
+      maskHint: maskCfg?.hint || null,
+      tajweedRules: tokens ? [...new Set(tokens.map((t) => t.rule).filter(Boolean))] : [],
+      isSelected: Boolean(imageSelection?.verseKeys.includes(w?.verse_key)),
+    };
+  };
+
+  const handleImageWordTap = (key) => {
+    const w = wordTextMap.get(key);
+    if (!w || w.type === 'end') return;
+    const isMaskedWord = activeMode === 'memorize' && maskedWordsMap.get(key)?.isMasked && !revealedWords.has(key);
+    if (activeMode === 'tajwid' && !isMicActive && !isMaskedWord) {
+      setTajweedWord({ verseKey: w.verse_key, idx: w.idx, text: w.text, tokens: tajweedMap.get(key) || null });
+      return;
+    }
+    handleWordManualClick(w.verse_key, w.idx);
+  };
+
+  const handleImageWordLongPress = (key, rect) => {
+    const w = wordTextMap.get(key);
+    if (!w) return;
+    // Long-press must not become a shortcut to reveal a word that is being memorised
+    if (activeMode === 'memorize' && maskedWordsMap.get(key)?.isMasked && !revealedWords.has(key)) return;
+    const selectedText = [...wordTextMap.values()]
+      .filter((t) => t.verse_key === w.verse_key && t.type !== 'end')
+      .sort(compareWords)
+      .map((t) => t.text)
+      .join(' ');
+    imageSelectionOpenedAtRef.current = Date.now();
+    setImageSelection({ ...getPopoverPosition(rect), verseKeys: [w.verse_key], selectedText });
+  };
+
+  const handleImageSelectionDismiss = () => {
+    // Ignore the synthetic mouse events some browsers fire right after a long-press
+    if (Date.now() - imageSelectionOpenedAtRef.current < 500) return;
+    setImageSelection(null);
+  };
+
   const goToPage = useCallback(
     (target) => {
       const p = Math.max(1, Math.min(604, target));
@@ -463,6 +569,32 @@ export function MushafPageView({ pageData, facingPageData = null }) {
 
     touchStartXRef.current = null;
     touchStartYRef.current = null;
+  };
+
+  // Render a Mushaf page: official page image when available, otherwise the text layout
+  const renderPage = (page) => {
+    const layout = mushafLayouts[page.page];
+    const imageUrl = getMushafImageUrl(page.page);
+    if (!imageUrl || layout === null || failedImagePages.has(page.page)) {
+      return renderSinglePage(page);
+    }
+    return (
+      <div className="relative flex-1 p-2 sm:p-3 bg-white dark:bg-black rounded-3xl border-2 border-amber-900/15 dark:border-amber-400/20 shadow-md transition-all">
+        {layout ? (
+          <MushafImagePage
+            page={page.page}
+            imageUrl={imageUrl}
+            layout={layout}
+            getWordState={getImageWordState}
+            onWordTap={handleImageWordTap}
+            onWordLongPress={handleImageWordLongPress}
+            onImageError={() => setFailedImagePages((prev) => new Set(prev).add(page.page))}
+          />
+        ) : (
+          <div className="w-full rounded-2xl bg-gray-100 dark:bg-white/5 animate-pulse" style={{ aspectRatio: '382.7 / 547.1' }} />
+        )}
+      </div>
+    );
   };
 
   // Render a single Mushaf Page
@@ -629,11 +761,11 @@ export function MushafPageView({ pageData, facingPageData = null }) {
         <div className="flex gap-4 items-stretch justify-center">
           {facingPageData && (
             <div className="hidden lg:flex flex-1">
-              {renderSinglePage(facingPageData)}
+              {renderPage(facingPageData)}
             </div>
           )}
           <div className="flex-1 max-w-2xl mx-auto w-full">
-            {renderSinglePage(pageData)}
+            {renderPage(pageData)}
           </div>
         </div>
 
@@ -750,7 +882,12 @@ export function MushafPageView({ pageData, facingPageData = null }) {
         onAskAI={handleAskAI}
         onQuickTafsir={handleQuickTafsir}
         onBookmark={handleBookmark}
+        selection={imageSelection}
+        onDismiss={handleImageSelectionDismiss}
       />
+
+      {/* Per-word Tajwid Sheet (image view) */}
+      <TajweedWordSheet word={tajweedWord} onClose={() => setTajweedWord(null)} />
 
       {/* Grounded AI Chat Panel */}
       <ChatPanel

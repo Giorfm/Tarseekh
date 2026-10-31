@@ -1,0 +1,7 @@
+brotli==1.2.1
+fonttools==4.68.0
+numpy==2.5.4
+opencv-python-headless==5.0.0.93
+pillow==13.0.0
+pymupdf==2.0
+uharfbuzz==0.57.0

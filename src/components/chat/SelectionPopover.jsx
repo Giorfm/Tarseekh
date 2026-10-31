@@ -3,9 +3,37 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Sparkles, BookOpen, Bookmark, X } from 'lucide-react';
 
-export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark }) {
+const POPOVER_WIDTH = 300;
+
+/**
+ * Page coordinates for the popover next to a selection rect (viewport coords).
+ * Above on desktop, below on mobile to stay clear of the native browser copy menu.
+ */
+export function getPopoverPosition(rect) {
+  const isMobile = window.innerWidth < 768;
+  let x = rect.left + rect.width / 2 - POPOVER_WIDTH / 2;
+  x = Math.max(16, Math.min(window.innerWidth - POPOVER_WIDTH - 16, x));
+
+  let y;
+  if (isMobile) {
+    y = rect.bottom + 12; // below selection
+  } else {
+    y = rect.top - 54; // above selection
+    if (y < 60) y = rect.bottom + 12;
+  }
+  return { x, y: y + window.scrollY };
+}
+
+/**
+ * Uncontrolled (default): reacts to native text selection on [data-verse-key] elements.
+ * Controlled: pass `selection` ({ x, y, verseKeys, selectedText }) and `onDismiss`, e.g. for
+ * long-press on mushaf page images where there is no selectable text.
+ */
+export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark, selection = null, onDismiss }) {
   const [popover, setPopover] = useState(null); // { x, y, verseKeys, selectedText, isTooMany }
   const popoverRef = useRef(null);
+  const onDismissRef = useRef(onDismiss);
+  onDismissRef.current = onDismiss;
 
   useEffect(() => {
     const handleSelection = () => {
@@ -40,25 +68,11 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark }) {
 
       if (verseKeys.length === 0) return;
 
-      const rect = range.getBoundingClientRect();
-      const isMobile = window.innerWidth < 768;
-
-      // Position: Above on desktop, below on mobile to avoid native browser copy menu
-      const popoverWidth = 260;
-      let x = rect.left + rect.width / 2 - popoverWidth / 2;
-      x = Math.max(16, Math.min(window.innerWidth - popoverWidth - 16, x));
-
-      let y;
-      if (isMobile) {
-        y = rect.bottom + 12; // below selection
-      } else {
-        y = rect.top - 54; // above selection
-        if (y < 60) y = rect.bottom + 12;
-      }
+      const { x, y } = getPopoverPosition(range.getBoundingClientRect());
 
       setPopover({
         x,
-        y: y + window.scrollY,
+        y,
         verseKeys,
         selectedText: text,
         isTooMany: verseKeys.length > 7,
@@ -72,7 +86,10 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark }) {
     const handleDismiss = (e) => {
       if (popoverRef.current && !popoverRef.current.contains(e.target)) {
         // Delay to allow action button click
-        setTimeout(() => setPopover(null), 100);
+        setTimeout(() => {
+          setPopover(null);
+          onDismissRef.current?.();
+        }, 100);
       }
     };
 
@@ -95,18 +112,24 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark }) {
     };
   }, [popover]);
 
-  if (!popover) return null;
+  const active = selection ? { ...selection, isTooMany: selection.verseKeys.length > 7 } : popover;
+  if (!active) return null;
+
+  const close = () => {
+    setPopover(null);
+    onDismissRef.current?.();
+  };
 
   return (
     <div
       ref={popoverRef}
       style={{
-        top: `${popover.y}px`,
-        left: `${popover.x}px`,
+        top: `${active.y}px`,
+        left: `${active.x}px`,
       }}
-      className="absolute z-50 animate-fade-in bg-brand-charcoal text-white dark:bg-white dark:text-brand-charcoal p-1.5 rounded-2xl shadow-2xl border border-white/10 dark:border-black/10 flex items-center gap-1 text-xs select-none pointer-events-auto"
+      className="absolute z-50 animate-fade-in bg-brand-charcoal text-white dark:bg-white dark:text-brand-charcoal p-1.5 rounded-2xl shadow-2xl border border-white/10 dark:border-black/10 flex items-center gap-1 text-xs whitespace-nowrap select-none pointer-events-auto"
     >
-      {popover.isTooMany ? (
+      {active.isTooMany ? (
         <div className="px-3 py-1.5 text-[11px] text-amber-300 dark:text-amber-700 font-medium">
           Maksimal 7 ayat sekaligus untuk tanya AI
         </div>
@@ -114,8 +137,8 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark }) {
         <>
           <button
             onClick={() => {
-              onAskAI?.(popover.verseKeys, popover.selectedText);
-              setPopover(null);
+              onAskAI?.(active.verseKeys, active.selectedText);
+              close();
             }}
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-brand-primary dark:bg-brand-dark-primary text-white dark:text-brand-dark-bg font-semibold hover:opacity-95 transition-opacity"
           >
@@ -125,8 +148,8 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark }) {
 
           <button
             onClick={() => {
-              onQuickTafsir?.(popover.verseKeys, popover.selectedText);
-              setPopover(null);
+              onQuickTafsir?.(active.verseKeys, active.selectedText);
+              close();
             }}
             className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/15 dark:hover:bg-black/10 font-medium transition-colors"
           >
@@ -136,8 +159,8 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark }) {
 
           <button
             onClick={() => {
-              onBookmark?.(popover.verseKeys);
-              setPopover(null);
+              onBookmark?.(active.verseKeys);
+              close();
             }}
             className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl hover:bg-white/15 dark:hover:bg-black/10 font-medium transition-colors"
           >
@@ -148,7 +171,7 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark }) {
       )}
 
       <button
-        onClick={() => setPopover(null)}
+        onClick={close}
         className="p-1 rounded-lg hover:bg-white/15 dark:hover:bg-black/10 text-gray-400"
         aria-label="Tutup"
       >
