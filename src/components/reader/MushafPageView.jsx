@@ -581,7 +581,11 @@ export function MushafPageView({ pageData, facingPageData = null }) {
       {/* Grounded AI Chat Panel */}
       <ChatPanel
         isOpen={isChatOpen}
-        onClose={() => setIsChatOpen(false)}
+        onClose={() => {
+          setIsChatOpen(false);
+          setChatInitialPrompt('');
+        }}
+        onClearInitialPrompt={() => setChatInitialPrompt('')}
         verseKeys={chatVerseKeys}
         selectedText={chatSelectedText}
         initialPrompt={chatInitialPrompt}

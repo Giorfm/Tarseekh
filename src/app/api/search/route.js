@@ -23,10 +23,15 @@ export async function GET(request) {
     }
 
     const { q, limit } = parsed.data;
-    const results = await searchSemanticTafsir(q, limit);
+    const searchData = await searchSemanticTafsir(q, limit);
+    const results = Array.isArray(searchData) ? searchData : searchData.results || [];
+    const theme = searchData.theme || null;
+    const explanation = searchData.explanation || null;
 
     return NextResponse.json({
       query: q,
+      theme,
+      explanation,
       count: results.length,
       results,
     });

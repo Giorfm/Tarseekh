@@ -24,6 +24,7 @@ const STARTER_CHIPS = [
 export function ChatPanel({
   isOpen,
   onClose,
+  onClearInitialPrompt,
   verseKeys = [],
   selectedText = '',
   initialPrompt = '',
@@ -37,6 +38,20 @@ export function ChatPanel({
 
   const abortControllerRef = useRef(null);
   const messagesEndRef = useRef(null);
+  const lastSentInitialPromptRef = useRef(null);
+
+  // Stable refs to prevent sendMessage from re-creating on every render
+  const isStreamingRef = useRef(isStreaming);
+  isStreamingRef.current = isStreaming;
+
+  const messagesRef = useRef(messages);
+  messagesRef.current = messages;
+
+  const verseKeysRef = useRef(verseKeys);
+  verseKeysRef.current = verseKeys;
+
+  const inputRef = useRef(input);
+  inputRef.current = input;
 
   // Auto-scroll to bottom of chat
   const scrollToBottom = () => {
@@ -47,22 +62,56 @@ export function ChatPanel({
     scrollToBottom();
   }, [messages, isStreaming]);
 
+  const handleStop = (e) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    if (abortControllerRef.current) {
+      try {
+        abortControllerRef.current.abort();
+      } catch (err) {
+        console.warn('Abort error:', err);
+      }
+      abortControllerRef.current = null;
+    }
+    setIsStreaming(false);
+    isStreamingRef.current = false;
+  };
+
+  const handleClose = () => {
+    handleStop();
+    lastSentInitialPromptRef.current = null;
+    onClose?.();
+  };
+
+  const handleCopy = (text, idx) => {
+    if (!text) return;
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(() => {
+        setCopiedIdx(idx);
+        setTimeout(() => setCopiedIdx(null), 2000);
+      }).catch((err) => {
+        console.warn('Gagal menyalin teks:', err);
+      });
+    }
+  };
+
   const sendMessage = useCallback(
     async (questionText) => {
-      const q = (questionText || input).trim();
-      if (!q || isStreaming) return;
+      const q = (typeof questionText === 'string' ? questionText : inputRef.current).trim();
+      if (!q || isStreamingRef.current) return;
 
       setInput('');
       setErrorMsg(null);
-
-      const userMessage = { role: 'user', content: q };
-      const updatedMessages = [...messages, userMessage];
-      setMessages(updatedMessages);
-
-      // Prepare placeholder for model response
-      const modelPlaceholder = { role: 'model', content: '', sources: [] };
-      setMessages([...updatedMessages, modelPlaceholder]);
       setIsStreaming(true);
+      isStreamingRef.current = true;
+
+      const currentMessages = messagesRef.current;
+      const userMessage = { role: 'user', content: q };
+      const modelPlaceholder = { role: 'model', content: '', sources: [] };
+      const updatedMessages = [...currentMessages, userMessage, modelPlaceholder];
+      setMessages(updatedMessages);
 
       abortControllerRef.current = new AbortController();
 
@@ -71,9 +120,9 @@ export function ChatPanel({
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            verseKeys,
+            verseKeys: verseKeysRef.current,
             question: q,
-            history: messages.slice(-4),
+            history: currentMessages.slice(-4),
           }),
           signal: abortControllerRef.current.signal,
         });
@@ -91,8 +140,9 @@ export function ChatPanel({
         let buffer = '';
         let accumulatedText = '';
         let activeSources = [];
+        let isDone = false;
 
-        while (true) {
+        while (!isDone) {
           const { value, done } = await reader.read();
           if (done) break;
 
@@ -131,8 +181,13 @@ export function ChatPanel({
                     }
                     return copy;
                   });
+                } else if (parsed.type === 'done') {
+                  isDone = true;
+                  break;
                 } else if (parsed.type === 'error') {
-                  setErrorMsg(parsed.message);
+                  setErrorMsg(parsed.message || 'Terjadi kesalahan pada AI');
+                  isDone = true;
+                  break;
                 }
               } catch (err) {
                 console.warn('Failed to parse SSE chunk', err);
@@ -140,30 +195,58 @@ export function ChatPanel({
             }
           }
         }
+
+        try {
+          await reader.cancel();
+        } catch {
+          // Stream already closed or cancelled
+        }
       } catch (err) {
         if (err.name !== 'AbortError') {
           setErrorMsg(err.message || 'Gagal memuat jawaban');
         }
       } finally {
         setIsStreaming(false);
+        isStreamingRef.current = false;
         abortControllerRef.current = null;
       }
     },
-    [input, isStreaming, messages, verseKeys]
+    []
   );
 
-  // Handle initialPrompt if triggered via starter action
+  // Reset chat state when verse selection changes
+  const currentVerseKeyStr = verseKeys.join(',');
+  const prevVerseKeyStrRef = useRef(currentVerseKeyStr);
   useEffect(() => {
-    if (isOpen && initialPrompt) {
-      sendMessage(initialPrompt);
+    if (currentVerseKeyStr !== prevVerseKeyStrRef.current) {
+      prevVerseKeyStrRef.current = currentVerseKeyStr;
+      setMessages([]);
+      setErrorMsg(null);
+      setSources([]);
+      lastSentInitialPromptRef.current = null;
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort();
+        abortControllerRef.current = null;
+      }
+      setIsStreaming(false);
+      isStreamingRef.current = false;
     }
-  }, [isOpen, initialPrompt, sendMessage]);
+  }, [currentVerseKeyStr]);
+
+  // Handle initialPrompt only ONCE per unique prompt
+  useEffect(() => {
+    if (isOpen && initialPrompt && lastSentInitialPromptRef.current !== initialPrompt) {
+      lastSentInitialPromptRef.current = initialPrompt;
+      sendMessage(initialPrompt);
+      onClearInitialPrompt?.();
+    }
+  }, [isOpen, initialPrompt, sendMessage, onClearInitialPrompt]);
 
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end bg-black/40 backdrop-blur-xs animate-fade-in">
-      <div className="absolute inset-0" onClick={onClose} />
+      <div className="absolute inset-0" onClick={handleClose} />
 
       {/* Chat Container: Bottom sheet on mobile, right panel on desktop */}
       <div className="relative w-full md:w-[480px] h-[85vh] md:h-full bg-white dark:bg-brand-dark-surface border-t md:border-l border-emerald-950/10 dark:border-white/10 shadow-2xl flex flex-col z-10 self-end md:self-stretch rounded-t-3xl md:rounded-none overflow-hidden">
@@ -184,7 +267,7 @@ export function ChatPanel({
           </div>
 
           <button
-            onClick={onClose}
+            onClick={handleClose}
             className="p-1.5 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 text-gray-500"
             aria-label="Tutup panel tanya AI"
           >

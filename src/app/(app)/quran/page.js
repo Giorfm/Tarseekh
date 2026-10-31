@@ -2,18 +2,18 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Search, BookOpen, Layers, ChevronRight, Sparkles, Loader2, ArrowRight } from 'lucide-react';
+import { Search, BookOpen, Layers, ChevronRight, Sparkles, Loader2, ArrowRight, Lightbulb } from 'lucide-react';
 import { useSettings } from '@/context/SettingsContext';
 import { getSurahList, getIndex } from '@/lib/quran/loader';
 import { getLastPosition } from '@/lib/quran/position';
 
 const SUGGESTED_TOPICS = [
-  'Sabar menghadapi cobaan',
-  'Keutamaan shalat malam',
+  'Ketenangan saat cemas & overthinking',
+  'Sabar menghadapi cobaan hidup',
+  'Sains penciptaan embrio manusia',
+  'Menahan amarah & memaafkan',
   'Berbakti kepada orang tua',
-  'Rezeki yang berkah',
-  'Ampunan dan taubat',
-  'Penciptaan alam semesta',
+  'Keadilan bisnis & kejujuran',
 ];
 
 export default function QuranIndexPage() {
@@ -21,6 +21,7 @@ export default function QuranIndexPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [semanticQuery, setSemanticQuery] = useState('');
   const [semanticResults, setSemanticResults] = useState([]);
+  const [semanticMeta, setSemanticMeta] = useState(null);
   const [isSearchingSemantic, setIsSearchingSemantic] = useState(false);
   const [surahs, setSurahs] = useState([]);
   const [index, setIndex] = useState(null);
@@ -53,6 +54,10 @@ export default function QuranIndexPage() {
       const res = await fetch(`/api/search?q=${encodeURIComponent(q)}&limit=10`);
       const data = await res.json();
       setSemanticResults(data.results || []);
+      setSemanticMeta({
+        theme: data.theme || null,
+        explanation: data.explanation || null,
+      });
     } catch (err) {
       console.warn('Gagal mencari semantik:', err);
     } finally {
@@ -302,13 +307,40 @@ export default function QuranIndexPage() {
           {isSearchingSemantic ? (
             <div className="py-12 text-center text-xs text-gray-400 flex items-center justify-center gap-2">
               <Loader2 className="w-4 h-4 animate-spin text-brand-primary" />
-              <span>Mencari rujukan ayat dan tafsir semantik...</span>
+              <span>Menganalisis makna tematik & menelusuri tafsir Al-Qur&apos;an...</span>
             </div>
           ) : semanticResults.length > 0 ? (
-            <div className="space-y-3">
-              <h4 className="font-bold text-xs uppercase tracking-wider text-gray-400">
-                Hasil Pencarian ({semanticResults.length} Ayat)
-              </h4>
+            <div className="space-y-4">
+              {/* Thematic Meta Header */}
+              {semanticMeta?.theme && (
+                <div className="p-4 rounded-3xl bg-amber-500/10 border border-amber-500/20 text-xs text-amber-950 dark:text-amber-200 flex items-start gap-3 shadow-xs">
+                  <div className="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+                    <Sparkles className="w-4 h-4" />
+                  </div>
+                  <div className="min-w-0">
+                    <span className="font-bold text-[10px] uppercase tracking-wider text-amber-800 dark:text-amber-400 block">
+                      Analisis Makna & Tema
+                    </span>
+                    <h4 className="font-bold text-sm text-brand-charcoal dark:text-white mt-0.5">
+                      {semanticMeta.theme}
+                    </h4>
+                    {semanticMeta.explanation && (
+                      <p className="text-xs text-gray-600 dark:text-gray-300 mt-1 leading-relaxed">
+                        {semanticMeta.explanation}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              )}
+
+              <div className="flex items-center justify-between">
+                <h4 className="font-bold text-xs uppercase tracking-wider text-gray-400">
+                  Ayat Rujukan Berdasarkan Makna ({semanticResults.length} Ayat)
+                </h4>
+                <span className="text-[11px] text-emerald-800 dark:text-emerald-400 font-medium">
+                  Tafsir Tematik (Maudhu&apos;i)
+                </span>
+              </div>
 
               {semanticResults.map((res) => {
                 const [sId, aId] = res.verse_key.split(':').map(Number);
@@ -318,9 +350,10 @@ export default function QuranIndexPage() {
                   <Link
                     key={res.verse_key}
                     href={targetHref}
-                    className="block p-4 rounded-3xl bg-white dark:bg-brand-dark-surface border border-emerald-950/10 dark:border-white/10 shadow-xs hover:border-brand-primary hover:shadow-md transition-all group space-y-2"
+                    className="block p-4 sm:p-5 rounded-3xl bg-white dark:bg-brand-dark-surface border border-emerald-950/10 dark:border-white/10 shadow-xs hover:border-brand-primary hover:shadow-md transition-all group space-y-3"
                   >
-                    <div className="flex items-center justify-between">
+                    {/* Top Row: Surah & Verse Badge + Theme Pill */}
+                    <div className="flex flex-wrap items-center justify-between gap-2">
                       <div className="flex items-center gap-2">
                         <span className="px-2.5 py-1 rounded-xl bg-brand-primary/10 text-brand-primary dark:text-brand-dark-primary font-bold text-xs">
                           QS {res.verse_key}
@@ -330,29 +363,54 @@ export default function QuranIndexPage() {
                             {res.surah_name}
                           </span>
                         )}
+                        {res.theme && (
+                          <span className="hidden sm:inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-800 dark:text-amber-300 font-semibold text-[10px]">
+                            <Sparkles className="w-3 h-3 text-amber-500" />
+                            <span>{res.theme}</span>
+                          </span>
+                        )}
                       </div>
                       <span className="text-xs font-semibold text-brand-primary dark:text-brand-dark-primary flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
-                        <span>Buka Ayat</span>
+                        <span>Buka Ayat & Tafsir</span>
                         <ArrowRight className="w-3.5 h-3.5" />
                       </span>
                     </div>
 
+                    {/* Arabic Text */}
                     {res.arabic && (
-                      <p className="font-quran text-lg text-brand-charcoal dark:text-gray-100 text-right leading-loose" dir="rtl">
+                      <p className="font-quran text-xl text-brand-charcoal dark:text-gray-100 text-right leading-loose pt-1" dir="rtl">
                         {res.arabic}
                       </p>
                     )}
 
-                    <p className="text-xs text-gray-600 dark:text-gray-300 leading-relaxed italic">
-                      &quot;{res.snippet}&quot;
+                    {/* Official Translation */}
+                    <p className="text-xs text-gray-700 dark:text-gray-300 leading-relaxed italic border-l-2 border-emerald-900/20 dark:border-emerald-400/20 pl-3">
+                      &quot;{res.translation || res.snippet}&quot;
                     </p>
+
+                    {/* Relevance & Tadabbur Insight */}
+                    {res.relevance && (
+                      <div className="p-3 rounded-2xl bg-emerald-50/80 dark:bg-emerald-950/30 border border-emerald-900/10 dark:border-emerald-400/10 text-xs flex items-start gap-2.5">
+                        <div className="w-5 h-5 rounded-md bg-emerald-100 dark:bg-emerald-900/60 text-emerald-800 dark:text-emerald-300 flex items-center justify-center shrink-0 mt-0.5">
+                          <Lightbulb className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+                        </div>
+                        <div className="min-w-0">
+                          <span className="font-bold block text-[10px] uppercase tracking-wider text-emerald-900 dark:text-emerald-300 mb-0.5">
+                            Keterkaitan Makna & Tadabbur
+                          </span>
+                          <p className="text-emerald-950 dark:text-emerald-100 text-xs leading-relaxed font-normal">
+                            {res.relevance}
+                          </p>
+                        </div>
+                      </div>
+                    )}
                   </Link>
                 );
               })}
             </div>
           ) : semanticQuery ? (
             <div className="p-8 text-center text-xs text-gray-400 rounded-3xl bg-white dark:bg-brand-dark-surface border border-black/5">
-              Tidak ditemukan hasil untuk &quot;{semanticQuery}&quot;. Coba gunakan kata kunci umum seperti &quot;sabar&quot;, &quot;shalat&quot;, atau &quot;rezeki&quot;.
+              Tidak ditemukan hasil tematik untuk &quot;{semanticQuery}&quot;. Coba gunakan konsep atau pertanyaan refleksi seperti &quot;ketenangan saat cemas&quot;, &quot;keutamaan memaafkan&quot;, atau &quot;penciptaan embrio&quot;.
             </div>
           ) : null}
         </div>
