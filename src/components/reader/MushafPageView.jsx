@@ -513,6 +513,32 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     [pageNum, router]
   );
 
+  // Two facing pages are visible from the lg breakpoint (matches the `lg:flex` wrapper below)
+  const [isSpreadView, setIsSpreadView] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 1024px)');
+    const update = () => setIsSpreadView(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
+  }, []);
+  const showsSpread = isSpreadView && Boolean(facingPageData);
+
+  // A mushaf spread is (odd page on the right, even page on the left): 1–2, 3–4, ... 603–604
+  const spreadStart = pageNum % 2 === 1 ? pageNum : pageNum - 1;
+  const spreadEnd = Math.min(604, spreadStart + 1);
+  const canGoPrev = showsSpread ? spreadStart > 1 : pageNum > 1;
+  const canGoNext = showsSpread ? spreadEnd < 604 : pageNum < 604;
+
+  // Next/previous move one spread (2 pages) when two pages are visible, otherwise one page
+  const goNext = useCallback(() => {
+    goToPage(showsSpread ? spreadStart + 2 : pageNum + 1);
+  }, [goToPage, showsSpread, spreadStart, pageNum]);
+
+  const goPrev = useCallback(() => {
+    goToPage(showsSpread ? spreadStart - 2 : pageNum - 1);
+  }, [goToPage, showsSpread, spreadStart, pageNum]);
+
   // Prefetch next and previous pages
   useEffect(() => {
     prefetchAdjacentPages(pageNum);
@@ -536,17 +562,17 @@ export function MushafPageView({ pageData, facingPageData = null }) {
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
       if (e.key === 'ArrowLeft') {
-        goToPage(pageNum + 1);
+        goNext();
       } else if (e.key === 'ArrowRight') {
-        goToPage(pageNum - 1);
+        goPrev();
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [pageNum, goToPage]);
+  }, [goNext, goPrev]);
 
-  // Touch Swipe Handler (Swipe Left = Next Page in mushaf)
+  // Touch Swipe Handler (RTL mushaf: swipe left-to-right = next page, like turning a printed mushaf)
   const handleTouchStart = (e) => {
     touchStartXRef.current = e.touches[0].clientX;
     touchStartYRef.current = e.touches[0].clientY;
@@ -560,10 +586,10 @@ export function MushafPageView({ pageData, facingPageData = null }) {
 
     // Horizontal swipe threshold
     if (Math.abs(deltaX) > 40 && Math.abs(deltaY) < 60) {
-      if (deltaX < 0) {
-        goToPage(pageNum + 1);
+      if (deltaX > 0) {
+        goNext();
       } else {
-        goToPage(pageNum - 1);
+        goPrev();
       }
     }
 
@@ -757,50 +783,56 @@ export function MushafPageView({ pageData, facingPageData = null }) {
 
       {/* Main Mushaf Viewing Area */}
       <div className="flex-1 max-w-5xl mx-auto w-full px-3 sm:px-6 py-4 flex flex-col justify-center">
-        {/* Two facing pages on large screens, single page on standard */}
+        {/* Two facing pages on large screens (even page left, odd page right), single page on standard */}
         <div className="flex gap-4 items-stretch justify-center">
-          {facingPageData && (
-            <div className="hidden lg:flex flex-1">
-              {renderPage(facingPageData)}
-            </div>
-          )}
-          <div className="flex-1 max-w-2xl mx-auto w-full">
-            {renderPage(pageData)}
-          </div>
+          {[pageData, facingPageData]
+            .filter(Boolean)
+            .sort((a, b) => b.page - a.page) // DOM order left-to-right: higher (even) page first
+            .map((p) =>
+              p.page === pageNum ? (
+                <div key={p.page} className="flex-1 max-w-2xl mx-auto w-full">
+                  {renderPage(p)}
+                </div>
+              ) : (
+                <div key={p.page} className="hidden lg:flex flex-1">
+                  {renderPage(p)}
+                </div>
+              )
+            )}
         </div>
 
-        {/* Navigation Bar & Progress */}
+        {/* Navigation Bar & Progress (RTL: next page is to the left) */}
         <div className="mt-4 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 max-w-2xl mx-auto w-full px-2">
-          {/* Previous Page */}
+          {/* Next Page */}
           <button
-            onClick={() => goToPage(pageNum - 1)}
-            disabled={pageNum <= 1}
+            onClick={goNext}
+            disabled={!canGoNext}
             className="flex items-center gap-1 px-3 py-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 disabled:opacity-30 disabled:cursor-not-allowed font-medium transition-colors"
           >
             <ChevronLeft className="w-4 h-4" />
-            <span className="hidden sm:inline">Sebelumnya</span>
+            <span className="hidden sm:inline">Berikutnya</span>
           </button>
 
           {/* Progress Bar & Label */}
           <div className="flex flex-col items-center gap-1 flex-1 max-w-xs px-4">
             <span className="text-[11px] font-semibold text-gray-600 dark:text-gray-300">
-              Halaman {pageNum} dari 604
+              {showsSpread ? `Halaman ${spreadStart}–${spreadEnd} dari 604` : `Halaman ${pageNum} dari 604`}
             </span>
-            <div className="w-full bg-gray-200 dark:bg-gray-800 h-1 rounded-full overflow-hidden">
+            <div className="w-full bg-gray-200 dark:bg-gray-800 h-1 rounded-full overflow-hidden" dir="rtl">
               <div
                 className="bg-brand-primary dark:bg-brand-dark-primary h-full transition-all duration-300"
-                style={{ width: `${(pageNum / 604) * 100}%` }}
+                style={{ width: `${((showsSpread ? spreadEnd : pageNum) / 604) * 100}%` }}
               />
             </div>
           </div>
 
-          {/* Next Page */}
+          {/* Previous Page */}
           <button
-            onClick={() => goToPage(pageNum + 1)}
-            disabled={pageNum >= 604}
+            onClick={goPrev}
+            disabled={!canGoPrev}
             className="flex items-center gap-1 px-3 py-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 disabled:opacity-30 disabled:cursor-not-allowed font-medium transition-colors"
           >
-            <span className="hidden sm:inline">Berikutnya</span>
+            <span className="hidden sm:inline">Sebelumnya</span>
             <ChevronRight className="w-4 h-4" />
           </button>
         </div>
