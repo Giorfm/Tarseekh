@@ -3,6 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
+  outputFileTracingIncludes: {
+    '/**': ['./public/data/**/*', './data/**/*'],
+  },
   async headers() {
     return [
       {

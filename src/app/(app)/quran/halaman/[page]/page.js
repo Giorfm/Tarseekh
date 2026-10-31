@@ -2,6 +2,12 @@ import { getPage } from '@/lib/pages/loader';
 import { MushafPageView } from '@/components/reader/MushafPageView';
 import { notFound } from 'next/navigation';
 
+export async function generateStaticParams() {
+  return Array.from({ length: 604 }, (_, i) => ({
+    page: String(i + 1),
+  }));
+}
+
 export async function generateMetadata({ params }) {
   const resolved = await params;
   const pageNum = parseInt(resolved.page, 10);
@@ -38,6 +44,7 @@ export default async function HalamanViewPage({ params }) {
       facingPageData = await getPage(facingNum);
     }
   } catch (err) {
+    console.error(`Error loading mushaf page ${pageNum}:`, err);
     notFound();
   }
 

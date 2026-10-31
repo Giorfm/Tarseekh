@@ -2,6 +2,12 @@ import { getSurah } from '@/lib/quran/loader';
 import { VerseListView } from '@/components/reader/VerseListView';
 import { notFound } from 'next/navigation';
 
+export async function generateStaticParams() {
+  return Array.from({ length: 114 }, (_, i) => ({
+    surah: String(i + 1),
+  }));
+}
+
 export async function generateMetadata({ params }) {
   const resolved = await params;
   const surahId = parseInt(resolved.surah, 10);
@@ -26,6 +32,7 @@ export default async function VerseViewPage({ params, searchParams }) {
   try {
     surahData = await getSurah(surahId);
   } catch (err) {
+    console.error(`Error loading surah ${surahId}:`, err);
     notFound();
   }
 
