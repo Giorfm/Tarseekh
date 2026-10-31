@@ -33,6 +33,8 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark, selection
   const [popover, setPopover] = useState(null); // { x, y, verseKeys, selectedText, isTooMany }
   const popoverRef = useRef(null);
   const onDismissRef = useRef(onDismiss);
+  const selectionTimerRef = useRef(null);
+  const isMouseDownRef = useRef(false);
   onDismissRef.current = onDismiss;
 
   useEffect(() => {
