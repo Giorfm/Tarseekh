@@ -169,17 +169,26 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     }
   }, [pageNum, activeMode, isMicActive, pageWords]);
 
-  // Recalculate memorization masks for page
+  // Recalculate memorization masks for the visible page(s); the facing page in the
+  // two-page view is masked too so it cannot be read while memorising
   useEffect(() => {
     if (activeMode === 'memorize') {
       const map = new Map();
-      // Masks are keyed by idx; word idx repeats per ayah, so use the page position instead
-      const positioned = pageWords.map((w, i) => ({ ...w, idx: i }));
-      const masks = generateWordMasks(positioned, memConfig.level, `page-${pageNum}`);
-      for (const [i, cfg] of masks.entries()) {
-        const w = pageWords[i];
-        if (w) {
-          map.set(`${w.verse_key}:${w.idx}`, cfg);
+      for (const p of [pageData, facingPageData]) {
+        if (!p) continue;
+        const words = p.lines
+          .filter((l) => l.type === 'text' && Array.isArray(l.words))
+          .flatMap((l) => l.words)
+          .filter((w) => w.type !== 'end')
+          .sort(compareWords);
+        // Masks are keyed by idx; word idx repeats per ayah, so use the page position instead
+        const positioned = words.map((w, i) => ({ ...w, idx: i }));
+        const masks = generateWordMasks(positioned, memConfig.level, `page-${p.page}`);
+        for (const [i, cfg] of masks.entries()) {
+          const w = words[i];
+          if (w) {
+            map.set(`${w.verse_key}:${w.idx}`, cfg);
+          }
         }
       }
       setMaskedWordsMap(map);
@@ -188,7 +197,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     } else {
       setMaskedWordsMap(new Map());
     }
-  }, [activeMode, memConfig, pageWords, pageNum]);
+  }, [activeMode, memConfig, pageData, facingPageData]);
 
   const startSpeechTracking = () => {
     if (!isSpeechSupported()) {
@@ -427,9 +436,12 @@ export function MushafPageView({ pageData, facingPageData = null }) {
   };
   useEffect(() => {
     if (isTajwidActive) {
-      getPageTajweedMap(pageData).then(setTajweedMap).catch(console.error);
+      // Both visible pages get tajwid colouring (the facing page is a readable page, not decoration)
+      Promise.all([pageData, facingPageData].filter(Boolean).map((p) => getPageTajweedMap(p)))
+        .then((maps) => setTajweedMap(new Map(maps.flatMap((m) => [...m]))))
+        .catch(console.error);
     }
-  }, [pageData, isTajwidActive]);
+  }, [pageData, facingPageData, isTajwidActive]);
 
   // Load word geometry for the image view (falls back to the text view on failure)
   useEffect(() => {
