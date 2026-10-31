@@ -1,4 +1,4 @@
-# Tarseekh (ترسيخ) - Meneguhkan & Menancapkan Al-Qur'an
+# Tarseekh (ترسيخ) - Seek the Light, Unfold Insight
 
 > **Tarseekh (ترسيخ):** Proses meneguhkan, mengokohkan, atau menancapkan hafalan dan pemahaman Al-Qur'an secara mendalam ke dalam dada dan ingatan.  
 > **Musabaqah Desain Aplikasi Al-Qur'an (DAQ)**  

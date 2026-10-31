@@ -55,8 +55,8 @@ export function AppShell({ children }) {
               <span className="font-bold text-lg tracking-tight block text-brand-primary dark:text-brand-dark-primary leading-none">
                 Tarseekh
               </span>
-              <span className="text-[11px] text-gray-500 dark:text-gray-400 font-medium tracking-wider uppercase">
-                Meneguhkan Al-Qur&apos;an
+              <span className="text-[10px] text-gray-500 dark:text-gray-400 font-medium tracking-tight">
+                Seek the Light, Unfold Insight
               </span>
             </div>
           </Link>

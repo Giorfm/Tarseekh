@@ -79,8 +79,22 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark, selection
       });
     };
 
+    const handlePointerDown = (e) => {
+      isMouseDownRef.current = e.pointerType === 'mouse';
+    };
+
     const handlePointerUp = () => {
+      isMouseDownRef.current = false;
       setTimeout(handleSelection, 50);
+    };
+
+    // Mobile long-press selection ends with touchcancel/pointercancel (not touchend),
+    // and dragging the selection handles fires no touch events on the page at all.
+    // selectionchange is the only event that reliably reports the final selection there.
+    const handleSelectionChange = () => {
+      if (isMouseDownRef.current) return; // desktop drag: wait for pointerup
+      clearTimeout(selectionTimerRef.current);
+      selectionTimerRef.current = setTimeout(handleSelection, 300);
     };
 
     const handleDismiss = (e) => {
@@ -94,19 +108,27 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark, selection
     };
 
     const handleScroll = () => {
-      if (popover) {
+      // Mobile browsers may scroll while the selection handles are dragged;
+      // keep the popover as long as the selection is still there.
+      const selection = window.getSelection();
+      if (popover && (!selection || selection.isCollapsed)) {
         setPopover(null);
       }
     };
 
+    document.addEventListener('pointerdown', handlePointerDown);
     document.addEventListener('pointerup', handlePointerUp);
     document.addEventListener('touchend', handlePointerUp);
+    document.addEventListener('selectionchange', handleSelectionChange);
     document.addEventListener('scroll', handleScroll, { passive: true });
     document.addEventListener('mousedown', handleDismiss);
 
     return () => {
+      clearTimeout(selectionTimerRef.current);
+      document.removeEventListener('pointerdown', handlePointerDown);
       document.removeEventListener('pointerup', handlePointerUp);
       document.removeEventListener('touchend', handlePointerUp);
+      document.removeEventListener('selectionchange', handleSelectionChange);
       document.removeEventListener('scroll', handleScroll);
       document.removeEventListener('mousedown', handleDismiss);
     };
@@ -123,6 +145,8 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark, selection
   return (
     <div
       ref={popoverRef}
+      // Keep the text selection alive while tapping a popover button
+      onMouseDown={(e) => e.preventDefault()}
       style={{
         top: `${active.y}px`,
         left: `${active.x}px`,
