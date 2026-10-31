@@ -119,10 +119,17 @@ const MEM_STORAGE_KEY = 'tarseekh_memorization_v1';
 const LEGACY_MEM_STORAGE_KEY = 'tadabbur_memorization_v1';
 
 export const MemorizationAdapter = {
+  _getStorage() {
+    if (typeof window !== 'undefined' && window.localStorage) return window.localStorage;
+    if (typeof globalThis !== 'undefined' && globalThis.localStorage) return globalThis.localStorage;
+    return null;
+  },
+
   getAll() {
-    if (typeof window === 'undefined') return [];
+    const storage = this._getStorage();
+    if (!storage) return [];
     try {
-      const raw = localStorage.getItem(MEM_STORAGE_KEY) || localStorage.getItem(LEGACY_MEM_STORAGE_KEY);
+      const raw = storage.getItem(MEM_STORAGE_KEY) || storage.getItem(LEGACY_MEM_STORAGE_KEY);
       return raw ? JSON.parse(raw) : [];
     } catch {
       return [];
@@ -134,18 +141,132 @@ export const MemorizationAdapter = {
     return items.filter((item) => !item.dueDate || item.dueDate <= todayStr);
   },
 
-  recordReview({ surah, ayah, grade }) {
-    if (typeof window === 'undefined') return;
+  getDueToday(todayStr = new Date().toISOString().split('T')[0]) {
+    return this.getDueItems(todayStr);
+  },
+
+  getItem(surah, ayah) {
     const items = this.getAll();
-    const existingIdx = items.findIndex((i) => i.surah === surah && i.ayah === ayah);
+    const s = parseInt(surah, 10);
+    const a = parseInt(ayah, 10);
+    return items.find((i) => i.surah === s && i.ayah === a) || null;
+  },
+
+  addItem({ surah, ayah, surahName = '', dueDate = null }) {
+    const storage = this._getStorage();
+    if (!storage) return;
+    const items = this.getAll();
+    const s = parseInt(surah, 10);
+    const a = parseInt(ayah, 10);
+    const existingIdx = items.findIndex((i) => i.surah === s && i.ayah === a);
+
+    const todayStr = new Date().toISOString().split('T')[0];
+    const itemData = {
+      id: `${s}:${a}`,
+      surah: s,
+      ayah: a,
+      surahName: surahName || `Surah ${s}`,
+      ease: 2.5,
+      interval: 0,
+      reps: 0,
+      dueDate: dueDate || todayStr,
+      addedAt: Date.now(),
+    };
+
+    if (existingIdx >= 0) {
+      items[existingIdx] = {
+        ...items[existingIdx],
+        surahName: surahName || items[existingIdx].surahName,
+      };
+    } else {
+      items.push(itemData);
+    }
+
+    try {
+      storage.setItem(MEM_STORAGE_KEY, JSON.stringify(items));
+    } catch (e) {
+      console.warn('Failed to save memorization item', e);
+    }
+
+    return itemData;
+  },
+
+  addRange({ surah, fromAyah, toAyah, surahName = '' }) {
+    const storage = this._getStorage();
+    if (!storage) return [];
+    const items = this.getAll();
+    const s = parseInt(surah, 10);
+    const start = parseInt(fromAyah, 10);
+    const end = parseInt(toAyah, 10);
+    const todayStr = new Date().toISOString().split('T')[0];
+    const addedList = [];
+
+    for (let a = start; a <= end; a++) {
+      const existingIdx = items.findIndex((i) => i.surah === s && i.ayah === a);
+      if (existingIdx >= 0) {
+        if (surahName && !items[existingIdx].surahName) {
+          items[existingIdx].surahName = surahName;
+        }
+      } else {
+        const newItem = {
+          id: `${s}:${a}`,
+          surah: s,
+          ayah: a,
+          surahName: surahName || `Surah ${s}`,
+          ease: 2.5,
+          interval: 0,
+          reps: 0,
+          dueDate: todayStr,
+          addedAt: Date.now(),
+        };
+        items.push(newItem);
+        addedList.push(newItem);
+      }
+    }
+
+    try {
+      storage.setItem(MEM_STORAGE_KEY, JSON.stringify(items));
+    } catch (e) {
+      console.warn('Failed to save memorization range', e);
+    }
+
+    return addedList;
+  },
+
+  removeById(id) {
+    const storage = this._getStorage();
+    if (!storage) return;
+    const items = this.getAll().filter((i) => i.id !== id);
+    try {
+      storage.setItem(MEM_STORAGE_KEY, JSON.stringify(items));
+    } catch (e) {
+      console.warn('Failed to remove memorization item', e);
+    }
+  },
+
+  removeItem({ surah, ayah }) {
+    const s = parseInt(surah, 10);
+    const a = parseInt(ayah, 10);
+    this.removeById(`${s}:${a}`);
+  },
+
+  recordReview({ surah, ayah, grade, surahName = '' }) {
+    const storage = this._getStorage();
+    if (!storage) return;
+    const items = this.getAll();
+    const s = parseInt(surah, 10);
+    const a = parseInt(ayah, 10);
+    const existingIdx = items.findIndex((i) => i.surah === s && i.ayah === a);
 
     const prev = existingIdx >= 0 ? items[existingIdx] : { ease: 2.5, interval: 0, reps: 0 };
     const sm2 = calculateSM2(prev, grade);
 
     const updatedItem = {
-      id: `${surah}:${ayah}`,
-      surah,
-      ayah,
+      ...(existingIdx >= 0 ? items[existingIdx] : {}),
+      id: `${s}:${a}`,
+      surah: s,
+      ayah: a,
+      surahName: surahName || items[existingIdx]?.surahName || `Surah ${s}`,
       ...sm2,
       lastGrade: grade,
       lastReviewedAt: Date.now(),
@@ -158,11 +279,37 @@ export const MemorizationAdapter = {
     }
 
     try {
-      localStorage.setItem(MEM_STORAGE_KEY, JSON.stringify(items));
+      storage.setItem(MEM_STORAGE_KEY, JSON.stringify(items));
     } catch (e) {
       console.warn('Failed to save memorization item', e);
     }
 
     return updatedItem;
+  },
+
+  getStats(todayStr = new Date().toISOString().split('T')[0]) {
+    const items = this.getAll();
+    const due = items.filter((item) => !item.dueDate || item.dueDate <= todayStr);
+    const mutqin = items.filter((item) => (item.reps >= 3 || item.interval >= 7) && item.lastGrade === 5);
+    const learning = items.filter((item) => !mutqin.includes(item));
+
+    return {
+      total: items.length,
+      due: due.length,
+      mutqin: mutqin.length,
+      learning: learning.length,
+      maxInterval: items.length > 0 ? Math.max(...items.map((i) => i.interval || 0), 0) : 0,
+    };
+  },
+
+  clearAll() {
+    const storage = this._getStorage();
+    if (!storage) return;
+    try {
+      storage.removeItem(MEM_STORAGE_KEY);
+      storage.removeItem(LEGACY_MEM_STORAGE_KEY);
+    } catch (e) {
+      console.warn('Failed to clear memorization items', e);
+    }
   },
 };

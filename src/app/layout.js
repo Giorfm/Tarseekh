@@ -40,8 +40,8 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="id" className={`${amiriQuran.variable} ${plusJakarta.variable}`}>
-      <body className="bg-brand-bg text-brand-charcoal dark:bg-brand-dark-bg dark:text-gray-100 transition-colors duration-200">
+    <html lang="id" className={`${amiriQuran.variable} ${plusJakarta.variable}`} suppressHydrationWarning>
+      <body className="bg-brand-bg text-brand-charcoal dark:bg-brand-dark-bg dark:text-gray-100 transition-colors duration-200" suppressHydrationWarning>
         <SettingsProvider>
           <ServiceWorkerRegister />
           {children}
