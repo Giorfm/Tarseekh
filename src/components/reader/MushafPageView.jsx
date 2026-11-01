@@ -15,7 +15,6 @@ import { MemorizationSetupModal } from '@/components/memorization/MemorizationSe
 import { MemorizationAssessmentModal } from '@/components/memorization/MemorizationAssessmentModal';
 import { MushafAudioPlayer } from './MushafAudioPlayer';
 import { MutashabihatModal } from '@/components/quran/MutashabihatModal';
-import { HighlightedAudioModal } from '@/components/audio/HighlightedAudioModal';
 import { FloatingMicButton } from './FloatingMicButton';
 import { useSettings } from '@/context/SettingsContext';
 import { prefetchAdjacentPages } from '@/lib/pages/loader';
@@ -66,9 +65,6 @@ export function MushafPageView({ pageData, facingPageData = null }) {
 
   // Mutashabihat Modal State (QUL Matching Verses)
   const [mutashabihatVerseKey, setMutashabihatVerseKey] = useState(null);
-
-  // Highlighted Audio Snippet Player State (Selected text pronunciation)
-  const [highlightedAudioSnippet, setHighlightedAudioSnippet] = useState(null);
 
   const pageNum = pageData.page;
   const juzNum = pageData.juz;
@@ -1000,18 +996,6 @@ export function MushafPageView({ pageData, facingPageData = null }) {
         onQuickTafsir={handleQuickTafsir}
         onBookmark={handleBookmark}
         onMutashabihat={(key) => setMutashabihatVerseKey(key)}
-        onPlayAudio={(text, keys) => setHighlightedAudioSnippet({ text, verseKeys: keys })}
-      />
-
-      {/* Highlighted Audio Snippet Player */}
-      <HighlightedAudioModal
-        isOpen={Boolean(highlightedAudioSnippet)}
-        onClose={() => setHighlightedAudioSnippet(null)}
-        snippet={highlightedAudioSnippet}
-        onPlayFullVerseMurottal={(vKey) => {
-          setActiveAudioVerseKey(vKey);
-          setIsAudioOpen(true);
-        }}
       />
 
       {/* Mutashabihat ul-Quran Modal (QUL Engine) */}

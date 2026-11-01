@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Sparkles, BookOpen, Bookmark, X, GitCompare, Volume2 } from 'lucide-react';
+import { Sparkles, BookOpen, Bookmark, X, GitCompare } from 'lucide-react';
 
-export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark, onMutashabihat, onPlayAudio }) {
+export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark, onMutashabihat }) {
   const [popover, setPopover] = useState(null); // { x, y, verseKeys, selectedText, isTooMany }
   const popoverRef = useRef(null);
   const selectionTimerRef = useRef(null);
@@ -158,18 +158,6 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark, onMutasha
         </div>
       ) : (
         <>
-          <button
-            onClick={() => {
-              onPlayAudio?.(popover.selectedText, popover.verseKeys);
-              setPopover(null);
-            }}
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/15 dark:hover:bg-black/10 font-medium transition-colors text-emerald-300 dark:text-emerald-700"
-            title="Dengarkan pelafalan audio teks / huruf ini"
-          >
-            <Volume2 className="w-3.5 h-3.5" />
-            <span>Dengar</span>
-          </button>
-
           <button
             onClick={() => {
               onAskAI?.(popover.verseKeys, popover.selectedText);
