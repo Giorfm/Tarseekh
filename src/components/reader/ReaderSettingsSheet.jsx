@@ -100,14 +100,49 @@ export function ReaderSettingsSheet({ isOpen, onClose, currentVerseKey = null, c
           </div>
         </div>
 
-        {/* 2. Font Size Slider & Live Preview */}
+        {/* 2. Font Style & Size */}
         <div className="space-y-3">
-          <div className="flex items-center justify-between">
+          <label className="text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+            Khat / Rasm Mushaf
+          </label>
+          <div className="grid grid-cols-2 gap-2">
+            <button
+              onClick={() => updateSettings({ mushaf_font: 'kfgqpc-v4' })}
+              className={`p-2.5 rounded-xl border text-left transition-all ${
+                (settings.mushaf_font || 'kfgqpc-v4') === 'kfgqpc-v4' || settings.mushaf_font === 'kfgqpc-v2'
+                  ? 'border-brand-primary bg-brand-primary/10 text-brand-primary dark:text-brand-dark-primary font-semibold'
+                  : 'border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-300'
+              }`}
+            >
+              <div className="flex items-center justify-between text-xs">
+                <span>KFGQPC V4 (1441H)</span>
+                {((settings.mushaf_font || 'kfgqpc-v4') === 'kfgqpc-v4' || settings.mushaf_font === 'kfgqpc-v2') && <Check className="w-3.5 h-3.5" />}
+              </div>
+              <span className="text-[10px] text-gray-400 block mt-0.5">Cetakan Terbaru Madinah (QUL)</span>
+            </button>
+
+            <button
+              onClick={() => updateSettings({ mushaf_font: 'amiri' })}
+              className={`p-2.5 rounded-xl border text-left transition-all ${
+                settings.mushaf_font === 'amiri'
+                  ? 'border-brand-primary bg-brand-primary/10 text-brand-primary dark:text-brand-dark-primary font-semibold'
+                  : 'border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-300'
+              }`}
+            >
+              <div className="flex items-center justify-between text-xs">
+                <span>Amiri Naskh</span>
+                {settings.mushaf_font === 'amiri' && <Check className="w-3.5 h-3.5" />}
+              </div>
+              <span className="text-[10px] text-gray-400 block mt-0.5">Teks Digital Klasik</span>
+            </button>
+          </div>
+
+          <div className="flex items-center justify-between pt-1">
             <label className="text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400">
-              Ukuran Huruf Arab
+              Ukuran Huruf / Zoom Mushaf
             </label>
             <span className="text-xs font-semibold px-2 py-0.5 rounded bg-black/5 dark:bg-white/5">
-              {Math.round(settings.font_scale * 16)}px
+              {Math.round((settings.font_scale / 1.75) * 100)}% ({Math.round(settings.font_scale * 16)}px)
             </span>
           </div>
 
@@ -121,8 +156,42 @@ export function ReaderSettingsSheet({ isOpen, onClose, currentVerseKey = null, c
             className="w-full accent-brand-primary cursor-pointer"
           />
 
+          {/* Perataan Tulisan */}
+          <div className="pt-1">
+            <label className="text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 block mb-1.5">
+              Perataan Tulisan
+            </label>
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                onClick={() => updateSettings({ text_align: 'center' })}
+                className={`py-2 px-3 rounded-xl border text-center text-xs transition-all ${
+                  (settings.text_align || 'center') === 'center'
+                    ? 'border-brand-primary bg-brand-primary/10 text-brand-primary dark:text-brand-dark-primary font-semibold'
+                    : 'border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-300'
+                }`}
+              >
+                Rata Tengah
+              </button>
+              <button
+                onClick={() => updateSettings({ text_align: 'justify' })}
+                className={`py-2 px-3 rounded-xl border text-center text-xs transition-all ${
+                  settings.text_align === 'justify'
+                    ? 'border-brand-primary bg-brand-primary/10 text-brand-primary dark:text-brand-dark-primary font-semibold'
+                    : 'border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-300'
+                }`}
+              >
+                Rata Kanan-Kiri
+              </button>
+            </div>
+          </div>
+
           <div className="p-3 rounded-xl bg-gray-50 dark:bg-black/20 text-center">
-            <p className="font-quran" dir="rtl">
+            <p
+              className={`${(settings.mushaf_font || 'kfgqpc-v4') === 'kfgqpc-v4' || settings.mushaf_font === 'kfgqpc-v2' ? 'font-qpc text-2xl' : 'font-quran'} ${
+                (settings.text_align || 'center') === 'center' ? 'text-center' : 'text-right'
+              }`}
+              dir="rtl"
+            >
               بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
             </p>
           </div>

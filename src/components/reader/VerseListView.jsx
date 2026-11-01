@@ -11,6 +11,7 @@ import { ChatPanel } from '@/components/chat/ChatPanel';
 import { SpeechConsentModal } from '@/components/speech/SpeechConsentModal';
 import { MemorizationSetupModal } from '@/components/memorization/MemorizationSetupModal';
 import { MemorizationAssessmentModal } from '@/components/memorization/MemorizationAssessmentModal';
+import { MutashabihatModal } from '@/components/quran/MutashabihatModal';
 import { FloatingMicButton } from './FloatingMicButton';
 import { useSettings } from '@/context/SettingsContext';
 import { saveLastPosition } from '@/lib/quran/position';
@@ -29,6 +30,8 @@ export function VerseListView({ surahData, initialAyah = null }) {
   const [isJumpOpen, setIsJumpOpen] = useState(false);
   const [isLegendOpen, setIsLegendOpen] = useState(false);
   const [activeVerseKey, setActiveVerseKey] = useState(initialAyah ? `${surahData.surah.id}:${initialAyah}` : `${surahData.surah.id}:1`);
+  const [mutashabihatVerseKey, setMutashabihatVerseKey] = useState(null);
+  const isKfgqpcFont = (settings.mushaf_font || 'kfgqpc-v4') === 'kfgqpc-v4' || settings.mushaf_font === 'kfgqpc-v2';
 
   // Chat Panel State
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -418,10 +421,10 @@ export function VerseListView({ surahData, initialAyah = null }) {
 
   const isTajwidActive = activeMode === 'tajwid' || settings.show_tajwid;
 
-  const handleAskAI = (keys, text) => {
+  const handleAskAI = (keys, text, prompt = '') => {
     setChatVerseKeys(keys);
     setChatSelectedText(text);
-    setChatInitialPrompt('');
+    setChatInitialPrompt(prompt);
     setIsChatOpen(true);
   };
 
@@ -492,7 +495,7 @@ export function VerseListView({ surahData, initialAyah = null }) {
           <span className="text-xs uppercase tracking-widest text-brand-primary dark:text-brand-dark-primary font-bold">
             Surah Ke-{surahData.surah.id}
           </span>
-          <h2 className="font-quran text-4xl text-brand-charcoal dark:text-white" dir="rtl">
+          <h2 className={`${isKfgqpcFont ? 'font-qpc' : 'font-quran'} text-4xl text-brand-charcoal dark:text-white`} dir="rtl">
             {surahData.surah.name_arabic}
           </h2>
           <h3 className="text-base font-bold text-brand-charcoal dark:text-white">
@@ -505,7 +508,7 @@ export function VerseListView({ surahData, initialAyah = null }) {
           {/* Bismillah Header Banner */}
           {showBismillahBanner && (
             <div className="pt-5 pb-2 text-center">
-              <span className="font-quran text-2xl text-brand-primary dark:text-brand-dark-primary select-none" dir="rtl">
+              <span className={`${isKfgqpcFont ? 'font-bismillah text-3xl' : 'font-quran text-2xl'} text-brand-primary dark:text-brand-dark-primary select-none`} dir="rtl">
                 بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
               </span>
             </div>
@@ -543,7 +546,9 @@ export function VerseListView({ surahData, initialAyah = null }) {
 
                 {/* Arabic Verse Text with Shared WordSpan */}
                 <div
-                  className="font-quran text-right select-text leading-quran py-2"
+                  className={`${isKfgqpcFont ? 'font-qpc text-2xl' : 'font-quran'} ${
+                    (settings.text_align || 'center') === 'center' ? 'text-center' : 'text-right'
+                  } select-text leading-quran py-2`}
                   dir="rtl"
                 >
                   {verse.words.map((w, idx) => {
@@ -682,6 +687,15 @@ export function VerseListView({ surahData, initialAyah = null }) {
         onAskAI={handleAskAI}
         onQuickTafsir={handleQuickTafsir}
         onBookmark={handleBookmark}
+        onMutashabihat={(key) => setMutashabihatVerseKey(key)}
+      />
+
+      {/* Mutashabihat ul-Quran Modal (QUL Engine) */}
+      <MutashabihatModal
+        isOpen={Boolean(mutashabihatVerseKey)}
+        onClose={() => setMutashabihatVerseKey(null)}
+        verseKey={mutashabihatVerseKey}
+        onAskAI={handleAskAI}
       />
 
       {/* Grounded AI Chat Panel */}

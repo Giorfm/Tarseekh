@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Sparkles, BookOpen, Bookmark, X } from 'lucide-react';
+import { Sparkles, BookOpen, Bookmark, X, GitCompare } from 'lucide-react';
 
-export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark }) {
+export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark, onMutashabihat }) {
   const [popover, setPopover] = useState(null); // { x, y, verseKeys, selectedText, isTooMany }
   const popoverRef = useRef(null);
   const selectionTimerRef = useRef(null);
@@ -28,33 +28,51 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark }) {
       const verseKeyElements = tempDiv.querySelectorAll('[data-verse-key]');
       let verseKeys = [...new Set(Array.from(verseKeyElements).map((el) => el.getAttribute('data-verse-key')))];
 
+      // Check startContainer and endContainer closest [data-verse-key] (essential for letter-by-letter selection)
+      const startEl = range.startContainer.nodeType === 1 ? range.startContainer : range.startContainer.parentElement;
+      const startVerseKey = startEl?.closest('[data-verse-key]')?.getAttribute('data-verse-key');
+      if (startVerseKey && !verseKeys.includes(startVerseKey)) {
+        verseKeys.push(startVerseKey);
+      }
+
+      const endEl = range.endContainer.nodeType === 1 ? range.endContainer : range.endContainer.parentElement;
+      const endVerseKey = endEl?.closest('[data-verse-key]')?.getAttribute('data-verse-key');
+      if (endVerseKey && !verseKeys.includes(endVerseKey)) {
+        verseKeys.push(endVerseKey);
+      }
+
       // If empty in fragment, check container ancestry
       if (verseKeys.length === 0) {
-        let parent = range.commonAncestorContainer;
-        while (parent && parent !== document.body) {
-          if (parent.nodeType === 1 && parent.hasAttribute('data-verse-key')) {
-            verseKeys = [parent.getAttribute('data-verse-key')];
-            break;
-          }
-          parent = parent.parentNode;
+        let parent = range.commonAncestorContainer.nodeType === 1 ? range.commonAncestorContainer : range.commonAncestorContainer.parentElement;
+        const ancestorKey = parent?.closest('[data-verse-key]')?.getAttribute('data-verse-key');
+        if (ancestorKey) {
+          verseKeys.push(ancestorKey);
         }
       }
 
       if (verseKeys.length === 0) return;
 
-      const rect = range.getBoundingClientRect();
-      const isMobile = window.innerWidth < 768;
+      let rect = range.getBoundingClientRect();
+      if ((!rect || (rect.width === 0 && rect.height === 0)) && range.getClientRects().length > 0) {
+        rect = range.getClientRects()[0];
+      }
+      if (!rect || (rect.width === 0 && rect.height === 0)) return;
 
-      // Position: Above on desktop, below on mobile to avoid native browser copy menu
-      const popoverWidth = 260;
+      const isMobile = window.innerWidth < 768;
+      const popoverWidth = Math.min(window.innerWidth - 32, 280);
       let x = rect.left + rect.width / 2 - popoverWidth / 2;
       x = Math.max(16, Math.min(window.innerWidth - popoverWidth - 16, x));
 
       let y;
       if (isMobile) {
-        y = rect.bottom + 12; // below selection
+        // If selection is near bottom of viewport, position above to prevent going off-screen
+        if (rect.bottom + 80 > window.innerHeight) {
+          y = rect.top - 62;
+        } else {
+          y = rect.bottom + 14;
+        }
       } else {
-        y = rect.top - 54; // above selection
+        y = rect.top - 54;
         if (y < 60) y = rect.bottom + 12;
       }
 
@@ -124,7 +142,9 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark }) {
   return (
     <div
       ref={popoverRef}
-      // Keep the text selection alive while tapping a popover button
+      // Keep the text selection alive on mobile and desktop while tapping a popover button
+      onTouchStart={(e) => e.stopPropagation()}
+      onPointerDown={(e) => e.stopPropagation()}
       onMouseDown={(e) => e.preventDefault()}
       style={{
         top: `${popover.y}px`,
@@ -158,6 +178,18 @@ export function SelectionPopover({ onAskAI, onQuickTafsir, onBookmark }) {
           >
             <BookOpen className="w-3.5 h-3.5" />
             <span>Tafsir</span>
+          </button>
+
+          <button
+            onClick={() => {
+              onMutashabihat?.(popover.verseKeys[0]);
+              setPopover(null);
+            }}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl hover:bg-white/15 dark:hover:bg-black/10 font-medium transition-colors text-amber-300 dark:text-amber-700"
+            title="Cari keserupaan ayat (Mutasyabihat)"
+          >
+            <GitCompare className="w-3.5 h-3.5" />
+            <span>Mutasyabihat</span>
           </button>
 
           <button

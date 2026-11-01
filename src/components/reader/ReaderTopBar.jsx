@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, SlidersHorizontal, Compass, HelpCircle } from 'lucide-react';
+import { ArrowLeft, SlidersHorizontal, Compass, HelpCircle, Volume2 } from 'lucide-react';
 
 export function ReaderTopBar({
   title,
@@ -12,6 +12,8 @@ export function ReaderTopBar({
   onOpenSettings,
   onOpenJump,
   onOpenLegend,
+  onToggleAudio,
+  isAudioActive = false,
 }) {
   return (
     <header className="sticky top-0 z-20 bg-white/90 dark:bg-brand-dark-surface/90 backdrop-blur-md border-b border-emerald-950/10 dark:border-white/10 px-3 py-2.5 flex items-center justify-between gap-2 shadow-xs">
@@ -80,6 +82,22 @@ export function ReaderTopBar({
             title="Panduan Warna Tajwid"
           >
             <HelpCircle className="w-5 h-5" />
+          </button>
+        )}
+
+        {/* Audio Recitation Button (QUL Murattal) */}
+        {onToggleAudio && (
+          <button
+            onClick={onToggleAudio}
+            className={`p-1.5 rounded-lg transition-colors ${
+              isAudioActive
+                ? 'bg-amber-500/20 text-amber-700 dark:text-amber-400 font-bold'
+                : 'hover:bg-black/5 dark:hover:bg-white/5 text-gray-600 dark:text-gray-300'
+            }`}
+            aria-label="Putar murottal qari (QUL)"
+            title="Dengarkan Murottal (1441H)"
+          >
+            <Volume2 className="w-5 h-5" />
           </button>
         )}
 

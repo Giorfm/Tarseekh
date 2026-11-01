@@ -8,6 +8,8 @@ const LEGACY_STORAGE_KEY = 'tadabbur_settings_v1';
 const defaultSettings = {
   theme: 'light',
   reading_view: 'ayat', // 'ayat' | 'halaman'
+  mushaf_font: 'kfgqpc-v4', // 'kfgqpc-v4' (KFGQPC 1441H Print from QUL) | 'amiri'
+  text_align: 'center', // 'center' (Rata Tengah) | 'justify' (Rata Kanan-Kiri)
   font_scale: 1.75, // in rem (maps to CSS var --quran-scale)
   show_translation: false, // Default false per PRD FR-1
   show_tajwid: false,

@@ -41,8 +41,8 @@ export function WordSpan({
         className="inline-flex items-center justify-center mx-1 text-emerald-800/80 dark:text-emerald-300/80 font-normal select-none"
         title={`Akhir ayat ${verseKey}`}
       >
-        <span className="inline-block text-[0.85em] leading-none">
-          {text}
+        <span className="inline-block text-[0.85em] leading-none font-qpc">
+          {text.includes('۝') ? text : `۝${text}`}
         </span>
       </span>
     );
@@ -103,6 +103,8 @@ export function WordSpan({
       className={`relative inline-block mx-[1px] transition-colors duration-150 rounded px-0.5 selection:bg-emerald-200 dark:selection:bg-emerald-900 ${
         highlightState === 'current'
           ? 'bg-amber-200/90 dark:bg-amber-900/60 text-amber-950 dark:text-amber-100 ring-2 ring-amber-400 font-semibold shadow-xs'
+          : highlightState === 'audio_playing'
+          ? 'bg-amber-300/30 dark:bg-amber-400/25 text-brand-charcoal dark:text-white rounded px-0.5 ring-1 ring-amber-500/50 shadow-xs'
           : highlightState === 'matched'
           ? 'text-emerald-700 dark:text-emerald-300 font-bold bg-emerald-500/10 dark:bg-emerald-400/10 rounded px-0.5'
           : highlightState === 'missed'

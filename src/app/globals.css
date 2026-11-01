@@ -5,12 +5,68 @@
 :root {
   --font-amiri-quran: 'Amiri Quran', serif;
   --font-plus-jakarta: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-qpc-hafs: 'qpc-hafs', 'Amiri Quran', 'Amiri', serif;
   --quran-scale: 1.75rem;
   --bg-color: #FAF7F0;
   --surface-color: #FFFFFF;
   --text-color: #1E2421;
   --primary-color: #1F5F4A;
   --accent-gold: #C9A227;
+}
+
+/* QUL (Quranic Universal Library by Tarteel AI) KFGQPC V4 (1441H Print) Fonts */
+@font-face {
+  font-family: 'qpc-hafs';
+  src: local('KFGQPCHAFSUthmanicScript-Regula'),
+       local('KFGQPC HAFS Uthmanic Script'),
+       url('https://static-cdn.tarteel.ai/qul/fonts/UthmanicHafs_V22.woff2') format('woff2'),
+       url('https://static-cdn.tarteel.ai/qul/fonts/UthmanicHafs_V22.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'qpc-v4';
+  src: url('https://static-cdn.tarteel.ai/qul/fonts/quran_fonts/v4/woff2/p1.woff2') format('woff2'),
+       url('https://static-cdn.tarteel.ai/qul/fonts/UthmanicHafs_V22.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'v4-tajweed';
+  src: url('https://static-cdn.tarteel.ai/qul/fonts/quran_fonts/v4-tajweed/woff2/p1.woff2') format('woff2'),
+       url('https://static-cdn.tarteel.ai/qul/fonts/UthmanicHafs_V22.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'qpc-bismillah';
+  src: url('https://static-cdn.tarteel.ai/qul/fonts/bismillah/bismillah.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'qpc-surah-header';
+  src: url('https://static-cdn.tarteel.ai/qul/fonts/surah-names/surah-header/QCF_SurahHeader_COLOR-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'qpc-surah-name';
+  src: url('https://static-cdn.tarteel.ai/qul/fonts/surah-names/v4/surah-name-v4.woff2') format('woff2'),
+       url('https://static-cdn.tarteel.ai/qul/fonts/surah-names/v2/surah-name-v2.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 .dark {
@@ -38,6 +94,62 @@ body {
   direction: rtl;
   text-align: right;
   word-spacing: 0.1em;
+}
+
+/* KFGQPC V4 1441H Print Typography (QUL - Quranic Universal Library) */
+.font-qpc {
+  font-family: 'qpc-v4', 'qpc-hafs', var(--font-amiri-quran), 'Amiri', serif;
+  direction: rtl;
+}
+
+.font-qpc-tajweed {
+  font-family: 'v4-tajweed', 'qpc-v4', 'qpc-hafs', var(--font-amiri-quran), 'Amiri', serif;
+  direction: rtl;
+}
+
+.mushaf-layout-v4,
+.mushaf-layout-v2 {
+  direction: rtl;
+  user-select: text;
+  text-align: center;
+}
+
+.mushaf-layout-v4 .line--center,
+.mushaf-layout-v2 .line--center {
+  text-align: center !important;
+  text-align-last: center !important;
+  justify-content: center;
+}
+
+.mushaf-layout-v4 .line--justified,
+.mushaf-layout-v2 .line--justified {
+  text-align: justify !important;
+  text-align-last: justify !important;
+}
+
+/* Calligraphic Bismillah from QUL */
+.font-bismillah {
+  font-family: 'qpc-bismillah', 'qpc-hafs', var(--font-amiri-quran), serif;
+}
+
+/* Calligraphic Surah Header & Name from QUL */
+.font-surah-header {
+  font-family: 'qpc-surah-header', 'qpc-hafs', var(--font-amiri-quran), serif;
+}
+
+.font-surah-name {
+  font-family: 'qpc-surah-name', 'qpc-hafs', var(--font-amiri-quran), serif;
+}
+
+/* Authentic King Fahd Complex 1441H Frame Decorations */
+.mushaf-frame-outer {
+  background-color: #FAF7F0;
+  border: 3px double #8B6508;
+}
+
+.dark .mushaf-frame-outer {
+  background-color: #121A17;
+  border-color: #D4AF37;
 }
 
 /* Accessibility focus ring */
