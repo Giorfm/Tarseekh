@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { Volume2, ZoomIn, ZoomOut } from 'lucide-react';
 import { ReaderTopBar } from './ReaderTopBar';
 import { WordSpan } from './WordSpan';
 import { ReaderSettingsSheet } from './ReaderSettingsSheet';
@@ -12,6 +13,8 @@ import { SpeechConsentModal } from '@/components/speech/SpeechConsentModal';
 import { MemorizationSetupModal } from '@/components/memorization/MemorizationSetupModal';
 import { MemorizationAssessmentModal } from '@/components/memorization/MemorizationAssessmentModal';
 import { MutashabihatModal } from '@/components/quran/MutashabihatModal';
+import { MushafAudioPlayer } from './MushafAudioPlayer';
+import { HighlightedAudioModal } from '@/components/audio/HighlightedAudioModal';
 import { FloatingMicButton } from './FloatingMicButton';
 import { useSettings } from '@/context/SettingsContext';
 import { saveLastPosition } from '@/lib/quran/position';
@@ -24,7 +27,7 @@ import { generateWordMasks } from '@/lib/memorization/engine';
 import { recordVerseDwell, logActivity } from '@/lib/activity/logger';
 
 export function VerseListView({ surahData, initialAyah = null }) {
-  const { settings } = useSettings();
+  const { settings, updateSettings } = useSettings();
   const [activeMode, setActiveMode] = useState('read'); // 'read' | 'tajwid' | 'memorize'
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isJumpOpen, setIsJumpOpen] = useState(false);
@@ -32,6 +35,30 @@ export function VerseListView({ surahData, initialAyah = null }) {
   const [activeVerseKey, setActiveVerseKey] = useState(initialAyah ? `${surahData.surah.id}:${initialAyah}` : `${surahData.surah.id}:1`);
   const [mutashabihatVerseKey, setMutashabihatVerseKey] = useState(null);
   const isKfgqpcFont = (settings.mushaf_font || 'kfgqpc-v4') === 'kfgqpc-v4' || settings.mushaf_font === 'kfgqpc-v2';
+
+  // Zoom & Font Scale Control (Floating Zoom Pill)
+  const zoomLevel = settings.font_scale ? Math.round((settings.font_scale / 1.75) * 100) / 100 : 1;
+
+  const handleZoomIn = () => {
+    const next = Math.min(2.0, Math.round((zoomLevel + 0.15) * 100) / 100);
+    updateSettings({ font_scale: Math.round(next * 1.75 * 1000) / 1000 });
+  };
+
+  const handleZoomOut = () => {
+    const next = Math.max(0.7, Math.round((zoomLevel - 0.15) * 100) / 100);
+    updateSettings({ font_scale: Math.round(next * 1.75 * 1000) / 1000 });
+  };
+
+  const handleZoomReset = () => {
+    updateSettings({ font_scale: 1.75 });
+  };
+
+  // Audio Recitation & Murattal State
+  const [isAudioOpen, setIsAudioOpen] = useState(false);
+  const [activeAudioVerseKey, setActiveAudioVerseKey] = useState(null);
+
+  // Highlighted Audio Snippet State
+  const [highlightedAudioSnippet, setHighlightedAudioSnippet] = useState(null);
 
   // Chat Panel State
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -59,6 +86,17 @@ export function VerseListView({ surahData, initialAyah = null }) {
 
   // Check if Bismillah banner should be shown:
   const showBismillahBanner = surahData.surah.id !== 1 && surahData.surah.id !== 9;
+
+  // Auto-scroll to active audio verse
+  useEffect(() => {
+    if (isAudioOpen && activeAudioVerseKey) {
+      const ayahNum = activeAudioVerseKey.split(':')[1];
+      const el = document.getElementById(`ayah-${ayahNum}`);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }, [isAudioOpen, activeAudioVerseKey]);
 
   // Flat list of words for sequential speech alignment
   const flatWords = React.useMemo(() => {
@@ -451,7 +489,7 @@ export function VerseListView({ surahData, initialAyah = null }) {
   };
 
   return (
-    <div className="min-h-screen pb-24">
+    <div data-reader-view="true" className="min-h-screen pb-24">
       {/* Top Bar */}
       <ReaderTopBar
         title={surahData.surah.name_simple}
@@ -461,6 +499,8 @@ export function VerseListView({ surahData, initialAyah = null }) {
         onOpenSettings={() => setIsSettingsOpen(true)}
         onOpenJump={() => setIsJumpOpen(true)}
         onOpenLegend={() => setIsLegendOpen(true)}
+        onToggleAudio={() => setIsAudioOpen((prev) => !prev)}
+        isAudioActive={isAudioOpen}
       />
 
       {/* Memorization Mode Control Banner */}
@@ -526,7 +566,11 @@ export function VerseListView({ surahData, initialAyah = null }) {
                 id={`ayah-${verse.n}`}
                 data-verse-key={verse.key}
                 data-page={verse.page}
-                className="verse-block p-5 sm:p-6 bg-white dark:bg-brand-dark-surface rounded-2xl border border-emerald-950/10 dark:border-white/10 shadow-xs transition-shadow hover:shadow-md space-y-4"
+                className={`verse-block p-5 sm:p-6 bg-white dark:bg-brand-dark-surface rounded-2xl border transition-all space-y-4 ${
+                  activeAudioVerseKey === verse.key && isAudioOpen
+                    ? 'border-amber-400 dark:border-amber-400/60 ring-2 ring-amber-400/30 shadow-md bg-amber-500/5'
+                    : 'border-emerald-950/10 dark:border-white/10 shadow-xs hover:shadow-md'
+                }`}
                 style={{ contentVisibility: 'auto', containIntrinsicSize: '200px' }}
               >
                 {/* Verse Meta Bar */}
@@ -538,6 +582,22 @@ export function VerseListView({ surahData, initialAyah = null }) {
                     <span className="font-medium text-gray-600 dark:text-gray-300">
                       Ayat {verse.n}
                     </span>
+                    <button
+                      onClick={() => {
+                        setActiveAudioVerseKey(verse.key);
+                        setIsAudioOpen(true);
+                      }}
+                      className={`flex items-center gap-1 px-2 py-0.5 rounded-lg text-[11px] font-medium transition-all ${
+                        activeAudioVerseKey === verse.key && isAudioOpen
+                          ? 'bg-amber-500/20 text-amber-700 dark:text-amber-300 ring-1 ring-amber-500/40 font-semibold'
+                          : 'hover:bg-black/5 dark:hover:bg-white/5 text-gray-500 dark:text-gray-400 hover:text-brand-primary'
+                      }`}
+                      title={`Putar murottal ayat ${verse.n}`}
+                      aria-label={`Putar murottal ayat ${verse.n}`}
+                    >
+                      <Volume2 className="w-3.5 h-3.5" />
+                      <span>{activeAudioVerseKey === verse.key && isAudioOpen ? 'Memutar' : 'Putar'}</span>
+                    </button>
                   </div>
                   <span className="text-[11px] text-gray-400">
                     Halaman {verse.page} • Juz {verse.juz}
@@ -546,9 +606,13 @@ export function VerseListView({ surahData, initialAyah = null }) {
 
                 {/* Arabic Verse Text with Shared WordSpan */}
                 <div
-                  className={`${isKfgqpcFont ? 'font-qpc text-2xl' : 'font-quran'} ${
+                  className={`${isKfgqpcFont ? 'font-qpc' : 'font-quran'} ${
                     (settings.text_align || 'center') === 'center' ? 'text-center' : 'text-right'
-                  } select-text leading-quran py-2`}
+                  } select-text leading-quran py-2 transition-all duration-150`}
+                  style={{
+                    fontSize: `${(settings.font_scale || 1.75) * 1.15}rem`,
+                    lineHeight: 2.3,
+                  }}
                   dir="rtl"
                 >
                   {verse.words.map((w, idx) => {
@@ -558,6 +622,9 @@ export function VerseListView({ surahData, initialAyah = null }) {
                     const isMasked = activeMode === 'memorize' && maskCfg?.isMasked && !revealedWords.has(wordKey);
 
                     let highlightState = null;
+                    if (activeAudioVerseKey === verse.key && isAudioOpen) {
+                      highlightState = 'audio_playing';
+                    }
                     if (isMicActive) {
                       const currentWord = activeTargetWords[speechPointer];
                       if (currentWord && `${currentWord.verseKey}:${currentWord.idx}` === wordKey) {
@@ -601,6 +668,37 @@ export function VerseListView({ surahData, initialAyah = null }) {
             );
           })}
         </div>
+      </div>
+
+      {/* Floating Zoom Control Pill */}
+      <div className="fixed left-4 sm:left-6 bottom-6 md:bottom-8 z-30 flex items-center gap-1 bg-white/95 dark:bg-brand-dark-surface/95 backdrop-blur-md px-2 py-1.5 rounded-full border border-amber-900/15 dark:border-amber-400/20 shadow-lg text-xs font-semibold text-gray-700 dark:text-gray-200 select-none">
+        <button
+          onClick={handleZoomOut}
+          disabled={zoomLevel <= 0.75}
+          className="w-7 h-7 flex items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 text-gray-600 dark:text-gray-300 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+          title="Perkecil Ukuran Huruf (Zoom Out)"
+          aria-label="Perkecil Ukuran Huruf"
+        >
+          <ZoomOut className="w-3.5 h-3.5" />
+        </button>
+
+        <button
+          onClick={handleZoomReset}
+          className="px-2 py-0.5 rounded-full hover:bg-black/5 dark:hover:bg-white/10 text-[11px] font-bold text-brand-primary dark:text-brand-dark-primary transition-colors min-w-[42px] text-center"
+          title="Klik untuk reset ukuran huruf ke 100%"
+        >
+          {Math.round(zoomLevel * 100)}%
+        </button>
+
+        <button
+          onClick={handleZoomIn}
+          disabled={zoomLevel >= 2.0}
+          className="w-7 h-7 flex items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 text-gray-600 dark:text-gray-300 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+          title="Perbesar Ukuran Huruf (Zoom In)"
+          aria-label="Perbesar Ukuran Huruf"
+        >
+          <ZoomIn className="w-3.5 h-3.5" />
+        </button>
       </div>
 
       {/* Floating Mic Button */}
@@ -688,6 +786,18 @@ export function VerseListView({ surahData, initialAyah = null }) {
         onQuickTafsir={handleQuickTafsir}
         onBookmark={handleBookmark}
         onMutashabihat={(key) => setMutashabihatVerseKey(key)}
+        onPlayAudio={(text, keys) => setHighlightedAudioSnippet({ text, verseKeys: keys })}
+      />
+
+      {/* Highlighted Audio Snippet Player */}
+      <HighlightedAudioModal
+        isOpen={Boolean(highlightedAudioSnippet)}
+        onClose={() => setHighlightedAudioSnippet(null)}
+        snippet={highlightedAudioSnippet}
+        onPlayFullVerseMurottal={(vKey) => {
+          setActiveAudioVerseKey(vKey);
+          setIsAudioOpen(true);
+        }}
       />
 
       {/* Mutashabihat ul-Quran Modal (QUL Engine) */}
@@ -696,6 +806,15 @@ export function VerseListView({ surahData, initialAyah = null }) {
         onClose={() => setMutashabihatVerseKey(null)}
         verseKey={mutashabihatVerseKey}
         onAskAI={handleAskAI}
+      />
+
+      {/* Audio Recitation Player (Surah Murottal) */}
+      <MushafAudioPlayer
+        isOpen={isAudioOpen}
+        onClose={() => setIsAudioOpen(false)}
+        surahData={surahData}
+        targetVerseKey={activeAudioVerseKey}
+        onActiveVerseChange={setActiveAudioVerseKey}
       />
 
       {/* Grounded AI Chat Panel */}

@@ -158,6 +158,19 @@ body {
   outline-offset: 2px;
 }
 
+/* Reader View Clean Mode (Declarative CSS via :has to prevent React hydration mismatch) */
+body:has([data-reader-view="true"]) .app-shell-mobile-header {
+  display: none !important;
+}
+
+body:has([data-reader-view="true"]) .app-shell-bottom-nav {
+  display: none !important;
+}
+
+body:has([data-reader-view="true"]) .app-shell-main {
+  padding-bottom: 0 !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;

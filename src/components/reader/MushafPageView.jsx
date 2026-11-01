@@ -15,6 +15,7 @@ import { MemorizationSetupModal } from '@/components/memorization/MemorizationSe
 import { MemorizationAssessmentModal } from '@/components/memorization/MemorizationAssessmentModal';
 import { MushafAudioPlayer } from './MushafAudioPlayer';
 import { MutashabihatModal } from '@/components/quran/MutashabihatModal';
+import { HighlightedAudioModal } from '@/components/audio/HighlightedAudioModal';
 import { FloatingMicButton } from './FloatingMicButton';
 import { useSettings } from '@/context/SettingsContext';
 import { prefetchAdjacentPages } from '@/lib/pages/loader';
@@ -65,6 +66,9 @@ export function MushafPageView({ pageData, facingPageData = null }) {
 
   // Mutashabihat Modal State (QUL Matching Verses)
   const [mutashabihatVerseKey, setMutashabihatVerseKey] = useState(null);
+
+  // Highlighted Audio Snippet Player State (Selected text pronunciation)
+  const [highlightedAudioSnippet, setHighlightedAudioSnippet] = useState(null);
 
   const pageNum = pageData.page;
   const juzNum = pageData.juz;
@@ -786,6 +790,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
 
   return (
     <div
+      data-reader-view="true"
       className="min-h-screen flex flex-col justify-between pb-24 touch-pan-y"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
@@ -888,7 +893,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
       </div>
 
       {/* Floating Zoom Control Pill */}
-      <div className="fixed left-5 bottom-20 md:bottom-8 z-30 flex items-center gap-1 bg-white/95 dark:bg-brand-dark-surface/95 backdrop-blur-md px-2 py-1.5 rounded-full border border-amber-900/15 dark:border-amber-400/20 shadow-lg text-xs font-semibold text-gray-700 dark:text-gray-200 select-none">
+      <div className="fixed left-4 sm:left-5 bottom-6 md:bottom-8 z-30 flex items-center gap-1 bg-white/95 dark:bg-brand-dark-surface/95 backdrop-blur-md px-2 py-1.5 rounded-full border border-amber-900/15 dark:border-amber-400/20 shadow-lg text-xs font-semibold text-gray-700 dark:text-gray-200 select-none">
         <button
           onClick={handleZoomOut}
           disabled={zoomLevel <= 0.75}
@@ -995,6 +1000,18 @@ export function MushafPageView({ pageData, facingPageData = null }) {
         onQuickTafsir={handleQuickTafsir}
         onBookmark={handleBookmark}
         onMutashabihat={(key) => setMutashabihatVerseKey(key)}
+        onPlayAudio={(text, keys) => setHighlightedAudioSnippet({ text, verseKeys: keys })}
+      />
+
+      {/* Highlighted Audio Snippet Player */}
+      <HighlightedAudioModal
+        isOpen={Boolean(highlightedAudioSnippet)}
+        onClose={() => setHighlightedAudioSnippet(null)}
+        snippet={highlightedAudioSnippet}
+        onPlayFullVerseMurottal={(vKey) => {
+          setActiveAudioVerseKey(vKey);
+          setIsAudioOpen(true);
+        }}
       />
 
       {/* Mutashabihat ul-Quran Modal (QUL Engine) */}
@@ -1010,6 +1027,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
         isOpen={isAudioOpen}
         onClose={() => setIsAudioOpen(false)}
         pageData={pageData}
+        targetVerseKey={activeAudioVerseKey}
         onActiveVerseChange={setActiveAudioVerseKey}
         onPageAdvance={() => goToPage(pageNum + 1)}
       />

@@ -135,8 +135,8 @@ export function AppShell({ children }) {
 
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col min-w-0">
-        {/* Mobile Slim Top Bar */}
-        <header className="md:hidden flex items-center justify-between px-4 h-14 sticky top-0 z-30 bg-white/80 dark:bg-brand-dark-surface/80 backdrop-blur-md border-b border-emerald-950/10 dark:border-white/10">
+        {/* Mobile Slim Top Bar (Hidden via CSS on reader pages to prevent double header and hydration mismatch) */}
+        <header className="app-shell-mobile-header md:hidden flex items-center justify-between px-4 h-14 sticky top-0 z-30 bg-white/80 dark:bg-brand-dark-surface/80 backdrop-blur-md border-b border-emerald-950/10 dark:border-white/10">
           <Link href="/" className="flex items-center gap-2">
             <div className="w-7 h-7 rounded-lg bg-brand-primary dark:bg-brand-dark-primary flex items-center justify-center text-white font-bold text-sm">
               ت
@@ -160,13 +160,13 @@ export function AppShell({ children }) {
         </header>
 
         {/* Page Content */}
-        <main className="flex-1 pb-20 md:pb-6 focus:outline-none" tabIndex={-1}>
+        <main className="app-shell-main flex-1 pb-20 md:pb-6 focus:outline-none" tabIndex={-1}>
           {children}
         </main>
 
-        {/* Mobile Bottom Navigation */}
+        {/* Mobile Bottom Navigation (Hidden via CSS on reader pages to give clean, full-screen reading) */}
         <nav
-          className="md:hidden fixed bottom-0 left-0 right-0 h-16 bg-white/95 dark:bg-brand-dark-surface/95 backdrop-blur-lg border-t border-emerald-950/10 dark:border-white/10 z-30 flex items-center justify-around px-2"
+          className="app-shell-bottom-nav md:hidden fixed bottom-0 left-0 right-0 h-16 bg-white/95 dark:bg-brand-dark-surface/95 backdrop-blur-lg border-t border-emerald-950/10 dark:border-white/10 z-30 flex items-center justify-around px-2"
           aria-label="Navigasi Bawah"
         >
           {NAV_ITEMS.map((item) => {
