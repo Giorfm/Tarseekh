@@ -49,6 +49,19 @@ describe('Tajweed Parser & Rules Suite', () => {
     }
   });
 
+  it('correctly tokenizes Al-Baqarah verses with 100% word alignment and valid tajweed rules', async () => {
+    const baqarah = await getSurah(2);
+    // Test first 20 verses including 2:1, 2:2, 2:26 (rub-el-hizb)
+    const testVerses = baqarah.verses.slice(0, 30);
+
+    for (const verse of testVerses) {
+      const parsedWords = parseVerseTajweed(verse.tajweed, verse.words);
+      expect(parsedWords).toHaveLength(verse.words.length);
+      const hasAnyRule = parsedWords.some((w) => w.some((seg) => seg.rule !== null));
+      expect(hasAnyRule).toBe(true);
+    }
+  });
+
   it('safely falls back to plain text when tajweed markup does not align', () => {
     const fakePlainWords = [
       { idx: 1, text: 'بِسْمِ' },

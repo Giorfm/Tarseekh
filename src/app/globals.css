@@ -141,6 +141,50 @@ body {
   font-family: 'qpc-surah-name', 'qpc-hafs', var(--font-amiri-quran), serif;
 }
 
+/* Tajweed Rule Typography Colors (QUL & KFGQPC Standard - WCAG AA compliant) */
+.tajweed-rule {
+  display: inline;
+  transition: opacity 0.15s ease;
+}
+.tajweed-rule:hover {
+  filter: brightness(1.2);
+}
+.tajweed-ham_wasl { color: #475569; }
+.tajweed-laam_shamsiyah { color: #0369A1; }
+.tajweed-madda_normal { color: #B45309; }
+.tajweed-madda_permissible { color: #7E22CE; }
+.tajweed-madda_necessary { color: #BE123C; }
+.tajweed-madda_obligatory { color: #B91C1C; }
+.tajweed-qalaqah { color: #0284C7; }
+.tajweed-ikhafa { color: #0D9488; }
+.tajweed-ikhafa_shafawi { color: #0F766E; }
+.tajweed-idgham_ghunnah { color: #15803D; }
+.tajweed-idgham_wo_ghunnah { color: #4D7C0F; }
+.tajweed-idgham_mutajanisayn { color: #166534; }
+.tajweed-idgham_mutaqaribayn { color: #14532D; }
+.tajweed-idgham_shafawi { color: #047857; }
+.tajweed-iqlab { color: #1D4ED8; }
+.tajweed-ghunnah { color: #A16207; }
+.tajweed-slnt { color: #64748B; }
+
+.dark .tajweed-ham_wasl { color: #94A3B8; }
+.dark .tajweed-laam_shamsiyah { color: #38BDF8; }
+.dark .tajweed-madda_normal { color: #FBBF24; }
+.dark .tajweed-madda_permissible { color: #C084FC; }
+.dark .tajweed-madda_necessary { color: #FB7185; }
+.dark .tajweed-madda_obligatory { color: #F87171; }
+.dark .tajweed-qalaqah { color: #60A5FA; }
+.dark .tajweed-ikhafa { color: #2DD4BF; }
+.dark .tajweed-ikhafa_shafawi { color: #5EEAD4; }
+.dark .tajweed-idgham_ghunnah { color: #4ADE80; }
+.dark .tajweed-idgham_wo_ghunnah { color: #A3E635; }
+.dark .tajweed-idgham_mutajanisayn { color: #86EFAC; }
+.dark .tajweed-idgham_mutaqaribayn { color: #BBF7D0; }
+.dark .tajweed-idgham_shafawi { color: #6EE7B7; }
+.dark .tajweed-iqlab { color: #93C5FD; }
+.dark .tajweed-ghunnah { color: #FDE047; }
+.dark .tajweed-slnt { color: #94A3B8; }
+
 /* Authentic King Fahd Complex 1441H Frame Decorations */
 .mushaf-frame-outer {
   background-color: #FAF7F0;

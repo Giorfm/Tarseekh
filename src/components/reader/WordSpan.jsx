@@ -42,7 +42,7 @@ export function WordSpan({
         title={`Akhir ayat ${verseKey}`}
       >
         <span className="inline-block text-[0.85em] leading-none font-qpc">
-          {text.includes('۝') ? text : `۝${text}`}
+          {text}
         </span>
       </span>
     );
@@ -114,34 +114,26 @@ export function WordSpan({
     >
       {showTajwid && Array.isArray(tajweedTokens) && tajweedTokens.length > 0 ? (
         tajweedTokens.map((token, tIdx) => {
-          const rule = token.rule ? TAJWEED_RULES[token.rule] : null;
-
-          if (!rule) {
-            return <span key={tIdx}>{token.text}</span>;
+          if (!token.rule) {
+            return token.text;
           }
+          const rule = TAJWEED_RULES[token.rule];
 
           return (
             <span
               key={tIdx}
-              onClick={(e) => {
-                e.stopPropagation();
-                setActiveRulePopover(rule);
-              }}
-              style={{
-                color: 'var(--tajweed-color, inherit)',
-              }}
-              className="cursor-help transition-all duration-150 hover:brightness-125"
+              onClick={
+                rule
+                  ? (e) => {
+                      e.stopPropagation();
+                      setActiveRulePopover(rule);
+                    }
+                  : undefined
+              }
+              className={`tajweed-rule tajweed-${token.rule} cursor-help`}
               data-tajweed-rule={token.rule}
+              title={rule ? `${rule.labelId}: ${rule.explanationId}` : undefined}
             >
-              {/* Inline style for light/dark CSS variable */}
-              <style jsx>{`
-                span {
-                  --tajweed-color: ${rule.colorLight};
-                }
-                :global(.dark) span {
-                  --tajweed-color: ${rule.colorDark};
-                }
-              `}</style>
               {token.text}
             </span>
           );
