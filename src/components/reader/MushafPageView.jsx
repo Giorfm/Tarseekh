@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo, useSyncExternalStore } from 'react';
 import { useRouter } from 'next/navigation';
 import { ChevronLeft, ChevronRight, ZoomIn, ZoomOut } from 'lucide-react';
 import { ReaderTopBar } from './ReaderTopBar';
@@ -26,6 +26,27 @@ import { SpeechTracker, hasSpeechConsent, isSpeechSupported } from '@/lib/speech
 import { RecitationStatusBar } from '@/components/speech/RecitationStatusBar';
 import { generateWordMasks } from '@/lib/memorization/engine';
 import { logActivity } from '@/lib/activity/logger';
+
+// Match Tailwind's lg breakpoint for the facing-page layout.
+const SPREAD_MEDIA_QUERY = '(min-width: 1024px)';
+
+function subscribeToSpreadLayout(onChange) {
+  const media = window.matchMedia(SPREAD_MEDIA_QUERY);
+  media.addEventListener('change', onChange);
+  return () => media.removeEventListener('change', onChange);
+}
+
+function getSpreadLayout() {
+  return window.matchMedia(SPREAD_MEDIA_QUERY).matches;
+}
+
+const getServerSpreadLayout = () => false;
+
+function getPageWords(page) {
+  return page.lines
+    .filter((line) => line.type === 'text')
+    .flatMap((line) => (line.words ?? []).filter((word) => word.type !== 'end'));
+}
 
 export function MushafPageView({ pageData, facingPageData = null }) {
   const router = useRouter();
@@ -55,7 +76,6 @@ export function MushafPageView({ pageData, facingPageData = null }) {
   const [isMemSetupOpen, setIsMemSetupOpen] = useState(false);
   const [isMemAssessmentOpen, setIsMemAssessmentOpen] = useState(false);
   const [memConfig, setMemConfig] = useState({ level: 'all' });
-  const [maskedWordsMap, setMaskedWordsMap] = useState(new Map());
   const [revealedWords, setRevealedWords] = useState(new Set());
   const [hintsUsed, setHintsUsed] = useState(0);
 
@@ -68,6 +88,16 @@ export function MushafPageView({ pageData, facingPageData = null }) {
 
   const pageNum = pageData.page;
   const juzNum = pageData.juz;
+  const isWideLayout = useSyncExternalStore(subscribeToSpreadLayout, getSpreadLayout, getServerSpreadLayout);
+  const showSpread = isWideLayout && Boolean(facingPageData);
+  const orderedPages = useMemo(() => [pageData, facingPageData]
+    .filter(Boolean)
+    .sort((a, b) => a.page - b.page), [pageData, facingPageData]);
+  const firstVisiblePage = showSpread ? orderedPages[0].page : pageNum;
+  const lastVisiblePage = showSpread ? orderedPages[1].page : pageNum;
+  const previousPage = showSpread ? firstVisiblePage - 1 : pageNum - 1;
+  const nextPage = showSpread ? lastVisiblePage + 2 : pageNum + 1;
+  const visiblePageLabel = showSpread ? `${firstVisiblePage}–${lastVisiblePage}` : pageNum;
 
   const touchStartXRef = useRef(null);
   const touchStartYRef = useRef(null);
@@ -165,20 +195,9 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     }
   };
 
-  // Extract content words of current page
-  const pageWords = React.useMemo(() => {
-    const list = [];
-    for (const l of pageData.lines) {
-      if (l.type === 'text' && Array.isArray(l.words)) {
-        for (const w of l.words) {
-          if (w.type !== 'end') {
-            list.push(w);
-          }
-        }
-      }
-    }
-    return list;
-  }, [pageData]);
+  const pageWords = useMemo(() => getPageWords(pageData), [pageData]);
+  const visibleWords = useMemo(() => showSpread ? orderedPages.flatMap(getPageWords) : pageWords,
+    [showSpread, orderedPages, pageWords]);
 
   const pageWordsRef = useRef(pageWords);
   pageWordsRef.current = pageWords;
@@ -208,24 +227,19 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     }
   }, [pageNum, activeMode, isMicActive, pageWords]);
 
-  // Recalculate memorization masks for page
+  const maskedWordsMap = useMemo(() => {
+    if (activeMode !== 'memorize') return new Map();
+
+    // Word indexes restart in each verse. Use indexes unique to the visible pages.
+    const indexedWords = visibleWords.map((word, idx) => ({ ...word, idx }));
+    const masks = generateWordMasks(indexedWords, memConfig.level, `pages-${visiblePageLabel}`);
+    return new Map(visibleWords.map((word, idx) => [`${word.verse_key}:${word.idx}`, masks.get(idx)]));
+  }, [activeMode, memConfig, visibleWords, visiblePageLabel]);
+
   useEffect(() => {
-    if (activeMode === 'memorize') {
-      const map = new Map();
-      const masks = generateWordMasks(pageWords, memConfig.level, `page-${pageNum}`);
-      for (const [idx, cfg] of masks.entries()) {
-        const w = pageWords.find((item) => item.idx === idx);
-        if (w) {
-          map.set(`${w.verse_key}:${w.idx}`, cfg);
-        }
-      }
-      setMaskedWordsMap(map);
-      setRevealedWords(new Set());
-      setHintsUsed(0);
-    } else {
-      setMaskedWordsMap(new Map());
-    }
-  }, [activeMode, memConfig, pageWords, pageNum]);
+    setRevealedWords(new Set());
+    setHintsUsed(0);
+  }, [maskedWordsMap]);
 
   const startSpeechTracking = () => {
     if (!isSpeechSupported()) {
@@ -404,7 +418,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     const curWord = targetList[speechPointerRef.current];
     if (curWord) {
       const curKey = `${curWord.verse_key}:${curWord.idx}`;
-      if (!revealedWords.has(curKey)) {
+      if (maskedWordsMap.get(curKey)?.isMasked && !revealedWords.has(curKey)) {
         setRevealedWords((prev) => new Set(prev).add(curKey));
         setMissedWordKeys((prev) => {
           const next = new Set(prev);
@@ -478,6 +492,10 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     [pageNum, router]
   );
 
+  const turnPage = useCallback((target) => {
+    if (target >= 1 && target <= 604) goToPage(target);
+  }, [goToPage]);
+
   // Prefetch next and previous pages
   useEffect(() => {
     prefetchAdjacentPages(pageNum);
@@ -501,15 +519,15 @@ export function MushafPageView({ pageData, facingPageData = null }) {
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
       if (e.key === 'ArrowLeft') {
-        goToPage(pageNum + 1);
+        turnPage(nextPage);
       } else if (e.key === 'ArrowRight') {
-        goToPage(pageNum - 1);
+        turnPage(previousPage);
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [pageNum, goToPage]);
+  }, [nextPage, previousPage, turnPage]);
 
   // Touch Swipe & Pinch-to-Zoom Handler
   const handleTouchStart = (e) => {
@@ -570,7 +588,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     if (Math.abs(deltaX) > 40 || Math.abs(deltaY) >= 60) {
       lastTapTimeRef.current = 0;
       if (zoomLevel <= 1.15 && Math.abs(deltaX) > 40 && Math.abs(deltaY) < 60) {
-        goToPage(pageNum + (deltaX > 0 ? 1 : -1));
+        turnPage(deltaX > 0 ? nextPage : previousPage);
       }
       return;
     }
@@ -814,7 +832,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
         <div className="bg-amber-50 dark:bg-amber-950/40 border-b border-amber-200 dark:border-amber-900/40 px-4 py-2 flex items-center justify-between text-xs sticky top-14 z-10 backdrop-blur-md">
           <div className="flex items-center gap-2">
             <span className="font-bold text-amber-800 dark:text-amber-300">
-              Mode Hafalan Halaman {pageNum}
+              Mode Hafalan Halaman {visiblePageLabel}
             </span>
             <span className="text-gray-400">• Petunjuk: {hintsUsed}</span>
           </div>
@@ -846,10 +864,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
             WebkitZoom: zoomLevel,
           }}
         >
-          {(facingPageData && facingPageData.page < pageNum
-            ? [facingPageData, pageData]
-            : [pageData, facingPageData]
-          ).filter(Boolean).map((page) => (
+          {orderedPages.map((page) => (
             <div
               key={page.page}
               dir="ltr"
@@ -866,9 +881,9 @@ export function MushafPageView({ pageData, facingPageData = null }) {
         <div className="mt-4 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 max-w-2xl mx-auto w-full px-2">
           {/* Next Page */}
           <button
-            onClick={() => goToPage(pageNum + 1)}
+            onClick={() => turnPage(nextPage)}
             aria-label="Halaman berikutnya"
-            disabled={pageNum >= 604}
+            disabled={nextPage > 604}
             className="flex items-center gap-1 px-3 py-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 disabled:opacity-30 disabled:cursor-not-allowed font-medium transition-colors"
           >
             <ChevronLeft className="w-4 h-4" />
@@ -878,21 +893,21 @@ export function MushafPageView({ pageData, facingPageData = null }) {
           {/* Progress Bar & Label */}
           <div className="flex flex-col items-center gap-1 flex-1 max-w-xs px-4">
             <span className="text-[11px] font-semibold text-gray-600 dark:text-gray-300">
-              Halaman {pageNum} dari 604
+              Halaman {visiblePageLabel} dari 604
             </span>
             <div dir="rtl" className="w-full bg-gray-200 dark:bg-gray-800 h-1 rounded-full overflow-hidden">
               <div
                 className="bg-brand-primary dark:bg-brand-dark-primary h-full transition-all duration-300"
-                style={{ width: `${(pageNum / 604) * 100}%` }}
+                style={{ width: `${(lastVisiblePage / 604) * 100}%` }}
               />
             </div>
           </div>
 
           {/* Previous Page */}
           <button
-            onClick={() => goToPage(pageNum - 1)}
+            onClick={() => turnPage(previousPage)}
             aria-label="Halaman sebelumnya"
-            disabled={pageNum <= 1}
+            disabled={previousPage < 1}
             className="flex items-center gap-1 px-3 py-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 disabled:opacity-30 disabled:cursor-not-allowed font-medium transition-colors"
           >
             <span className="hidden sm:inline">Sebelumnya</span>
@@ -964,8 +979,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
       <MemorizationSetupModal
         isOpen={isMemSetupOpen}
         onClose={() => setIsMemSetupOpen(false)}
-        versesCount={pageData.surahs[0]?.verses_count || 10}
-        currentAyah={1}
+        useVisiblePages
         onStart={(config) => {
           setMemConfig(config);
         }}
@@ -975,7 +989,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
       <MemorizationAssessmentModal
         isOpen={isMemAssessmentOpen}
         onClose={() => setIsMemAssessmentOpen(false)}
-        verses={[...new Set(pageWords.map((w) => w.verse_key))].map((vk) => {
+        verses={[...new Set(visibleWords.map((w) => w.verse_key))].map((vk) => {
           const parts = vk.split(':');
           return { surah: parseInt(parts[0], 10), n: parseInt(parts[1], 10), key: vk };
         })}

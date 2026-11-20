@@ -6,12 +6,12 @@ import { X, Sparkles, EyeOff, Check } from 'lucide-react';
 const LEVELS = [
   { id: 'all', title: 'Sembunyikan Semua (100%)', desc: 'Seluruh kata disembunyikan. Uji hafalan penuh.' },
   { id: 'percent_70', title: 'Sembunyikan 70%', desc: '70% kata disamarkan secara acak.' },
-  { id: 'percent_50', title: 'Sembunyikan 50%', desc: 'Setengah kata disamarkan secara bergantian.' },
+  { id: 'percent_50', title: 'Sembunyikan 50%', desc: 'Setengah kata disamarkan secara acak.' },
   { id: 'percent_30', title: 'Sembunyikan 30%', desc: 'Sebagian kecil kata disamarkan untuk latihan awal.' },
   { id: 'first_letter', title: 'Bantuan Huruf Pertama', desc: 'Huruf pertama tiap kata tetap terlihat sebagai pemandu.' },
 ];
 
-export function MemorizationSetupModal({ isOpen, onClose, onStart, versesCount = 7, currentAyah = 1 }) {
+export function MemorizationSetupModal({ isOpen, onClose, onStart, versesCount = 7, currentAyah = 1, useVisiblePages = false }) {
   const [level, setLevel] = useState('all');
   const [startAyah, setStartAyah] = useState(currentAyah || 1);
   const [endAyah, setEndAyah] = useState(Math.min(versesCount, (currentAyah || 1) + 4));
@@ -41,7 +41,7 @@ export function MemorizationSetupModal({ isOpen, onClose, onStart, versesCount =
               <h3 className="font-bold text-sm text-brand-charcoal dark:text-white">
                 Pengaturan Mode Hafalan
               </h3>
-              <p className="text-[11px] text-gray-400">Pilih tingkat penyamaran kata & rentang ayat</p>
+              <p className="text-[11px] text-gray-400">{useVisiblePages ? 'Persentase dihitung dari semua kata di halaman yang tampil.' : 'Pilih tingkat penyamaran kata & rentang ayat'}</p>
             </div>
           </div>
 
@@ -55,36 +55,37 @@ export function MemorizationSetupModal({ isOpen, onClose, onStart, versesCount =
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          {/* Rentang Ayat */}
-          <div className="space-y-2">
-            <label className="text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400">
-              Rentang Ayat
-            </label>
-            <div className="grid grid-cols-2 gap-3">
-              <div>
-                <span className="text-[11px] text-gray-400 block mb-1">Dari Ayat</span>
-                <input
-                  type="number"
-                  min="1"
-                  max={versesCount}
-                  value={startAyah}
-                  onChange={(e) => setStartAyah(Math.min(versesCount, Math.max(1, parseInt(e.target.value, 10) || 1)))}
-                  className="w-full px-3 py-2 rounded-xl bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-white/10 text-xs font-semibold"
-                />
-              </div>
-              <div>
-                <span className="text-[11px] text-gray-400 block mb-1">Sampai Ayat</span>
-                <input
-                  type="number"
-                  min={startAyah}
-                  max={versesCount}
-                  value={endAyah}
-                  onChange={(e) => setEndAyah(Math.min(versesCount, Math.max(startAyah, parseInt(e.target.value, 10) || startAyah)))}
-                  className="w-full px-3 py-2 rounded-xl bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-white/10 text-xs font-semibold"
-                />
+          {!useVisiblePages && (
+            <div className="space-y-2">
+              <label className="text-xs font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400">
+                Rentang Ayat
+              </label>
+              <div className="grid grid-cols-2 gap-3">
+                <div>
+                  <span className="text-[11px] text-gray-400 block mb-1">Dari Ayat</span>
+                  <input
+                    type="number"
+                    min="1"
+                    max={versesCount}
+                    value={startAyah}
+                    onChange={(e) => setStartAyah(Math.min(versesCount, Math.max(1, parseInt(e.target.value, 10) || 1)))}
+                    className="w-full px-3 py-2 rounded-xl bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-white/10 text-xs font-semibold"
+                  />
+                </div>
+                <div>
+                  <span className="text-[11px] text-gray-400 block mb-1">Sampai Ayat</span>
+                  <input
+                    type="number"
+                    min={startAyah}
+                    max={versesCount}
+                    value={endAyah}
+                    onChange={(e) => setEndAyah(Math.min(versesCount, Math.max(startAyah, parseInt(e.target.value, 10) || startAyah)))}
+                    className="w-full px-3 py-2 rounded-xl bg-gray-50 dark:bg-black/20 border border-gray-200 dark:border-white/10 text-xs font-semibold"
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          )}
 
           {/* Level Pilihan */}
           <div className="space-y-2">

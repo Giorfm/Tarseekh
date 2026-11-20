@@ -29,15 +29,19 @@ function seededRandom(seedStr) {
  */
 export function generateWordMasks(words, level = 'all', seed = 'default') {
   const maskMap = new Map();
-  const rng = seededRandom(seed);
+  const percentage = { percent_30: 0.3, percent_50: 0.5, percent_70: 0.7 }[level];
+  const contentWords = words.filter((word) => word.type !== 'end');
+  const selectedWords = new Set();
 
-  // Filter actual content words (skip ayah end markers)
-  const contentWords = words.filter((w) => w.type !== 'end');
-
-  let threshold = 1.0;
-  if (level === 'percent_30') threshold = 0.3;
-  if (level === 'percent_50') threshold = 0.5;
-  if (level === 'percent_70') threshold = 0.7;
+  if (percentage !== undefined) {
+    const random = seededRandom(seed);
+    const count = Math.round(contentWords.length * percentage);
+    for (let i = 0; i < count; i++) {
+      const j = i + Math.floor(random() * (contentWords.length - i));
+      [contentWords[i], contentWords[j]] = [contentWords[j], contentWords[i]];
+      selectedWords.add(contentWords[i]);
+    }
+  }
 
   for (const w of words) {
     if (w.type === 'end') {
@@ -53,7 +57,7 @@ export function generateWordMasks(words, level = 'all', seed = 'default') {
       maskMap.set(w.idx, { isMasked: true, hint: firstChar });
     } else {
       // Percentage masking
-      const shouldMask = rng() < threshold;
+      const shouldMask = percentage === undefined || selectedWords.has(w);
       maskMap.set(w.idx, { isMasked: shouldMask, hint: null });
     }
   }
