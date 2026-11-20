@@ -514,6 +514,9 @@ export function MushafPageView({ pageData, facingPageData = null }) {
   // Touch Swipe & Pinch-to-Zoom Handler
   const handleTouchStart = (e) => {
     if (e.touches.length === 2) {
+      touchStartXRef.current = null;
+      touchStartYRef.current = null;
+      lastTapTimeRef.current = 0;
       setIsPinching(true);
       const dist = Math.hypot(
         e.touches[0].clientX - e.touches[1].clientX,
@@ -552,6 +555,26 @@ export function MushafPageView({ pageData, facingPageData = null }) {
       return;
     }
 
+    const touch = e.changedTouches?.[0];
+    const startX = touchStartXRef.current;
+    const startY = touchStartYRef.current;
+    touchStartXRef.current = null;
+    touchStartYRef.current = null;
+
+    if (!touch || startX === null || startY === null) return;
+
+    const deltaX = touch.clientX - startX;
+    const deltaY = touch.clientY - startY;
+
+    // In an RTL mushaf, drag the current page right to reveal the next page.
+    if (Math.abs(deltaX) > 40 || Math.abs(deltaY) >= 60) {
+      lastTapTimeRef.current = 0;
+      if (zoomLevel <= 1.15 && Math.abs(deltaX) > 40 && Math.abs(deltaY) < 60) {
+        goToPage(pageNum + (deltaX > 0 ? 1 : -1));
+      }
+      return;
+    }
+
     // Double-tap zoom toggle
     const now = Date.now();
     if (now - lastTapTimeRef.current < 300) {
@@ -563,28 +586,9 @@ export function MushafPageView({ pageData, facingPageData = null }) {
         updateSettings({ font_scale: Math.round(newZoom * 1.75 * 1000) / 1000 });
       }
       lastTapTimeRef.current = 0;
-      touchStartXRef.current = null;
-      touchStartYRef.current = null;
       return;
     }
     lastTapTimeRef.current = now;
-
-    // Horizontal swipe threshold (only when not zoomed in deeply to allow smooth pan)
-    if (zoomLevel <= 1.15 && touchStartXRef.current !== null && touchStartYRef.current !== null && e.changedTouches?.length > 0) {
-      const deltaX = e.changedTouches[0].clientX - touchStartXRef.current;
-      const deltaY = e.changedTouches[0].clientY - touchStartYRef.current;
-
-      if (Math.abs(deltaX) > 40 && Math.abs(deltaY) < 60) {
-        if (deltaX < 0) {
-          goToPage(pageNum + 1);
-        } else {
-          goToPage(pageNum - 1);
-        }
-      }
-    }
-
-    touchStartXRef.current = null;
-    touchStartYRef.current = null;
   };
 
   // Convert Western digits to Eastern Arabic numerals for authentic Madinah cartouches
@@ -835,32 +839,40 @@ export function MushafPageView({ pageData, facingPageData = null }) {
       <div className="flex-1 max-w-5xl mx-auto w-full px-2 sm:px-6 py-4 flex flex-col justify-center overflow-x-auto">
         {/* Two facing pages on large screens, single page on standard */}
         <div
+          dir="rtl"
           className="flex gap-4 items-stretch justify-center transition-all duration-150 origin-top"
           style={{
             zoom: zoomLevel,
             WebkitZoom: zoomLevel,
           }}
         >
-          {facingPageData && (
-            <div className="hidden lg:flex flex-1">
-              {renderSinglePage(facingPageData)}
+          {(facingPageData && facingPageData.page < pageNum
+            ? [facingPageData, pageData]
+            : [pageData, facingPageData]
+          ).filter(Boolean).map((page) => (
+            <div
+              key={page.page}
+              dir="ltr"
+              className={page === pageData
+                ? 'flex-1 max-w-2xl mx-auto w-full'
+                : 'hidden lg:flex flex-1'}
+            >
+              {renderSinglePage(page)}
             </div>
-          )}
-          <div className="flex-1 max-w-2xl mx-auto w-full">
-            {renderSinglePage(pageData)}
-          </div>
+          ))}
         </div>
 
         {/* Navigation Bar & Progress */}
         <div className="mt-4 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 max-w-2xl mx-auto w-full px-2">
-          {/* Previous Page */}
+          {/* Next Page */}
           <button
-            onClick={() => goToPage(pageNum - 1)}
-            disabled={pageNum <= 1}
+            onClick={() => goToPage(pageNum + 1)}
+            aria-label="Halaman berikutnya"
+            disabled={pageNum >= 604}
             className="flex items-center gap-1 px-3 py-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 disabled:opacity-30 disabled:cursor-not-allowed font-medium transition-colors"
           >
             <ChevronLeft className="w-4 h-4" />
-            <span className="hidden sm:inline">Sebelumnya</span>
+            <span className="hidden sm:inline">Berikutnya</span>
           </button>
 
           {/* Progress Bar & Label */}
@@ -868,7 +880,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
             <span className="text-[11px] font-semibold text-gray-600 dark:text-gray-300">
               Halaman {pageNum} dari 604
             </span>
-            <div className="w-full bg-gray-200 dark:bg-gray-800 h-1 rounded-full overflow-hidden">
+            <div dir="rtl" className="w-full bg-gray-200 dark:bg-gray-800 h-1 rounded-full overflow-hidden">
               <div
                 className="bg-brand-primary dark:bg-brand-dark-primary h-full transition-all duration-300"
                 style={{ width: `${(pageNum / 604) * 100}%` }}
@@ -876,13 +888,14 @@ export function MushafPageView({ pageData, facingPageData = null }) {
             </div>
           </div>
 
-          {/* Next Page */}
+          {/* Previous Page */}
           <button
-            onClick={() => goToPage(pageNum + 1)}
-            disabled={pageNum >= 604}
+            onClick={() => goToPage(pageNum - 1)}
+            aria-label="Halaman sebelumnya"
+            disabled={pageNum <= 1}
             className="flex items-center gap-1 px-3 py-1.5 rounded-xl hover:bg-black/5 dark:hover:bg-white/5 disabled:opacity-30 disabled:cursor-not-allowed font-medium transition-colors"
           >
-            <span className="hidden sm:inline">Berikutnya</span>
+            <span className="hidden sm:inline">Sebelumnya</span>
             <ChevronRight className="w-4 h-4" />
           </button>
         </div>
