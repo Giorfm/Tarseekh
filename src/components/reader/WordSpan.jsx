@@ -59,6 +59,8 @@ export function WordSpan({
         data-word-index={wordIndex}
         data-page={page}
         data-line={line}
+        data-type="word"
+        data-masked="true"
         onClick={onClick}
         title={
           isError
@@ -74,7 +76,6 @@ export function WordSpan({
             ? 'border-b-2 border-amber-400 bg-amber-400/15 dark:bg-amber-400/20 text-transparent px-1 rounded-sm ring-2 ring-amber-400/50 animate-pulse'
             : 'border-b-2 border-emerald-700/60 dark:border-emerald-400/60 text-transparent hover:border-emerald-500'
         }`}
-        style={{ minWidth: `${Math.max(1.8, text.length * 0.75)}ch` }}
       >
         {isError ? (
           <span className="text-red-600 dark:text-red-400 text-[0.85em] font-sans font-bold">
@@ -85,7 +86,7 @@ export function WordSpan({
             {maskHint}
           </span>
         ) : (
-          text
+          <span className="invisible" aria-hidden="true">{text}</span>
         )}
       </span>
     );
