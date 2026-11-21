@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Mail, ArrowLeft, CheckCircle2, User, Loader2 } from 'lucide-react';
 import { getSupabaseBrowserClient } from '@/lib/supabase/client';
@@ -13,6 +13,15 @@ export default function LoginPage() {
   const [errorMessage, setErrorMessage] = useState('');
   const [showEmailForm, setShowEmailForm] = useState(false);
 
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('error') === 'auth_callback_failed') {
+        setErrorMessage('Autentikasi akun gagal atau dibatalkan. Silakan coba lagi.');
+      }
+    }
+  }, []);
+
   const handleGoogleSignIn = async () => {
     setLoadingGoogle(true);
     setErrorMessage('');
@@ -23,7 +32,7 @@ export default function LoginPage() {
         const { error } = await supabase.auth.signInWithOAuth({
           provider: 'google',
           options: {
-            redirectTo: typeof window !== 'undefined' ? `${window.location.origin}/` : undefined,
+            redirectTo: typeof window !== 'undefined' ? `${window.location.origin}/auth/callback` : undefined,
           },
         });
         if (error) {
