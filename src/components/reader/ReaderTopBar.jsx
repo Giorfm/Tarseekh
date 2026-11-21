@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, SlidersHorizontal, Compass, HelpCircle, Volume2 } from 'lucide-react';
+import { ArrowLeft, SlidersHorizontal, Compass, HelpCircle, Volume2, Bookmark } from 'lucide-react';
 
 export function ReaderTopBar({
   title,
@@ -11,6 +11,7 @@ export function ReaderTopBar({
   onModeChange,
   onOpenSettings,
   onOpenJump,
+  onOpenBookmarks,
   onOpenLegend,
   onToggleAudio,
   isAudioActive = false,
@@ -98,6 +99,18 @@ export function ReaderTopBar({
             title="Dengarkan Murottal (1441H)"
           >
             <Volume2 className="w-4 h-4 sm:w-5 sm:h-5" />
+          </button>
+        )}
+
+        {/* Bookmarks Button */}
+        {onOpenBookmarks && (
+          <button
+            onClick={onOpenBookmarks}
+            className="p-1.5 rounded-lg hover:bg-black/5 dark:hover:bg-white/5 text-gray-600 dark:text-gray-300 transition-colors"
+            aria-label="Buka ayat tersimpan"
+            title="Ayat Tersimpan (Bookmark)"
+          >
+            <Bookmark className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         )}
 

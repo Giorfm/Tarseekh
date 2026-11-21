@@ -2,10 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Search, BookOpen, Layers, ChevronRight, Sparkles, Loader2, ArrowRight, Lightbulb } from 'lucide-react';
+import { Search, BookOpen, Layers, ChevronRight, Sparkles, Loader2, ArrowRight, Lightbulb, Bookmark, Trash2 } from 'lucide-react';
 import { useSettings } from '@/context/SettingsContext';
 import { getSurahList, getIndex } from '@/lib/quran/loader';
 import { getLastPosition } from '@/lib/quran/position';
+import { getBookmarks, removeBookmark, BOOKMARKS_CHANGED_EVENT } from '@/lib/quran/bookmarks';
 
 const SUGGESTED_TOPICS = [
   'Ketenangan saat cemas & overthinking',
@@ -17,8 +18,10 @@ const SUGGESTED_TOPICS = [
 ];
 
 export default function QuranIndexPage() {
-  const [activeTab, setActiveTab] = useState('surah'); // 'surah' | 'juz' | 'tematik'
+  const [activeTab, setActiveTab] = useState('surah'); // 'surah' | 'juz' | 'tematik' | 'bookmark'
   const [searchQuery, setSearchQuery] = useState('');
+  const [bookmarkSearch, setBookmarkSearch] = useState('');
+  const [bookmarks, setBookmarks] = useState([]);
   const [semanticQuery, setSemanticQuery] = useState('');
   const [semanticResults, setSemanticResults] = useState([]);
   const [semanticMeta, setSemanticMeta] = useState(null);
@@ -41,6 +44,22 @@ export default function QuranIndexPage() {
         console.error('Failed to load Quran metadata', err);
         setIsLoading(false);
       });
+
+    // Check if ?tab=bookmark in URL
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const tabParam = params.get('tab');
+      if (tabParam === 'bookmark' || tabParam === 'tersimpan') {
+        setActiveTab('bookmark');
+      }
+    }
+
+    const syncBookmarks = () => {
+      setBookmarks(getBookmarks());
+    };
+    syncBookmarks();
+    window.addEventListener(BOOKMARKS_CHANGED_EVENT, syncBookmarks);
+    return () => window.removeEventListener(BOOKMARKS_CHANGED_EVENT, syncBookmarks);
   }, []);
 
   const handleSemanticSearch = async (term) => {
@@ -73,6 +92,17 @@ export default function QuranIndexPage() {
       s.translated_name.toLowerCase().includes(q) ||
       s.name_arabic.includes(q) ||
       String(s.id) === q
+    );
+  });
+
+  const filteredBookmarks = bookmarks.filter((b) => {
+    const q = bookmarkSearch.toLowerCase().trim();
+    if (!q) return true;
+    return (
+      b.verseKey.toLowerCase().includes(q) ||
+      (b.surahName && b.surahName.toLowerCase().includes(q)) ||
+      (b.translation && b.translation.toLowerCase().includes(q)) ||
+      (b.text && b.text.includes(q))
     );
   });
 
@@ -155,6 +185,17 @@ export default function QuranIndexPage() {
         >
           <Sparkles className="w-3.5 h-3.5 text-amber-500" />
           <span>Tematik AI</span>
+        </button>
+        <button
+          onClick={() => setActiveTab('bookmark')}
+          className={`flex-1 py-2.5 text-xs font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 ${
+            activeTab === 'bookmark'
+              ? 'bg-white dark:bg-brand-dark-surface shadow-xs text-brand-primary dark:text-brand-dark-primary'
+              : 'text-gray-500 hover:text-gray-900 dark:hover:text-white'
+          }`}
+        >
+          <Bookmark className="w-3.5 h-3.5 text-amber-500" />
+          <span>Tersimpan {bookmarks.length > 0 && `(${bookmarks.length})`}</span>
         </button>
       </div>
 
@@ -248,7 +289,7 @@ export default function QuranIndexPage() {
             );
           })}
         </div>
-      ) : (
+      ) : activeTab === 'tematik' ? (
         /* Tematik AI Search Tab (PRD FR-10) */
         <div className="space-y-5">
           <div className="bg-gradient-to-br from-brand-primary/10 via-brand-bg to-brand-accent/10 dark:from-brand-dark-surface dark:to-emerald-950/30 rounded-3xl p-5 border border-brand-primary/20 dark:border-white/10 space-y-3">
@@ -414,7 +455,109 @@ export default function QuranIndexPage() {
             </div>
           ) : null}
         </div>
-      )}
+      ) : activeTab === 'bookmark' ? (
+        <div className="space-y-4">
+          <div className="relative">
+            <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400" />
+            <input
+              type="search"
+              value={bookmarkSearch}
+              onChange={(e) => setBookmarkSearch(e.target.value)}
+              placeholder="Cari ayat tersimpan (nama surah, terjemahan, atau nomor ayat)..."
+              className="w-full pl-10 pr-4 py-2.5 rounded-2xl bg-white dark:bg-brand-dark-surface border border-emerald-950/10 dark:border-white/10 text-sm focus:outline-none focus:ring-2 focus:ring-brand-primary"
+            />
+          </div>
+
+          {bookmarks.length === 0 ? (
+            <div className="py-16 px-4 text-center space-y-4 bg-white dark:bg-brand-dark-surface rounded-3xl border border-emerald-950/10 dark:border-white/10 shadow-xs">
+              <div className="w-16 h-16 rounded-3xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center mx-auto shadow-xs">
+                <Bookmark className="w-8 h-8" />
+              </div>
+              <div className="max-w-sm mx-auto space-y-1">
+                <h3 className="font-bold text-base text-brand-charcoal dark:text-white">
+                  Belum Ada Ayat Tersimpan
+                </h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
+                  Tandai ayat favorit Anda saat membaca. Klik tombol <strong>Simpan</strong> pada daftar per ayat, atau sorot teks ayat pada tampilan Mushaf untuk menyimpan penanda tilawah.
+                </p>
+              </div>
+              <button
+                onClick={() => setActiveTab('surah')}
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-primary text-white dark:bg-brand-dark-primary dark:text-brand-dark-bg font-bold text-xs hover:opacity-95 transition-opacity"
+              >
+                <span>Mulai Jelajahi Al-Qur&apos;an</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          ) : filteredBookmarks.length === 0 ? (
+            <div className="p-8 text-center text-xs text-gray-400 rounded-3xl bg-white dark:bg-brand-dark-surface border border-emerald-950/10 dark:border-white/10">
+              Tidak ada ayat tersimpan yang cocok dengan &quot;{bookmarkSearch}&quot;.
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {filteredBookmarks.map((b) => {
+                const targetHref =
+                  settings.reading_view === 'halaman'
+                    ? `/quran/halaman/${b.page || index?.verse_to_page[b.verseKey] || 1}?verse=${b.verseKey}`
+                    : `/quran/${b.surah}?ayah=${b.ayah}`;
+
+                return (
+                  <div
+                    key={b.verseKey}
+                    className="p-5 rounded-3xl bg-white dark:bg-brand-dark-surface border border-emerald-950/10 dark:border-white/10 shadow-xs hover:shadow-md transition-all space-y-3"
+                  >
+                    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-gray-100 dark:border-white/5 pb-3">
+                      <div className="flex items-center gap-2.5">
+                        <span className="px-2.5 py-1 rounded-xl bg-brand-primary/10 text-brand-primary dark:text-brand-dark-primary font-bold text-xs">
+                          QS {b.verseKey}
+                        </span>
+                        <div>
+                          <span className="font-bold text-sm text-brand-charcoal dark:text-white block">
+                            {b.surahName}
+                          </span>
+                          <span className="text-[11px] text-gray-400">
+                            Ayat {b.ayah} {b.page ? `• Halaman ${b.page}` : ''} {b.juz ? `• Juz ${b.juz}` : ''}
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-2">
+                        <button
+                          onClick={() => removeBookmark(b.verseKey)}
+                          className="flex items-center gap-1 px-3 py-1.5 rounded-xl border border-red-200 dark:border-red-900/30 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/30 text-xs font-semibold transition-colors"
+                          title="Hapus dari tersimpan"
+                        >
+                          <Trash2 className="w-3.5 h-3.5" />
+                          <span>Hapus</span>
+                        </button>
+                        <Link
+                          href={targetHref}
+                          className="flex items-center gap-1.5 px-4 py-1.5 rounded-xl bg-brand-primary dark:bg-brand-dark-primary text-white dark:text-brand-dark-bg text-xs font-bold shadow-xs hover:opacity-95 transition-opacity"
+                        >
+                          <span>Buka Ayat</span>
+                          <ArrowRight className="w-3.5 h-3.5" />
+                        </Link>
+                      </div>
+                    </div>
+
+                    {b.text && (
+                      <p className="font-quran text-xl text-brand-charcoal dark:text-gray-100 text-right leading-loose py-1" dir="rtl">
+                        {b.text}
+                      </p>
+                    )}
+
+                    {b.translation && (
+                      <p className="text-xs text-gray-600 dark:text-gray-300 leading-relaxed border-l-2 border-brand-primary/30 pl-3 italic">
+                        &quot;{b.translation}&quot;
+                      </p>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      ) : null}
     </div>
   );
 }

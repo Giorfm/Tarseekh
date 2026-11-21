@@ -2,23 +2,38 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { X, Search, BookOpen, Layers, ArrowRight } from 'lucide-react';
+import { X, Search, BookOpen, Layers, ArrowRight, Bookmark, Trash2, ExternalLink } from 'lucide-react';
 import { useSettings } from '@/context/SettingsContext';
 import { getSurahList, getIndex } from '@/lib/quran/loader';
+import { getBookmarks, removeBookmark, BOOKMARKS_CHANGED_EVENT } from '@/lib/quran/bookmarks';
 
-export function JumpSheet({ isOpen, onClose }) {
+export function JumpSheet({ isOpen, onClose, initialTab = 'page' }) {
   const router = useRouter();
   const { settings } = useSettings();
-  const [tab, setTab] = useState('page'); // 'page' | 'surah' | 'juz'
+  const [tab, setTab] = useState(initialTab); // 'page' | 'surah' | 'juz' | 'bookmark'
   const [pageInput, setPageInput] = useState('');
   const [surahs, setSurahs] = useState([]);
   const [index, setIndex] = useState(null);
   const [search, setSearch] = useState('');
+  const [bookmarks, setBookmarks] = useState([]);
+
+  useEffect(() => {
+    if (initialTab) {
+      setTab(initialTab);
+    }
+  }, [initialTab, isOpen]);
 
   useEffect(() => {
     if (!isOpen) return;
     getSurahList().then(setSurahs).catch(console.error);
     getIndex().then(setIndex).catch(console.error);
+    setBookmarks(getBookmarks());
+
+    const handleBookmarksChanged = () => {
+      setBookmarks(getBookmarks());
+    };
+    window.addEventListener(BOOKMARKS_CHANGED_EVENT, handleBookmarksChanged);
+    return () => window.removeEventListener(BOOKMARKS_CHANGED_EVENT, handleBookmarksChanged);
   }, [isOpen]);
 
   if (!isOpen) return null;
@@ -54,6 +69,22 @@ export function JumpSheet({ isOpen, onClose }) {
       router.push(`/quran/${surahEntry.id}`);
     }
     onClose();
+  };
+
+  const navigateToBookmark = (b) => {
+    if (settings.reading_view === 'halaman') {
+      const targetPage = b.page || index?.verse_to_page[b.verseKey] || 1;
+      router.push(`/quran/halaman/${targetPage}?verse=${b.verseKey}`);
+    } else {
+      router.push(`/quran/${b.surah}?ayah=${b.ayah}`);
+    }
+    onClose();
+  };
+
+  const handleDeleteBookmark = (e, verseKey) => {
+    e.stopPropagation();
+    const updated = removeBookmark(verseKey);
+    setBookmarks(updated);
   };
 
   const filteredSurahs = surahs.filter((s) => {
@@ -103,6 +134,17 @@ export function JumpSheet({ isOpen, onClose }) {
               }`}
             >
               Juz
+            </button>
+            <button
+              onClick={() => setTab('bookmark')}
+              className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1 ${
+                tab === 'bookmark'
+                  ? 'bg-white dark:bg-brand-dark-surface shadow-xs text-brand-primary dark:text-brand-dark-primary'
+                  : 'text-gray-500 hover:text-gray-900 dark:hover:text-white'
+              }`}
+            >
+              <Bookmark className="w-3 h-3 text-amber-500" />
+              <span>Tersimpan {bookmarks.length > 0 && `(${bookmarks.length})`}</span>
             </button>
           </div>
 
@@ -222,6 +264,73 @@ export function JumpSheet({ isOpen, onClose }) {
                 </button>
               );
             })}
+          </div>
+        )}
+
+        {/* Tab 4: Ayat Tersimpan (Bookmark) */}
+        {tab === 'bookmark' && (
+          <div className="space-y-3 flex-1 flex flex-col min-h-0">
+            {bookmarks.length === 0 ? (
+              <div className="py-12 text-center space-y-2">
+                <div className="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center mx-auto">
+                  <Bookmark className="w-6 h-6" />
+                </div>
+                <h4 className="font-bold text-sm text-brand-charcoal dark:text-white">
+                  Belum Ada Ayat Tersimpan
+                </h4>
+                <p className="text-xs text-gray-500 dark:text-gray-400 max-w-xs mx-auto leading-relaxed">
+                  Sorot teks ayat atau gunakan tombol Simpan pada daftar ayat untuk menyimpan penanda tilawah Anda.
+                </p>
+              </div>
+            ) : (
+              <div className="overflow-y-auto divide-y divide-gray-100 dark:divide-white/5 max-h-80 pr-1 space-y-1">
+                {bookmarks.map((b) => (
+                  <div
+                    key={b.verseKey}
+                    onClick={() => navigateToBookmark(b)}
+                    className="py-3 px-3 flex items-start justify-between hover:bg-black/5 dark:hover:bg-white/5 rounded-2xl cursor-pointer transition-colors group gap-3"
+                  >
+                    <div className="flex-1 min-w-0 space-y-1">
+                      <div className="flex items-center gap-2">
+                        <span className="px-2 py-0.5 rounded-lg bg-brand-primary/10 text-brand-primary dark:text-brand-dark-primary text-[10px] font-bold">
+                          QS {b.verseKey}
+                        </span>
+                        <span className="font-bold text-xs text-brand-charcoal dark:text-white truncate">
+                          {b.surahName}
+                        </span>
+                        <span className="text-[10px] text-gray-400">
+                          {b.page ? `Hal ${b.page}` : ''} {b.juz ? `• Juz ${b.juz}` : ''}
+                        </span>
+                      </div>
+                      {b.text && (
+                        <p className="font-quran text-sm text-brand-primary dark:text-brand-dark-primary text-right truncate" dir="rtl">
+                          {b.text}
+                        </p>
+                      )}
+                      {b.translation && (
+                        <p className="text-[11px] text-gray-500 dark:text-gray-400 line-clamp-1 italic">
+                          &quot;{b.translation}&quot;
+                        </p>
+                      )}
+                    </div>
+
+                    <div className="flex items-center gap-1 shrink-0 pt-1">
+                      <button
+                        onClick={(e) => handleDeleteBookmark(e, b.verseKey)}
+                        className="p-1.5 rounded-lg text-gray-400 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors"
+                        title="Hapus dari tersimpan"
+                        aria-label={`Hapus ayat ${b.verseKey} dari tersimpan`}
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </button>
+                      <span className="p-1.5 text-brand-primary dark:text-brand-dark-primary group-hover:translate-x-0.5 transition-transform">
+                        <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         )}
       </div>

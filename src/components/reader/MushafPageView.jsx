@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef, useCallback, useMemo, useSyncExternalStore } from 'react';
 import { useRouter } from 'next/navigation';
-import { ChevronLeft, ChevronRight, ZoomIn, ZoomOut } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ZoomIn, ZoomOut, Bookmark } from 'lucide-react';
 import { ReaderTopBar } from './ReaderTopBar';
 import { WordSpan } from './WordSpan';
 import { ReaderSettingsSheet } from './ReaderSettingsSheet';
@@ -26,6 +26,7 @@ import { SpeechTracker, hasSpeechConsent, isSpeechSupported } from '@/lib/speech
 import { RecitationStatusBar } from '@/components/speech/RecitationStatusBar';
 import { generateWordMasks } from '@/lib/memorization/engine';
 import { logActivity } from '@/lib/activity/logger';
+import { saveBookmarks } from '@/lib/quran/bookmarks';
 
 // Match Tailwind's lg breakpoint for the facing-page layout.
 const SPREAD_MEDIA_QUERY = '(min-width: 1024px)';
@@ -48,13 +49,16 @@ function getPageWords(page) {
     .flatMap((line) => (line.words ?? []).filter((word) => word.type !== 'end'));
 }
 
-export function MushafPageView({ pageData, facingPageData = null }) {
+export function MushafPageView({ pageData, facingPageData = null, initialVerseKey = null }) {
   const router = useRouter();
   const { settings, updateSettings } = useSettings();
   const [activeMode, setActiveMode] = useState('read');
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isJumpOpen, setIsJumpOpen] = useState(false);
+  const [jumpInitialTab, setJumpInitialTab] = useState('page');
   const [isLegendOpen, setIsLegendOpen] = useState(false);
+  const [toastMessage, setToastMessage] = useState('');
+  const toastTimerRef = useRef(null);
   const [isFlowingFallback, setIsFlowingFallback] = useState(false);
   const [tajweedMap, setTajweedMap] = useState(new Map());
 
@@ -180,16 +184,31 @@ export function MushafPageView({ pageData, facingPageData = null }) {
     setIsChatOpen(true);
   };
 
-  const handleBookmark = (keys) => {
+  const showToast = (msg) => {
+    setToastMessage(msg);
+    clearTimeout(toastTimerRef.current);
+    toastTimerRef.current = setTimeout(() => setToastMessage(''), 3000);
+  };
+
+  const handleBookmark = (keys, selectedText) => {
     try {
-      const stored = JSON.parse(
-        localStorage.getItem('tarseekh_bookmarks_v1') ||
-        localStorage.getItem('tadabbur_bookmarks_v1') ||
-        '[]'
-      );
-      const newBookmarks = [...new Set([...stored, ...keys])];
-      localStorage.setItem('tarseekh_bookmarks_v1', JSON.stringify(newBookmarks));
-      alert(`Ayat ${keys.join(', ')} berhasil disimpan ke bookmark.`);
+      const items = keys.map((vk) => {
+        const [sNum, aNum] = vk.split(':');
+        const surahId = parseInt(sNum, 10);
+        const surahMeta = pageData.surahs?.find((s) => s.id === surahId);
+        return {
+          verseKey: vk,
+          surah: surahId,
+          ayah: parseInt(aNum, 10) || 1,
+          page: pageData.page,
+          juz: pageData.juz,
+          surahName: surahMeta?.name_simple || `Surah ${surahId}`,
+          surahArabic: surahMeta?.name_arabic || '',
+          text: selectedText || '',
+        };
+      });
+      saveBookmarks(items);
+      showToast(`Ayat ${keys.join(', ')} berhasil disimpan ke penanda baca`);
     } catch (e) {
       console.warn(e);
     }
@@ -814,6 +833,14 @@ export function MushafPageView({ pageData, facingPageData = null }) {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
+      {/* Toast Notification */}
+      {toastMessage && (
+        <div className="fixed top-16 left-1/2 -translate-x-1/2 z-50 animate-fade-in bg-brand-charcoal/95 dark:bg-white/95 text-white dark:text-brand-charcoal px-4 py-2 rounded-2xl shadow-xl border border-white/10 dark:border-black/10 text-xs font-semibold flex items-center gap-2">
+          <Bookmark className="w-3.5 h-3.5 text-amber-400 fill-amber-400 shrink-0" />
+          <span>{toastMessage}</span>
+        </div>
+      )}
+
       {/* Top Bar */}
       <ReaderTopBar
         title={`Halaman ${pageNum}`}
@@ -821,7 +848,14 @@ export function MushafPageView({ pageData, facingPageData = null }) {
         activeMode={activeMode}
         onModeChange={handleModeChange}
         onOpenSettings={() => setIsSettingsOpen(true)}
-        onOpenJump={() => setIsJumpOpen(true)}
+        onOpenJump={() => {
+          setJumpInitialTab('page');
+          setIsJumpOpen(true);
+        }}
+        onOpenBookmarks={() => {
+          setJumpInitialTab('bookmark');
+          setIsJumpOpen(true);
+        }}
         onOpenLegend={() => setIsLegendOpen(true)}
         onToggleAudio={() => setIsAudioOpen((prev) => !prev)}
         isAudioActive={isAudioOpen}
@@ -1009,6 +1043,7 @@ export function MushafPageView({ pageData, facingPageData = null }) {
       <JumpSheet
         isOpen={isJumpOpen}
         onClose={() => setIsJumpOpen(false)}
+        initialTab={jumpInitialTab}
       />
 
       {/* Tajweed Legend Sheet */}

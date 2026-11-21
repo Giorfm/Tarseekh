@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { Volume2, ZoomIn, ZoomOut } from 'lucide-react';
+import { Volume2, ZoomIn, ZoomOut, Bookmark } from 'lucide-react';
+import { getBookmarks, saveBookmarks, toggleBookmark, BOOKMARKS_CHANGED_EVENT } from '@/lib/quran/bookmarks';
 import { ReaderTopBar } from './ReaderTopBar';
 import { WordSpan } from './WordSpan';
 import { ReaderSettingsSheet } from './ReaderSettingsSheet';
@@ -30,7 +31,11 @@ export function VerseListView({ surahData, initialAyah = null }) {
   const [activeMode, setActiveMode] = useState('read'); // 'read' | 'tajwid' | 'memorize'
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isJumpOpen, setIsJumpOpen] = useState(false);
+  const [jumpInitialTab, setJumpInitialTab] = useState('page');
   const [isLegendOpen, setIsLegendOpen] = useState(false);
+  const [bookmarkedKeys, setBookmarkedKeys] = useState(new Set());
+  const [toastMessage, setToastMessage] = useState('');
+  const toastTimerRef = useRef(null);
   const [activeVerseKey, setActiveVerseKey] = useState(initialAyah ? `${surahData.surah.id}:${initialAyah}` : `${surahData.surah.id}:1`);
   const [mutashabihatVerseKey, setMutashabihatVerseKey] = useState(null);
   const isKfgqpcFont = (settings.mushaf_font || 'kfgqpc-v4') === 'kfgqpc-v4' || settings.mushaf_font === 'kfgqpc-v2';
@@ -469,23 +474,77 @@ export function VerseListView({ surahData, initialAyah = null }) {
     setIsChatOpen(true);
   };
 
-  const handleBookmark = (keys) => {
+  const showToast = (msg) => {
+    setToastMessage(msg);
+    clearTimeout(toastTimerRef.current);
+    toastTimerRef.current = setTimeout(() => setToastMessage(''), 3000);
+  };
+
+  useEffect(() => {
+    const sync = () => {
+      const list = getBookmarks();
+      setBookmarkedKeys(new Set(list.map((b) => b.verseKey)));
+    };
+    sync();
+    window.addEventListener(BOOKMARKS_CHANGED_EVENT, sync);
+    return () => {
+      window.removeEventListener(BOOKMARKS_CHANGED_EVENT, sync);
+      clearTimeout(toastTimerRef.current);
+    };
+  }, []);
+
+  const handleBookmark = (keys, selectedText) => {
     try {
-      const stored = JSON.parse(
-        localStorage.getItem('tarseekh_bookmarks_v1') ||
-        localStorage.getItem('tadabbur_bookmarks_v1') ||
-        '[]'
-      );
-      const newBookmarks = [...new Set([...stored, ...keys])];
-      localStorage.setItem('tarseekh_bookmarks_v1', JSON.stringify(newBookmarks));
-      alert(`Ayat ${keys.join(', ')} berhasil disimpan ke bookmark.`);
+      const items = keys.map((vk) => {
+        const verseObj = surahData.verses.find((v) => v.key === vk);
+        return {
+          verseKey: vk,
+          surah: surahData.surah.id,
+          ayah: verseObj?.n || parseInt(vk.split(':')[1], 10),
+          page: verseObj?.page || 1,
+          juz: verseObj?.juz || 1,
+          surahName: surahData.surah.name_simple,
+          surahArabic: surahData.surah.name_arabic,
+          text: verseObj?.text || selectedText || '',
+          translation: verseObj?.translation || '',
+        };
+      });
+      saveBookmarks(items);
+      showToast(`Ayat ${keys.join(', ')} berhasil disimpan ke penanda baca`);
     } catch (e) {
       console.warn(e);
     }
   };
 
+  const handleToggleVerseBookmark = (verse) => {
+    const res = toggleBookmark({
+      verseKey: verse.key,
+      surah: surahData.surah.id,
+      ayah: verse.n,
+      page: verse.page,
+      juz: verse.juz,
+      surahName: surahData.surah.name_simple,
+      surahArabic: surahData.surah.name_arabic,
+      text: verse.text,
+      translation: verse.translation,
+    });
+    if (res.isBookmarked) {
+      showToast(`Ayat ${verse.key} disimpan ke penanda baca`);
+    } else {
+      showToast(`Ayat ${verse.key} dihapus dari penanda baca`);
+    }
+  };
+
   return (
     <div data-reader-view="true" className="min-h-screen pb-24">
+      {/* Toast Notification */}
+      {toastMessage && (
+        <div className="fixed top-16 left-1/2 -translate-x-1/2 z-50 animate-fade-in bg-brand-charcoal/95 dark:bg-white/95 text-white dark:text-brand-charcoal px-4 py-2 rounded-2xl shadow-xl border border-white/10 dark:border-black/10 text-xs font-semibold flex items-center gap-2">
+          <Bookmark className="w-3.5 h-3.5 text-amber-400 fill-amber-400 shrink-0" />
+          <span>{toastMessage}</span>
+        </div>
+      )}
+
       {/* Top Bar */}
       <ReaderTopBar
         title={surahData.surah.name_simple}
@@ -493,7 +552,14 @@ export function VerseListView({ surahData, initialAyah = null }) {
         activeMode={activeMode}
         onModeChange={handleModeChange}
         onOpenSettings={() => setIsSettingsOpen(true)}
-        onOpenJump={() => setIsJumpOpen(true)}
+        onOpenJump={() => {
+          setJumpInitialTab('page');
+          setIsJumpOpen(true);
+        }}
+        onOpenBookmarks={() => {
+          setJumpInitialTab('bookmark');
+          setIsJumpOpen(true);
+        }}
         onOpenLegend={() => setIsLegendOpen(true)}
         onToggleAudio={() => setIsAudioOpen((prev) => !prev)}
         isAudioActive={isAudioOpen}
@@ -593,6 +659,19 @@ export function VerseListView({ surahData, initialAyah = null }) {
                     >
                       <Volume2 className="w-3.5 h-3.5" />
                       <span>{activeAudioVerseKey === verse.key && isAudioOpen ? 'Memutar' : 'Putar'}</span>
+                    </button>
+                    <button
+                      onClick={() => handleToggleVerseBookmark(verse)}
+                      className={`flex items-center gap-1 px-2 py-0.5 rounded-lg text-[11px] font-medium transition-all ${
+                        bookmarkedKeys.has(verse.key)
+                          ? 'bg-amber-500/15 text-amber-600 dark:text-amber-400 font-semibold ring-1 ring-amber-500/30'
+                          : 'hover:bg-black/5 dark:hover:bg-white/5 text-gray-500 dark:text-gray-400 hover:text-brand-primary'
+                      }`}
+                      title={bookmarkedKeys.has(verse.key) ? 'Hapus dari simpanan' : 'Simpan ayat ini'}
+                      aria-label={bookmarkedKeys.has(verse.key) ? 'Hapus dari simpanan' : 'Simpan ayat ini'}
+                    >
+                      <Bookmark className={`w-3.5 h-3.5 ${bookmarkedKeys.has(verse.key) ? 'fill-current text-amber-500' : ''}`} />
+                      <span>{bookmarkedKeys.has(verse.key) ? 'Tersimpan' : 'Simpan'}</span>
                     </button>
                   </div>
                   <span className="text-[11px] text-gray-400">
@@ -768,6 +847,7 @@ export function VerseListView({ surahData, initialAyah = null }) {
       <JumpSheet
         isOpen={isJumpOpen}
         onClose={() => setIsJumpOpen(false)}
+        initialTab={jumpInitialTab}
       />
 
       {/* Tajweed Legend Sheet */}

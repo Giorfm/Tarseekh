@@ -2,13 +2,14 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { BookOpen, Sparkles, Compass, ShieldCheck } from 'lucide-react';
+import { BookOpen, Sparkles, Compass, ShieldCheck, Bookmark, ArrowRight } from 'lucide-react';
 import { useSettings } from '@/context/SettingsContext';
 import { getLastPosition } from '@/lib/quran/position';
 import { getSurahList } from '@/lib/quran/loader';
 import { getLocalTodayString, getPast7DaysIndicators } from '@/lib/streak';
 import { getLocalQuests, saveLocalQuests, claimQuestReward } from '@/lib/quests';
 import { MemorizationAdapter } from '@/lib/memorization/engine';
+import { getBookmarks, BOOKMARKS_CHANGED_EVENT } from '@/lib/quran/bookmarks';
 import { StreakHeader } from '@/components/dashboard/StreakHeader';
 import { ContinueReadingCard } from '@/components/dashboard/ContinueReadingCard';
 import { DailyQuestsCard } from '@/components/dashboard/DailyQuestsCard';
@@ -29,6 +30,7 @@ export default function DashboardPage() {
   const [streakData, setStreakData] = useState({ current_streak: 1, longest_streak: 1, last_active_date: null });
   const [quests, setQuests] = useState([]);
   const [dueCount, setDueCount] = useState(0);
+  const [bookmarks, setBookmarks] = useState([]);
 
   useEffect(() => {
     setMounted(true);
@@ -79,6 +81,14 @@ export default function DashboardPage() {
     } catch {
       setDueCount(0);
     }
+
+    // 5. Bookmarks sync
+    setBookmarks(getBookmarks());
+    const syncBookmarks = () => {
+      setBookmarks(getBookmarks());
+    };
+    window.addEventListener(BOOKMARKS_CHANGED_EVENT, syncBookmarks);
+    return () => window.removeEventListener(BOOKMARKS_CHANGED_EVENT, syncBookmarks);
   }, [settings.daily_goal_ayah, settings.reading_view, settings.timezone]);
 
   const handleClaimQuest = (questId) => {
@@ -125,7 +135,80 @@ export default function DashboardPage() {
       {/* 4. Jadwal Murajaah (PRD FR-5) */}
       <MurajaahDueCard dueCount={dueCount} />
 
-      {/* 5. Akses Cepat Surah Pilihan */}
+      {/* 5. Ayat Tersimpan (Penanda Baca) */}
+      {bookmarks.length > 0 && (
+        <section className="space-y-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Bookmark className="w-4 h-4 text-amber-500 fill-amber-500" />
+              <h3 className="font-bold text-sm text-brand-charcoal dark:text-white uppercase tracking-wider">
+                Ayat Tersimpan ({bookmarks.length})
+              </h3>
+            </div>
+            <Link
+              href="/quran?tab=bookmark"
+              className="text-xs font-semibold text-brand-primary dark:text-brand-dark-primary hover:underline"
+            >
+              Lihat Semua &rarr;
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {bookmarks.slice(0, 2).map((b) => {
+              const targetHref =
+                settings.reading_view === 'halaman'
+                  ? `/quran/halaman/${b.page || 1}?verse=${b.verseKey}`
+                  : `/quran/${b.surah}?ayah=${b.ayah}`;
+
+              return (
+                <Link
+                  key={b.verseKey}
+                  href={targetHref}
+                  className="p-4 rounded-2xl bg-white dark:bg-brand-dark-surface border border-emerald-950/10 dark:border-white/10 shadow-xs hover:border-brand-primary hover:shadow-md transition-all group flex flex-col justify-between space-y-2"
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <span className="px-2 py-0.5 rounded-lg bg-amber-500/10 text-amber-700 dark:text-amber-300 font-bold text-[10px]">
+                        QS {b.verseKey}
+                      </span>
+                      <span className="font-bold text-xs text-brand-charcoal dark:text-white">
+                        {b.surahName}
+                      </span>
+                    </div>
+                    <span className="text-[10px] text-gray-400">
+                      {b.page ? `Hal ${b.page}` : ''}
+                    </span>
+                  </div>
+
+                  {b.text ? (
+                    <p className="font-quran text-base text-brand-primary dark:text-brand-dark-primary text-right line-clamp-1" dir="rtl">
+                      {b.text}
+                    </p>
+                  ) : b.translation ? (
+                    <p className="text-[11px] text-gray-500 dark:text-gray-400 line-clamp-2 italic">
+                      &quot;{b.translation}&quot;
+                    </p>
+                  ) : (
+                    <p className="text-[11px] text-gray-400">
+                      Ayat ke-{b.ayah} Surah {b.surahName}
+                    </p>
+                  )}
+
+                  <div className="pt-1 flex items-center justify-between text-xs font-semibold text-brand-primary dark:text-brand-dark-primary">
+                    <span className="text-[10px] text-gray-400 font-normal">Klik untuk lanjut baca</span>
+                    <span className="flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                      <span>Buka</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {/* 6. Akses Cepat Surah Pilihan */}
       <section className="space-y-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">

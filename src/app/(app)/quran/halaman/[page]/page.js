@@ -23,9 +23,11 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default async function HalamanViewPage({ params }) {
+export default async function HalamanViewPage({ params, searchParams }) {
   const resolved = await params;
+  const resolvedQuery = await searchParams;
   const pageNum = parseInt(resolved.page, 10);
+  const initialVerseKey = resolvedQuery?.verse || null;
 
   if (isNaN(pageNum) || pageNum < 1 || pageNum > 604) {
     notFound();
@@ -50,7 +52,11 @@ export default async function HalamanViewPage({ params }) {
 
   return (
     <main>
-      <MushafPageView pageData={pageData} facingPageData={facingPageData} />
+      <MushafPageView
+        pageData={pageData}
+        facingPageData={facingPageData}
+        initialVerseKey={initialVerseKey}
+      />
     </main>
   );
 }
